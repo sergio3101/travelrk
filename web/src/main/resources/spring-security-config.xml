@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:mvc="http://www.springframework.org/schema/mvc"
+             xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.1.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+
+    <mvc:annotation-driven/>
+    <http use-expressions="true" pattern="/admin/**" auto-config="true">
+        <intercept-url pattern="/admin/login*" access="permitAll" />
+        <intercept-url pattern="/admin/logout" access="permitAll" />
+        <intercept-url pattern="/admin/auth" access="permitAll" />
+        <intercept-url pattern="/admin/**" access="isAuthenticated()" />
+
+        <csrf disabled="true"/>
+
+        <form-login
+                default-target-url="/admin/youtubegallery"
+                username-parameter="username"
+                password-parameter="password"
+                login-processing-url="/admin/auth"
+                login-page='/admin/login'
+                authentication-failure-url="/admin/login?error"
+                always-use-default-target="true"
+                authentication-success-handler-ref="myAuthenticationSuccessHandler"/>
+        <logout logout-success-url="/admin/login?logout" logout-url="/admin/logout" />
+
+    </http>
+    <http pattern="/" security="none"/>
+    <beans:bean id="myAuthenticationSuccessHandler" class="ru.flystar.travelrk.security.MySimpleUrlAuthenticationSuccessHandler"/>
+    <authentication-manager>
+        <authentication-provider>
+            <user-service>
+                <user name="admin" password="m5BwmGSJ8Wf#c!" authorities="ROLE_ADMIN"/>
+                <user name="user" password="Hn7DCW3WnB6K" authorities="ROLE_USER"/>
+                <user name="manager1" password="En9Sb3Jg2Hfj" authorities="ROLE_MANAGER"/>
+                <user name="manager2" password="N6wGvdH2HgsB" authorities="ROLE_MANAGER"/>
+                <user name="manager3" password="wM2hcD5Gfd2a" authorities="ROLE_MANAGER"/>
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+</beans:beans>

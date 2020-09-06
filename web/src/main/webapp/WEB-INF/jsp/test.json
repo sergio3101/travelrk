@@ -1,0 +1,74 @@
+{
+  "description": "Pipeline for parsing squid access logs",
+  "processors": [
+    {
+      "grok": {
+        "field": "message",
+        "trace_match": true,
+        "patterns": [
+          "%{NUMBER:timestamp}%{SPACE}*%{NUMBER:duration} %{IP:client_address} %{WORD:cache_result}/%{POSINT:status_code} %{NUMBER:bytes} %{WORD:request_method} %{NOTSPACE:url} (%{NOTSPACE:user}|-) %{WORD:hierarchy_code}/%{IPORHOST:server} %{NOTSPACE:content_type}"
+        ]
+      }
+    },
+    {
+      "remove": {
+        "field": "message"
+      }
+    },
+    {
+      "date": {
+        "field": "timestamp",
+        "target_field": "@timestamp",
+        "formats": [
+          "UNIX"
+        ],
+        "ignore_failure": true
+      }
+    }
+  ],
+  "on_failure": [
+    {
+      "set": {
+        "field": "error.message",
+        "value": "{{ _ingest.on_failure_message }}"
+      }
+    }
+  ]
+}
+,
+{
+  "_index": "filebeat-7.0.0-alpha1-2018.07.02",
+  "_type": "doc",
+  "_id": "Pf7ZWmQB4hLnZcNwbx6T",
+  "_score": 0.2876821,
+  "_source": {
+    "offset": 2087,
+    "prospector": {
+      "type": "log"
+    },
+    "source": "/var/log/squid/access.log",
+    "message": "1530532554.390 734 127.0.0.1 TCP_TUNNEL/200 16932 CONNECT www.facebook.com:443 - HIER_DIRECT/157.240.23.39 -",
+    "fileset": {
+      "module": "squid",
+      "name": "access"
+    },
+    "error": {
+      "message": "Provided Grok expressions do not match field value: [1530532554.390 734 127.0.0.1 TCP_TUNNEL/200 16932 CONNECT www.facebook.com:443 - HIER_DIRECT/157.240.23.39 -]"
+    },
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2018-07-02T11:55:55.685Z",
+    "beat": {
+      "hostname": "DevOps-Team",
+      "name": "DevOps-Team",
+      "version": "7.0.0-alpha1"
+    },
+    "host": {
+      "name": "DevOps-Team"
+    }
+  }
+}
+]
+}
+}
