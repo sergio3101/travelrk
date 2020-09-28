@@ -1,9 +1,12 @@
 package ru.flystar.travelrk.domain.persistents;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.persistence.*;
 
 /**
  * Project: travelrk
@@ -14,15 +17,15 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class BaseId {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private int id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id", nullable = false)
+  private int id;
 
-    public BaseId() {
-    }
+  public BaseId() {
+  }
 
-    public BaseId(int id) {
-        this.id = id;
-    }
+  public BaseId(int id) {
+    this.id = id;
+  }
 }

@@ -1,10 +1,9 @@
 package ru.flystar.travelrk.domain.nopersist;
 
+import java.util.ArrayList;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.ArrayList;
 
 /**
  * Project: travelrk
@@ -14,10 +13,10 @@ import java.util.ArrayList;
 @Getter
 @NoArgsConstructor
 public class Message {
-    private Status status;
-    private String statusMsg = "";
-    private ArrayList<Integer> errorKys;
-    private String error = "";
-    private Object msgObj;
+  private Status status;
+  private String statusMsg = "";
+  private ArrayList<Integer> errorKys;
+  private String error = "";
+  private Object msgObj;
 
 }

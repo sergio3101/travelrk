@@ -6,13 +6,13 @@ import ru.flystar.travelrk.repositories.UserRepository;
 
 @Service("userService")
 public class UserService {
-    private final UserRepository userRepository;
+  private final UserRepository userRepository;
 
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+  public UserService(UserRepository userRepository) {
+    this.userRepository = userRepository;
+  }
 
-    public User getUserByLogin(String login) {
-        return userRepository.findByLogin(login);
-    }
+  public User getUserByLogin(String login) {
+    return userRepository.findByLogin(login);
+  }
 }

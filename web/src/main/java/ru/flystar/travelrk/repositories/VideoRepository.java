@@ -9,9 +9,9 @@ import ru.flystar.travelrk.domain.persistents.Video;
  */
 public interface VideoRepository extends JpaRepository<Video, Long> {
 
-    Long deleteByYoutubeId(String youtubeId);
+  Long deleteByYoutubeId(String youtubeId);
 
-    Video findByYoutubeId(String youtubeId);
+  Video findByYoutubeId(String youtubeId);
 
-    Video saveAndFlush(Video video);
+  Video saveAndFlush(Video video);
 }

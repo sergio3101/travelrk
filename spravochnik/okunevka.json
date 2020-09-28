@@ -1,0 +1,551 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "ResponseMetaData": {
+      "SearchResponse": {
+        "found": 11,
+        "display": "multiple"
+      },
+      "SearchRequest": {
+        "request": "гостиница окуневка республика крым",
+        "skip": 0,
+        "results": 500,
+        "boundedBy": [
+          [
+            37.048427,
+            55.43644866
+          ],
+          [
+            38.175903,
+            56.04690174
+          ]
+        ]
+      }
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.758908,
+          45.366919
+        ]
+      },
+      "properties": {
+        "name": "Окуневка",
+        "description": "Россия, Республика Крым, Черноморский район, село Окунёвка",
+        "boundedBy": [
+          [
+            32.7472885,
+            45.36279085
+          ],
+          [
+            32.7705275,
+            45.37104685
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1067552694",
+          "name": "Окуневка",
+          "address": "Россия, Республика Крым, Черноморский район, село Окунёвка",
+          "url": "http://okunevka.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 025-82-20"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.767041,
+          45.36663
+        ]
+      },
+      "properties": {
+        "name": "Тарпанчи",
+        "description": "Набережная ул., 48А, село Окунёвка, Россия",
+        "boundedBy": [
+          [
+            32.762936,
+            45.36373593
+          ],
+          [
+            32.771146,
+            45.36952393
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "75932837970",
+          "name": "Тарпанчи",
+          "address": "Россия, Республика Крым, Черноморский район, село Окунёвка, Набережная улица, 48А",
+          "url": "http://tarpanchi.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-41-21"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.763854,
+          45.367188
+        ]
+      },
+      "properties": {
+        "name": "Гостеприимный двор на Набережной",
+        "description": "34, село Окунёвка, Россия",
+        "boundedBy": [
+          [
+            32.759749,
+            45.36429443
+          ],
+          [
+            32.767959,
+            45.37008143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "80463168639",
+          "name": "Гостеприимный двор на Набережной",
+          "address": "Россия, Республика Крым, Черноморский район, село Окунёвка, 34",
+          "url": "http://www.myokunevka.net/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 766-01-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–18:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.767369,
+          45.367036
+        ]
+      },
+      "properties": {
+        "name": "Усадьба Афалина-2",
+        "description": "Набережная ул., 52А, село Окунёвка, Россия",
+        "boundedBy": [
+          [
+            32.763264,
+            45.36414243
+          ],
+          [
+            32.771474,
+            45.36992943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "172174874320",
+          "name": "Усадьба Афалина-2",
+          "address": "Россия, Республика Крым, Черноморский район, село Окунёвка, Набережная улица, 52А",
+          "url": "http://метка.онлайн/housing/item/afalina-2",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-60-50"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.761674,
+          45.368365
+        ]
+      },
+      "properties": {
+        "name": "Гостинный двор У Марины",
+        "description": "ул. Крупской, 18, село Окунёвка, Россия",
+        "boundedBy": [
+          [
+            32.757569,
+            45.36547143
+          ],
+          [
+            32.765779,
+            45.37125843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "197337871364",
+          "name": "Гостинный двор У Марины",
+          "address": "Россия, Республика Крым, Черноморский район, село Окунёвка, улица Крупской, 18",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 004-62-28"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "hotels",
+              "name": "Хостел"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Турбаза"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.761191,
+          45.368365
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Атиже",
+        "description": "ул. Крупской, 16, село Окунёвка, Россия",
+        "boundedBy": [
+          [
+            32.757086,
+            45.36547093
+          ],
+          [
+            32.765296,
+            45.37125893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "81779826781",
+          "name": "Гостевой дом Атиже",
+          "address": "Россия, Республика Крым, Черноморский район, село Окунёвка, улица Крупской, 16",
+          "url": "http://myatlesh.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 115-71-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.759116,
+          45.367149
+        ]
+      },
+      "properties": {
+        "name": "Минигостиница",
+        "description": "Набережная ул., 2А, село Окунёвка, Россия",
+        "boundedBy": [
+          [
+            32.755011,
+            45.36425543
+          ],
+          [
+            32.763221,
+            45.37004243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "115708069235",
+          "name": "Минигостиница",
+          "address": "Россия, Республика Крым, Черноморский район, село Окунёвка, Набережная улица, 2А",
+          "url": "http://okunevka.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 025-82-20"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.755778,
+          45.370602
+        ]
+      },
+      "properties": {
+        "name": "Letoff",
+        "description": "Степная ул., 15, село Окунёвка, Россия",
+        "boundedBy": [
+          [
+            32.751673,
+            45.36770843
+          ],
+          [
+            32.759883,
+            45.37349543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "93217533533",
+          "name": "Letoff",
+          "address": "Россия, Республика Крым, Черноморский район, село Окунёвка, Степная улица, 15",
+          "url": "http://letoff.ru.net/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (911) 130-26-31"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.758748,
+          45.368952
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Фотиния",
+        "description": "ул. Крупской, 7, село Окунёвка, Россия",
+        "boundedBy": [
+          [
+            32.7546425,
+            45.36605793
+          ],
+          [
+            32.7628535,
+            45.37184593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "60095756233",
+          "name": "Пансионат Фотиния",
+          "address": "Россия, Республика Крым, Черноморский район, село Окунёвка, улица Крупской, 7",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.783307,
+          45.368612
+        ]
+      },
+      "properties": {
+        "name": "Усадьба Savostin horse beach club",
+        "description": "Россия, Республика Крым, Черноморский район, Окунёвское сельское поселение",
+        "boundedBy": [
+          [
+            32.637829,
+            45.3055932
+          ],
+          [
+            32.928785,
+            45.4315602
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "87678035627",
+          "name": "Усадьба Savostin horse beach club",
+          "address": "Россия, Республика Крым, Черноморский район, Окунёвское сельское поселение",
+          "url": "http://www.savostin-beach-club.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+380 (6558) 5-46-10"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (985) 760-94-44"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.759544,
+          45.366951
+        ]
+      },
+      "properties": {
+        "name": "Мини-пансионат Villa Galla",
+        "description": "Набережная ул., 4, село Окунёвка, Россия",
+        "boundedBy": [
+          [
+            32.7554385,
+            45.36405743
+          ],
+          [
+            32.7636495,
+            45.36984443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "97034162319",
+          "name": "Мини-пансионат Villa Galla",
+          "address": "Россия, Республика Крым, Черноморский район, село Окунёвка, Набережная улица, 4",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

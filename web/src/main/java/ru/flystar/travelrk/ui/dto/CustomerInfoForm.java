@@ -1,6 +1,10 @@
 package ru.flystar.travelrk.ui.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 import org.springframework.web.multipart.MultipartFile;
 import ru.flystar.travelrk.domain.persistents.Region;
 
@@ -14,18 +18,18 @@ import ru.flystar.travelrk.domain.persistents.Region;
 @AllArgsConstructor
 @ToString
 public class CustomerInfoForm {
-    private int id;
-    private String companyName = "";
-    private Region region;
-    private String phone = "";
-    private String address = "";
-    private String site = "";
-    private String excltour = "";
-    private String email = "";
-    private MultipartFile logoPath;
-    private String logo = "";
-    private String officeLat = "";
-    private String officeLng = "";
-    private String height = "";
-    private String description = "";
+  private int id;
+  private String companyName = "";
+  private Region region;
+  private String phone = "";
+  private String address = "";
+  private String site = "";
+  private String excltour = "";
+  private String email = "";
+  private MultipartFile logoPath;
+  private String logo = "";
+  private String officeLat = "";
+  private String officeLng = "";
+  private String height = "";
+  private String description = "";
 }

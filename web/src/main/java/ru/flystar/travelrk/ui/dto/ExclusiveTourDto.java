@@ -13,12 +13,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ExclusiveTourDto {
-    private int id;
-    private String path;
-    private String name;
-    private String size;
-    private String logo;
-    private String latitude;
-    private String longitude;
-    private String dateOfDownload;
+  private int id;
+  private String path;
+  private String name;
+  private String size;
+  private String logo;
+  private String latitude;
+  private String longitude;
+  private String dateOfDownload;
 }

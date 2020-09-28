@@ -1,9 +1,8 @@
 package ru.flystar.travelrk.repositories;
 
+import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import ru.flystar.travelrk.domain.persistents.Region;
-
-import java.util.List;
 
 /**
  * Project: travelrk
@@ -11,9 +10,9 @@ import java.util.List;
  */
 public interface RegionRepository extends JpaRepository<Region, Integer> {
 
-    //    @Query("select r from Region r where name = :name")
-    Region findByName(String name);
+  //    @Query("select r from Region r where name = :name")
+  Region findByName(String name);
 
-    List<Region> findByOrderByViewNameAsc();
+  List<Region> findByOrderByViewNameAsc();
 
 }

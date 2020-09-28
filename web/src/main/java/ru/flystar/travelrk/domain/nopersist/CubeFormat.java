@@ -5,5 +5,5 @@ package ru.flystar.travelrk.domain.nopersist;
  * Created by Sergej Shestopalov on 21.11.2017.
  */
 public enum CubeFormat {
-    KRO, TIF, BTF, PSD, PSB, JPG
+  KRO, TIF, BTF, PSD, PSB, JPG
 }

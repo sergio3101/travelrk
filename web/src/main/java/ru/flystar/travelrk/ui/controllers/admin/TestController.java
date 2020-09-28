@@ -17,19 +17,19 @@ import ru.flystar.travelrk.repositories.TestPanoScanRepo;
 @RequestMapping(value = "/test")
 @Log4j
 public class TestController {
-    private TestPanoRepo testPanoRepo;
-    private TestPanoScanRepo testPanoScanRepo;
+  private TestPanoRepo testPanoRepo;
+  private TestPanoScanRepo testPanoScanRepo;
 
-    public TestController(TestPanoRepo testPanoRepo, TestPanoScanRepo testPanoScanRepo) {
-        this.testPanoRepo = testPanoRepo;
-        this.testPanoScanRepo = testPanoScanRepo;
-    }
+  public TestController(TestPanoRepo testPanoRepo, TestPanoScanRepo testPanoScanRepo) {
+    this.testPanoRepo = testPanoRepo;
+    this.testPanoScanRepo = testPanoScanRepo;
+  }
 
-    @RequestMapping(value = "/1", method = RequestMethod.GET)
-    public String getTest1() {
-        TestPanoScan panoScan = testPanoScanRepo.findOne(1);
-        TestPano pano = testPanoRepo.findOne(4);
+  @RequestMapping(value = "/1", method = RequestMethod.GET)
+  public String getTest1() {
+    TestPanoScan panoScan = testPanoScanRepo.findOne(1);
+    TestPano pano = testPanoRepo.findOne(4);
 //        testPanoScanRepo.delete(3);
-        return "";
-    }
+    return "";
+  }
 }

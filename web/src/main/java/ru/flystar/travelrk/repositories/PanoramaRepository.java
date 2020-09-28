@@ -8,9 +8,9 @@ import ru.flystar.travelrk.domain.persistents.Panorama;
  * Created by Sergej Shestopalov on 24.11.2017.
  */
 public interface PanoramaRepository extends JpaRepository<Panorama, Integer> {
-    Panorama findByPanoPath(String panoPath);
+  Panorama findByPanoPath(String panoPath);
 
-    Panorama saveAndFlush(Panorama panorama);
+  Panorama saveAndFlush(Panorama panorama);
 
-    Panorama findByPanoScan(String panoScan);
+  Panorama findByPanoScan(String panoScan);
 }

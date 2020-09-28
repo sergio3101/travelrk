@@ -8,8 +8,8 @@ import ru.flystar.travelrk.domain.persistents.KrpanoConfig;
  * Created by Sergej Shestopalov on 21.11.2017.
  */
 public interface KrpanoConfigRepository extends JpaRepository<KrpanoConfig, Integer> {
-    KrpanoConfig findByPath(String path);
+  KrpanoConfig findByPath(String path);
 
-    KrpanoConfig saveAndFlush(KrpanoConfig panoScan);
+  KrpanoConfig saveAndFlush(KrpanoConfig panoScan);
 
 }

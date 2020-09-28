@@ -1,0 +1,2587 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "ResponseMetaData": {
+      "SearchResponse": {
+        "found": 49,
+        "display": "multiple"
+      },
+      "SearchRequest": {
+        "request": "гостиница новый свет республика крым",
+        "skip": 0,
+        "results": 500,
+        "boundedBy": [
+          [
+            37.048427,
+            55.43644866
+          ],
+          [
+            38.175903,
+            56.04690174
+          ]
+        ]
+      }
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.916716,
+          44.832234
+        ]
+      },
+      "properties": {
+        "name": "Гостиничный комплекс Новый Свет",
+        "description": "ул. Голицына, 7, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9147985,
+            44.83060398
+          ],
+          [
+            34.9186335,
+            44.83386398
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1306841695",
+          "name": "Гостиничный комплекс Новый Свет",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 7",
+          "url": "https://newworld-crimea.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 740-35-70"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (918) 145-66-50"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 217-18-08"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.914938,
+          44.825556
+        ]
+      },
+      "properties": {
+        "name": "Винтаж",
+        "description": "Набережная ул., 3, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.910833,
+            44.82263443
+          ],
+          [
+            34.919043,
+            44.82847743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "11896116108",
+          "name": "Винтаж",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, Набережная улица, 3",
+          "url": "http://vintage-crimea.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 900-71-11"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 917-00-00"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 900-72-22"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 900-74-44"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–00:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "00:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.916114,
+          44.82889
+        ]
+      },
+      "properties": {
+        "name": "Paradise Crimea",
+        "description": "Набережная ул., 17А, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9120085,
+            44.82596843
+          ],
+          [
+            34.9202195,
+            44.83181143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "61258932133",
+          "name": "Paradise Crimea",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, Набережная улица, 17А",
+          "url": "http://paradise-crimea.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 899-32-53"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 058-06-10"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.91208,
+          44.82822
+        ]
+      },
+      "properties": {
+        "name": "Новый Свет",
+        "description": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет",
+        "boundedBy": [
+          [
+            34.904682,
+            44.82289825
+          ],
+          [
+            34.919478,
+            44.83354125
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "122653380228",
+          "name": "Новый Свет",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет",
+          "url": "http://newworld-crimea.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 740-35-70"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "restaurants",
+              "name": "Банкетный зал"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.91458,
+          44.832531
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Миндальный Новый Свет Крым",
+        "description": "12, квартал Миндальный, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9104745,
+            44.82960993
+          ],
+          [
+            34.9186855,
+            44.83545193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "178376411971",
+          "name": "Гостевой дом Миндальный Новый Свет Крым",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, квартал Миндальный, 12",
+          "url": "https://mindal-hotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 740-36-88"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.912974,
+          44.830469
+        ]
+      },
+      "properties": {
+        "name": "Зеленая бухта",
+        "description": "ул. Голицына, 19Б, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9088685,
+            44.82754743
+          ],
+          [
+            34.9170795,
+            44.83339043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "20213273633",
+          "name": "Зеленая бухта",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 19Б",
+          "url": "http://зеленаябухта.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 801-04-76"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 801-04-75"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 06:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "06:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.91552,
+          44.825496
+        ]
+      },
+      "properties": {
+        "name": "Катран",
+        "description": "Набережная ул., 2А, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9114145,
+            44.82257443
+          ],
+          [
+            34.9196255,
+            44.82841743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "76190701410",
+          "name": "Катран",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, Набережная улица, 2А",
+          "url": "https://sudakdom.ru/302/katran.htm",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 865-78-22"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "swimming pool",
+              "name": "Дайвинг"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.915929,
+          44.831623
+        ]
+      },
+      "properties": {
+        "name": "Villa Инжир",
+        "description": "6, Курортный квартал, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.911824,
+            44.82870193
+          ],
+          [
+            34.920034,
+            44.83454393
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "108381815015",
+          "name": "Villa Инжир",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, Курортный квартал, 6",
+          "url": "http://виллаинжир.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 747-60-14"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.916858,
+          44.834009
+        ]
+      },
+      "properties": {
+        "name": "Сосновая роща",
+        "description": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет",
+        "boundedBy": [
+          [
+            34.909411,
+            44.82868725
+          ],
+          [
+            34.924305,
+            44.83933025
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "76164936844",
+          "name": "Сосновая роща",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.909081,
+          44.829311
+        ]
+      },
+      "properties": {
+        "name": "Ассоль",
+        "description": "ул. Шаляпина, 5/1, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.904976,
+            44.82638943
+          ],
+          [
+            34.913186,
+            44.83223243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "123839696571",
+          "name": "Ассоль",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина, 5/1",
+          "url": "https://www.assol-house.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 700-49-64"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.909786,
+          44.829845
+        ]
+      },
+      "properties": {
+        "name": "Коттедж 11, частный сектор",
+        "description": "ул. Шаляпина, 6, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9056805,
+            44.82692393
+          ],
+          [
+            34.9138915,
+            44.83276593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "122971474496",
+          "name": "Коттедж 11, частный сектор",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина, 6",
+          "url": "https://noviy-svet.info/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 845-49-64"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 769-53-92"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "office service",
+              "name": "Агентство недвижимости"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.911231,
+          44.830861
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Шаляпина 16в",
+        "description": "ул. Шаляпина, 16В, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.907126,
+            44.82793943
+          ],
+          [
+            34.915336,
+            44.83378243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "169719566331",
+          "name": "Гостевой дом Шаляпина 16в",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина, 16В",
+          "url": "http://novsvet.jimdofree.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 700-50-71"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 002-03-65"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (906) 248-35-35"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.91439,
+          44.830797
+        ]
+      },
+      "properties": {
+        "name": "У Лукоморья 7д",
+        "description": "ул. Голицына, 7Д, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.906943,
+            44.82547525
+          ],
+          [
+            34.921837,
+            44.83611825
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "210524477532",
+          "name": "У Лукоморья 7д",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 7Д",
+          "url": "https://lukomore7d.ru/index.php/kontakty",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 740-34-55"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 892-40-19"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.910078,
+          44.829875
+        ]
+      },
+      "properties": {
+        "name": "Коттедж 108",
+        "description": "ул. Шаляпина, 16, стр. 108, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9059725,
+            44.82695343
+          ],
+          [
+            34.9141835,
+            44.83279643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "125929159152",
+          "name": "Коттедж 108",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина, 16с108",
+          "url": "https://noviy-svet.info/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 769-53-92"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 845-49-64"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "office service",
+              "name": "Агентство недвижимости"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.912252,
+          44.832158
+        ]
+      },
+      "properties": {
+        "name": "Глонтия 1",
+        "description": "ул. Голицына, 12, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.908147,
+            44.82923643
+          ],
+          [
+            34.916357,
+            44.83507943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "153095184856",
+          "name": "Глонтия 1",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 12",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.911521,
+          44.830205
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Елена",
+        "description": "ул. Голицына, 16В, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9074155,
+            44.82728393
+          ],
+          [
+            34.9156265,
+            44.83312593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "3663434065",
+          "name": "Гостевой дом Елена",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 16В",
+          "url": "http://новсвет.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 720-33-49"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 217-87-10"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–00:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "00:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.90933,
+          44.82914
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Кипарис",
+        "description": "ул. Шаляпина, 5К, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9052245,
+            44.82621843
+          ],
+          [
+            34.9134355,
+            44.83206143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "26965643037",
+          "name": "Гостевой дом Кипарис",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, ул Шаляпина 5К",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 814-07-94"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.915392,
+          44.831144
+        ]
+      },
+      "properties": {
+        "name": "Лукоморье",
+        "description": "ул. Голицына, 11Б, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.911287,
+            44.82822293
+          ],
+          [
+            34.919497,
+            44.83406493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "99357948706",
+          "name": "Лукоморье",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 11Б",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 706-56-50"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 706-56-35"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.916172,
+          44.82854
+        ]
+      },
+      "properties": {
+        "name": "Ассоль",
+        "description": "Набережная ул., 15, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9137105,
+            44.82634096
+          ],
+          [
+            34.9186335,
+            44.83073896
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "118426809626",
+          "name": "Ассоль",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, Набережная улица, 15",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 750-78-47"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.91093,
+          44.829895
+        ]
+      },
+      "properties": {
+        "name": "Мини-отель Шампань",
+        "description": "ул. Голицына, 16, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9068245,
+            44.82697343
+          ],
+          [
+            34.9150355,
+            44.83281643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1283687792",
+          "name": "Мини-отель Шампань",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 16",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 06:00–21:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "06:00:00",
+                    "to": "21:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.915439,
+          44.828254
+        ]
+      },
+      "properties": {
+        "name": "Отель Тихая Гавань",
+        "description": "Набережная ул., 16А, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.911334,
+            44.82533243
+          ],
+          [
+            34.919544,
+            44.83117543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1091176396",
+          "name": "Отель Тихая Гавань",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, Набережная улица, 16А",
+          "url": "https://tihaya-gavan.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 790-00-29"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.907351,
+          44.826683
+        ]
+      },
+      "properties": {
+        "name": "Paradise",
+        "description": "ул. Голицына, 40/1, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.903246,
+            44.82376143
+          ],
+          [
+            34.911456,
+            44.82960443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1540675414",
+          "name": "Paradise",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 40/1",
+          "url": "http://paradispansion.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+380 (50) 967-13-79"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (66) 641-93-95"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.910547,
+          44.830462
+        ]
+      },
+      "properties": {
+        "name": "Сокол",
+        "description": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет",
+        "boundedBy": [
+          [
+            34.9031,
+            44.82514025
+          ],
+          [
+            34.917994,
+            44.83578325
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "131396916906",
+          "name": "Сокол",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет",
+          "url": "https://vkrim.info/sdam/object/27002",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 002-70-51"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–20:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "20:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.914491,
+          44.830685
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Фисташка",
+        "description": "ул. Голицына, 7Д, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.910386,
+            44.82776343
+          ],
+          [
+            34.918596,
+            44.83360643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "158211083974",
+          "name": "Гостевой дом Фисташка",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 7Д",
+          "url": "http://fistashka-leo.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 852-42-93"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.916093,
+          44.833515
+        ]
+      },
+      "properties": {
+        "name": "Князь Голицын",
+        "description": "ул. Голицына, 5, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9119875,
+            44.83059343
+          ],
+          [
+            34.9201985,
+            44.83643643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1031165796",
+          "name": "Князь Голицын",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 5",
+          "url": "http://hotel-golitsyn.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 110-24-12"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36566) 3-33-59"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36566) 3-33-21"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.910394,
+          44.829177
+        ]
+      },
+      "properties": {
+        "name": "Гостиный двор Л. С. Голицына",
+        "description": "ул. Голицына, 18, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9062885,
+            44.82625543
+          ],
+          [
+            34.9144995,
+            44.83209843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1178385707",
+          "name": "Гостиный двор Л. С. Голицына",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 18",
+          "url": "http://more-82.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 740-37-64"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.915348,
+          44.831891
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Елена",
+        "description": "ул. Голицына, 12, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9112425,
+            44.82896993
+          ],
+          [
+            34.9194535,
+            44.83481193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "224376700692",
+          "name": "Гостевой дом Елена",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 12",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.910601,
+          44.829871
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Алые Паруса",
+        "description": "ул. Голицына, 16Е, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.906496,
+            44.82694993
+          ],
+          [
+            34.914706,
+            44.83279193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "205078811579",
+          "name": "Гостевой дом Алые Паруса",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 16Е",
+          "url": "https://scarletsailscrimea.nethouse.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 769-53-81"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.916954,
+          44.833587
+        ]
+      },
+      "properties": {
+        "name": "Апельсин",
+        "description": "ул. Голицына, 2Б, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.912849,
+            44.83066593
+          ],
+          [
+            34.921059,
+            44.83650793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1783548725",
+          "name": "Апельсин",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 2Б",
+          "url": "http://www.orange82.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (900) 929-76-26"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (915) 546-96-68"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (916) 319-21-37"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (916) 581-99-39"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.907587,
+          44.829831
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Можжевеловый Рай",
+        "description": "ул. Шаляпина, 9, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9034815,
+            44.82690993
+          ],
+          [
+            34.9116925,
+            44.83275193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "232001841695",
+          "name": "Гостевой дом Можжевеловый Рай",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина, 9",
+          "Phones": [
+            {
+              "type": "phone_fax",
+              "formatted": "+7 (978) 799-13-66"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 890-62-12"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.907221,
+          44.826775
+        ]
+      },
+      "properties": {
+        "name": "Мини-отель Елена",
+        "description": "ул. Голицына, 40/1, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.903116,
+            44.82385343
+          ],
+          [
+            34.911326,
+            44.82969643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "161827944582",
+          "name": "Мини-отель Елена",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 40/1",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 890-62-57"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.916714,
+          44.833732
+        ]
+      },
+      "properties": {
+        "name": "Гостиный двор Людмила",
+        "description": "ул. Голицына, 2А, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9126085,
+            44.83081093
+          ],
+          [
+            34.9208195,
+            44.83665293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "37273734640",
+          "name": "Гостиный двор Людмила",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 2А",
+          "url": "http://litvinov1.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 838-03-44"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.912506,
+          44.829644
+        ]
+      },
+      "properties": {
+        "name": "Голицына 19",
+        "description": "ул. Голицына, 19, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9084005,
+            44.82672293
+          ],
+          [
+            34.9166115,
+            44.83256493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "179620597673",
+          "name": "Голицына 19",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 19",
+          "url": "http://novi-svet.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (977) 618-80-65"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.914328,
+          44.830758
+        ]
+      },
+      "properties": {
+        "name": "Коттедж Династия",
+        "description": "ул. Голицына, 7Д, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.910223,
+            44.82783643
+          ],
+          [
+            34.918433,
+            44.83367943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "53059152799",
+          "name": "Коттедж Династия",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 7Д",
+          "url": "https://noviy-svet.info/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 845-49-64"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.90833,
+          44.829876
+        ]
+      },
+      "properties": {
+        "name": "ШаляпинHouse",
+        "description": "ул. Шаляпина, 12А, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9042245,
+            44.82695443
+          ],
+          [
+            34.9124355,
+            44.83279743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "43138220557",
+          "name": "ШаляпинHouse",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина, 12А",
+          "url": "http://shaliapinhouse.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 845-50-33"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 799-47-07"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.909594,
+          44.828841
+        ]
+      },
+      "properties": {
+        "name": "Дача",
+        "description": "ул. Шаляпина, 19, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.905489,
+            44.82591943
+          ],
+          [
+            34.913699,
+            44.83176243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "240731936956",
+          "name": "Дача",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина, 19",
+          "url": "http://noviy-svet.info/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 845-49-64"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "office service",
+              "name": "Агентство недвижимости"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.910861,
+          44.830373
+        ]
+      },
+      "properties": {
+        "name": "У Татьяны",
+        "description": "ул. Голицына, 16А, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9067555,
+            44.82745143
+          ],
+          [
+            34.9149665,
+            44.83329443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "184252593428",
+          "name": "У Татьяны",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 16А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 033-61-58"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.906882,
+          44.826721
+        ]
+      },
+      "properties": {
+        "name": "Дом Можжевеловая роща",
+        "description": "ул. Голицына, 40/1, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.899435,
+            44.82139925
+          ],
+          [
+            34.914329,
+            44.83204225
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1175420426",
+          "name": "Дом Можжевеловая роща",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 40/1",
+          "url": "http://grove.ru.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 700-81-65"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 892-39-91"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 090-68-28"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.914364,
+          44.825822
+        ]
+      },
+      "properties": {
+        "name": "Вино и Рыба",
+        "description": "Набережная ул., 3, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.910259,
+            44.82290043
+          ],
+          [
+            34.918469,
+            44.82874343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "198718957933",
+          "name": "Вино и Рыба",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, Набережная улица, 3",
+          "url": "https://vintage-crimea.ru/uslugi/restoran-i-bary/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 900-74-44"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "restaurants",
+              "name": "Ресторан"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.910643,
+          44.829936
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом 3+2",
+        "description": "ул. Голицына, 16Е, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.906538,
+            44.82701493
+          ],
+          [
+            34.914748,
+            44.83285693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "209121014279",
+          "name": "Гостевой дом 3+2",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 16Е",
+          "url": "http://3plus2.com.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 729-04-87"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 751-81-40"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 747-60-82"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 07:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "07:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.91611,
+          44.832621
+        ]
+      },
+      "properties": {
+        "name": "Центр Здоровья Новый Свет",
+        "description": "ул. Голицына, 7, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.912041,
+            44.82965492
+          ],
+          [
+            34.920179,
+            44.83558692
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "100893079946",
+          "name": "Центр Здоровья Новый Свет",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 7",
+          "url": "http://newworld-healthcenter.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 217-18-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "medicine",
+              "name": "Медцентр, клиника"
+            }
+          ],
+          "Hours": {
+            "text": "пн-сб 08:00–17:00, перерыв 12:00–13:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "12:00:00"
+                  },
+                  {
+                    "from": "13:00:00",
+                    "to": "17:00:00"
+                  }
+                ],
+                "Monday": true,
+                "Tuesday": true,
+                "Wednesday": true,
+                "Thursday": true,
+                "Friday": true,
+                "Saturday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.913592,
+          44.831388
+        ]
+      },
+      "properties": {
+        "name": "Веселая скорпена",
+        "description": "ул. Голицына, 8, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9094865,
+            44.82846643
+          ],
+          [
+            34.9176975,
+            44.83430943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "110826278028",
+          "name": "Веселая скорпена",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 8",
+          "url": "http://hotelscorpena.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 700-59-19"
+            },
+            {
+              "type": "phone",
+              "formatted": "+375 29 676-31-14"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 043-37-26"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (915) 335-99-09"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.914565,
+          44.828007
+        ]
+      },
+      "properties": {
+        "name": "У Берендея",
+        "description": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина",
+        "boundedBy": [
+          [
+            34.9106215,
+            44.82668348
+          ],
+          [
+            34.9185085,
+            44.82933048
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "142004714761",
+          "name": "У Берендея",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.914072,
+          44.833579
+        ]
+      },
+      "properties": {
+        "name": "Лесной",
+        "description": "ул. Голицына, 4, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.906625,
+            44.82825725
+          ],
+          [
+            34.921519,
+            44.83890025
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "194043221019",
+          "name": "Лесной",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 4",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.91025,
+          44.829988
+        ]
+      },
+      "properties": {
+        "name": "Laguna",
+        "description": "ул. Шаляпина, 16/55, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9061445,
+            44.82706693
+          ],
+          [
+            34.9143555,
+            44.83290893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "196849271957",
+          "name": "Laguna",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина, 16/55",
+          "url": "http://новый-свет-восход.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 700-82-96"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.90711,
+          44.827625
+        ]
+      },
+      "properties": {
+        "name": "Участок 58а",
+        "description": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина",
+        "boundedBy": [
+          [
+            34.899663,
+            44.82230325
+          ],
+          [
+            34.914557,
+            44.83294625
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "75594561641",
+          "name": "Участок 58а",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 935-40-50"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.915166,
+          44.830242
+        ]
+      },
+      "properties": {
+        "name": "Rome",
+        "description": "ул. Голицына, 14, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.911061,
+            44.82732043
+          ],
+          [
+            34.919271,
+            44.83316343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "170386846509",
+          "name": "Rome",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Голицына, 14",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.911173,
+          44.830917
+        ]
+      },
+      "properties": {
+        "name": "Коттедж",
+        "description": "ул. Шаляпина, 16, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.907068,
+            44.82799543
+          ],
+          [
+            34.915278,
+            44.83383843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "45181439681",
+          "name": "Коттедж",
+          "address": "Россия, Республика Крым, городской округ Судак, посёлок городского типа Новый Свет, улица Шаляпина, 16.94",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.913089,
+          44.831689
+        ]
+      },
+      "properties": {
+        "name": "Жилой дом Комфорт",
+        "description": "21Б, квартал Миндальный, п. г. т. Новый Свет, Россия",
+        "boundedBy": [
+          [
+            34.9089835,
+            44.82876743
+          ],
+          [
+            34.9171945,
+            44.83461043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "34176915411",
+          "name": "Жилой дом Комфорт",
+          "address": "Россия, Судак, квартал Миндальный, 21",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

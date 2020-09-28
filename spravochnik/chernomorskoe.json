@@ -1,0 +1,6058 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "ResponseMetaData": {
+      "SearchResponse": {
+        "found": 126,
+        "display": "multiple"
+      },
+      "SearchRequest": {
+        "request": "гостиница черноморское республика крым",
+        "skip": 0,
+        "results": 500,
+        "boundedBy": [
+          [
+            37.048427,
+            55.43644866
+          ],
+          [
+            38.175903,
+            56.04690174
+          ]
+        ]
+      }
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.71972,
+          45.517958
+        ]
+      },
+      "properties": {
+        "name": "Черноморский",
+        "description": "Сигнальная ул., 30А, стр. 8, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.715615,
+            45.51507193
+          ],
+          [
+            32.723825,
+            45.52084393
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1759564162",
+          "name": "Черноморский",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Сигнальная улица, 30А, стр. 8",
+          "url": "http://chernomorskiygk.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (800) 600-43-64"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (985) 644-45-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 07:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "07:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.684572,
+          45.512059
+        ]
+      },
+      "properties": {
+        "name": "Черноморец",
+        "description": "109, п. г. т. Черноморское, СНТ Черноморец, Россия",
+        "boundedBy": [
+          [
+            32.6804665,
+            45.50917243
+          ],
+          [
+            32.6886775,
+            45.51494543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "72679063126",
+          "name": "Черноморец",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, СНТ Черноморец, 109",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 797-81-68"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 877-80-55"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.707935,
+          45.513743
+        ]
+      },
+      "properties": {
+        "name": "Атеш",
+        "description": "ул. Агафонова, 2, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.70383,
+            45.51085693
+          ],
+          [
+            32.71204,
+            45.51662893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "123538906234",
+          "name": "Атеш",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 2",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.671943,
+          45.513523
+        ]
+      },
+      "properties": {
+        "name": "Meduza",
+        "description": "16В, п. г. т. Черноморское, садоводческое некоммерческое товарищество Кипарис, Россия",
+        "boundedBy": [
+          [
+            32.6678375,
+            45.51063643
+          ],
+          [
+            32.6760485,
+            45.51640943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "217197534104",
+          "name": "Meduza",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, садоводческое некоммерческое товарищество Кипарис, 16В",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (988) 189-53-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.700268,
+          45.512186
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом",
+        "description": "Почтовая ул., 3А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6961625,
+            45.50929943
+          ],
+          [
+            32.7043735,
+            45.51507243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "117468402912",
+          "name": "Гостевой дом",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Почтовая улица, 3А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.705513,
+          45.506513
+        ]
+      },
+      "properties": {
+        "name": "Моряк",
+        "description": "ул. Агафонова, 80, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7014075,
+            45.50362593
+          ],
+          [
+            32.7096185,
+            45.50939993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "35309298062",
+          "name": "Моряк",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 80",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 735-46-12"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 735-46-13"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.697643,
+          45.506828
+        ]
+      },
+      "properties": {
+        "name": "Черноморский берег",
+        "description": "ул. Революции, 53, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6935375,
+            45.50394143
+          ],
+          [
+            32.7017485,
+            45.50971443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1688223067",
+          "name": "Черноморский берег",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Революции, 53",
+          "url": "http://черноморскийберег.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-40-95"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (916) 257-97-02"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.718057,
+          45.524794
+        ]
+      },
+      "properties": {
+        "name": "Маячок",
+        "description": "Восточная ул., 63, село Новосельское, Россия",
+        "boundedBy": [
+          [
+            32.713952,
+            45.52190793
+          ],
+          [
+            32.722162,
+            45.52767993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "183476353194",
+          "name": "Маячок",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, Восточная улица, 63",
+          "url": "http://hotel-mayachok.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (903) 387-55-55"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.722095,
+          45.516183
+        ]
+      },
+      "properties": {
+        "name": "КС Гостевой дом",
+        "description": "192, село Новосельское, СНТ Мечта-1, Россия",
+        "boundedBy": [
+          [
+            32.7179895,
+            45.51329643
+          ],
+          [
+            32.7262005,
+            45.51906943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "173935638736",
+          "name": "КС Гостевой дом",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, СНТ Мечта-1, 192",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 068-11-05"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.70723,
+          45.509849
+        ]
+      },
+      "properties": {
+        "name": "Leo Palace",
+        "description": "Парковая ул., 2, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7031245,
+            45.50696293
+          ],
+          [
+            32.7113355,
+            45.51273493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1330037189",
+          "name": "Leo Palace",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Парковая улица, 2",
+          "url": "http://leopalace.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 884-55-55"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 885-99-99"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.718338,
+          45.519953
+        ]
+      },
+      "properties": {
+        "name": "Усадьба рыцаря Эдварда Остера. Дом Дракона",
+        "description": "Восточная ул., 6, село Новосельское, Россия",
+        "boundedBy": [
+          [
+            32.7142325,
+            45.51706693
+          ],
+          [
+            32.7224435,
+            45.52283893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1678623835",
+          "name": "Усадьба рыцаря Эдварда Остера. Дом Дракона",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, Восточная улица, 6",
+          "url": "http://drakon-house.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 097-17-07"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 010-90-99"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–18:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.704861,
+          45.508938
+        ]
+      },
+      "properties": {
+        "name": "Гавань",
+        "description": "ул. Агафонова, 45, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.700756,
+            45.50605143
+          ],
+          [
+            32.708966,
+            45.51182443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1085887165",
+          "name": "Гавань",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 45",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36558) 9-27-62"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.665916,
+          45.511965
+        ]
+      },
+      "properties": {
+        "name": "Эко-отель Мегарон",
+        "description": "129К, п. г. т. Черноморское, садоводческое некоммерческое товарищество Кипарис, Россия",
+        "boundedBy": [
+          [
+            32.6618105,
+            45.50907893
+          ],
+          [
+            32.6700215,
+            45.51485093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "8259811690",
+          "name": "Эко-отель Мегарон",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, садоводческое некоммерческое товарищество Кипарис, 129К",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (988) 344-38-82"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (96) 629-30-32"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (96) 620-30-32"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.703838,
+          45.509798
+        ]
+      },
+      "properties": {
+        "name": "Вилла Инесс-Мари",
+        "description": "ул. 60-летия Октября, 32А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6997325,
+            45.50691143
+          ],
+          [
+            32.7079435,
+            45.51268443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "111779906113",
+          "name": "Вилла Инесс-Мари",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица 60-летия Октября, 32А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 204-77-79"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.722715,
+          45.506898
+        ]
+      },
+      "properties": {
+        "name": "Lastochka Guest House",
+        "description": "ул. Ленина, 10, село Новосельское, Россия",
+        "boundedBy": [
+          [
+            32.7186095,
+            45.50401143
+          ],
+          [
+            32.7268205,
+            45.50978443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "169569688142",
+          "name": "Lastochka Guest House",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, улица Ленина, 10",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-68-28"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 07:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "07:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.715592,
+          45.520124
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Лилия",
+        "description": "ул. Фрунзе, 9, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7114865,
+            45.51723793
+          ],
+          [
+            32.7196975,
+            45.52300993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "50336515337",
+          "name": "Гостевой дом Лилия",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Фрунзе, 9",
+          "url": "https://gd-liliya.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 851-49-22"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.713764,
+          45.524728
+        ]
+      },
+      "properties": {
+        "name": "Бриз",
+        "description": "Восточная ул., 5А, село Новосельское, Россия",
+        "boundedBy": [
+          [
+            32.709659,
+            45.52184243
+          ],
+          [
+            32.717869,
+            45.52761343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "216815391249",
+          "name": "Бриз",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, Восточная улица, 5А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.701299,
+          45.513313
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Черноморский",
+        "description": "ул. 60-летия Октября, 1, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6971935,
+            45.51042643
+          ],
+          [
+            32.7054045,
+            45.51619943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1285948083",
+          "name": "Пансионат Черноморский",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица 60-летия Октября, 1",
+          "url": "http://черноморский-пансионат.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36558) 9-14-33"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.683449,
+          45.514433
+        ]
+      },
+      "properties": {
+        "name": "Крым",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, СОТ Прометей",
+        "boundedBy": [
+          [
+            32.683184,
+            45.5142275
+          ],
+          [
+            32.683714,
+            45.5146385
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "241577447063",
+          "name": "Крым",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, СОТ Прометей",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.715309,
+          45.523002
+        ]
+      },
+      "properties": {
+        "name": "Бриз",
+        "description": "Восточная ул., 1А, село Новосельское, Россия",
+        "boundedBy": [
+          [
+            32.7112035,
+            45.52011593
+          ],
+          [
+            32.7194145,
+            45.52588793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1492236849",
+          "name": "Бриз",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, Восточная улица, 1А",
+          "url": "http://briz-ok.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-40-54"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-40-56"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.686049,
+          45.511009
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, СНТ Олимп, Первая улица",
+        "boundedBy": [
+          [
+            32.6858915,
+            45.5109145
+          ],
+          [
+            32.6862065,
+            45.5111035
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "220551084284",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, СНТ Олимп, Первая улица",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.712968,
+          45.522542
+        ]
+      },
+      "properties": {
+        "name": "Ранчо Тарханкут",
+        "description": "ул. Фрунзе, 1, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.675468,
+            45.50157857
+          ],
+          [
+            32.750468,
+            45.54349757
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "56513900781",
+          "name": "Ранчо Тарханкут",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Фрунзе, 1",
+          "url": "https://letomtut.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (968) 561-11-45"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.708815,
+          45.514119
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом У Николая",
+        "description": "Озёрная ул., 48, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.70471,
+            45.51123243
+          ],
+          [
+            32.71292,
+            45.51700543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "88716242798",
+          "name": "Гостевой дом У Николая",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Озёрная улица, 48",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 714-59-45"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–21:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "21:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.705644,
+          45.506613
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Парус",
+        "description": "ул. Агафонова, 78, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.701539,
+            45.50372643
+          ],
+          [
+            32.709749,
+            45.50949943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "135898562742",
+          "name": "Гостевой дом Парус",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 78",
+          "url": "http://tarhankyt.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 033-99-51"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (97) 954-47-79"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (68) 272-03-53"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 267-85-68"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.687846,
+          45.518806
+        ]
+      },
+      "properties": {
+        "name": "Морская жемчужина",
+        "description": "22, п. г. т. Черноморское, СНТ Солнечный, Россия",
+        "boundedBy": [
+          [
+            32.6837405,
+            45.51591993
+          ],
+          [
+            32.6919515,
+            45.52169193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "237702114607",
+          "name": "Морская жемчужина",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, СНТ Солнечный, 22",
+          "url": "https://more-crimea.nethouse.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 706-29-85"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.673383,
+          45.51303
+        ]
+      },
+      "properties": {
+        "name": "Клубная база Эсперо",
+        "description": "Кипарисная ул., 1, п. г. т. Черноморское, садоводческое некоммерческое товарищество Кипарис, Россия",
+        "boundedBy": [
+          [
+            32.6692775,
+            45.51014343
+          ],
+          [
+            32.6774885,
+            45.51591643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "105101804302",
+          "name": "Клубная база Эсперо",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, садоводческое некоммерческое товарищество Кипарис, Кипарисная улица, 1",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 988-29-04"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.70686,
+          45.513742
+        ]
+      },
+      "properties": {
+        "name": "Гостиничный комплекс Мирослава",
+        "description": "ул. Агафонова, 1Б, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7027545,
+            45.51085543
+          ],
+          [
+            32.7109655,
+            45.51662843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1724688324",
+          "name": "Гостиничный комплекс Мирослава",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 1Б",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-12-77"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.719803,
+          45.518892
+        ]
+      },
+      "properties": {
+        "name": "Отель Сayman",
+        "description": "71, село Новосельское, СНТ Мечта-1, Россия",
+        "boundedBy": [
+          [
+            32.7156975,
+            45.51600593
+          ],
+          [
+            32.7239085,
+            45.52177793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "180578384625",
+          "name": "Отель Сayman",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, СНТ Мечта-1, 71",
+          "url": "http://www.cayman-hotel.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (918) 497-13-43"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 204-77-37"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "пн-сб 09:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Monday": true,
+                "Tuesday": true,
+                "Wednesday": true,
+                "Thursday": true,
+                "Friday": true,
+                "Saturday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.706156,
+          45.510616
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Жемчужина у моря",
+        "description": "ул. Агафонова, 31, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7020505,
+            45.50772943
+          ],
+          [
+            32.7102615,
+            45.51350243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1148495225",
+          "name": "Гостевой дом Жемчужина у моря",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 31",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 856-30-04"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "hotels",
+              "name": "Хостел"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.669594,
+          45.512239
+        ]
+      },
+      "properties": {
+        "name": "Мини-гостиница Скалистый берег",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, садоводческое некоммерческое товарищество Кипарис, Рыбацкая улица",
+        "boundedBy": [
+          [
+            32.6675775,
+            45.51139899
+          ],
+          [
+            32.6716105,
+            45.51307899
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "35529127354",
+          "name": "Мини-гостиница Скалистый берег",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, садоводческое некоммерческое товарищество Кипарис, Рыбацкая улица",
+          "url": "http://sancho1741.wixsite.com/beregsk",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (916) 913-69-56"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (919) 174-21-01"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.712185,
+          45.514858
+        ]
+      },
+      "properties": {
+        "name": "Туристический комплекс Тарханкут лайф Б",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+        "boundedBy": [
+          [
+            32.709863,
+            45.51315597
+          ],
+          [
+            32.714507,
+            45.51655997
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "202292312261",
+          "name": "Туристический комплекс Тарханкут лайф Б",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (923) 233-50-70"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 069-73-60"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.697338,
+          45.509223
+        ]
+      },
+      "properties": {
+        "name": "У Причала",
+        "description": "Почтовая ул., 32, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.693233,
+            45.50633643
+          ],
+          [
+            32.701443,
+            45.51210943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "62263623442",
+          "name": "У Причала",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Почтовая улица, 32",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-50-18"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.709961,
+          45.506476
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на улице Луговой",
+        "description": "Луговая ул., 17А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7058555,
+            45.50358893
+          ],
+          [
+            32.7140665,
+            45.50936293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "7528135038",
+          "name": "Гостевой дом на улице Луговой",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Луговая улица, 17А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-61-11"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.716457,
+          45.519823
+        ]
+      },
+      "properties": {
+        "name": "Виктория",
+        "description": "ул. Фрунзе, 14, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.712352,
+            45.51693693
+          ],
+          [
+            32.720562,
+            45.52270893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1719997995",
+          "name": "Виктория",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Фрунзе, 14",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 806-88-36"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (982) 488-73-38"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.700647,
+          45.513824
+        ]
+      },
+      "properties": {
+        "name": "Динамикс",
+        "description": "ул. 60-летия Октября, 3, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6965415,
+            45.51093743
+          ],
+          [
+            32.7047525,
+            45.51671043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "59826783185",
+          "name": "Динамикс",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица 60-летия Октября, 3",
+          "url": "http://www.godynamix.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 085-39-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.698306,
+          45.509684
+        ]
+      },
+      "properties": {
+        "name": "Яхонт",
+        "description": "ул. Революции, 15, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.694201,
+            45.50679743
+          ],
+          [
+            32.702411,
+            45.51257043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1212138884",
+          "name": "Яхонт",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Революции, 15",
+          "url": "http://yahont-hotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 718-40-88"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 718-40-82"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.690469,
+          45.508616
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Россия, Республика Крым, Черноморский район, Калиновская балка",
+        "boundedBy": [
+          [
+            32.676918,
+            45.49504085
+          ],
+          [
+            32.70402,
+            45.52218785
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "19880669112",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, Черноморский район, Калиновская балка",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.679825,
+          45.516963
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Золотой сундук капитана Флинта",
+        "description": "9П, п. г. т. Черноморское, садоводческое некоммерческое товарищество Кипарис, Россия",
+        "boundedBy": [
+          [
+            32.6757195,
+            45.51407643
+          ],
+          [
+            32.6839305,
+            45.51984943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "213137890786",
+          "name": "Гостевой дом Золотой сундук капитана Флинта",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, садоводческое некоммерческое товарищество Кипарис, 9П",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-50-18"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.708325,
+          45.512038
+        ]
+      },
+      "properties": {
+        "name": "Витокс у моря",
+        "description": "Озёрная ул., 24, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.707737,
+            45.50971995
+          ],
+          [
+            32.708913,
+            45.51435595
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "50883190738",
+          "name": "Витокс у моря",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Озёрная улица, 24",
+          "url": "https://метка.онлайн/housing/mini-pansionat-vitoks",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 856-52-11"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 856-52-10"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.711502,
+          45.525752
+        ]
+      },
+      "properties": {
+        "name": "Новый Океан",
+        "description": "Россия, Республика Крым, Черноморский район, Новосельское сельское поселение",
+        "boundedBy": [
+          [
+            32.6179465,
+            45.4523053
+          ],
+          [
+            32.8050575,
+            45.5991023
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "100616939348",
+          "name": "Новый Океан",
+          "address": "Россия, Республика Крым, Черноморский район, Новосельское сельское поселение",
+          "url": "http://new-ocean.club/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 837-83-69"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.709983,
+          45.504302
+        ]
+      },
+      "properties": {
+        "name": "У Олеси",
+        "description": "Луговая ул., 22А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.705878,
+            45.50141543
+          ],
+          [
+            32.714088,
+            45.50718843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "70512174282",
+          "name": "У Олеси",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Луговая улица, 22А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.71196,
+          45.513969
+        ]
+      },
+      "properties": {
+        "name": "Туристический комплекс Палермо",
+        "description": "Сигнальная ул., 2Б, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7078545,
+            45.51108243
+          ],
+          [
+            32.7160655,
+            45.51685543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "204930373397",
+          "name": "Туристический комплекс Палермо",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Сигнальная улица, 2Б",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 069-73-60"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.686167,
+          45.505034
+        ]
+      },
+      "properties": {
+        "name": "Вилла Плаятина",
+        "description": "Западная ул., 69, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.682062,
+            45.50214743
+          ],
+          [
+            32.690272,
+            45.50792043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1797715237",
+          "name": "Вилла Плаятина",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Западная улица, 69",
+          "url": "http://playatina.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 105-36-08"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (95) 663-68-06"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.694476,
+          45.503249
+        ]
+      },
+      "properties": {
+        "name": "Леся",
+        "description": "Морская ул., 20, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.690371,
+            45.50036193
+          ],
+          [
+            32.698581,
+            45.50613593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "151066560509",
+          "name": "Леся",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Морская улица, 20",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-40-66"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-40-65"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.710293,
+          45.504757
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом у Айдера",
+        "description": "Луговая ул., 18, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7061875,
+            45.50187043
+          ],
+          [
+            32.7143985,
+            45.50764343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1160011023",
+          "name": "Гостевой дом у Айдера",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Луговая улица, 18",
+          "url": "https://aider88.io.ua/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-61-11"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.684433,
+          45.513501
+        ]
+      },
+      "properties": {
+        "name": "Рандеву",
+        "description": "ул. Жердева, 42, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.680328,
+            45.51061443
+          ],
+          [
+            32.688538,
+            45.51638743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "10733736230",
+          "name": "Рандеву",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Жердева, 42",
+          "url": "http://черноморскоелето.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 073-90-97"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.704207,
+          45.505431
+        ]
+      },
+      "properties": {
+        "name": "Гостинный двор Приморский дворик",
+        "description": "ул. Кирова, 67, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.700102,
+            45.50254393
+          ],
+          [
+            32.708312,
+            45.50831793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "124825298897",
+          "name": "Гостинный двор Приморский дворик",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Кирова, 67",
+          "url": "https://метка.онлайн/housing/primorskij-dvorik",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 775-62-85"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.703756,
+          45.512688
+        ]
+      },
+      "properties": {
+        "name": "Яна-Каро",
+        "description": "ул. 60-летия Октября, 17, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.703504,
+            45.51150999
+          ],
+          [
+            32.704008,
+            45.51386599
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "65511523331",
+          "name": "Яна-Каро",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица 60-летия Октября, 17",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 068-31-30"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "hotels",
+              "name": "Бронирование гостиниц"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.719902,
+          45.518606
+        ]
+      },
+      "properties": {
+        "name": "Натали",
+        "description": "ул. Фрунзе, 71, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.714099,
+            45.50998484
+          ],
+          [
+            32.725705,
+            45.52722584
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "150839420986",
+          "name": "Натали",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Фрунзе, 71",
+          "url": "http://natali-guesthouse.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-26-00"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 571-55-99"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–20:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "20:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.716169,
+          45.515919
+        ]
+      },
+      "properties": {
+        "name": "Елена",
+        "description": "Сигнальная ул., 15Б, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7120635,
+            45.51303293
+          ],
+          [
+            32.7202745,
+            45.51880493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1280551773",
+          "name": "Елена",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Сигнальная улица, 15Б",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 837-33-90"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 716-89-72"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.698421,
+          45.508666
+        ]
+      },
+      "properties": {
+        "name": "Флора",
+        "description": "ул. Революции, 27, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.694316,
+            45.50577943
+          ],
+          [
+            32.702526,
+            45.51155243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "164961907095",
+          "name": "Флора",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Революции, 27",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 010-64-68"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 046-83-01"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.709214,
+          45.507334
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом",
+        "description": "Луговая ул., 12А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7051085,
+            45.50444693
+          ],
+          [
+            32.7133195,
+            45.51022093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "132938854893",
+          "name": "Гостевой дом",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Луговая улица, 12А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 027-10-70"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.706334,
+          45.505225
+        ]
+      },
+      "properties": {
+        "name": "Ямал",
+        "description": "ул. Агафонова, 96Б, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.702229,
+            45.50233793
+          ],
+          [
+            32.710439,
+            45.50811193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1757867898",
+          "name": "Ямал",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 96Б",
+          "url": "http://yamal-crimea.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (912) 913-05-01"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.716355,
+          45.523521
+        ]
+      },
+      "properties": {
+        "name": "Отдых у Володи",
+        "description": "4, село Новосельское, СНТ Дружба, Россия",
+        "boundedBy": [
+          [
+            32.7122495,
+            45.52063493
+          ],
+          [
+            32.7204605,
+            45.52640693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "75298164046",
+          "name": "Отдых у Володи",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, СНТ Дружба, 4",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 725-82-94"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 725-82-93"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.683139,
+          45.514376
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Греческий дворик",
+        "description": "Четвертый пр., 43, п. г. т. Черноморское, СОТ Прометей, Россия",
+        "boundedBy": [
+          [
+            32.6790335,
+            45.51148943
+          ],
+          [
+            32.6872445,
+            45.51726243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "242731609765",
+          "name": "Пансионат Греческий дворик",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, СОТ Прометей, Четвертый проезд, 43",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 104-76-59"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.714588,
+          45.515511
+        ]
+      },
+      "properties": {
+        "name": "Guest House Morskoy",
+        "description": "Россия, Республика Крым, Черноморский район, Черноморское сельское поселение",
+        "boundedBy": [
+          [
+            32.677088,
+            45.49454757
+          ],
+          [
+            32.752088,
+            45.53646657
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "119587955513",
+          "name": "Guest House Morskoy",
+          "address": "Россия, Республика Крым, Черноморский район, Черноморское сельское поселение",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.692962,
+          45.506284
+        ]
+      },
+      "properties": {
+        "name": "Мини-пансионат Даниэль",
+        "description": "Кооперативная ул., 25, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.688857,
+            45.50339743
+          ],
+          [
+            32.697067,
+            45.50917043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1326287844",
+          "name": "Мини-пансионат Даниэль",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Кооперативная улица, 25",
+          "url": "http://dani.in.ua/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 732-26-46"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 704-07-44"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Хостел"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–20:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "20:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.720541,
+          45.51089
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Крым",
+        "description": "Приморская ул., 2А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7164355,
+            45.50800393
+          ],
+          [
+            32.7246465,
+            45.51377593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1834129741",
+          "name": "Гостевой дом Крым",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Приморская улица, 2А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (921) 558-11-73"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.712899,
+          45.515098
+        ]
+      },
+      "properties": {
+        "name": "Туристический комплекс Солнце и Море",
+        "description": "Сигнальная ул., 2В, корп. 3, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7087935,
+            45.51221143
+          ],
+          [
+            32.7170045,
+            45.51798443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1772232793",
+          "name": "Туристический комплекс Солнце и Море",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Сигнальная улица, 2В, корп. 3",
+          "url": "https://fiesta-krym.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 069-73-60"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (923) 233-50-70"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "travel agency",
+              "name": "Экскурсии"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–18:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.716398,
+          45.520643
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Тамара",
+        "description": "Заводская ул., 11, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.712293,
+            45.51775693
+          ],
+          [
+            32.720503,
+            45.52352893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "24232550599",
+          "name": "Гостевой дом Тамара",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Заводская улица, 11",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-40-94"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.716023,
+          45.50918
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Семейный",
+        "description": "Парковая ул., 9, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.711918,
+            45.50629343
+          ],
+          [
+            32.720128,
+            45.51206643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "141324489113",
+          "name": "Гостевой дом Семейный",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Парковая улица, 9",
+          "url": "https://метка.онлайн/housing/semejnyj-2",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 763-70-22"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.718353,
+          45.517223
+        ]
+      },
+      "properties": {
+        "name": "Мини-Отель на Сигнальной",
+        "description": "Сигнальная ул., 30А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7129315,
+            45.51467494
+          ],
+          [
+            32.7237745,
+            45.51977094
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "34267272639",
+          "name": "Мини-Отель на Сигнальной",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Сигнальная улица, 30А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.712465,
+          45.514205
+        ]
+      },
+      "properties": {
+        "name": "Туристический комплекс Капри",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+        "boundedBy": [
+          [
+            32.710143,
+            45.51250297
+          ],
+          [
+            32.714787,
+            45.51590697
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "230395971085",
+          "name": "Туристический комплекс Капри",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (800) 511-07-18"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (923) 233-50-70"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 069-73-60"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "Нет информации"
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.696195,
+          45.508286
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Почтовая 35-а",
+        "description": "Почтовая ул., 35А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.69209,
+            45.50539943
+          ],
+          [
+            32.7003,
+            45.51117243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "173067165355",
+          "name": "Пансионат Почтовая 35-а",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Почтовая улица, 35А",
+          "url": "https://www.u-zamiry.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 704-22-02"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.707754,
+          45.513045
+        ]
+      },
+      "properties": {
+        "name": "Мини-пансионат Жемчужина",
+        "description": "ул. Агафонова, 10, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.703649,
+            45.51015843
+          ],
+          [
+            32.711859,
+            45.51593143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "60101916102",
+          "name": "Мини-пансионат Жемчужина",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 10",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 723-55-92"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 723-55-93"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.701806,
+          45.508815
+        ]
+      },
+      "properties": {
+        "name": "У Тёти Сони",
+        "description": "ул. Шевченко, 9, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6977005,
+            45.50592843
+          ],
+          [
+            32.7059115,
+            45.51170143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "65131592444",
+          "name": "У Тёти Сони",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Шевченко, 9",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-93-45"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.699342,
+          45.509626
+        ]
+      },
+      "properties": {
+        "name": "Гостиница у Наташи",
+        "description": "ул. Революции, 12, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.695237,
+            45.50673943
+          ],
+          [
+            32.703447,
+            45.51251243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "171083763244",
+          "name": "Гостиница у Наташи",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Революции, 12",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.718287,
+          45.512659
+        ]
+      },
+      "properties": {
+        "name": "Морской",
+        "description": "Приморская ул., 20, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7141815,
+            45.50977243
+          ],
+          [
+            32.7223925,
+            45.51554543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "82928804556",
+          "name": "Морской",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Приморская улица, 20",
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.720434,
+          45.510909
+        ]
+      },
+      "properties": {
+        "name": "Мини пансионат",
+        "description": "Приморская ул., 2А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7163285,
+            45.50802293
+          ],
+          [
+            32.7245395,
+            45.51379493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "50360082843",
+          "name": "Мини пансионат",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Приморская улица, 2А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 762-73-35"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 10:00–20:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "10:00:00",
+                    "to": "20:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.701272,
+          45.508548
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Прекрасная гавань",
+        "description": "ул. Чехова, 6, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6971665,
+            45.50566143
+          ],
+          [
+            32.7053775,
+            45.51143443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "45096218215",
+          "name": "Гостевой дом Прекрасная гавань",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Чехова, 6",
+          "url": "https://метка.онлайн/housing/provans",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 883-68-16"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.705319,
+          45.507615
+        ]
+      },
+      "properties": {
+        "name": "Ассоль",
+        "description": "ул. Агафонова, 68, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.701214,
+            45.50472843
+          ],
+          [
+            32.709424,
+            45.51050143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "20461991474",
+          "name": "Ассоль",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 68",
+          "url": "http://www.assol-more.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 111-67-17"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-03-38"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 756-88-79"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.706402,
+          45.513894
+        ]
+      },
+      "properties": {
+        "name": "MilNas Beach House",
+        "description": "Спортивная ул., 4/1, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.702297,
+            45.51100793
+          ],
+          [
+            32.710507,
+            45.51677993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "164756052497",
+          "name": "MilNas Beach House",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Спортивная улица, 4/1",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (981) 126-57-53"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.709929,
+          45.507588
+        ]
+      },
+      "properties": {
+        "name": "Отдыхай у нас!",
+        "description": "Луговая ул., 8, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7058235,
+            45.50470143
+          ],
+          [
+            32.7140345,
+            45.51047443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "121470476621",
+          "name": "Отдыхай у нас!",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Луговая улица, 8",
+          "url": "http://www.chernomorsk-rest.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 710-25-77"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.69956,
+          45.506999
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом у Бекира",
+        "description": "ул. Чапаева, 34, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6954545,
+            45.50411193
+          ],
+          [
+            32.7036655,
+            45.50988593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "221326133666",
+          "name": "Гостевой дом у Бекира",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Чапаева, 34",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (911) 945-84-80"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.713782,
+          45.512241
+        ]
+      },
+      "properties": {
+        "name": "Дом солнца",
+        "description": "ул. Некрасова, 6Б, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7110645,
+            45.50862488
+          ],
+          [
+            32.7164995,
+            45.51585688
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "118181434310",
+          "name": "Дом солнца",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Некрасова, 6Б",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (977) 710-75-87"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.685839,
+          45.513389
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Лето",
+        "description": "99, п. г. т. Черноморское, СНТ Олимп, Россия",
+        "boundedBy": [
+          [
+            32.6817335,
+            45.51050293
+          ],
+          [
+            32.6899445,
+            45.51627493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "221631002304",
+          "name": "Пансионат Лето",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, СНТ Олимп, 99",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 743-30-66"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.699489,
+          45.508107
+        ]
+      },
+      "properties": {
+        "name": "Пансионат у Тиграна",
+        "description": "ул. Чапаева, 27, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.695384,
+            45.50522043
+          ],
+          [
+            32.703594,
+            45.51099343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1250153170",
+          "name": "Пансионат у Тиграна",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Чапаева, 27",
+          "url": "https://tigrancrimea.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 732-26-25"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 732-26-27"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "пн-пт 08:00–17:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "17:00:00"
+                  }
+                ],
+                "Monday": true,
+                "Tuesday": true,
+                "Wednesday": true,
+                "Thursday": true,
+                "Friday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.684281,
+          45.511936
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Аббас",
+        "description": "110, п. г. т. Черноморское, СНТ Черноморец, Россия",
+        "boundedBy": [
+          [
+            32.6801755,
+            45.50904943
+          ],
+          [
+            32.6883865,
+            45.51482243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "76156889156",
+          "name": "Пансионат Аббас",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, СНТ Черноморец, 110",
+          "url": "https://abbas-crimea.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-93-11"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 791-75-86"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.699494,
+          45.507722
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Чапаева 31",
+        "description": "ул. Чапаева, 31, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.695389,
+            45.50483493
+          ],
+          [
+            32.703599,
+            45.51060893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "138868044135",
+          "name": "Гостевой дом на Чапаева 31",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Чапаева, 31",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 756-09-92"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.706138,
+          45.507694
+        ]
+      },
+      "properties": {
+        "name": "Пансионат у Эльмиры",
+        "description": "ул. Агафонова, 66А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7020325,
+            45.50480743
+          ],
+          [
+            32.7102435,
+            45.51058043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "92856917597",
+          "name": "Пансионат у Эльмиры",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 66А",
+          "url": "https://метка.онлайн/housing/u-elmiry",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 756-09-80"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "hotels",
+              "name": "Хостел"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.704824,
+          45.507268
+        ]
+      },
+      "properties": {
+        "name": "Апартаменты Яхонт",
+        "description": "ул. Кирова, 50Б, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.700719,
+            45.50438143
+          ],
+          [
+            32.708929,
+            45.51015443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1364186313",
+          "name": "Апартаменты Яхонт",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Кирова, 50Б",
+          "url": "http://yahont-hotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 718-40-87"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 718-40-80"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.720226,
+          45.517231
+        ]
+      },
+      "properties": {
+        "name": "Большая медведица",
+        "description": "ул. Калос-Лимен, 6, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7161205,
+            45.51434493
+          ],
+          [
+            32.7243315,
+            45.52011693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1176020125",
+          "name": "Большая медведица",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Калос-Лимен, 6",
+          "url": "http://bigursa.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-30-02"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-30-01"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.718906,
+          45.52316
+        ]
+      },
+      "properties": {
+        "name": "Отель Пчелка",
+        "description": "Восточная ул., 17, село Новосельское, Россия",
+        "boundedBy": [
+          [
+            32.714801,
+            45.52027393
+          ],
+          [
+            32.723011,
+            45.52604593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1155686035",
+          "name": "Отель Пчелка",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, Восточная улица, 17",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-40-20"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.690231,
+          45.504606
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Южный",
+        "description": "ул. Николая Кудри, 20, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.686126,
+            45.50171943
+          ],
+          [
+            32.694336,
+            45.50749243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1090162722",
+          "name": "Пансионат Южный",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Николая Кудри, 20",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "Нет информации"
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.695696,
+          45.508675
+        ]
+      },
+      "properties": {
+        "name": "Пансионат У Алины",
+        "description": "Почтовая ул., 37Б, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.691591,
+            45.50578843
+          ],
+          [
+            32.699801,
+            45.51156143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "193275728346",
+          "name": "Пансионат У Алины",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Почтовая улица, 37Б",
+          "url": "https://метка.онлайн/housing/u-aliny",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 095-50-15"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (918) 463-51-15"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 725-82-68"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 725-82-69"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "hotels",
+              "name": "Хостел"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.693505,
+          45.503757
+        ]
+      },
+      "properties": {
+        "name": "Людмила",
+        "description": "Пограничная ул., 18, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6894,
+            45.50086993
+          ],
+          [
+            32.69761,
+            45.50664393
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "140348057388",
+          "name": "Людмила",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Пограничная улица, 18",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.683048,
+          45.515333
+        ]
+      },
+      "properties": {
+        "name": "Загородная Усадьба",
+        "description": "ул. Жердева, 64, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6789425,
+            45.51244693
+          ],
+          [
+            32.6871535,
+            45.51821893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1002082776",
+          "name": "Загородная Усадьба",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Жердева, 64",
+          "url": "http://загороднаяусадьба.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 787-29-91"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 880-63-03"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Турбаза"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.716082,
+          45.514104
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Дилижанс-м",
+        "description": "ул. Некрасова, 2А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7119765,
+            45.51121743
+          ],
+          [
+            32.7201875,
+            45.51699043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "230833383203",
+          "name": "Гостевой дом Дилижанс-м",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Некрасова, 2А",
+          "url": "http://дилижанс-м.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (919) 107-24-43"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.674596,
+          45.515087
+        ]
+      },
+      "properties": {
+        "name": "Вилла Эсперо",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, садоводческое некоммерческое товарищество Кипарис, улица Эсперо",
+        "boundedBy": [
+          [
+            32.674106,
+            45.514891
+          ],
+          [
+            32.675086,
+            45.515283
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "167263624072",
+          "name": "Вилла Эсперо",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, садоводческое некоммерческое товарищество Кипарис, улица Эсперо",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.698198,
+          45.508101
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом",
+        "description": "ул. Революции, 33А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6940925,
+            45.50521443
+          ],
+          [
+            32.7023035,
+            45.51098743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "201331762718",
+          "name": "Гостевой дом",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Революции, 33А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-59-97"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.71366,
+          45.520445
+        ]
+      },
+      "properties": {
+        "name": "Дельфин",
+        "description": "ул. Фрунзе, 3, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7095545,
+            45.51755893
+          ],
+          [
+            32.7177655,
+            45.52333093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "198036353152",
+          "name": "Дельфин",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Фрунзе, 3",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (912) 823-00-03"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.688772,
+          45.511775
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Западная ул., 1В, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.684667,
+            45.50888843
+          ],
+          [
+            32.692877,
+            45.51466143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "79480644526",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Западная улица, 1В",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.692544,
+          45.49978
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Морская ул., 75, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.688439,
+            45.49689293
+          ],
+          [
+            32.696649,
+            45.50266693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "195967560364",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Морская улица, 75",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.717748,
+          45.512798
+        ]
+      },
+      "properties": {
+        "name": "Guest House Primorskaya 18",
+        "description": "Приморская ул., 18, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7136425,
+            45.50991143
+          ],
+          [
+            32.7218535,
+            45.51568443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "216673753883",
+          "name": "Guest House Primorskaya 18",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Приморская улица, 18",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.669733,
+          45.511509
+        ]
+      },
+      "properties": {
+        "name": "Grand Mary",
+        "description": "101, п. г. т. Черноморское, садоводческое некоммерческое товарищество Кипарис, Россия",
+        "boundedBy": [
+          [
+            32.6656275,
+            45.50862293
+          ],
+          [
+            32.6738385,
+            45.51439493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "18103393614",
+          "name": "Grand Mary",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, садоводческое некоммерческое товарищество Кипарис, 101",
+          "url": "http://www.grandmary.tyrs.biz/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+380 (98) 426-50-13"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.705076,
+          45.508613
+        ]
+      },
+      "properties": {
+        "name": "Гостевые номера Васькин дом",
+        "description": "ул. Агафонова, 45А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7009705,
+            45.50572643
+          ],
+          [
+            32.7091815,
+            45.51149943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "74773110049",
+          "name": "Гостевые номера Васькин дом",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 45А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-69-41"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.700048,
+          45.509132
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Амбиция",
+        "description": "ул. Чапаева, 17, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6959425,
+            45.50624543
+          ],
+          [
+            32.7041535,
+            45.51201843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "203642173397",
+          "name": "Гостевой дом Амбиция",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Чапаева, 17",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-49-96"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.68282,
+          45.515872
+        ]
+      },
+      "properties": {
+        "name": "Ассоль-2",
+        "description": "ул. Жердева, 60, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.678715,
+            45.51298593
+          ],
+          [
+            32.686925,
+            45.51875793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "137373917165",
+          "name": "Ассоль-2",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Жердева, 60",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.72332,
+          45.511458
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Delfia",
+        "description": "51, село Новосельское, СНТ Мечта-1, Россия",
+        "boundedBy": [
+          [
+            32.719215,
+            45.50857143
+          ],
+          [
+            32.727425,
+            45.51434443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "19782848088",
+          "name": "Пансионат Delfia",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, СНТ Мечта-1, 51",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.711122,
+          45.513897
+        ]
+      },
+      "properties": {
+        "name": "Туристический комплекс Тарханкут лайф А",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+        "boundedBy": [
+          [
+            32.7088,
+            45.51219497
+          ],
+          [
+            32.713444,
+            45.51559897
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "122658094166",
+          "name": "Туристический комплекс Тарханкут лайф А",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.718761,
+          45.521595
+        ]
+      },
+      "properties": {
+        "name": "Guest House Vostok",
+        "description": "Россия, Республика Крым, Черноморский район, село Новосельское, Восточная улица",
+        "boundedBy": [
+          [
+            32.7159585,
+            45.51795438
+          ],
+          [
+            32.7215635,
+            45.52523538
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "18873126008",
+          "name": "Guest House Vostok",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, Восточная улица",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.721453,
+          45.514008
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "64, село Новосельское, СНТ Мечта-1, Россия",
+        "boundedBy": [
+          [
+            32.7173475,
+            45.51112193
+          ],
+          [
+            32.7255585,
+            45.51689393
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "65968582849",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, СНТ Мечта-1, 64",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.684655,
+          45.513855
+        ]
+      },
+      "properties": {
+        "name": "У Иван Иваныча",
+        "description": "58, п. г. т. Черноморское, СОТ Прометей, Россия",
+        "boundedBy": [
+          [
+            32.6805495,
+            45.51096893
+          ],
+          [
+            32.6887605,
+            45.51674093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "5861954466",
+          "name": "У Иван Иваныча",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, СОТ Прометей, 58",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 026-86-54"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.705809,
+          45.503171
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом У Гули",
+        "description": "ул. Белинского, 10, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.701704,
+            45.50028443
+          ],
+          [
+            32.709914,
+            45.50605743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "143624109624",
+          "name": "Гостевой дом У Гули",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Белинского, 10",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 218-86-33"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.719465,
+          45.521392
+        ]
+      },
+      "properties": {
+        "name": "Гостинный двор Восток",
+        "description": "683, село Новосельское, СНТ Мечта-1, Россия",
+        "boundedBy": [
+          [
+            32.71536,
+            45.51850593
+          ],
+          [
+            32.72357,
+            45.52427793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "171921685730",
+          "name": "Гостинный двор Восток",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, СНТ Мечта-1, 683",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.682678,
+          45.514184
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Светлаюр",
+        "description": "Третий пр., 37, п. г. т. Черноморское, СОТ Прометей, Россия",
+        "boundedBy": [
+          [
+            32.6785725,
+            45.51129793
+          ],
+          [
+            32.6867835,
+            45.51706993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "90123743206",
+          "name": "Гостевой дом Светлаюр",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, СОТ Прометей, Третий проезд, 37",
+          "url": "https://метка.онлайн/housing/svetlayur",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-23-36"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.70489,
+          45.50823
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом у Светланы",
+        "description": "ул. Агафонова, 47, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7007845,
+            45.50534343
+          ],
+          [
+            32.7089955,
+            45.51111643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "217067313673",
+          "name": "Гостевой дом у Светланы",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Агафонова, 47",
+          "url": "http://метка.онлайн/housing/item/agafonova-47",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 762-48-83"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.694534,
+          45.508472
+        ]
+      },
+      "properties": {
+        "name": "Отель Новый Океан Дельта",
+        "description": "Кооперативная ул., 4Б, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.690429,
+            45.50558543
+          ],
+          [
+            32.698639,
+            45.51135843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "163598546531",
+          "name": "Отель Новый Океан Дельта",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Кооперативная улица, 4Б",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.698946,
+          45.507098
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Райский уголок",
+        "description": "ул. Чапаева, 39, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.694841,
+            45.50421143
+          ],
+          [
+            32.703051,
+            45.50998443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "17300632675",
+          "name": "Гостевой дом Райский уголок",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Чапаева, 39",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 856-30-04"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.701011,
+          45.502136
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом На Павленко",
+        "description": "ул. Павленко, 31, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.696906,
+            45.49924893
+          ],
+          [
+            32.705116,
+            45.50502293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "38761243622",
+          "name": "Гостевой дом На Павленко",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Павленко, 31",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.698209,
+          45.506898
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Кованный дворик",
+        "description": "ул. Революции, 44, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.694104,
+            45.50401143
+          ],
+          [
+            32.702314,
+            45.50978443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1801249166",
+          "name": "Гостевой дом Кованный дворик",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Революции, 44",
+          "url": "https://метка.онлайн/housing/kovanyj",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 794-52-92"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 762-72-36"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-59-97"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.717078,
+          45.509055
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом у Александра",
+        "description": "Парковая ул., 17, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.712973,
+            45.50616843
+          ],
+          [
+            32.721183,
+            45.51194143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "227950707041",
+          "name": "Гостевой дом у Александра",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Парковая улица, 17",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 763-51-68"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 763-51-67"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.714693,
+          45.502578
+        ]
+      },
+      "properties": {
+        "name": "Апартаменты",
+        "description": "ул. Димитрова, 14, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7105875,
+            45.49969143
+          ],
+          [
+            32.7187985,
+            45.50546443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "198591109544",
+          "name": "Апартаменты",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Димитрова, 14",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.719434,
+          45.520829
+        ]
+      },
+      "properties": {
+        "name": "Мини-пансионат Владлен",
+        "description": "681, село Новосельское, СНТ Мечта-1, Россия",
+        "boundedBy": [
+          [
+            32.7153285,
+            45.51794293
+          ],
+          [
+            32.7235395,
+            45.52371493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "201645693427",
+          "name": "Мини-пансионат Владлен",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, СНТ Мечта-1, 681",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-28-67"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-28-68"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.694825,
+          45.508141
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Санта-Барбара",
+        "description": "Кооперативная ул., 2Г, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6927365,
+            45.50331479
+          ],
+          [
+            32.6969135,
+            45.51296679
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "199901420755",
+          "name": "Пансионат Санта-Барбара",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Кооперативная улица, 2Г",
+          "url": "http://santa-barbara.mya5.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 047-80-38"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Турбаза"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.699772,
+          45.507488
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Назар",
+        "description": "ул. Чапаева, 30/1, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6956665,
+            45.50460143
+          ],
+          [
+            32.7038775,
+            45.51037443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "80330568999",
+          "name": "Гостевой дом Назар",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Чапаева, 30/1",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-27-11"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.712706,
+          45.514087
+        ]
+      },
+      "properties": {
+        "name": "Гостиничный комплекс Итальянская деревня в Крыму",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+        "boundedBy": [
+          [
+            32.710384,
+            45.51238497
+          ],
+          [
+            32.715028,
+            45.51578897
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "98896477842",
+          "name": "Гостиничный комплекс Итальянская деревня в Крыму",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.71289,
+          45.51544
+        ]
+      },
+      "properties": {
+        "name": "Курортный комплекс Соренто",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+        "boundedBy": [
+          [
+            32.710568,
+            45.51373797
+          ],
+          [
+            32.715212,
+            45.51714197
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "61823136234",
+          "name": "Курортный комплекс Соренто",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.71887,
+          45.51736
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Виллидж-клуб",
+        "description": "Сигнальная ул., 19, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.7174865,
+            45.5167065
+          ],
+          [
+            32.7202535,
+            45.5180135
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "63113169943",
+          "name": "Пансионат Виллидж-клуб",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, Сигнальная улица, 19",
+          "url": "https://метка.онлайн/housing/villidzh-klub",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-59-78"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36558) 9-29-76"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.711553,
+          45.513266
+        ]
+      },
+      "properties": {
+        "name": "Туристический комплекс Мое лето",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+        "boundedBy": [
+          [
+            32.709231,
+            45.51156397
+          ],
+          [
+            32.713875,
+            45.51496797
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "56412940855",
+          "name": "Туристический комплекс Мое лето",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.703041,
+          45.509321
+        ]
+      },
+      "properties": {
+        "name": "Апартаменты Бригантина",
+        "description": "ул. Кирова, 33А, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.698936,
+            45.50643443
+          ],
+          [
+            32.707146,
+            45.51220743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "93478826765",
+          "name": "Апартаменты Бригантина",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Кирова, 33А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.717214,
+          45.523052
+        ]
+      },
+      "properties": {
+        "name": "Мини-отель Коралл",
+        "description": "16, село Новосельское, СНТ Дружба, Россия",
+        "boundedBy": [
+          [
+            32.7131085,
+            45.52016593
+          ],
+          [
+            32.7213195,
+            45.52593793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "16687347610",
+          "name": "Мини-отель Коралл",
+          "address": "Россия, Республика Крым, Черноморский район, село Новосельское, СНТ Дружба, 16",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.713856,
+          45.513749
+        ]
+      },
+      "properties": {
+        "name": "Комплекс Флоренция",
+        "description": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+        "boundedBy": [
+          [
+            32.711534,
+            45.51204697
+          ],
+          [
+            32.716178,
+            45.51545097
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "158062188456",
+          "name": "Комплекс Флоренция",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, жилой комплекс Итальянская Деревня",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.712645,
+          45.506349
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Элла",
+        "description": "ул. Суворова, 7, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.70854,
+            45.50346243
+          ],
+          [
+            32.71675,
+            45.50923543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1257381530",
+          "name": "Пансионат Элла",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Суворова, 7",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "Нет информации"
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.699736,
+          45.507532
+        ]
+      },
+      "properties": {
+        "name": "Назар",
+        "description": "ул. Чапаева, 30/1, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.6956305,
+            45.50464543
+          ],
+          [
+            32.7038415,
+            45.51041843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "4215511468",
+          "name": "Назар",
+          "address": "Россия, Республика Крым, посёлок городского типа Черноморское, улица Чапаева, 30/1",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "Нет информации"
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.686964,
+          45.513309
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Тенистой",
+        "description": "Тенистая ул., 73, п. г. т. Черноморское, Россия",
+        "boundedBy": [
+          [
+            32.685612,
+            45.51244999
+          ],
+          [
+            32.688316,
+            45.51416799
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "180434713133",
+          "name": "Гостевой дом на Тенистой",
+          "address": "Россия, Черноморское, Тенистая, 73",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

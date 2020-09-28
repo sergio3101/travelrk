@@ -179,6 +179,8 @@
                                     <option value="${krpanoConfig.path}" label="${krpanoConfig.name}" <c:if test="${krpanoConfig.path} eq 'defaultkrpano.config'">selected</c:if> >${krpanoConfig.name}</option>
                                     </c:forEach>
                                 </select>
+                                <button id="upload-dir-btn" type="button" class="btn btn-info btn-flat"><i
+                                            class="fa fa-save"></i> Подгрузить из upload</button>
                                 </div>
                             </div>
 

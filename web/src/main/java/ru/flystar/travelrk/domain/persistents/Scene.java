@@ -1,11 +1,14 @@
 package ru.flystar.travelrk.domain.persistents;
 
-import lombok.*;
-
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 /**
  * Project: travelrk
@@ -19,20 +22,20 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @ToString
 public class Scene extends BaseId {
-    private String name;
-    private String dir;
-    private String title;
-    private String latitude;
-    private String longitude;
-    private String north;
-    private String height;
+  private String name;
+  private String dir;
+  private String title;
+  private String latitude;
+  private String longitude;
+  private String north;
+  private String height;
 
-    @ManyToOne
-    @JoinColumn(name = "exclusiveTour_id")
-    private ExclusiveTour exclusiveTour;
+  @ManyToOne
+  @JoinColumn(name = "exclusiveTour_id")
+  private ExclusiveTour exclusiveTour;
 
-    public boolean haveGeoMetaData() {
-        return (latitude!=null&&longitude!=null&&height!=null&&north!=null) &&
-                (!longitude.isEmpty()&&!latitude.isEmpty()&&!height.isEmpty()&&!north.isEmpty());
-    }
+  public boolean haveGeoMetaData() {
+    return (latitude != null && longitude != null && height != null && north != null) &&
+        (!longitude.isEmpty() && !latitude.isEmpty() && !height.isEmpty() && !north.isEmpty());
+  }
 }

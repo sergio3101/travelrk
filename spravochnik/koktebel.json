@@ -1,0 +1,2664 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "ResponseMetaData": {
+      "SearchResponse": {
+        "found": 52,
+        "display": "multiple"
+      },
+      "SearchRequest": {
+        "request": "гостиница коктебель республика крым",
+        "skip": 0,
+        "results": 500,
+        "boundedBy": [
+          [
+            37.048427,
+            55.43644866
+          ],
+          [
+            38.175903,
+            56.04690174
+          ]
+        ]
+      }
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.249555,
+          44.961119
+        ]
+      },
+      "properties": {
+        "name": "Частный отель Коктебель",
+        "description": "ул. Ленина, 110Б, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2454495,
+            44.95820443
+          ],
+          [
+            35.2536605,
+            44.96403343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1238753800",
+          "name": "Частный отель Коктебель",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ленина, 110Б",
+          "url": "http://www.hotel-koktebel.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 897-33-63"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 065-37-57"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.240353,
+          44.967409
+        ]
+      },
+      "properties": {
+        "name": "Коктебель",
+        "description": "ул. Арцеулова, 13, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2362475,
+            44.96449493
+          ],
+          [
+            35.2444585,
+            44.97032293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "51074002637",
+          "name": "Коктебель",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Арцеулова, 13",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 831-75-74"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2474,
+          44.954305
+        ]
+      },
+      "properties": {
+        "name": "Белый Грифон",
+        "description": "Морская ул., 1А, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2432945,
+            44.95138993
+          ],
+          [
+            35.2515055,
+            44.95721993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "27908084018",
+          "name": "Белый Грифон",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Морская улица, 1А",
+          "url": "http://grifon-crimea.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 832-27-04"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36562) 2-44-39"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.268253,
+          44.968864
+        ]
+      },
+      "properties": {
+        "name": "БОН Резорт Коктебель",
+        "description": "ул. Юнге, 7В, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.264148,
+            44.96594993
+          ],
+          [
+            35.272358,
+            44.97177793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "108361518103",
+          "name": "БОН Резорт Коктебель",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Юнге, 7В",
+          "url": "https://bon-resort.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 906-91-99"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.251437,
+          44.961747
+        ]
+      },
+      "properties": {
+        "name": "Голубой Залив",
+        "description": "ул. Ленина, 120, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.247332,
+            44.95883193
+          ],
+          [
+            35.255542,
+            44.96466193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1333841704",
+          "name": "Голубой Залив",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ленина, 120",
+          "url": "http://zaliv.blue/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (800) 707-19-50"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 849-17-39"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–20:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "20:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.267105,
+          44.967949
+        ]
+      },
+      "properties": {
+        "name": "Отель-Кафе Крым",
+        "description": "Морская ул., 28, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2629995,
+            44.96503443
+          ],
+          [
+            35.2712105,
+            44.97086343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "117303964149",
+          "name": "Отель-Кафе Крым",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Морская улица, 28",
+          "url": "https://otel-cafe-krim.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 955-40-50"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 011-77-45"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.246496,
+          44.957455
+        ]
+      },
+      "properties": {
+        "name": "Гостевой Дом на Мичурина",
+        "description": "ул. Мичурина, 12А, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.242391,
+            44.95454043
+          ],
+          [
+            35.250601,
+            44.96036943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "100999010793",
+          "name": "Гостевой Дом на Мичурина",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Мичурина, 12А",
+          "url": "http://koktebel.2crim.com/house_show.php?id=28",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 819-74-17"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 862-49-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.249193,
+          44.958691
+        ]
+      },
+      "properties": {
+        "name": "Камелия-Кафа",
+        "description": "ул. Десантников, 110, корп. 7, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.245088,
+            44.95577593
+          ],
+          [
+            35.253298,
+            44.96160593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "68261357976",
+          "name": "Камелия-Кафа",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Десантников, 110, корп. 7",
+          "url": "https://www.kamelia-kafa.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 786-25-10"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 790-32-21"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.240913,
+          44.964753
+        ]
+      },
+      "properties": {
+        "name": "Коктевилль",
+        "description": "ул. Вересаева, 1Б, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2368075,
+            44.96183843
+          ],
+          [
+            35.2450185,
+            44.96766743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1136159519",
+          "name": "Коктевилль",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Вересаева, 1Б",
+          "url": "http://kokteville.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 906-88-88"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 919-80-08"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.25522,
+          44.963154
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель",
+        "boundedBy": [
+          [
+            35.226375,
+            44.94821554
+          ],
+          [
+            35.284065,
+            44.97808854
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "145293074373",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.233387,
+          44.954901
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Славия",
+        "description": "ул. Грина, 4, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2292815,
+            44.95198593
+          ],
+          [
+            35.2374925,
+            44.95781593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1546596537",
+          "name": "Гостевой дом Славия",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Грина, 4",
+          "url": "http://slaviya-koktebel.ru/?utm_source=yandex_spravochnik",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (903) 859-51-81"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.266058,
+          44.967893
+        ]
+      },
+      "properties": {
+        "name": "Сан Отель",
+        "description": "Морская ул., 89, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2619525,
+            44.96497843
+          ],
+          [
+            35.2701635,
+            44.97080743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "182862982301",
+          "name": "Сан Отель",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Морская улица, 89",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 874-11-01"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.248264,
+          44.958496
+        ]
+      },
+      "properties": {
+        "name": "Private Residence in Koktebel",
+        "description": "ул. Десантников, 5, лит.З, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2441585,
+            44.95558093
+          ],
+          [
+            35.2523695,
+            44.96141093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "48051479462",
+          "name": "Private Residence in Koktebel",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Десантников, 5, лит.З",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 088-27-28"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 10:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "10:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.189087,
+          44.913209
+        ]
+      },
+      "properties": {
+        "name": "Колыбель Коктебеля",
+        "description": "Морская ул., 2, п. г. т. Курортное, Россия",
+        "boundedBy": [
+          [
+            35.1884985,
+            44.9126665
+          ],
+          [
+            35.1896755,
+            44.9137515
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "30121272619",
+          "name": "Колыбель Коктебеля",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Курортное, Морская улица, 2",
+          "url": "http://kolibel-koktebelya.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 891-58-77"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.255994,
+          44.966148
+        ]
+      },
+      "properties": {
+        "name": "Гостиница Аквапарка Коктебель",
+        "description": "ул. Ленина, 144Б, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.251889,
+            44.96323343
+          ],
+          [
+            35.260099,
+            44.96906243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "219110788196",
+          "name": "Гостиница Аквапарка Коктебель",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ленина, 144Б",
+          "url": "https://aquapark-koktebel.ru/booking/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 128-50-91"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.266999,
+          44.967962
+        ]
+      },
+      "properties": {
+        "name": "Отель-кафе Крым",
+        "description": "Морская ул., 28, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2628935,
+            44.96504743
+          ],
+          [
+            35.2711045,
+            44.97087643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1320106601",
+          "name": "Отель-кафе Крым",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Морская улица, 28",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 955-40-50"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 011-77-45"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "cafe",
+              "name": "Кафе"
+            },
+            {
+              "class": "restaurants",
+              "name": "Ресторан"
+            }
+          ],
+          "Hours": {
+            "text": "пн-пт 09:00–17:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "17:00:00"
+                  }
+                ],
+                "Monday": true,
+                "Tuesday": true,
+                "Wednesday": true,
+                "Thursday": true,
+                "Friday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.240909,
+          44.958462
+        ]
+      },
+      "properties": {
+        "name": "Гостиница Коктебель",
+        "description": "ул. Калинина, 8, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2368035,
+            44.95554693
+          ],
+          [
+            35.2450145,
+            44.96137693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1380816476",
+          "name": "Гостиница Коктебель",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Калинина, 8",
+          "url": "http://koctebel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 819-98-80"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 823-82-29"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.23022,
+          44.95573
+        ]
+      },
+      "properties": {
+        "name": "Motel Oxygen",
+        "description": "ул. Гумилёва, 1, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2261145,
+            44.95281493
+          ],
+          [
+            35.2343255,
+            44.95864493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "62632398227",
+          "name": "Motel Oxygen",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Гумилёва, 1",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 893-75-96"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 143-62-39"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.340339,
+          45.474688
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Коктебель, Курортное, Керчь",
+        "description": "Набережная ул., 64А, село Курортное, Россия",
+        "boundedBy": [
+          [
+            36.3362335,
+            45.47179943
+          ],
+          [
+            36.3444445,
+            45.47757643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "66057085724",
+          "name": "Гостевой дом Коктебель, Курортное, Керчь",
+          "address": "Россия, Республика Крым, Ленинский район, Войковское сельское поселение, село Курортное, Набережная улица, 64А",
+          "url": "http://kurortnoe-kerch.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 849-18-10"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.24737,
+          44.96125
+        ]
+      },
+      "properties": {
+        "name": "Costera",
+        "description": "ул. Ленина, 118С, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2432645,
+            44.95833493
+          ],
+          [
+            35.2514755,
+            44.96416493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "90120698626",
+          "name": "Costera",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ленина, 118С",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 135-41-48"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 07:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "07:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.257937,
+          44.98063
+        ]
+      },
+      "properties": {
+        "name": "Визитка Коктебеля",
+        "description": "ул. Ленина, 205, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2538315,
+            44.97771643
+          ],
+          [
+            35.2620425,
+            44.98354343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "144095319292",
+          "name": "Визитка Коктебеля",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ленина, 205",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 126-41-43"
+            },
+            {
+              "type": "fax",
+              "formatted": "+380 (50) 480-02-76"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.266526,
+          44.968108
+        ]
+      },
+      "properties": {
+        "name": "Гранат",
+        "description": "Морская ул., 93, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2624205,
+            44.96519343
+          ],
+          [
+            35.2706315,
+            44.97102243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "179070247680",
+          "name": "Гранат",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Морская улица, 93",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 049-78-82"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 889-47-07"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–00:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "00:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.244994,
+          44.955348
+        ]
+      },
+      "properties": {
+        "name": "Виктория",
+        "description": "ул. Победы, 22, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.240889,
+            44.95243293
+          ],
+          [
+            35.249099,
+            44.95826293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "162213384519",
+          "name": "Виктория",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Победы, 22",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 849-59-96"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.246931,
+          44.953362
+        ]
+      },
+      "properties": {
+        "name": "Эллинги Коктебель",
+        "description": "Набережная ул., 12, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.218086,
+            44.93842354
+          ],
+          [
+            35.275776,
+            44.96829654
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1923793021",
+          "name": "Эллинги Коктебель",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Набережная улица, 12",
+          "url": "http://elling-koktebel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 831-71-99"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–21:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "21:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.251231,
+          44.969033
+        ]
+      },
+      "properties": {
+        "name": "Самоцветы",
+        "description": "Курортная ул., 3, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2471255,
+            44.96611893
+          ],
+          [
+            35.2553365,
+            44.97194693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1037583115",
+          "name": "Самоцветы",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Курортная улица, 3",
+          "url": "http://www.samosvety.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 748-05-76"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.251395,
+          44.959858
+        ]
+      },
+      "properties": {
+        "name": "Дом Творчества Писателей Коктебель Корпус 3",
+        "description": "ул. Ленина, 110, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.249055,
+            44.95793497
+          ],
+          [
+            35.253735,
+            44.96178097
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "172839300995",
+          "name": "Дом Творчества Писателей Коктебель Корпус 3",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ленина, 110",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 862-48-87"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.235072,
+          44.955826
+        ]
+      },
+      "properties": {
+        "name": "Мини-гостиница ДС",
+        "description": "ул. Шершнёва, 47В, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.233635,
+            44.95389647
+          ],
+          [
+            35.236509,
+            44.95775547
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "147082317689",
+          "name": "Мини-гостиница ДС",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Шершнёва, 47в",
+          "url": "https://edem-v-gosti.ru/rus/ds-koktebel.html",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 869-28-87"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.248005,
+          44.966607
+        ]
+      },
+      "properties": {
+        "name": "Отель Коктебель",
+        "description": "Школьный пер., 37, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2450045,
+            44.96529949
+          ],
+          [
+            35.2510055,
+            44.96791449
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "137286259675",
+          "name": "Отель Коктебель",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Школьный переулок, 37",
+          "url": "https://koktebelfeo.nethouse.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 816-64-79"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.242336,
+          44.956318
+        ]
+      },
+      "properties": {
+        "name": "Ювен",
+        "description": "ул. Калинина, 32, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2382305,
+            44.95340293
+          ],
+          [
+            35.2464415,
+            44.95923293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "157798865048",
+          "name": "Ювен",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Калинина, 32",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 848-24-77"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 725-16-02"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 725-16-13"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.263948,
+          44.967633
+        ]
+      },
+      "properties": {
+        "name": "Royal Life",
+        "description": "Морская ул., 87, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2598425,
+            44.96471843
+          ],
+          [
+            35.2680535,
+            44.97054743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "238432696467",
+          "name": "Royal Life",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Морская улица, 87",
+          "url": "http://royal-life.info/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 791-20-66"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.243248,
+          44.961784
+        ]
+      },
+      "properties": {
+        "name": "Глициния-Коктебель",
+        "description": "Долинный пер., 11Д, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.239143,
+            44.95886943
+          ],
+          [
+            35.247353,
+            44.96469843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "41328851869",
+          "name": "Глициния-Коктебель",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Долинный переулок, 11Д",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.250937,
+          44.959011
+        ]
+      },
+      "properties": {
+        "name": "Троянда",
+        "description": "ул. Ленина, 110, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.222092,
+            44.94407254
+          ],
+          [
+            35.279782,
+            44.97394554
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "221984136360",
+          "name": "Троянда",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ленина, 110",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 037-37-22"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.247738,
+          44.958841
+        ]
+      },
+      "properties": {
+        "name": "Отель Международный",
+        "description": "ул. Десантников, 3Б, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2436325,
+            44.95592643
+          ],
+          [
+            35.2518435,
+            44.96175543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "54358377678",
+          "name": "Отель Международный",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Десантников, 3Б",
+          "url": "http://www.captainhotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36562) 2-45-20"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 803-25-83"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 803-25-53"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.242984,
+          44.962374
+        ]
+      },
+      "properties": {
+        "name": "Терем Ок",
+        "description": "Долинный пер., 6, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2388785,
+            44.95945943
+          ],
+          [
+            35.2470895,
+            44.96528843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "219347057292",
+          "name": "Терем Ок",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Долинный переулок, 6",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 786-74-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.229181,
+          44.959701
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом EcoHouse",
+        "description": "Горная ул., 4, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2250755,
+            44.95678643
+          ],
+          [
+            35.2332865,
+            44.96261543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1019392078",
+          "name": "Гостевой дом EcoHouse",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Горная улица, 4",
+          "url": "http://ecohouse-koktebel.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 263-80-69"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.25269,
+          44.961033
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель",
+        "boundedBy": [
+          [
+            35.223845,
+            44.94609454
+          ],
+          [
+            35.281535,
+            44.97596754
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "222515900970",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.229365,
+          44.959684
+        ]
+      },
+      "properties": {
+        "name": "Коктебельская Слобода",
+        "description": "Горная ул., 3, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2252595,
+            44.95676943
+          ],
+          [
+            35.2334705,
+            44.96259843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1160569731",
+          "name": "Коктебельская Слобода",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Горная улица, 3",
+          "url": "http://hotel-sloboda.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 118-14-57"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (50) 902-76-76"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.245053,
+          44.96236
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Долинный пер., 11А, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.240948,
+            44.95944543
+          ],
+          [
+            35.249158,
+            44.96527443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1276596147",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Долинный переулок, 11А",
+          "url": "http://otdyh-krym.su/gostevyie_doma_kryima_1/koktebel_otdyih_v_kryimu/villa_tamara_gostevoy_dom_koktebel_otdyih_v_kryimu_i46",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 820-34-04"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 890-91-81"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–21:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "21:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.239372,
+          44.955388
+        ]
+      },
+      "properties": {
+        "name": "Тепсень",
+        "description": "ул. Блока, 22, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2352665,
+            44.95247293
+          ],
+          [
+            35.2434775,
+            44.95830293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "156723025302",
+          "name": "Тепсень",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Блока, 22",
+          "url": "http://www.tepsen.su/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 700-61-97"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 700-61-98"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.246488,
+          44.96607
+        ]
+      },
+      "properties": {
+        "name": "Лето в Коктебеле/Школьный, 22",
+        "description": "Школьный пер., 22, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.242383,
+            44.96315593
+          ],
+          [
+            35.250593,
+            44.96898393
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1329943030",
+          "name": "Лето в Коктебеле/Школьный, 22",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Школьный переулок, 22",
+          "url": "http://www.letovkoktebele.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 743-35-85"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.244951,
+          44.953851
+        ]
+      },
+      "properties": {
+        "name": "Каллиера",
+        "description": "ул. Айвазовского, 20, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.240846,
+            44.95093593
+          ],
+          [
+            35.249056,
+            44.95676593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "203282669041",
+          "name": "Каллиера",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Айвазовского, 20",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 863-16-35"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 10:00–20:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "10:00:00",
+                    "to": "20:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.253037,
+          44.969367
+        ]
+      },
+      "properties": {
+        "name": "Абажур",
+        "description": "ул. Македонского, 33, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2489315,
+            44.96645293
+          ],
+          [
+            35.2571425,
+            44.97228093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1781087243",
+          "name": "Абажур",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Македонского, 33",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 893-75-68"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–18:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.245355,
+          44.96507
+        ]
+      },
+      "properties": {
+        "name": "Апартаменты Мв",
+        "description": "Школьный пер., 2Б, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2412495,
+            44.96215543
+          ],
+          [
+            35.2494605,
+            44.96798443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1107044943",
+          "name": "Апартаменты Мв",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Школьный переулок, 2Б",
+          "url": "http://koktebel-hotel.ru/",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.23904,
+          44.961607
+        ]
+      },
+      "properties": {
+        "name": "Мотодом в Коктебеле",
+        "description": "Полевой пер., 1, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.234935,
+            44.95869243
+          ],
+          [
+            35.243145,
+            44.96452143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1304427108",
+          "name": "Мотодом в Коктебеле",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, Полевой переулок, 1",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 882-74-73"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.232044,
+          44.956314
+        ]
+      },
+      "properties": {
+        "name": "Отель Крым-Манжерок",
+        "description": "ул. Ахматовой, 4, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.227939,
+            44.95339893
+          ],
+          [
+            35.236149,
+            44.95922893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "44615142890",
+          "name": "Отель Крым-Манжерок",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ахматовой, 4",
+          "url": "http://krim-manzherok.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 504-69-64"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.242368,
+          44.961346
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Елена",
+        "description": "ул. Жуковского, 49, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.238263,
+            44.95843093
+          ],
+          [
+            35.246473,
+            44.96426093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "66466512383",
+          "name": "Гостевой дом Елена",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Жуковского, 49",
+          "url": "http://гостевой-дом-елена.в-коктебель.рф/",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.241034,
+          44.957742
+        ]
+      },
+      "properties": {
+        "name": "Касабланка",
+        "description": "ул. Калинина, 14, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.236929,
+            44.95482693
+          ],
+          [
+            35.245139,
+            44.96065693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "174668775339",
+          "name": "Касабланка",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Калинина, 14",
+          "url": "http://casablanca-hotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 743-35-60"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 097-36-90"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.242798,
+          44.959344
+        ]
+      },
+      "properties": {
+        "name": "Талисман Коктебеля",
+        "description": "ул. Ленина, 97, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.238693,
+            44.95642893
+          ],
+          [
+            35.246903,
+            44.96225893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1341081820",
+          "name": "Талисман Коктебеля",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ленина, 97",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36562) 2-44-80"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 074-46-52"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36562) 2-44-76"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.269275,
+          44.968799
+        ]
+      },
+      "properties": {
+        "name": "Жемчужина Коктебеля",
+        "description": "ул. Юнге, 6А, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.26517,
+            44.96588493
+          ],
+          [
+            35.27338,
+            44.97171293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "8558467002",
+          "name": "Жемчужина Коктебеля",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Юнге, 6А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.239471,
+          44.960031
+        ]
+      },
+      "properties": {
+        "name": "Номер в Коктебеле",
+        "description": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель",
+        "boundedBy": [
+          [
+            35.235366,
+            44.95711593
+          ],
+          [
+            35.243576,
+            44.96294593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "134107724777",
+          "name": "Номер в Коктебеле",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель",
+          "url": "https://ikoktebel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 790-39-07"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 790-39-08"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.238255,
+          44.960262
+        ]
+      },
+      "properties": {
+        "name": "Economy Hotel Marina",
+        "description": "ул. Ленина, 75, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2341495,
+            44.95734743
+          ],
+          [
+            35.2423605,
+            44.96317643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "179953625530",
+          "name": "Economy Hotel Marina",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ленина, 75",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.25042,
+          44.965656
+        ]
+      },
+      "properties": {
+        "name": "Мечта",
+        "description": "ул. Ленина, 125В, п. г. т. Коктебель, Россия",
+        "boundedBy": [
+          [
+            35.2463145,
+            44.96274143
+          ],
+          [
+            35.2545255,
+            44.96857043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "45213945587",
+          "name": "Мечта",
+          "address": "Россия, Республика Крым, городской округ Феодосия, посёлок городского типа Коктебель, улица Ленина, 125В",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

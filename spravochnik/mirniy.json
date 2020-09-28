@@ -1,0 +1,709 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "ResponseMetaData": {
+      "SearchResponse": {
+        "found": 13,
+        "display": "multiple"
+      },
+      "SearchRequest": {
+        "request": "гостиница мирный республика крым",
+        "skip": 0,
+        "results": 500,
+        "boundedBy": [
+          [
+            37.048427,
+            55.43644866
+          ],
+          [
+            38.175903,
+            56.04690174
+          ]
+        ]
+      }
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.03505,
+          45.309501
+        ]
+      },
+      "properties": {
+        "name": "Мирный",
+        "description": "Школьная ул., 14А, п. г. т. Мирный, Россия",
+        "boundedBy": [
+          [
+            33.0309445,
+            45.30660393
+          ],
+          [
+            33.0391555,
+            45.31239793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "123765463112",
+          "name": "Мирный",
+          "address": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный, Школьная улица, 14А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.036027,
+          45.306809
+        ]
+      },
+      "properties": {
+        "name": "Колибри",
+        "description": "ул. Сырникова, 8, п. г. т. Мирный, Россия",
+        "boundedBy": [
+          [
+            33.0319215,
+            45.30391193
+          ],
+          [
+            33.0401325,
+            45.30970593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1195317738",
+          "name": "Колибри",
+          "address": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный, улица Сырникова, 8",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 4-88-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.395313,
+          44.686066
+        ]
+      },
+      "properties": {
+        "name": "Мирный",
+        "description": "Совхозная ул., 3, Алушта, Россия",
+        "boundedBy": [
+          [
+            34.3912075,
+            44.68313743
+          ],
+          [
+            34.3994185,
+            44.68899443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1174102577",
+          "name": "Мирный",
+          "address": "Россия, Республика Крым, Алушта, Совхозная улица, 3",
+          "url": "http://hotelmirnyi.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 707-61-62"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.036362,
+          45.30558
+        ]
+      },
+      "properties": {
+        "name": "Мини-Отель Гармония",
+        "description": "ул. Сырникова, 41, п. г. т. Мирный, Россия",
+        "boundedBy": [
+          [
+            33.032257,
+            45.30268293
+          ],
+          [
+            33.040467,
+            45.30847693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "45476019787",
+          "name": "Мини-Отель Гармония",
+          "address": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный, улица Сырникова, 41",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.034763,
+          45.302618
+        ]
+      },
+      "properties": {
+        "name": "Мини-отель Чайка",
+        "description": "ул. Сырникова, 42, п. г. т. Мирный, Россия",
+        "boundedBy": [
+          [
+            33.0306575,
+            45.29972093
+          ],
+          [
+            33.0388685,
+            45.30551493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "223516079846",
+          "name": "Мини-отель Чайка",
+          "address": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный, улица Сырникова, 42",
+          "url": "http://chayka42.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 735-49-38"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 820-24-87"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.011921,
+          45.314432
+        ]
+      },
+      "properties": {
+        "name": "Морской клуб Лагуна",
+        "description": "Россия, Республика Крым, Сакский район, дачный потребительский кооператив Нептун, Центральная улица",
+        "boundedBy": [
+          [
+            33.0025605,
+            45.30847368
+          ],
+          [
+            33.0212815,
+            45.32038968
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "46257204908",
+          "name": "Морской клуб Лагуна",
+          "address": "Россия, Республика Крым, Сакский район, дачный потребительский кооператив Нептун, Центральная улица",
+          "url": "http://www.sea-club.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 729-05-03"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 729-05-01"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 729-05-02"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (916) 988-22-66"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.012753,
+          45.313813
+        ]
+      },
+      "properties": {
+        "name": "Мини-Отель Семейный",
+        "description": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный",
+        "boundedBy": [
+          [
+            33.0086475,
+            45.31091643
+          ],
+          [
+            33.0168585,
+            45.31670943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "231545158638",
+          "name": "Мини-Отель Семейный",
+          "address": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (989) 821-08-80"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.031355,
+          45.299566
+        ]
+      },
+      "properties": {
+        "name": "Миратель",
+        "description": "ул. Рыбалко, 86, село Поповка, Россия",
+        "boundedBy": [
+          [
+            33.0272495,
+            45.29666843
+          ],
+          [
+            33.0354605,
+            45.30246343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "216767353871",
+          "name": "Миратель",
+          "address": "Россия, Республика Крым, Сакский район, село Поповка, улица Рыбалко, 86",
+          "url": "http://www.popovka.com.ua/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 794-59-09"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (50) 587-90-70"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 794-59-49"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.00693,
+          45.317102
+        ]
+      },
+      "properties": {
+        "name": "Natalia",
+        "description": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный",
+        "boundedBy": [
+          [
+            33.0028245,
+            45.31420543
+          ],
+          [
+            33.0110355,
+            45.31999843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "2602074602",
+          "name": "Natalia",
+          "address": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный",
+          "url": "http://christiehotels.com/natalia.html",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (800) 777-02-86"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 551-26-44"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 111-51-09"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 551-12-24"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.006186,
+          45.317375
+        ]
+      },
+      "properties": {
+        "name": "Viila White House",
+        "description": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный",
+        "boundedBy": [
+          [
+            32.997203,
+            45.3115657
+          ],
+          [
+            33.015169,
+            45.3231837
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "222362207110",
+          "name": "Viila White House",
+          "address": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный",
+          "url": "http://belydom.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 087-63-74"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.028044,
+          45.319585
+        ]
+      },
+      "properties": {
+        "name": "Гостевой Дом Tortuga",
+        "description": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный",
+        "boundedBy": [
+          [
+            33.0266155,
+            45.31642241
+          ],
+          [
+            33.0294725,
+            45.32274741
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "13842244037",
+          "name": "Гостевой Дом Tortuga",
+          "address": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 709-23-53"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 709-23-63"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.029222,
+          45.326449
+        ]
+      },
+      "properties": {
+        "name": "Донузlove",
+        "description": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный",
+        "boundedBy": [
+          [
+            33.025611,
+            45.32342292
+          ],
+          [
+            33.032833,
+            45.32947492
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1756197514",
+          "name": "Донузlove",
+          "address": "Россия, Республика Крым, городской округ Евпатория, посёлок городского типа Мирный",
+          "url": "http://donuzlove.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-56-23"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (903) 970-58-14"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.56249,
+          45.094047
+        ]
+      },
+      "properties": {
+        "name": "Оазис",
+        "description": "Мирная ул., 15, п. г. т. Новофёдоровка, Россия",
+        "boundedBy": [
+          [
+            33.5583845,
+            45.09113893
+          ],
+          [
+            33.5665955,
+            45.09695493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "134573384333",
+          "name": "Оазис",
+          "address": "Россия, Республика Крым, Сакский район, посёлок городского типа Новофёдоровка, Мирная улица, 15",
+          "url": "http://oazis.crimea.ua/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 707-80-18"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 766-37-12"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

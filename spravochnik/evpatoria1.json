@@ -1,0 +1,5984 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "ResponseMetaData": {
+      "SearchResponse": {
+        "found": 126,
+        "display": "multiple",
+        "boundedBy": [
+          [
+            33.32262456,
+            45.17055404
+          ],
+          [
+            33.39567944,
+            45.21857098
+          ]
+        ]
+      },
+      "SearchRequest": {
+        "request": "гостиница евпатория республика крым",
+        "skip": 0,
+        "results": 500,
+        "boundedBy": [
+          [
+            33.322588,
+            45.17053
+          ],
+          [
+            33.395716,
+            45.218595
+          ]
+        ]
+      }
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.374762,
+          45.194344
+        ]
+      },
+      "properties": {
+        "name": "Крым",
+        "description": "ул. Революции, 46, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3706565,
+            45.19144143
+          ],
+          [
+            33.3788675,
+            45.19724643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "72608062963",
+          "name": "Крым",
+          "address": "Россия, Республика Крым, Евпатория, улица Революции, 46/9",
+          "url": "http://hostelkrym.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 4-33-07"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 204-49-05"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 033-18-56"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 6-31-87"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.347994,
+          45.177861
+        ]
+      },
+      "properties": {
+        "name": "Лиана",
+        "description": "ул. Косицкого, 5, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3438885,
+            45.17495743
+          ],
+          [
+            33.3520995,
+            45.18076443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1180768297",
+          "name": "Лиана",
+          "address": "Россия, Республика Крым, Евпатория, улица Косицкого, 5",
+          "url": "http://liana-evpatoria.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 3-62-49"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 140-63-66"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-32-40"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.367425,
+          45.188637
+        ]
+      },
+      "properties": {
+        "name": "Петротель",
+        "description": "ул. Гоголя, 15А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3633195,
+            45.18573393
+          ],
+          [
+            33.3715305,
+            45.19153993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "31767531985",
+          "name": "Петротель",
+          "address": "Россия, Республика Крым, Евпатория, улица Гоголя, 15А",
+          "url": "https://hotelpetro.ru/?utm_source=ya_maps",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (800) 775-62-53"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 795-63-95"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.345966,
+          45.184677
+        ]
+      },
+      "properties": {
+        "name": "Уютный дом",
+        "description": "ул. Косицкого, 27, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3418605,
+            45.18177343
+          ],
+          [
+            33.3500715,
+            45.18758043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "175560354745",
+          "name": "Уютный дом",
+          "address": "Россия, Республика Крым, Евпатория, улица Косицкого, 27",
+          "url": "http://evpatoria-rielt.ru/",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.365644,
+          45.188587
+        ]
+      },
+      "properties": {
+        "name": "ТЭС отель",
+        "description": "ул. Пушкина, 16А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3615385,
+            45.18568393
+          ],
+          [
+            33.3697495,
+            45.19148993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1099857871",
+          "name": "ТЭС отель",
+          "address": "Россия, Республика Крым, Евпатория, улица Пушкина, 16А",
+          "url": "http://tes-evpatoriya.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (800) 200-87-05"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-33-66"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-33-77"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.34826,
+          45.19221
+        ]
+      },
+      "properties": {
+        "name": "Гостиница Евпатория",
+        "description": "Россия, Республика Крым, Евпатория, проспект Победы",
+        "boundedBy": [
+          [
+            33.3455785,
+            45.17493436
+          ],
+          [
+            33.3509415,
+            45.20948036
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "71493664580",
+          "name": "Гостиница Евпатория",
+          "address": "Россия, Республика Крым, Евпатория, проспект Победы",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+380 (6569) 5-14-18"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (6569) 5-15-48"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.363337,
+          45.184744
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Paradise",
+        "description": "ул. Токарева, 10, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.359232,
+            45.18184043
+          ],
+          [
+            33.367442,
+            45.18764743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "205725813410",
+          "name": "Пансионат Paradise",
+          "address": "Россия, Республика Крым, Евпатория, улица Токарева, 10",
+          "url": "https://pans-paradise.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (804) 333-55-70"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 008-71-59"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.352222,
+          45.176703
+        ]
+      },
+      "properties": {
+        "name": "Санаторий Орленок",
+        "description": "Московская ул., 3, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3481165,
+            45.17379943
+          ],
+          [
+            33.3563275,
+            45.17960643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "40253673805",
+          "name": "Санаторий Орленок",
+          "address": "Россия, Республика Крым, Евпатория, Московская улица, 3",
+          "url": "https://orlenok-evp.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (804) 333-55-70"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 008-71-59"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 008-71-60"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Санаторий"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.355631,
+          45.186485
+        ]
+      },
+      "properties": {
+        "name": "Вилла Валери",
+        "description": "ул. Пушкина, 55, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3515255,
+            45.18358193
+          ],
+          [
+            33.3597365,
+            45.18938793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "176624692267",
+          "name": "Вилла Валери",
+          "address": "Россия, Республика Крым, Евпатория, улица Пушкина, 55",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.339482,
+          45.187666
+        ]
+      },
+      "properties": {
+        "name": "Ace",
+        "description": "ул. Полупанова, 25А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3353765,
+            45.18476293
+          ],
+          [
+            33.3435875,
+            45.19056893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "101641191923",
+          "name": "Ace",
+          "address": "Россия, Республика Крым, Евпатория, улица Полупанова, 25А",
+          "url": "http://hotel-ace.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 6-90-32"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 703-63-20"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.36314,
+          45.192799
+        ]
+      },
+      "properties": {
+        "name": "Гостиница Yevpatoriya Guest House",
+        "description": "ул. Дёмышева, 73, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3444055,
+            45.1894769
+          ],
+          [
+            33.3818745,
+            45.1961209
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "106927164332",
+          "name": "Гостиница Yevpatoriya Guest House",
+          "address": "Россия, Республика Крым, Евпатория, улица Дёмышева, 73",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.353612,
+          45.206095
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Суворова 13",
+        "description": "ул. Суворова, 13, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.349507,
+            45.20319293
+          ],
+          [
+            33.357717,
+            45.20899693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "164044557645",
+          "name": "Гостевой дом на Суворова 13",
+          "address": "Россия, Республика Крым, Евпатория, улица Суворова, 13",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.337476,
+          45.203291
+        ]
+      },
+      "properties": {
+        "name": "Калифорния",
+        "description": "ул. 60 лет ВЛКСМ, 35, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3333705,
+            45.20038893
+          ],
+          [
+            33.3415815,
+            45.20619293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1128643058",
+          "name": "Калифорния",
+          "address": "Россия, Республика Крым, Евпатория, улица 60 лет ВЛКСМ, 35",
+          "url": "http://californiahotel.ru/",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.362259,
+          45.191705
+        ]
+      },
+      "properties": {
+        "name": "Uyutnaya Inn",
+        "description": "ул. 13 Ноября, 49, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3581535,
+            45.18880193
+          ],
+          [
+            33.3663645,
+            45.19460793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "138318124746",
+          "name": "Uyutnaya Inn",
+          "address": "Россия, Республика Крым, Евпатория, улица 13 Ноября, 49",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.369014,
+          45.187279
+        ]
+      },
+      "properties": {
+        "name": "У моря",
+        "description": "Санаторская ул., 5, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.364909,
+            45.18437593
+          ],
+          [
+            33.373119,
+            45.19018193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "74223305218",
+          "name": "У моря",
+          "address": "Россия, Республика Крым, Евпатория, Санаторская улица, 5",
+          "url": "http://u-morya.crimea-business.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 719-02-80"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.363379,
+          45.184491
+        ]
+      },
+      "properties": {
+        "name": "Paradise",
+        "description": "наб. Горького, 16А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3592735,
+            45.18158743
+          ],
+          [
+            33.3674845,
+            45.18739443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "228485806462",
+          "name": "Paradise",
+          "address": "Россия, Республика Крым, Евпатория, набережная Горького, 16А",
+          "url": "http://paradisehot.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 135-81-53"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (67) 565-38-63"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 06:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "06:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.375081,
+          45.197279
+        ]
+      },
+      "properties": {
+        "name": "Уют",
+        "description": "Нижняя ул., 12, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.370976,
+            45.19437593
+          ],
+          [
+            33.379186,
+            45.20018193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1397275621",
+          "name": "Уют",
+          "address": "Россия, Республика Крым, Евпатория, Нижняя улица, 12",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+380 (68) 085-39-39"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (50) 696-23-07"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.371459,
+          45.184615
+        ]
+      },
+      "properties": {
+        "name": "Фемида Климатопавильон",
+        "description": "ул. Горького, 1Е, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.367354,
+            45.18171193
+          ],
+          [
+            33.375564,
+            45.18751793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "181742543831",
+          "name": "Фемида Климатопавильон",
+          "address": "Россия, Республика Крым, Евпатория, улица Горького, 1Е",
+          "url": "https://crimea-hotels.ru/kurort/143/pansionat-femida-klimatopavilon-evpatoria-krym.html",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (804) 333-55-70"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 008-71-59"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "hotels",
+              "name": "Бронирование гостиниц"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.367194,
+          45.207974
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом",
+        "description": "ул. Шишкина, 10А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3640635,
+            45.207885
+          ],
+          [
+            33.3703245,
+            45.208063
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "98085511199",
+          "name": "Гостевой дом",
+          "address": "Россия, Республика Крым, Евпатория, улица Шишкина, 10А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (916) 241-64-56"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.364335,
+          45.207548
+        ]
+      },
+      "properties": {
+        "name": "Guest House na Belogubtsa",
+        "description": "ул. Белогубца, 72, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.36023,
+            45.20464593
+          ],
+          [
+            33.36844,
+            45.21044993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "75449715453",
+          "name": "Guest House na Belogubtsa",
+          "address": "Россия, Республика Крым, Евпатория, улица Белогубца, 72",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 714-73-80"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.350669,
+          45.185979
+        ]
+      },
+      "properties": {
+        "name": "Аркале",
+        "description": "ул. Пушкина, 70/42А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3465635,
+            45.18307593
+          ],
+          [
+            33.3547745,
+            45.18888193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "237917243042",
+          "name": "Аркале",
+          "address": "Россия, Республика Крым, Евпатория, улица Пушкина, 70/42А",
+          "url": "http://arkale.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 2-77-54"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-37-27"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 827-76-80"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.352206,
+          45.180602
+        ]
+      },
+      "properties": {
+        "name": "Гостевой Дом на Московской",
+        "description": "Московская ул., 22А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3505445,
+            45.17567829
+          ],
+          [
+            33.3538675,
+            45.18552529
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "43146189975",
+          "name": "Гостевой Дом на Московской",
+          "address": "Россия, Республика Крым, Евпатория, Московская улица, 22А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 755-14-86"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 090-21-19"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.347631,
+          45.177564
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Приват",
+        "description": "ул. Маяковского, 8/5/2, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3435255,
+            45.17466043
+          ],
+          [
+            33.3517365,
+            45.18046743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1141706012",
+          "name": "Гостевой дом Приват",
+          "address": "Россия, Республика Крым, Евпатория, улица Маяковского, 8/5/2",
+          "url": "http://private-hotel.net/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 861-99-99"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.386845,
+          45.199036
+        ]
+      },
+      "properties": {
+        "name": "Diva",
+        "description": "ул. Революции, 9А/3, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3827395,
+            45.19613393
+          ],
+          [
+            33.3909505,
+            45.20193793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "243536897828",
+          "name": "Diva",
+          "address": "Россия, Республика Крым, Евпатория, улица Революции, 9А/3",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 856-15-42"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 856-15-43"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "cafe",
+              "name": "Кафе"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.390731,
+          45.199076
+        ]
+      },
+      "properties": {
+        "name": "Донна Роза",
+        "description": "Симферопольская ул., 94В, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3866255,
+            45.19617343
+          ],
+          [
+            33.3948365,
+            45.20197843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1392004937",
+          "name": "Донна Роза",
+          "address": "Россия, Республика Крым, Евпатория, Симферопольская улица, 94В",
+          "url": "http://dona-rosa.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (985) 890-89-44"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 935-75-87"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 202-10-37"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.393838,
+          45.198081
+        ]
+      },
+      "properties": {
+        "name": "Мини отель Аура",
+        "description": "Симферопольская ул., 85, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3897325,
+            45.19517843
+          ],
+          [
+            33.3979435,
+            45.20098343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "147270597702",
+          "name": "Мини отель Аура",
+          "address": "Россия, Республика Крым, Евпатория, Симферопольская улица, 85",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.336583,
+          45.173954
+        ]
+      },
+      "properties": {
+        "name": "Европа",
+        "description": "ул. Маяковского, 17Б, корп. 1, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.332478,
+            45.17104993
+          ],
+          [
+            33.340688,
+            45.17685793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1708858110",
+          "name": "Европа",
+          "address": "Россия, Республика Крым, Евпатория, улица Маяковского, 17Б, корп. 1",
+          "url": "http://апартаменты-европа.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 2-74-83"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 705-62-84"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (989) 127-58-97"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "пн-пт 09:00–18:00; сб 09:00–14:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Monday": true,
+                "Tuesday": true,
+                "Wednesday": true,
+                "Thursday": true,
+                "Friday": true
+              },
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "14:00:00"
+                  }
+                ],
+                "Saturday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.391081,
+          45.198543
+        ]
+      },
+      "properties": {
+        "name": "Оазис",
+        "description": "Симферопольская ул., 99Б, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3869755,
+            45.19564043
+          ],
+          [
+            33.3951865,
+            45.20144543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1359824862",
+          "name": "Оазис",
+          "address": "Россия, Республика Крым, Евпатория, Симферопольская улица, 99Б",
+          "url": "https://oasis-hotel.info/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 821-20-10"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 4-50-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.354452,
+          45.18533
+        ]
+      },
+      "properties": {
+        "name": "Юлиана",
+        "description": "ул. Шевченко, 23, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3503465,
+            45.18242693
+          ],
+          [
+            33.3585575,
+            45.18823293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1403544906",
+          "name": "Юлиана",
+          "address": "Россия, Республика Крым, Евпатория, улица Шевченко, 23",
+          "url": "http://yuli-hotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 037-28-00"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 717-53-21"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 3-02-74"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.365565,
+          45.190939
+        ]
+      },
+      "properties": {
+        "name": "Рандеву",
+        "description": "просп. Ленина, 10, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3614595,
+            45.18803643
+          ],
+          [
+            33.3696705,
+            45.19384143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1234444205",
+          "name": "Рандеву",
+          "address": "Россия, Республика Крым, Евпатория, проспект Ленина, 10",
+          "url": "http://krumtur24.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 015-51-90"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–18:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.385861,
+          45.19784
+        ]
+      },
+      "properties": {
+        "name": "Вилла у моря",
+        "description": "наб. Валентины Терешковой, 7, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.381756,
+            45.19493743
+          ],
+          [
+            33.389966,
+            45.20074243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1154518687",
+          "name": "Вилла у моря",
+          "address": "Россия, Республика Крым, Евпатория, набережная Валентины Терешковой, 7",
+          "url": "http://www.villa-evpatoriya.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 741-38-31"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 3-35-19"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.366746,
+          45.187118
+        ]
+      },
+      "properties": {
+        "name": "Вилла Даша",
+        "description": "Санаторская ул., 15, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3626405,
+            45.18421493
+          ],
+          [
+            33.3708515,
+            45.19002093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "194961007136",
+          "name": "Вилла Даша",
+          "address": "Россия, Республика Крым, Евпатория, Санаторская улица, 15",
+          "url": "http://hotel-zlata.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 103-96-59"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (918) 420-80-34"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.340312,
+          45.195411
+        ]
+      },
+      "properties": {
+        "name": "Визит",
+        "description": "ул. 60 лет ВЛКСМ, 6, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3362065,
+            45.19250793
+          ],
+          [
+            33.3444175,
+            45.19831393
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1215914240",
+          "name": "Визит",
+          "address": "Россия, Республика Крым, Евпатория, улица 60 лет ВЛКСМ, 6",
+          "url": "http://gostinicavizit.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 752-37-62"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 4-26-63"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 5-48-03"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.369662,
+          45.193887
+        ]
+      },
+      "properties": {
+        "name": "Кристина",
+        "description": "ул. Краевского, 9, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.365557,
+            45.19098443
+          ],
+          [
+            33.373767,
+            45.19678943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "164345765250",
+          "name": "Кристина",
+          "address": "Россия, Республика Крым, Евпатория, улица Краевского, 9",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 736-80-88"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.358292,
+          45.191738
+        ]
+      },
+      "properties": {
+        "name": "Позитив",
+        "description": "ул. 13 Ноября, 74, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3541865,
+            45.18883543
+          ],
+          [
+            33.3623975,
+            45.19464043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "41301262909",
+          "name": "Позитив",
+          "address": "Россия, Республика Крым, Евпатория, 13 ноября, 74",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.367591,
+          45.199125
+        ]
+      },
+      "properties": {
+        "name": "Калинка",
+        "description": "Профсоюзная ул., 10, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.363486,
+            45.19622243
+          ],
+          [
+            33.371696,
+            45.20202743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "168683913664",
+          "name": "Калинка",
+          "address": "Россия, Республика Крым, Евпатория, Профсоюзная улица, 10",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 035-46-20"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.35915,
+          45.19842
+        ]
+      },
+      "properties": {
+        "name": "Кораблик",
+        "description": "ул. Сытникова, 29, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.350652,
+            45.19704498
+          ],
+          [
+            33.367648,
+            45.19979498
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "34032484523",
+          "name": "Кораблик",
+          "address": "Россия, Республика Крым, Евпатория, улица Сытникова, 29",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 763-64-93"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 732-11-87"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.36565,
+          45.18662
+        ]
+      },
+      "properties": {
+        "name": "Гд Комфорт",
+        "description": "Санаторская ул., 21, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3615445,
+            45.18371693
+          ],
+          [
+            33.3697555,
+            45.18952293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "216157812959",
+          "name": "Гд Комфорт",
+          "address": "Россия, Республика Крым, Евпатория, Санаторская улица, 21",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 714-93-48"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–20:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "20:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.364709,
+          45.189929
+        ]
+      },
+      "properties": {
+        "name": "Юнион",
+        "description": "просп. Ленина, 17А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3606035,
+            45.18702643
+          ],
+          [
+            33.3688145,
+            45.19283143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "211951188562",
+          "name": "Юнион",
+          "address": "Россия, Республика Крым, Евпатория, проспект Ленина, 17А",
+          "url": "http://hotel-union.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 6-32-30"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 6-32-31"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 729-02-02"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 729-01-01"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 6-32-33"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.369754,
+          45.197578
+        ]
+      },
+      "properties": {
+        "name": "Pulsar",
+        "description": "Караимская ул., 87/34, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3656485,
+            45.19467543
+          ],
+          [
+            33.3738595,
+            45.20048043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "189470902938",
+          "name": "Pulsar",
+          "address": "Россия, Республика Крым, Евпатория, Караимская улица, 87/34",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 10:00–18:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "10:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.372805,
+          45.197066
+        ]
+      },
+      "properties": {
+        "name": "Вилла Испанский дворик",
+        "description": "Пролетарская ул., 16, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3687,
+            45.19416343
+          ],
+          [
+            33.37691,
+            45.19996843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1010743920",
+          "name": "Вилла Испанский дворик",
+          "address": "Россия, Республика Крым, Евпатория, Пролетарская улица, 16",
+          "url": "http://evpatoriya-otdyh.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 883-24-03"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-63-21"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.372549,
+          45.196903
+        ]
+      },
+      "properties": {
+        "name": "Вилла Фазенда",
+        "description": "Комиссаровская ул., 5, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3684435,
+            45.19400043
+          ],
+          [
+            33.3766545,
+            45.19980543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "175377708925",
+          "name": "Вилла Фазенда",
+          "address": "Россия, Республика Крым, Евпатория, Комиссаровская улица, 5",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 505-03-51"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.363943,
+          45.187445
+        ]
+      },
+      "properties": {
+        "name": "Весна",
+        "description": "ул. Токарева, 22, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.359838,
+            45.18454193
+          ],
+          [
+            33.368048,
+            45.19034793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "187055710039",
+          "name": "Весна",
+          "address": "Россия, Республика Крым, Евпатория, улица Токарева, 22",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+380 (50) 397-09-90"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.377686,
+          45.197546
+        ]
+      },
+      "properties": {
+        "name": "Семейный отдых",
+        "description": "Училищный пер., 4, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.373581,
+            45.19464343
+          ],
+          [
+            33.381791,
+            45.20044843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1166429293",
+          "name": "Семейный отдых",
+          "address": "Россия, Республика Крым, Евпатория, Училищный переулок, 4",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-10-30"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 07:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "07:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.3802,
+          45.200013
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Brisa Marina",
+        "description": "Поворотная ул., 44А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3760945,
+            45.19711043
+          ],
+          [
+            33.3843055,
+            45.20291543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1302228476",
+          "name": "Гостевой дом Brisa Marina",
+          "address": "Россия, Республика Крым, Евпатория, Поворотная улица, 44А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 703-45-03"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 07:00–23:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "07:00:00",
+                    "to": "23:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.38657,
+          45.199877
+        ]
+      },
+      "properties": {
+        "name": "Гостиница Ева",
+        "description": "Эскадронная ул., 9, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3824645,
+            45.19697443
+          ],
+          [
+            33.3906755,
+            45.20277943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1330967757",
+          "name": "Гостиница Ева",
+          "address": "Россия, Республика Крым, Евпатория, Эскадронная улица, 9",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 799-48-05"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.355643,
+          45.186479
+        ]
+      },
+      "properties": {
+        "name": "Приватный Пансионат",
+        "description": "ул. Пушкина, 55, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3515375,
+            45.18357593
+          ],
+          [
+            33.3597485,
+            45.18938193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "243740099173",
+          "name": "Приватный Пансионат",
+          "address": "Россия, Республика Крым, Евпатория, улица Пушкина, 55",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.380093,
+          45.196423
+        ]
+      },
+      "properties": {
+        "name": "Жемчужина",
+        "description": "Набережная ул., 26, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3759875,
+            45.19351993
+          ],
+          [
+            33.3841985,
+            45.19932593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "183646931437",
+          "name": "Жемчужина",
+          "address": "Россия, Республика Крым, Евпатория, пос.Прибрежный, ул. Набережная, 26",
+          "url": "http://www.hotel-pearl.net/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 714-73-91"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 774-00-67"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (93) 885-85-95"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "Нет информации"
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.343441,
+          45.186294
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Планета",
+        "description": "просп. Ленина, 73/29, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3306895,
+            45.17882501
+          ],
+          [
+            33.3561925,
+            45.19376201
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "19798272200",
+          "name": "Пансионат Планета",
+          "address": "Россия, Республика Крым, Евпатория, проспект Ленина, 73/29",
+          "url": "https://pans-planeta.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 2-83-84"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 027-69-42"
+            },
+            {
+              "type": "phone",
+              "formatted": "8 (804) 333-55-70"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 008-71-59"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 2-80-70"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.34779,
+          45.18387
+        ]
+      },
+      "properties": {
+        "name": "Валентина",
+        "description": "ул. Кирова, 82Г, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.343685,
+            45.18096693
+          ],
+          [
+            33.351895,
+            45.18677293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1227537845",
+          "name": "Валентина",
+          "address": "Россия, Республика Крым, Евпатория, улица Кирова, 82Г",
+          "url": "http://hotel-evpatoria.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 732-10-63"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.366789,
+          45.197736
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом у Евгения",
+        "description": "ул. Вити Коробкова, 46, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3626835,
+            45.19483343
+          ],
+          [
+            33.3708945,
+            45.20063843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1343955063",
+          "name": "Гостевой дом у Евгения",
+          "address": "Россия, Республика Крым, Евпатория, улица Вити Коробкова, 46",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 799-48-05"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.392371,
+          45.199999
+        ]
+      },
+      "properties": {
+        "name": "Аура-Крым",
+        "description": "Симферопольская ул., 94, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.388266,
+            45.19709643
+          ],
+          [
+            33.396476,
+            45.20290143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "57893722473",
+          "name": "Аура-Крым",
+          "address": "Россия, Республика Крым, Евпатория, Симферопольская улица, 94",
+          "url": "http://aura-krim.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 791-37-06"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–21:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "21:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.378467,
+          45.198778
+        ]
+      },
+      "properties": {
+        "name": "Дом для отдыха",
+        "description": "Училищная ул., 20, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3743615,
+            45.19587543
+          ],
+          [
+            33.3825725,
+            45.20168043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "48822206195",
+          "name": "Дом для отдыха",
+          "address": "Россия, Республика Крым, Евпатория, Училищная улица, 20",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 731-74-44"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.352451,
+          45.181553
+        ]
+      },
+      "properties": {
+        "name": "Люкс на Московской",
+        "description": "Московская ул., 22Г, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3483455,
+            45.17864943
+          ],
+          [
+            33.3565565,
+            45.18445643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "29259013413",
+          "name": "Люкс на Московской",
+          "address": "Россия, Республика Крым, Евпатория, Московская улица, 22Г",
+          "url": "http://na-moskovskoy.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 856-44-34"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.36772,
+          45.19207
+        ]
+      },
+      "properties": {
+        "name": "Guest house",
+        "description": "Театральный пер., 8, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3674235,
+            45.1916255
+          ],
+          [
+            33.3680165,
+            45.1925145
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "96825181524",
+          "name": "Guest house",
+          "address": "Россия, Республика Крым, Евпатория, Театральный переулок, 8",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-43-15"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.392881,
+          45.198364
+        ]
+      },
+      "properties": {
+        "name": "Гостевой Дом Виктория",
+        "description": "Симферопольская ул., 93, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3887755,
+            45.19546143
+          ],
+          [
+            33.3969865,
+            45.20126643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "19356400277",
+          "name": "Гостевой Дом Виктория",
+          "address": "Россия, Республика Крым, Евпатория, Симферопольская улица, 93",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-42-72"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.368784,
+          45.194453
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом",
+        "description": "Комсомольская ул., 8, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3646785,
+            45.19155043
+          ],
+          [
+            33.3728895,
+            45.19735543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1801166962",
+          "name": "Гостевой дом",
+          "address": "Россия, Республика Крым, Евпатория, Комсомольская улица, 8",
+          "url": "http://www.inform-ok.com/ru/component/estateagent/?act=object&id=100&task=showEO",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 753-19-87"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "пн-пт 09:00–17:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "17:00:00"
+                  }
+                ],
+                "Monday": true,
+                "Tuesday": true,
+                "Wednesday": true,
+                "Thursday": true,
+                "Friday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.368651,
+          45.211183
+        ]
+      },
+      "properties": {
+        "name": "Крымагрокосмос",
+        "description": "ул. 2-й Гвардейской Армии, 14, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3645455,
+            45.20828143
+          ],
+          [
+            33.3727565,
+            45.21408443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1073848118",
+          "name": "Крымагрокосмос",
+          "address": "Россия, Республика Крым, Евпатория, улица 2-й Гвардейской Армии, 14",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.351617,
+          45.186366
+        ]
+      },
+      "properties": {
+        "name": "Меридиана-2",
+        "description": "ул. Пушкина, 66, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.347512,
+            45.18346243
+          ],
+          [
+            33.355722,
+            45.18926943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "112403089957",
+          "name": "Меридиана-2",
+          "address": "Россия, Республика Крым, Евпатория, улица Пушкина, 66",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.352786,
+          45.180377
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом в Парке Фрунзе",
+        "description": "Московская ул., 22, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3486805,
+            45.17747343
+          ],
+          [
+            33.3568915,
+            45.18328043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "166957499784",
+          "name": "Гостевой дом в Парке Фрунзе",
+          "address": "Россия, Республика Крым, Евпатория, Московская улица, 22",
+          "url": "http://отдых-дом.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 814-27-90"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.36608,
+          45.194014
+        ]
+      },
+      "properties": {
+        "name": "Дом отдыха у Анжелы",
+        "description": "ул. Вити Коробкова, 7, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3619745,
+            45.19111143
+          ],
+          [
+            33.3701855,
+            45.19691643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "169006783115",
+          "name": "Дом отдыха у Анжелы",
+          "address": "Россия, Республика Крым, Евпатория, улица Вити Коробкова, 7",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 815-12-92"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.368442,
+          45.188768
+        ]
+      },
+      "properties": {
+        "name": "DaLaMar",
+        "description": "ул. Пушкина, 4, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3643365,
+            45.18586493
+          ],
+          [
+            33.3725475,
+            45.19167093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "31695016634",
+          "name": "DaLaMar",
+          "address": "Россия, Республика Крым, Евпатория, улица Пушкина, 4",
+          "url": "http://dalamar-otel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (903) 133-04-89"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (499) 343-49-37"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–20:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "20:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.357459,
+          45.182285
+        ]
+      },
+      "properties": {
+        "name": "Грот",
+        "description": "ул. Горького, 5Б, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.353354,
+            45.17938143
+          ],
+          [
+            33.361564,
+            45.18518843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "27042607701",
+          "name": "Грот",
+          "address": "Россия, Республика Крым, Евпатория, улица Горького, 5Б",
+          "url": "http://grot-hotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 712-80-81"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (989) 124-50-50"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.368738,
+          45.187616
+        ]
+      },
+      "properties": {
+        "name": "Южный дом",
+        "description": "Санаторская ул., 4, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3646325,
+            45.18471293
+          ],
+          [
+            33.3728435,
+            45.19051893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1638331635",
+          "name": "Южный дом",
+          "address": "Россия, Республика Крым, Евпатория, Санаторская улица, 4",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 745-16-73"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 557-54-98"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.346138,
+          45.184044
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Алехандро",
+        "description": "Россия, Республика Крым, Евпатория, улица Косицкого",
+        "boundedBy": [
+          [
+            33.344526,
+            45.17922529
+          ],
+          [
+            33.34775,
+            45.18886229
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "91043514554",
+          "name": "Пансионат Алехандро",
+          "address": "Россия, Республика Крым, Евпатория, улица Косицкого",
+          "url": "http://evpatoria-rielt.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 712-80-81"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.339409,
+          45.178209
+        ]
+      },
+      "properties": {
+        "name": "Атлантис",
+        "description": "Киевская ул., 44, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3353035,
+            45.17530543
+          ],
+          [
+            33.3435145,
+            45.18111243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "15328177311",
+          "name": "Атлантис",
+          "address": "Россия, Республика Крым, Евпатория, Киевская улица, 44",
+          "url": "http://отель-атлантис.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (800) 700-76-51"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 705-62-86"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "пн-пт 09:00–17:00; сб 09:00–14:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "17:00:00"
+                  }
+                ],
+                "Monday": true,
+                "Tuesday": true,
+                "Wednesday": true,
+                "Thursday": true,
+                "Friday": true
+              },
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "14:00:00"
+                  }
+                ],
+                "Saturday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.337059,
+          45.175762
+        ]
+      },
+      "properties": {
+        "name": "Парус",
+        "description": "ул. Маяковского, 24, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.332954,
+            45.17285843
+          ],
+          [
+            33.341164,
+            45.17866543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1094342856",
+          "name": "Парус",
+          "address": "Россия, Республика Крым, Евпатория, улица Маяковского, 24",
+          "url": "http://evparus.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 054-17-63"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 6-32-04"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 4-35-03"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.392775,
+          45.199048
+        ]
+      },
+      "properties": {
+        "name": "Арсенал",
+        "description": "Симферопольская ул., 94А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3886695,
+            45.19614543
+          ],
+          [
+            33.3968805,
+            45.20195043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1372840751",
+          "name": "Арсенал",
+          "address": "Россия, Республика Крым, Евпатория, Симферопольская улица, 94А",
+          "url": "https://arsenal-hotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 4-55-03"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 832-83-58"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 731-48-33"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 757-78-25"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.342282,
+          45.187267
+        ]
+      },
+      "properties": {
+        "name": "Родничок",
+        "description": "просп. Ленина, 68, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.338177,
+            45.18436393
+          ],
+          [
+            33.346387,
+            45.19016993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "37634322124",
+          "name": "Родничок",
+          "address": "Россия, Республика Крым, Евпатория, проспект Ленина, 68",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+380 (6569) 3-01-16"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (6569) 3-34-74"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (6569) 3-00-17"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (6569) 6-24-73"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.353123,
+          45.186031
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Пушкина 63",
+        "description": "ул. Пушкина, 63, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.349018,
+            45.18312743
+          ],
+          [
+            33.357228,
+            45.18893443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "141586766395",
+          "name": "Гостевой дом на Пушкина 63",
+          "address": "Россия, Республика Крым, Евпатория, улица Пушкина, 63",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.390496,
+          45.198232
+        ]
+      },
+      "properties": {
+        "name": "Отель Бриз",
+        "description": "ул. Революции, 1А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.386391,
+            45.19532943
+          ],
+          [
+            33.394601,
+            45.20113443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1751023904",
+          "name": "Отель Бриз",
+          "address": "Россия, Республика Крым, Евпатория, улица Революции, 1А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 015-51-90"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.384692,
+          45.198599
+        ]
+      },
+      "properties": {
+        "name": "Апартаменты Room",
+        "description": "ул. Революции, 16, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3805865,
+            45.19569643
+          ],
+          [
+            33.3887975,
+            45.20150143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "107551150842",
+          "name": "Апартаменты Room",
+          "address": "Россия, Республика Крым, Евпатория, улица Революции, 16",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 763-31-59"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.362606,
+          45.186817
+        ]
+      },
+      "properties": {
+        "name": "Guest House Na Pushkina",
+        "description": "ул. Пушкина, 37, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.358501,
+            45.18391343
+          ],
+          [
+            33.366711,
+            45.18972043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "229088338539",
+          "name": "Guest House Na Pushkina",
+          "address": "Россия, Республика Крым, Евпатория, улица Пушкина, 37",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.348085,
+          45.18373
+        ]
+      },
+      "properties": {
+        "name": "Хельга",
+        "description": "ул. Кирова, 82/1, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3439795,
+            45.18082643
+          ],
+          [
+            33.3521905,
+            45.18663343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "109270567505",
+          "name": "Хельга",
+          "address": "Россия, Республика Крым, Евпатория, улица Кирова, 82/1",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 774-75-14"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 07:00–22:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "07:00:00",
+                    "to": "22:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.391771,
+          45.208589
+        ]
+      },
+      "properties": {
+        "name": "Отель Акватория",
+        "description": "Новосёловское ш., 1Г, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3876655,
+            45.20568693
+          ],
+          [
+            33.3958765,
+            45.21149093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "157086580789",
+          "name": "Отель Акватория",
+          "address": "Россия, Республика Крым, Евпатория, Новосёловское шоссе, 1Г",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-40-75"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.338991,
+          45.179737
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Радужная",
+        "description": "ул. Ивана Франко, 16А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3348855,
+            45.17683343
+          ],
+          [
+            33.3430965,
+            45.18264043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "65428416574",
+          "name": "Гостевой дом Радужная",
+          "address": "Россия, Республика Крым, Евпатория, улица Ивана Франко, 16А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+380 (66) 245-70-14"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.365402,
+          45.191772
+        ]
+      },
+      "properties": {
+        "name": "Отдыхаем Летом",
+        "description": "ул. Гагарина, 10, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.361297,
+            45.18886943
+          ],
+          [
+            33.369507,
+            45.19467443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "125118224578",
+          "name": "Отдыхаем Летом",
+          "address": "Россия, Республика Крым, Евпатория, улица Гагарина, 10",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.350555,
+          45.184044
+        ]
+      },
+      "properties": {
+        "name": "Гостевой Дом на Кирова",
+        "description": "ул. Кирова, 68, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.34645,
+            45.18114043
+          ],
+          [
+            33.35466,
+            45.18694743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "182219511147",
+          "name": "Гостевой Дом на Кирова",
+          "address": "Россия, Республика Крым, Евпатория, улица Кирова, 68",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.370859,
+          45.195424
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Уют",
+        "description": "ул. Володи Дубинина, 7А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3667535,
+            45.19252143
+          ],
+          [
+            33.3749645,
+            45.19832643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1681152149",
+          "name": "Гостевой дом Уют",
+          "address": "Крым, Евпатория, улица Володи Дубинина, 7а",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 015-51-90"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–18:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.343276,
+          45.182332
+        ]
+      },
+      "properties": {
+        "name": "Магистраль",
+        "description": "ул. Кирова, 81, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3391705,
+            45.17942843
+          ],
+          [
+            33.3473815,
+            45.18523543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "107070652238",
+          "name": "Магистраль",
+          "address": "Россия, Республика Крым, Евпатория, улица Кирова, 81",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "8 (800) 775-73-15"
+            },
+            {
+              "type": "phone",
+              "formatted": "8 (800) 775-99-35"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.380668,
+          45.199146
+        ]
+      },
+      "properties": {
+        "name": "Лилия",
+        "description": "ул. Караева, 16, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3765625,
+            45.19624343
+          ],
+          [
+            33.3847735,
+            45.20204843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1775721822",
+          "name": "Лилия",
+          "address": "Россия, Республика Крым, Евпатория, улица Караева, 16",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 714-85-23"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.392878,
+          45.198355
+        ]
+      },
+      "properties": {
+        "name": "У Натальи",
+        "description": "Симферопольская ул., 93/1, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3887725,
+            45.19545243
+          ],
+          [
+            33.3969835,
+            45.20125743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "64807147685",
+          "name": "У Натальи",
+          "address": "Республика Крым, Евпатория, Симферопольская улица, 93/1",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.392789,
+          45.20021
+        ]
+      },
+      "properties": {
+        "name": "Мини-отель Коста Браво",
+        "description": "Симферопольская ул., 94, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.388684,
+            45.19730743
+          ],
+          [
+            33.396894,
+            45.20311243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "63736284107",
+          "name": "Мини-отель Коста Браво",
+          "address": "Россия, Республика Крым, Евпатория, Симферопольская улица, 94",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 767-81-14"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.334064,
+          45.174346
+        ]
+      },
+      "properties": {
+        "name": "Вироль",
+        "description": "ул. Маяковского, 17Б, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3299585,
+            45.17144193
+          ],
+          [
+            33.3381695,
+            45.17724993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "52817958906",
+          "name": "Вироль",
+          "address": "Россия, Республика Крым, Евпатория, улица Маяковского, 17Б",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.365702,
+          45.197616
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Русской 18",
+        "description": "Русская ул., 18, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3615965,
+            45.19471343
+          ],
+          [
+            33.3698075,
+            45.20051843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "35827845923",
+          "name": "Гостевой дом на Русской 18",
+          "address": "Россия, Республика Крым, Евпатория, Русская улица, 18",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.340846,
+          45.215428
+        ]
+      },
+      "properties": {
+        "name": "Уют",
+        "description": "Россия, Республика Крым, Евпатория, квартал Спутник-2, Южная улица",
+        "boundedBy": [
+          [
+            33.336965,
+            45.215133
+          ],
+          [
+            33.344727,
+            45.215723
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "91807269238",
+          "name": "Уют",
+          "address": "Россия, Республика Крым, Евпатория, квартал Спутник-2, Южная улица",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+380 (99) 511-15-11"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.382924,
+          45.203218
+        ]
+      },
+      "properties": {
+        "name": "Русалочка",
+        "description": "Красная ул., 17, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.378819,
+            45.20031593
+          ],
+          [
+            33.387029,
+            45.20611993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "32898682284",
+          "name": "Русалочка",
+          "address": "Россия, Республика Крым, Евпатория, Красная улица, 17",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.363981,
+          45.20023
+        ]
+      },
+      "properties": {
+        "name": "Mari's",
+        "description": "Интернациональная ул., 79, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3598755,
+            45.19732743
+          ],
+          [
+            33.3680865,
+            45.20313243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "142050375674",
+          "name": "Mari's",
+          "address": "Россия, Республика Крым, Евпатория, Интернациональная улица, 79",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.365253,
+          45.19108
+        ]
+      },
+      "properties": {
+        "name": "Рандеву",
+        "description": "ул. Гагарина, 7, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3611475,
+            45.18817693
+          ],
+          [
+            33.3693585,
+            45.19398293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "118680739043",
+          "name": "Рандеву",
+          "address": "Россия, Республика Крым, Евпатория, улица Гагарина, 7",
+          "url": "http://ерандеву.рус/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 551-01-81"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–20:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "20:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.376768,
+          45.201498
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на переулке Сквозном 2/3",
+        "description": "Сквозной пер., 2/3, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3726625,
+            45.19859543
+          ],
+          [
+            33.3808735,
+            45.20440043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "236329979149",
+          "name": "Гостевой дом на переулке Сквозном 2/3",
+          "address": "Россия, Республика Крым, Евпатория, Сквозной переулок, 2/3",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.3564,
+          45.188099
+        ]
+      },
+      "properties": {
+        "name": "Oasis",
+        "description": "Россия, Республика Крым, Евпатория, квартал Курортный",
+        "boundedBy": [
+          [
+            33.3414745,
+            45.18089104
+          ],
+          [
+            33.3713255,
+            45.19530604
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "169565376256",
+          "name": "Oasis",
+          "address": "Россия, Республика Крым, Евпатория, квартал Курортный",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.382967,
+          45.202923
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Красной 13а",
+        "description": "Красная ул., 13А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.378862,
+            45.20002093
+          ],
+          [
+            33.387072,
+            45.20582493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "173130088729",
+          "name": "Гостевой дом на Красной 13а",
+          "address": "Россия, Республика Крым, Евпатория, Красная улица, 13А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.358731,
+          45.204418
+        ]
+      },
+      "properties": {
+        "name": "City",
+        "description": "ул. Конституции, 34, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3546255,
+            45.20151593
+          ],
+          [
+            33.3628365,
+            45.20731993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "164432368804",
+          "name": "City",
+          "address": "Россия, Республика Крым, Евпатория, улица Конституции, 34",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.390496,
+          45.198232
+        ]
+      },
+      "properties": {
+        "name": "Станция Море",
+        "description": "ул. Революции, 1А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.386391,
+            45.19532943
+          ],
+          [
+            33.394601,
+            45.20113443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "109871944448",
+          "name": "Станция Море",
+          "address": "Россия, Республика Крым, Евпатория, улица Революции, 1А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 784-34-54"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.367032,
+          45.192372
+        ]
+      },
+      "properties": {
+        "name": "У Алёны",
+        "description": "ул. 13 Ноября, 15, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.362927,
+            45.18946943
+          ],
+          [
+            33.371137,
+            45.19527443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "144908541196",
+          "name": "У Алёны",
+          "address": "Россия, Республика Крым, Евпатория, улица 13 Ноября, 15",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 118-23-14"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "hotels",
+              "name": "Хостел"
+            },
+            {
+              "class": "hotels",
+              "name": "Общежитие"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.378048,
+          45.198006
+        ]
+      },
+      "properties": {
+        "name": "Tatyana",
+        "description": "Россия, Республика Крым, Евпатория, Училищная улица",
+        "boundedBy": [
+          [
+            33.3776435,
+            45.19680549
+          ],
+          [
+            33.3784525,
+            45.19920649
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "161046339043",
+          "name": "Tatyana",
+          "address": "Россия, Республика Крым, Евпатория, Училищная улица",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.367899,
+          45.189053
+        ]
+      },
+      "properties": {
+        "name": "Космос",
+        "description": "ул. Белинского, 9, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3637935,
+            45.18614993
+          ],
+          [
+            33.3720045,
+            45.19195593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "64367370145",
+          "name": "Космос",
+          "address": "Россия, Республика Крым, Евпатория, улица Белинского, 9",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.377202,
+          45.202291
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Огороднической 9",
+        "description": "Огородническая ул., 9, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.373097,
+            45.19938893
+          ],
+          [
+            33.381307,
+            45.20519293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "82952748887",
+          "name": "Гостевой дом на Огороднической 9",
+          "address": "Россия, Республика Крым, Евпатория, Огородническая улица, 9",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.36329,
+          45.201234
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Дзержинского 53",
+        "description": "ул. Дзержинского, 53, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.359185,
+            45.19833143
+          ],
+          [
+            33.367395,
+            45.20413643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "208425889687",
+          "name": "Гостевой дом на Дзержинского 53",
+          "address": "Россия, Республика Крым, Евпатория, улица Дзержинского, 53",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.366094,
+          45.195258
+        ]
+      },
+      "properties": {
+        "name": "Добрый Дом",
+        "description": "ул. Мориса Тореза, 3, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.361989,
+            45.19235543
+          ],
+          [
+            33.370199,
+            45.19816043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "11152092066",
+          "name": "Добрый Дом",
+          "address": "Россия, Республика Крым, Евпатория, улица Мориса Тореза, 3",
+          "url": "http://dobruy-dom.crimea-business.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-89-22"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 064-23-89"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.345963,
+          45.208363
+        ]
+      },
+      "properties": {
+        "name": "Гостевой Дом Бейтулла",
+        "description": "просп. Победы, 48, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3418575,
+            45.20546093
+          ],
+          [
+            33.3500685,
+            45.21126493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "159951817223",
+          "name": "Гостевой Дом Бейтулла",
+          "address": "Россия, Республика Крым, Евпатория, проспект Победы, 48",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.377773,
+          45.198233
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Красноармейском переулке 3",
+        "description": "Красноармейский пер., 3, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3736675,
+            45.19533043
+          ],
+          [
+            33.3818785,
+            45.20113543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "203492803710",
+          "name": "Гостевой дом на Красноармейском переулке 3",
+          "address": "Россия, Республика Крым, Евпатория, Красноармейский переулок, 3",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.368786,
+          45.20566
+        ]
+      },
+      "properties": {
+        "name": "Гостевой Дом Вольная 58",
+        "description": "Вольная ул., 58, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3646805,
+            45.20275793
+          ],
+          [
+            33.3728915,
+            45.20856193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "123596674701",
+          "name": "Гостевой Дом Вольная 58",
+          "address": "Россия, Республика Крым, Евпатория, Вольная улица, 58",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 861-39-25"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.36219,
+          45.192055
+        ]
+      },
+      "properties": {
+        "name": "Guest House Svetlana",
+        "description": "ул. Токарева, 36, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.358085,
+            45.18915193
+          ],
+          [
+            33.366295,
+            45.19495793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "122021629502",
+          "name": "Guest House Svetlana",
+          "address": "Россия, Республика Крым, Евпатория, улица Токарева, 36",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.340607,
+          45.180664
+        ]
+      },
+      "properties": {
+        "name": "Pervomaysky Health Resort",
+        "description": "ул. Кирова, 91-101, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.336502,
+            45.17776043
+          ],
+          [
+            33.344712,
+            45.18356743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "72422504849",
+          "name": "Pervomaysky Health Resort",
+          "address": "Россия, Республика Крым, Евпатория, улица Кирова, 91-101",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.353409,
+          45.186428
+        ]
+      },
+      "properties": {
+        "name": "Guest House u Natalii",
+        "description": "ул. Пушкина, 62, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3493035,
+            45.18352493
+          ],
+          [
+            33.3575145,
+            45.18933093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "109343792413",
+          "name": "Guest House u Natalii",
+          "address": "Россия, Республика Крым, Евпатория, улица Пушкина, 62",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.33957,
+          45.187662
+        ]
+      },
+      "properties": {
+        "name": "Алые паруса",
+        "description": "ул. Полупанова, 25А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3354645,
+            45.18475893
+          ],
+          [
+            33.3436755,
+            45.19056493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "36949407421",
+          "name": "Алые паруса",
+          "address": "Россия, Республика Крым, Евпатория, улица Полупанова, 25А",
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.371964,
+          45.198791
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом",
+        "description": "Тихий пер., 9, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3678585,
+            45.19588843
+          ],
+          [
+            33.3760695,
+            45.20169343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1315932299",
+          "name": "Гостевой дом",
+          "address": "Россия, Республика Крым, Евпатория, Тихий переулок, 9",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (36569) 2-33-84"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.344749,
+          45.179806
+        ]
+      },
+      "properties": {
+        "name": "Gagarin детский оздоровительный лагерь",
+        "description": "ул. Полупанова, 10, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3406435,
+            45.17690243
+          ],
+          [
+            33.3488545,
+            45.18270943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "68129402698",
+          "name": "Gagarin детский оздоровительный лагерь",
+          "address": "Россия, Республика Крым, Евпатория, улица Полупанова, 10",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.378681,
+          45.198238
+        ]
+      },
+      "properties": {
+        "name": "Guest house on Tuchina",
+        "description": "ул. Тучина, 21, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.374576,
+            45.19533543
+          ],
+          [
+            33.382786,
+            45.20114043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "14119987642",
+          "name": "Guest house on Tuchina",
+          "address": "Россия, Республика Крым, Евпатория, улица Тучина, 21",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.371376,
+          45.199226
+        ]
+      },
+      "properties": {
+        "name": "U Marii",
+        "description": "ул. Дмитрия Ульянова, 50/23, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3672705,
+            45.19632343
+          ],
+          [
+            33.3754815,
+            45.20212843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "65350290261",
+          "name": "U Marii",
+          "address": "Россия, Республика Крым, Евпатория, улица Дмитрия Ульянова, 50/23",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "Нет информации"
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.360214,
+          45.191718
+        ]
+      },
+      "properties": {
+        "name": "В гостях у Светланы",
+        "description": "ул. 13 Ноября, 62, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3561085,
+            45.18881493
+          ],
+          [
+            33.3643195,
+            45.19462093
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "230073757394",
+          "name": "В гостях у Светланы",
+          "address": "Россия, Республика Крым, Евпатория, улица 13 Ноября, 62",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.363827,
+          45.187107
+        ]
+      },
+      "properties": {
+        "name": "Guesthouse Irina",
+        "description": "ул. Токарева, 18, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3597215,
+            45.18420393
+          ],
+          [
+            33.3679325,
+            45.19000993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "62275506680",
+          "name": "Guesthouse Irina",
+          "address": "Россия, Республика Крым, Евпатория, улица Токарева, 18",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.37907,
+          45.200096
+        ]
+      },
+      "properties": {
+        "name": "Guest house Valentina",
+        "description": "Интернациональная ул., 46, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3749645,
+            45.19719343
+          ],
+          [
+            33.3831755,
+            45.20299843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "222415454239",
+          "name": "Guest house Valentina",
+          "address": "Россия, Республика Крым, Евпатория, Интернациональная улица, 46",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.381222,
+          45.202534
+        ]
+      },
+      "properties": {
+        "name": "Guest House Iris",
+        "description": "Россия, Республика Крым, Евпатория, Слободская улица",
+        "boundedBy": [
+          [
+            33.3798295,
+            45.2018035
+          ],
+          [
+            33.3826145,
+            45.2032645
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "83361810737",
+          "name": "Guest House Iris",
+          "address": "Россия, Республика Крым, Евпатория, Слободская улица",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.36293,
+          45.191277
+        ]
+      },
+      "properties": {
+        "name": "Rooms near the sea",
+        "description": "ул. Гагарина, 24, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.358825,
+            45.18837393
+          ],
+          [
+            33.367035,
+            45.19417993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "129534301126",
+          "name": "Rooms near the sea",
+          "address": "Россия, Республика Крым, Евпатория, улица Гагарина, 24",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.368149,
+          45.186724
+        ]
+      },
+      "properties": {
+        "name": "Ударник",
+        "description": "ул. Гоголя, 5, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.364044,
+            45.18382093
+          ],
+          [
+            33.372254,
+            45.18962693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "101465819191",
+          "name": "Ударник",
+          "address": "Россия, Республика Крым, Евпатория, улица Гоголя, 5",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "пн-пт 09:00–18:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Monday": true,
+                "Tuesday": true,
+                "Wednesday": true,
+                "Thursday": true,
+                "Friday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.353268,
+          45.180397
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом у Дмитрия",
+        "description": "Московская ул., 22А, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3491625,
+            45.17749343
+          ],
+          [
+            33.3573735,
+            45.18330043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "122518062083",
+          "name": "Гостевой дом у Дмитрия",
+          "address": "Россия, Евпатория, Московская улица, 22А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.369035,
+          45.187465
+        ]
+      },
+      "properties": {
+        "name": "Дом для отдыха на Санаторской 11",
+        "description": "Санаторская ул., 1, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.36493,
+            45.18456193
+          ],
+          [
+            33.37314,
+            45.19036793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "107534418655",
+          "name": "Дом для отдыха на Санаторской 11",
+          "address": "Россия, Республика Крым, Евпатория, Санаторская улица, 1",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.347672,
+          45.183895
+        ]
+      },
+      "properties": {
+        "name": "U Yevgenii",
+        "description": "ул. Кирова, 82, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.343567,
+            45.18099193
+          ],
+          [
+            33.351777,
+            45.18679793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "162233710034",
+          "name": "U Yevgenii",
+          "address": "Россия, Республика Крым, Евпатория, улица Кирова, 82",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.355635,
+          45.181997
+        ]
+      },
+      "properties": {
+        "name": "СК Городки, гостиница",
+        "description": "ул. Горького, 5, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.341648,
+            45.17479854
+          ],
+          [
+            33.369622,
+            45.18919454
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "186880703384",
+          "name": "СК Городки, гостиница",
+          "address": "Россия, Республика Крым, Евпатория, улица Горького, 5",
+          "url": "http://skgorodki.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 938-40-43"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 938-40-44"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "Нет информации"
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.350124,
+          45.187302
+        ]
+      },
+      "properties": {
+        "name": "Elena Guest House",
+        "description": "Московская ул., 50, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3460185,
+            45.18439893
+          ],
+          [
+            33.3542295,
+            45.19020493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "100829732040",
+          "name": "Elena Guest House",
+          "address": "Россия, Республика Крым, Евпатория, Московская улица, 50",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.381459,
+          45.196949
+        ]
+      },
+      "properties": {
+        "name": "Помор",
+        "description": "наб. Валентины Терешковой, 25, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.377354,
+            45.19404643
+          ],
+          [
+            33.385564,
+            45.19985143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "5016047538",
+          "name": "Помор",
+          "address": "Республика Крым, Евпатория, набережная Валентины Терешковой, 25",
+          "url": "http://shtorm.biz/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-32-29"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (50) 667-58-85"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 855-32-89"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "Нет информации"
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.375584,
+          45.198837
+        ]
+      },
+      "properties": {
+        "name": "Guest House Vlada",
+        "description": "Караимская ул., 54/33, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3714785,
+            45.19593443
+          ],
+          [
+            33.3796895,
+            45.20173943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "81612281335",
+          "name": "Guest House Vlada",
+          "address": "Россия, Республика Крым, Евпатория, Караимская улица, 54/33",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "Нет информации"
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.379752,
+          45.197216
+        ]
+      },
+      "properties": {
+        "name": "Memory",
+        "description": "ул. Караева, 1, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.375647,
+            45.19431343
+          ],
+          [
+            33.383857,
+            45.20011843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "212325046630",
+          "name": "Memory",
+          "address": "Россия, Республика Крым, Евпатория, улица Караева, 1",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+380 (50) 989-55-98"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (50) 497-80-39"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.377309,
+          45.198632
+        ]
+      },
+      "properties": {
+        "name": "Мотивы",
+        "description": "Караимская ул., 43, Евпатория, Россия",
+        "boundedBy": [
+          [
+            33.3732035,
+            45.19572943
+          ],
+          [
+            33.3814145,
+            45.20153443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "145162090541",
+          "name": "Мотивы",
+          "address": "Россия, Республика Крым, Евпатория, Караимская улица, 43",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

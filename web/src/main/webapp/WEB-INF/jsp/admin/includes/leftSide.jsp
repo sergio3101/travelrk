@@ -52,6 +52,7 @@
                         <li><a><i class="fa fa-info"></i> Справочники <span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu">
                                 <li class="current-page"><a href="/admin/customers">Заказчики</a></li>
+                                <li class="current-page"><a href="/admin/searchcustomers">Поиск заказчиков</a></li>
                                 <li class="current-page"><a href="/admin/regions">Регионы</a></li>
                             </ul>
                         </li>

@@ -12,7 +12,11 @@ import org.springframework.web.servlet.ModelAndView;
 import ru.flystar.travelrk.domain.persistents.PanoScan;
 import ru.flystar.travelrk.domain.persistents.Scene;
 import ru.flystar.travelrk.domain.persistents.Video;
-import ru.flystar.travelrk.service.*;
+import ru.flystar.travelrk.service.CategoryOfContentService;
+import ru.flystar.travelrk.service.PanoScanService;
+import ru.flystar.travelrk.service.RegionService;
+import ru.flystar.travelrk.service.SceneService;
+import ru.flystar.travelrk.service.YoutubeService;
 
 /**
  * Project: travelrk
@@ -22,28 +26,28 @@ import ru.flystar.travelrk.service.*;
 @Controller
 @RequestMapping(value = "/admin")
 public class AjaxFormController {
-    private YoutubeService youtubeService;
-    private RegionService regionService;
-    private CategoryOfContentService categoryOfContentService;
-    private PanoScanService panoScanService;
-    private SceneService sceneService;
+  private YoutubeService youtubeService;
+  private RegionService regionService;
+  private CategoryOfContentService categoryOfContentService;
+  private PanoScanService panoScanService;
+  private SceneService sceneService;
 
-    @Autowired
-    public AjaxFormController(YoutubeService youtubeService, RegionService regionService, CategoryOfContentService categoryOfContentService, PanoScanService panoScanService, SceneService sceneService) {
-        this.youtubeService = youtubeService;
-        this.regionService = regionService;
-        this.categoryOfContentService = categoryOfContentService;
-        this.panoScanService = panoScanService;
-        this.sceneService = sceneService;
-    }
+  @Autowired
+  public AjaxFormController(YoutubeService youtubeService, RegionService regionService, CategoryOfContentService categoryOfContentService, PanoScanService panoScanService, SceneService sceneService) {
+    this.youtubeService = youtubeService;
+    this.regionService = regionService;
+    this.categoryOfContentService = categoryOfContentService;
+    this.panoScanService = panoScanService;
+    this.sceneService = sceneService;
+  }
 
-    @RequestMapping(value = "/ajaxForm/ajaxGetVideoFormById", method = RequestMethod.POST)
-    public ModelAndView ajaxGetVideoFormById(@RequestParam("idForEdit") String idForEdit, @ModelAttribute("videoForm") Video videoForm, BindingResult result) {
-        ModelAndView mov = new ModelAndView("admin/ajaxForm/editVideo");
-        Video videoById = youtubeService.getVideoById(idForEdit);
-        mov.addObject("videoForm", videoById);
-        mov.addObject("regionList", regionService.getRegionList());
-        mov.addObject("categoryList", categoryOfContentService.getCategoryList());
+  @RequestMapping(value = "/ajaxForm/ajaxGetVideoFormById", method = RequestMethod.POST)
+  public ModelAndView ajaxGetVideoFormById(@RequestParam("idForEdit") String idForEdit, @ModelAttribute("videoForm") Video videoForm, BindingResult result) {
+    ModelAndView mov = new ModelAndView("admin/ajaxForm/editVideo");
+    Video videoById = youtubeService.getVideoById(idForEdit);
+    mov.addObject("videoForm", videoById);
+    mov.addObject("regionList", regionService.getRegionList());
+    mov.addObject("categoryList", categoryOfContentService.getCategoryList());
         /*if (result.hasErrors()) {
             List<ObjectError> list = result.getAllErrors();
             log.info("Error binding!!!!!");
@@ -54,23 +58,23 @@ public class AjaxFormController {
                 log.info(err.toString());
             }
         }*/
-        log.info(videoById.getYoutubeId());
-        log.info(videoById.getCategoryOfContent().getName());
-        log.info(videoById.getRegion().getName());
-        return mov;
-    }
+    log.info(videoById.getYoutubeId());
+    log.info(videoById.getCategoryOfContent().getName());
+    log.info(videoById.getRegion().getName());
+    return mov;
+  }
 
-    @RequestMapping(value = "/ajaxForm/ajaxGetPanoscanFormById", method = RequestMethod.POST)
-    public ModelAndView ajaxGetPanoscanFormById(@RequestParam("idForEdit") String idForEdit, @ModelAttribute("panoscanForm") PanoScan panoScan) {
-        ModelAndView mov = new ModelAndView("admin/ajaxForm/editPanoscan");
-        mov.addObject("panoscanForm", panoScanService.getPanoScanByPath(idForEdit));
-        return mov;
-    }
+  @RequestMapping(value = "/ajaxForm/ajaxGetPanoscanFormById", method = RequestMethod.POST)
+  public ModelAndView ajaxGetPanoscanFormById(@RequestParam("idForEdit") String idForEdit, @ModelAttribute("panoscanForm") PanoScan panoScan) {
+    ModelAndView mov = new ModelAndView("admin/ajaxForm/editPanoscan");
+    mov.addObject("panoscanForm", panoScanService.getPanoScanByPath(idForEdit));
+    return mov;
+  }
 
-    @RequestMapping(value = "/ajaxForm/ajaxGetScenaFormByName", method = RequestMethod.POST)
-    public ModelAndView ajaxGetScenaFormByName(@RequestParam("name") String name, @RequestParam("tourid") int tourId, @ModelAttribute("panoscanForm") Scene scene) {
-        ModelAndView mov = new ModelAndView("admin/ajaxForm/editScena");
-        mov.addObject("scenaForm", sceneService.getSceneByNameAndTourId(name,tourId));
-        return mov;
-    }
+  @RequestMapping(value = "/ajaxForm/ajaxGetScenaFormByName", method = RequestMethod.POST)
+  public ModelAndView ajaxGetScenaFormByName(@RequestParam("name") String name, @RequestParam("tourid") int tourId, @ModelAttribute("panoscanForm") Scene scene) {
+    ModelAndView mov = new ModelAndView("admin/ajaxForm/editScena");
+    mov.addObject("scenaForm", sceneService.getSceneByNameAndTourId(name, tourId));
+    return mov;
+  }
 }

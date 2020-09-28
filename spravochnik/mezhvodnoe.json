@@ -1,0 +1,3902 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "ResponseMetaData": {
+      "SearchResponse": {
+        "found": 83,
+        "display": "multiple"
+      },
+      "SearchRequest": {
+        "request": "гостиница межводное республика крым",
+        "skip": 0,
+        "results": 500,
+        "boundedBy": [
+          [
+            37.048427,
+            55.43644866
+          ],
+          [
+            38.175903,
+            56.04690174
+          ]
+        ]
+      }
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.834951,
+          45.593524
+        ]
+      },
+      "properties": {
+        "name": "Кемпинг Межводное",
+        "description": "Морская ул., 65, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8308455,
+            45.59064193
+          ],
+          [
+            32.8390565,
+            45.59640593
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "21631322808",
+          "name": "Кемпинг Межводное",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Морская улица, 65",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 740-58-73"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.839166,
+          45.591005
+        ]
+      },
+      "properties": {
+        "name": "Лидия",
+        "description": "ул. 70 лет Октября, 12, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8350605,
+            45.58812293
+          ],
+          [
+            32.8432715,
+            45.59388693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "77201558831",
+          "name": "Лидия",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица 70 лет Октября, 12",
+          "url": "https://lidiya-rk.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-68-35"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.846817,
+          45.570395
+        ]
+      },
+      "properties": {
+        "name": "Караван-сарай",
+        "description": "Черноморское ш., 54А, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8427115,
+            45.56751143
+          ],
+          [
+            32.8509225,
+            45.57327843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "144921970415",
+          "name": "Караван-сарай",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Черноморское шоссе, 54А",
+          "url": "http://caravan-sarai-mezhvodnoe.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 008-52-66"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.847141,
+          45.577301
+        ]
+      },
+      "properties": {
+        "name": "Edem Guest House",
+        "description": "Черноморское ш., 31, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.843036,
+            45.57441793
+          ],
+          [
+            32.851246,
+            45.58018393
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "183937312419",
+          "name": "Edem Guest House",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Черноморское шоссе, 31",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-70-41"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.839708,
+          45.583812
+        ]
+      },
+      "properties": {
+        "name": "Ямайка",
+        "description": "Пограничная ул., 1А, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.835603,
+            45.58092893
+          ],
+          [
+            32.843813,
+            45.58669493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "117808263921",
+          "name": "Ямайка",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Пограничная улица, 1А",
+          "url": "https://jamaica-hotel.net/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (982) 147-67-07"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.834376,
+          45.587861
+        ]
+      },
+      "properties": {
+        "name": "Гостиница Дворик",
+        "description": "Комсомольская ул., 32, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.830271,
+            45.58497843
+          ],
+          [
+            32.838481,
+            45.59074343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "234022283561",
+          "name": "Гостиница Дворик",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Комсомольская улица, 32",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-80-30"
+            },
+            {
+              "type": "phone",
+              "formatted": "+380 (66) 558-20-28"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.850816,
+          45.586291
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Комарова 62",
+        "description": "ул. Комарова, 62, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.846711,
+            45.58340843
+          ],
+          [
+            32.854921,
+            45.58917343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "101184711026",
+          "name": "Гостевой дом на Комарова 62",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Комарова, 62",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.833522,
+          45.591298
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом на Морской 39",
+        "description": "Морская ул., 39, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8294165,
+            45.58841593
+          ],
+          [
+            32.8376275,
+            45.59417993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "56854996556",
+          "name": "Гостевой дом на Морской 39",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Морская улица, 39",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 091-74-25"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.841749,
+          45.582714
+        ]
+      },
+      "properties": {
+        "name": "Пальмира",
+        "description": "Пограничная ул., 7/2, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.837644,
+            45.57983143
+          ],
+          [
+            32.845854,
+            45.58559643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1047481091",
+          "name": "Пальмира",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Пограничная улица, 7/2",
+          "url": "http://www.palmira-more.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 135-09-29"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 10:00–20:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "10:00:00",
+                    "to": "20:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.824764,
+          45.585375
+        ]
+      },
+      "properties": {
+        "name": "АйСу",
+        "description": "Приморская ул., 80, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.820659,
+            45.58249243
+          ],
+          [
+            32.828869,
+            45.58825743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "74511485327",
+          "name": "АйСу",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Приморская улица, 80",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 838-68-28"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (988) 967-72-72"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.848557,
+          45.583626
+        ]
+      },
+      "properties": {
+        "name": "Магнолия",
+        "description": "ул. Будённого, 11, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8444515,
+            45.58074343
+          ],
+          [
+            32.8526625,
+            45.58650843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1186068502",
+          "name": "Магнолия",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Будённого, 11",
+          "url": "http://www.gh-magnoliya.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-72-30"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-72-24"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.834763,
+          45.585484
+        ]
+      },
+      "properties": {
+        "name": "Guest House Casa De Lara",
+        "description": "ул. Мира, 2А, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8306575,
+            45.58260143
+          ],
+          [
+            32.8388685,
+            45.58836643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "101188705827",
+          "name": "Guest House Casa De Lara",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира, 2А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.837866,
+          45.589177
+        ]
+      },
+      "properties": {
+        "name": "Крым",
+        "description": "ул. 70 лет Октября, 2Л, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8337605,
+            45.58629493
+          ],
+          [
+            32.8419715,
+            45.59205893
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "157184701875",
+          "name": "Крым",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица 70 лет Октября, 2Л",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-77-58"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.847528,
+          45.569014
+        ]
+      },
+      "properties": {
+        "name": "Мини Отель у Петровича",
+        "description": "Советская ул., 57, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8384865,
+            45.55095808
+          ],
+          [
+            32.8565695,
+            45.58706408
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "171531932370",
+          "name": "Мини Отель у Петровича",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Советская улица, 57",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (903) 720-89-11"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.838747,
+          45.585199
+        ]
+      },
+      "properties": {
+        "name": "Смак",
+        "description": "Приморская ул., 24, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8346415,
+            45.58231643
+          ],
+          [
+            32.8428525,
+            45.58808143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "37453679995",
+          "name": "Смак",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Приморская улица, 24",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 719-10-40"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–00:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "00:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.832544,
+          45.586635
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Вилла Эспаньола",
+        "description": "Аэрофлотский пер., 7, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8284385,
+            45.58375243
+          ],
+          [
+            32.8366495,
+            45.58951743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1691412422",
+          "name": "Гостевой дом Вилла Эспаньола",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Аэрофлотский переулок, 7",
+          "url": "http://виллаэспаньола.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 873-17-15"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.827185,
+          45.585725
+        ]
+      },
+      "properties": {
+        "name": "Laura Guesthouse",
+        "description": "ул. Авдет, 23, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8230795,
+            45.58284243
+          ],
+          [
+            32.8312905,
+            45.58860743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "227736800542",
+          "name": "Laura Guesthouse",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Авдет, 23",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "Нет информации"
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.847467,
+          45.575577
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Черноморское ш., 35, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.843362,
+            45.57269393
+          ],
+          [
+            32.851572,
+            45.57845993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "64104376432",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Черноморское шоссе, 35",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.847716,
+          45.57598
+        ]
+      },
+      "properties": {
+        "name": "Мари-Анна",
+        "description": "Советская ул., 20, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8436105,
+            45.57309693
+          ],
+          [
+            32.8518215,
+            45.57886293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1721760424",
+          "name": "Мари-Анна",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Советская улица, 20",
+          "url": "http://mari-anna.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 831-95-24"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 861-01-76"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.830344,
+          45.584959
+        ]
+      },
+      "properties": {
+        "name": "Амидея",
+        "description": "Приморская ул., 40, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8262385,
+            45.58207643
+          ],
+          [
+            32.8344495,
+            45.58784143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "61874906936",
+          "name": "Амидея",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Приморская улица, 40",
+          "url": "http://amideya.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 706-69-87"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.834861,
+          45.589753
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Оазис",
+        "description": "ул. Мира, 40, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.830756,
+            45.58687043
+          ],
+          [
+            32.838966,
+            45.59263543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "160084061853",
+          "name": "Гостевой дом Оазис",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира, 40",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 229-25-17"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.84847,
+          45.575844
+        ]
+      },
+      "properties": {
+        "name": "Алиса",
+        "description": "Советская ул., 22А, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8443645,
+            45.57296093
+          ],
+          [
+            32.8525755,
+            45.57872693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "134540436695",
+          "name": "Алиса",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Советская улица, 22А",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (919) 441-84-48"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 726-21-37"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.834323,
+          45.587149
+        ]
+      },
+      "properties": {
+        "name": "Касабланка",
+        "description": "ул. Мира, 5, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.830218,
+            45.58426643
+          ],
+          [
+            32.838428,
+            45.59003143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "156664034952",
+          "name": "Касабланка",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира, 5",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.832316,
+          45.589415
+        ]
+      },
+      "properties": {
+        "name": "Роза ветров",
+        "description": "Морская ул., 19, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8282105,
+            45.58653243
+          ],
+          [
+            32.8364215,
+            45.59229743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "100230242084",
+          "name": "Роза ветров",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Морская улица, 19",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (917) 464-46-98"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.840808,
+          45.593171
+        ]
+      },
+      "properties": {
+        "name": "Вилла Сиеста",
+        "description": "ул. 70 лет Октября, 30, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8367025,
+            45.59028893
+          ],
+          [
+            32.8449135,
+            45.59605293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "104249896342",
+          "name": "Вилла Сиеста",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица 70 лет Октября, 30",
+          "url": "https://villa-siesta.nethouse.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (926) 828-95-85"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 124-22-04"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–00:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "00:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.832525,
+          45.588788
+        ]
+      },
+      "properties": {
+        "name": "Агидель",
+        "description": "Морская ул., 11, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8284195,
+            45.58590543
+          ],
+          [
+            32.8366305,
+            45.59167043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "47438590925",
+          "name": "Агидель",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Морская улица, 11",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (906) 419-66-54"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 870-59-41"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.838512,
+          45.593601
+        ]
+      },
+      "properties": {
+        "name": "Скала",
+        "description": "ул. Амет-Хана Султана, 47, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.834407,
+            45.59071893
+          ],
+          [
+            32.842617,
+            45.59648293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1169502219",
+          "name": "Скала",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Амет-Хана Султана, 47",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-38-39"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-38-49"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.83537,
+          45.58611
+        ]
+      },
+      "properties": {
+        "name": "Венеция",
+        "description": "Юбилейная ул., 19, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8312645,
+            45.58322743
+          ],
+          [
+            32.8394755,
+            45.58899243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "177045337763",
+          "name": "Венеция",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Юбилейная улица, 19",
+          "url": "https://www.veneciya-hotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 036-65-51"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 08:00–19:00, перерыв 13:00–14:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "08:00:00",
+                    "to": "13:00:00"
+                  },
+                  {
+                    "from": "14:00:00",
+                    "to": "19:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.842167,
+          45.583452
+        ]
+      },
+      "properties": {
+        "name": "Домики возле моря",
+        "description": "Пограничная ул., 6, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8148715,
+            45.55354649
+          ],
+          [
+            32.8694625,
+            45.61334149
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1303709900",
+          "name": "Домики возле моря",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Пограничная улица, 6",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 762-72-50"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.830046,
+          45.586849
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Арт",
+        "description": "Новая ул., 10, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.825941,
+            45.58396643
+          ],
+          [
+            32.834151,
+            45.58973143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "75072358733",
+          "name": "Гостевой дом Арт",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Новая улица, 10",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 754-23-25"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 754-23-24"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.843472,
+          45.587749
+        ]
+      },
+      "properties": {
+        "name": "Гостевой Дом на Октябрьской",
+        "description": "Октябрьская ул., 22, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8348975,
+            45.5843904
+          ],
+          [
+            32.8520465,
+            45.5911074
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "101475755768",
+          "name": "Гостевой Дом на Октябрьской",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Октябрьская улица, 22",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (916) 317-57-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.826561,
+          45.587766
+        ]
+      },
+      "properties": {
+        "name": "Гостиный дом Белый Хорват",
+        "description": "ул. Грушевского, 15, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8224555,
+            45.58488343
+          ],
+          [
+            32.8306665,
+            45.59064843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1681169415",
+          "name": "Гостиный дом Белый Хорват",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Грушевского, 15",
+          "url": "http://whitecroats.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 846-95-49"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-02-54"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (985) 266-90-75"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.840671,
+          45.58782
+        ]
+      },
+      "properties": {
+        "name": "Татьяна",
+        "description": "ул. Ленина, 1, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.836566,
+            45.58493743
+          ],
+          [
+            32.844776,
+            45.59070243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "68906281005",
+          "name": "Татьяна",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Ленина, 1",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 066-53-37"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.846799,
+          45.569085
+        ]
+      },
+      "properties": {
+        "name": "Западный",
+        "description": "Черноморское ш., 58, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8426935,
+            45.56620193
+          ],
+          [
+            32.8509045,
+            45.57196793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "13381680504",
+          "name": "Западный",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Черноморское шоссе, 58",
+          "url": "http://sportshotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (985) 805-60-60"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 805-60-50"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.842178,
+          45.584051
+        ]
+      },
+      "properties": {
+        "name": "Вилла Астория",
+        "description": "Приморская ул., 11, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.838073,
+            45.58116843
+          ],
+          [
+            32.846283,
+            45.58693343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "116063786609",
+          "name": "Вилла Астория",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Приморская улица, 11",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-70-01"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 794-75-72"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "restaurants",
+              "name": "Ресторан"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.838909,
+          45.59132
+        ]
+      },
+      "properties": {
+        "name": "Катюша",
+        "description": "ул. 70 лет Октября, 10, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.837575,
+            45.58839042
+          ],
+          [
+            32.840243,
+            45.59424942
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "83527254156",
+          "name": "Катюша",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица 70 лет Октября, 10",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-77-49"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.847775,
+          45.585951
+        ]
+      },
+      "properties": {
+        "name": "У дяди Васи",
+        "description": "Октябрьская ул., 26, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8436695,
+            45.58306843
+          ],
+          [
+            32.8518805,
+            45.58883343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "190073446893",
+          "name": "У дяди Васи",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Октябрьская улица, 26",
+          "url": "https://udv-hotel.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 710-27-05"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.845048,
+          45.589709
+        ]
+      },
+      "properties": {
+        "name": "Green Housξ гостевой дом",
+        "description": "ул. Шевченко, 17, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.840943,
+            45.58682643
+          ],
+          [
+            32.849153,
+            45.59259143
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "244636312423",
+          "name": "Green Housξ гостевой дом",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Шевченко, 17",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 894-89-04"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.843305,
+          45.583395
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Кодак",
+        "description": "Приморская ул., 5, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8392,
+            45.58051243
+          ],
+          [
+            32.84741,
+            45.58627743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1767275042",
+          "name": "Гостевой дом Кодак",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Приморская улица, 5",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 012-04-00"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–18:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.846063,
+          45.584328
+        ]
+      },
+      "properties": {
+        "name": "Отдых",
+        "description": "ул. Будённого, 1, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.841958,
+            45.58144543
+          ],
+          [
+            32.850168,
+            45.58721043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "132314870943",
+          "name": "Отдых",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Будённого, 1",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 074-23-21"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.833428,
+          45.586653
+        ]
+      },
+      "properties": {
+        "name": "У Ирины",
+        "description": "Россия, Республика Крым, Черноморский район, село Межводное, Аэрофлотский переулок",
+        "boundedBy": [
+          [
+            32.832148,
+            45.586625
+          ],
+          [
+            32.834708,
+            45.586681
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "100223953059",
+          "name": "У Ирины",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Аэрофлотский переулок",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-03-73"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.839778,
+          45.592132
+        ]
+      },
+      "properties": {
+        "name": "Москвичка",
+        "description": "ул. 70 лет Октября, 20, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8124825,
+            45.56222648
+          ],
+          [
+            32.8670735,
+            45.62202148
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "25755006880",
+          "name": "Москвичка",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица 70 лет Октября, 20",
+          "url": "http://moskvichka.tyrs.biz/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 009-04-09"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.827084,
+          45.587583
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Г. О. А.",
+        "description": "ул. Грушевского, 16, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8229785,
+            45.58470093
+          ],
+          [
+            32.8311895,
+            45.59046493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "14101054887",
+          "name": "Гостевой дом Г. О. А.",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Грушевского, 16",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 778-40-96"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.846422,
+          45.586495
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Эдие",
+        "description": "Россия, Республика Крым, Черноморский район, село Межводное, Первомайская улица",
+        "boundedBy": [
+          [
+            32.842721,
+            45.58116525
+          ],
+          [
+            32.850123,
+            45.59182425
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1268822364",
+          "name": "Гостевой дом Эдие",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Первомайская улица",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.847008,
+          45.587837
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Анастасия",
+        "description": "ул. Комарова, 33, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.842903,
+            45.58495443
+          ],
+          [
+            32.851113,
+            45.59071943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1241660319",
+          "name": "Гостевой дом Анастасия",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Комарова, 33",
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.836157,
+          45.592517
+        ]
+      },
+      "properties": {
+        "name": "Александрия",
+        "description": "ул. Мира, 51, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8320515,
+            45.58963443
+          ],
+          [
+            32.8402625,
+            45.59539943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "148301325817",
+          "name": "Александрия",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира, 51",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.848738,
+          45.582027
+        ]
+      },
+      "properties": {
+        "name": "Морская Звезда",
+        "description": "ул. Будённого, 12, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8214425,
+            45.55212149
+          ],
+          [
+            32.8760335,
+            45.61191649
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1729873297",
+          "name": "Морская Звезда",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Будённого, 12",
+          "url": "http://www.westkrim.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (985) 805-60-60"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.846838,
+          45.578792
+        ]
+      },
+      "properties": {
+        "name": "Пансионат Эльвина",
+        "description": "Россия, Республика Крым, Черноморский район, село Межводное",
+        "boundedBy": [
+          [
+            32.8195425,
+            45.54888649
+          ],
+          [
+            32.8741335,
+            45.60868149
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "190859175879",
+          "name": "Пансионат Эльвина",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 039-09-20"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.835661,
+          45.585876
+        ]
+      },
+      "properties": {
+        "name": "Гостевой Дом Лазурный Берег",
+        "description": "Юбилейная ул., 21, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8315555,
+            45.58299343
+          ],
+          [
+            32.8397665,
+            45.58875843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1132556998",
+          "name": "Гостевой Дом Лазурный Берег",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Юбилейная улица, 21",
+          "url": "http://межводное.su/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (915) 000-76-09"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (925) 040-09-77"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.834355,
+          45.586414
+        ]
+      },
+      "properties": {
+        "name": "Каса де Лара",
+        "description": "Аэрофлотский пер., 1, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.83025,
+            45.58353143
+          ],
+          [
+            32.83846,
+            45.58929643
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "213697524069",
+          "name": "Каса де Лара",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Аэрофлотский переулок, 1",
+          "url": "http://kasadelara.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 774-23-61"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 774-23-60"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.833378,
+          45.585507
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Дарья",
+        "description": "Приморская ул., 32, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8292725,
+            45.58262443
+          ],
+          [
+            32.8374835,
+            45.58838943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1705257570",
+          "name": "Гостевой дом Дарья",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Приморская улица, 32",
+          "url": "http://mezhvodnoe-daria.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 794-06-03"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Санаторий"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.846384,
+          45.58691
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом",
+        "description": "Октябрьская ул., 27, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8422785,
+            45.58402743
+          ],
+          [
+            32.8504895,
+            45.58979243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "184637549555",
+          "name": "Гостевой дом",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Октябрьская улица, 27",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 704-14-54"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.832204,
+          45.586404
+        ]
+      },
+      "properties": {
+        "name": "Мини-пансионат Тропиканка",
+        "description": "Аэрофлотский пер., 7, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.830924,
+            45.586376
+          ],
+          [
+            32.833484,
+            45.586432
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1192463024",
+          "name": "Мини-пансионат Тропиканка",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Аэрофлотский переулок, 7",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.845508,
+          45.581927
+        ]
+      },
+      "properties": {
+        "name": "Чайка",
+        "description": "Пограничная ул., 10А, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.841403,
+            45.57904393
+          ],
+          [
+            32.849613,
+            45.58480993
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "195458392914",
+          "name": "Чайка",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Пограничная улица, 10А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.846644,
+          45.582574
+        ]
+      },
+      "properties": {
+        "name": "Музыка ветра +",
+        "description": "ул. Будённого, 6, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8425385,
+            45.57969093
+          ],
+          [
+            32.8507495,
+            45.58545693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "222420092122",
+          "name": "Музыка ветра +",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Будённого, 6",
+          "url": "http://www.musik-wind.crimea.ua/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 053-69-52"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.842551,
+          45.589576
+        ]
+      },
+      "properties": {
+        "name": "Дельфин",
+        "description": "ул. Комарова, 5, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8384455,
+            45.58669393
+          ],
+          [
+            32.8466565,
+            45.59245793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1004391502",
+          "name": "Дельфин",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Комарова, 5",
+          "url": "http://www.pansionat-delphin.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 710-27-26"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.847709,
+          45.579973
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Советская ул., 3, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8436035,
+            45.57709043
+          ],
+          [
+            32.8518145,
+            45.58285543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "28609001109",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное,  Советская улица, 3 ",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.848497,
+          45.578922
+        ]
+      },
+      "properties": {
+        "name": "Анифе",
+        "description": "Советская ул., 11, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8443915,
+            45.57603893
+          ],
+          [
+            32.8526025,
+            45.58180493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "49207654169",
+          "name": "Анифе",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Советская улица, 11",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 036-66-20"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.845281,
+          45.580412
+        ]
+      },
+      "properties": {
+        "name": "Коттеджный городок Gelios",
+        "description": "Пограничная ул., 24, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8411755,
+            45.57752943
+          ],
+          [
+            32.8493865,
+            45.58329443
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "15042840760",
+          "name": "Коттеджный городок Gelios",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Пограничная улица, 24",
+          "url": "http://gelioscrimea.ru/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 702-80-22"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.834651,
+          45.588511
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Якорь",
+        "description": "ул. Мира, 26, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8305455,
+            45.58562843
+          ],
+          [
+            32.8387565,
+            45.59139343
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1356077523",
+          "name": "Гостевой дом Якорь",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира, 26",
+          "url": "http://krym-mezhvodnoe.com/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 036-66-40"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.841897,
+          45.584743
+        ]
+      },
+      "properties": {
+        "name": "Бутик-отель VIP",
+        "description": "Приморская ул., 14, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8377915,
+            45.58186043
+          ],
+          [
+            32.8460025,
+            45.58762543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1343057748",
+          "name": "Бутик-отель VIP",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Приморская улица, 14",
+          "url": "http://ликко.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (911) 979-98-83"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (911) 790-43-73"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.842972,
+          45.589223
+        ]
+      },
+      "properties": {
+        "name": "Акварель",
+        "description": "ул. Комарова, 13, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.836976,
+            45.58716346
+          ],
+          [
+            32.848968,
+            45.59128246
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "133539076894",
+          "name": "Акварель",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Комарова, 13",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (912) 914-20-10"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.849153,
+          45.58151
+        ]
+      },
+      "properties": {
+        "name": "Али-Баба",
+        "description": "Пограничная ул., 27, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.845048,
+            45.57862743
+          ],
+          [
+            32.853258,
+            45.58439243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "117708634098",
+          "name": "Али-Баба",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Пограничная улица, 27",
+          "url": "http://ali-baba-crimea.ru/",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.841965,
+          45.583896
+        ]
+      },
+      "properties": {
+        "name": "Дом у моря",
+        "description": "Пограничная ул., 4, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.83786,
+            45.58101343
+          ],
+          [
+            32.84607,
+            45.58677843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1099488398",
+          "name": "Дом у моря",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Пограничная улица, 4",
+          "url": "http://межводное.рф/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 897-50-25"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.851579,
+          45.58366
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Жемчужина моря",
+        "description": "Виноградная ул., 25, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8474735,
+            45.58077743
+          ],
+          [
+            32.8556845,
+            45.58654243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1744041278",
+          "name": "Гостевой дом Жемчужина моря",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Виноградная улица, 25",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 008-55-45"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, 09:00–18:00",
+            "Availabilities": [
+              {
+                "Intervals": [
+                  {
+                    "from": "09:00:00",
+                    "to": "18:00:00"
+                  }
+                ],
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.833747,
+          45.592648
+        ]
+      },
+      "properties": {
+        "name": "Триумф",
+        "description": "ул. А. Абдиннановой, 56, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.829642,
+            45.58976543
+          ],
+          [
+            32.837852,
+            45.59553043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "220514221098",
+          "name": "Триумф",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица А. Абдиннановой, 56",
+          "url": "http://oteltriumf.urest.org/",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (961) 608-69-27"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.836118,
+          45.587116
+        ]
+      },
+      "properties": {
+        "name": "Guest house",
+        "description": "Юбилейная ул., 10, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8320125,
+            45.58423343
+          ],
+          [
+            32.8402235,
+            45.58999843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "67965495153",
+          "name": "Guest house",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Юбилейная улица, 10",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.845389,
+          45.589576
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "ул. Шевченко, 19, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.841284,
+            45.58669393
+          ],
+          [
+            32.849494,
+            45.59245793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1921253576",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, Черноморский район, улица Шевченко, 19",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 704-08-88"
+            },
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 714-59-70"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.845158,
+          45.582847
+        ]
+      },
+      "properties": {
+        "name": "Гостиный дом Уют",
+        "description": "Пограничная ул., 9, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8410525,
+            45.57996443
+          ],
+          [
+            32.8492635,
+            45.58572943
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "146060722582",
+          "name": "Гостиный дом Уют",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Пограничная улица, 9",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.837156,
+          45.592545
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом",
+        "description": "ул. Мира, 70, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8330505,
+            45.58966293
+          ],
+          [
+            32.8412615,
+            45.59542693
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "176329492062",
+          "name": "Гостевой дом",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира, 70",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.848346,
+          45.57829
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Советская ул., 15, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8442405,
+            45.57540693
+          ],
+          [
+            32.8524515,
+            45.58117293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "12107784618",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Советская улица, 15",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.839713,
+          45.586486
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "Приморская ул., 18А, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.835608,
+            45.58360343
+          ],
+          [
+            32.843818,
+            45.58936843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "133393794392",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Приморская улица, 18А",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.840536,
+          45.586875
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "ул. Ленина, 1, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8364305,
+            45.58399243
+          ],
+          [
+            32.8446415,
+            45.58975743
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "191889655227",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Ленина, 1",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.849018,
+          45.584278
+        ]
+      },
+      "properties": {
+        "name": "Guest House Yantar",
+        "description": "Виноградная ул., 16, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8449125,
+            45.58139543
+          ],
+          [
+            32.8531235,
+            45.58716043
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "218965110336",
+          "name": "Guest House Yantar",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Виноградная улица, 16",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.846319,
+          45.583692
+        ]
+      },
+      "properties": {
+        "name": "Гостиница",
+        "description": "ул. Будённого, 4Б, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8422135,
+            45.58080893
+          ],
+          [
+            32.8504245,
+            45.58657493
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "107759842251",
+          "name": "Гостиница",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Будённого, 4Б",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.834454,
+          45.589256
+        ]
+      },
+      "properties": {
+        "name": "Гостиный дом Довольный слон",
+        "description": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира",
+        "boundedBy": [
+          [
+            32.8327205,
+            45.58462331
+          ],
+          [
+            32.8361875,
+            45.59388831
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1191707250",
+          "name": "Гостиный дом Довольный слон",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            },
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            },
+            {
+              "class": "office service",
+              "name": "Гостиничный оператор"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.833988,
+          45.589853
+        ]
+      },
+      "properties": {
+        "name": "Туристическая база Аурелия",
+        "description": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира",
+        "boundedBy": [
+          [
+            32.8298825,
+            45.58697043
+          ],
+          [
+            32.8380935,
+            45.59273543
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "22343418140",
+          "name": "Туристическая база Аурелия",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.837295,
+          45.585509
+        ]
+      },
+      "properties": {
+        "name": "Дворик",
+        "description": "Приморская ул., 34Б, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.8331895,
+            45.58262593
+          ],
+          [
+            32.8414005,
+            45.58839193
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1213435945",
+          "name": "Дворик",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Приморская улица, 34Б",
+          "url": "http://dvorik.pp.ua/",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.834816,
+          45.588006
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Изумруд",
+        "description": "Комсомольская ул., 28, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.830711,
+            45.58512343
+          ],
+          [
+            32.838921,
+            45.59088843
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1254375583",
+          "name": "Гостевой дом Изумруд",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, Комсомольская улица, 28",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8374,
+          45.592992
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Отдых у рыбака",
+        "description": "ул. Мира, 74, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.833295,
+            45.59010993
+          ],
+          [
+            32.841505,
+            45.59587393
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "72421443330",
+          "name": "Гостевой дом Отдых у рыбака",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица Мира, 74",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.838093,
+          45.59066
+        ]
+      },
+      "properties": {
+        "name": "Kovrov Guest House",
+        "description": "ул. 70 лет Октября, 29, село Межводное, Россия",
+        "boundedBy": [
+          [
+            32.833988,
+            45.58777743
+          ],
+          [
+            32.842198,
+            45.59354243
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "165361842795",
+          "name": "Kovrov Guest House",
+          "address": "Россия, Республика Крым, Черноморский район, село Межводное, улица 70 лет Октября, 29",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.830837,
+          45.587368
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом “Ласточка“",
+        "description": "Россия, Межводное, Полевая улица, 2",
+        "boundedBy": [
+          [
+            32.8035415,
+            45.55746249
+          ],
+          [
+            32.8581325,
+            45.61725749
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "229757579936",
+          "name": "Гостевой дом “Ласточка“",
+          "address": "Россия, Межводное, Полевая улица, 2",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.833739,
+          45.58809
+        ]
+      },
+      "properties": {
+        "name": "Гостиный двор Берег",
+        "description": "Россия, Межводное, Полевая улица, 12",
+        "boundedBy": [
+          [
+            32.8064435,
+            45.55818449
+          ],
+          [
+            32.8610345,
+            45.61797949
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "135597196499",
+          "name": "Гостиный двор Берег",
+          "address": "Россия, Межводное, Полевая улица, 12",
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "ResponseMetaData": {
+      "SearchResponse": {
+        "found": 2,
+        "display": "multiple"
+      },
+      "SearchRequest": {
+        "request": "гостиница джангуль республика крым",
+        "skip": 0,
+        "results": 500,
+        "boundedBy": [
+          [
+            37.048427,
+            55.43644866
+          ],
+          [
+            38.175903,
+            56.04690174
+          ]
+        ]
+      }
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.529991,
+          45.369119
+        ]
+      },
+      "properties": {
+        "name": "Мини-отель Солнечный Джангуль",
+        "description": "Рабочая ул., 81, село Оленевка, Россия",
+        "boundedBy": [
+          [
+            32.5258855,
+            45.36622493
+          ],
+          [
+            32.5340965,
+            45.37201293
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "1260694989",
+          "name": "Мини-отель Солнечный Джангуль",
+          "address": "Россия, Республика Крым, Черноморский район, Оленевское сельское поселение, село Оленевка, Рабочая улица, 81",
+          "url": "http://djangul.com/",
+          "Categories": [
+            {
+              "class": "sanatorium",
+              "name": "Дом отдыха"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.529392,
+          45.377365
+        ]
+      },
+      "properties": {
+        "name": "Гостевой дом Джангуль Оленевка",
+        "description": "ул. Ленина, 42Б, село Оленевка, Россия",
+        "boundedBy": [
+          [
+            32.525287,
+            45.37447193
+          ],
+          [
+            32.533497,
+            45.38025793
+          ]
+        ],
+        "CompanyMetaData": {
+          "id": "187626783028",
+          "name": "Гостевой дом Джангуль Оленевка",
+          "address": "Россия, Республика Крым, Черноморский район, Оленевское сельское поселение, село Оленевка, улица Ленина, 42Б",
+          "Phones": [
+            {
+              "type": "phone",
+              "formatted": "+7 (978) 268-20-69"
+            }
+          ],
+          "Categories": [
+            {
+              "class": "hotels",
+              "name": "Гостиница"
+            }
+          ],
+          "Hours": {
+            "text": "ежедневно, круглосуточно",
+            "Availabilities": [
+              {
+                "TwentyFourHours": true,
+                "Everyday": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

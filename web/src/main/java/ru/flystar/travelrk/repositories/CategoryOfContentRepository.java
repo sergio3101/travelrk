@@ -9,6 +9,6 @@ import ru.flystar.travelrk.domain.persistents.CategoryOfContent;
  */
 public interface CategoryOfContentRepository extends JpaRepository<CategoryOfContent, Long> {
 
-    //    @Query("select c from CategoryOfContent c where name = :name")
-    CategoryOfContent findByName(String name);
+  //    @Query("select c from CategoryOfContent c where name = :name")
+  CategoryOfContent findByName(String name);
 }
