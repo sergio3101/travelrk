@@ -1,7 +1,9 @@
 package ru.flystar.travelrk.ui.controllers.admin;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -25,6 +27,7 @@ import ru.flystar.travelrk.service.KrpanoConfigService;
 import ru.flystar.travelrk.service.PanoScanService;
 import ru.flystar.travelrk.service.PanoramaService;
 import ru.flystar.travelrk.service.RegionService;
+import ru.flystar.travelrk.service.RentaTourService;
 import ru.flystar.travelrk.service.XmlParserService;
 import ru.flystar.travelrk.ui.dto.ToursConstraight;
 
@@ -39,6 +42,7 @@ import ru.flystar.travelrk.ui.dto.ToursConstraight;
 public class Pano3DController {
   private KrpanoConfigService krpanoConfigService;
   private PanoramaService panoramaService;
+  private RentaTourService rentaTourService;
   private PanoScanService panoScanService;
   private RegionService regionService;
   private CategoryOfContentService categoryOfContentService;
@@ -46,9 +50,10 @@ public class Pano3DController {
   private ExclusiveTourService exclusiveTourService;
 
   @Autowired
-  public Pano3DController(KrpanoConfigService krpanoConfigService, PanoramaService panoramaService, PanoScanService panoScanService, RegionService regionService, CategoryOfContentService categoryOfContentService, XmlParserService xmlParser, ExclusiveTourService exclusiveTourService) {
+  public Pano3DController(KrpanoConfigService krpanoConfigService, PanoramaService panoramaService, RentaTourService rentaTourService, PanoScanService panoScanService, RegionService regionService, CategoryOfContentService categoryOfContentService, XmlParserService xmlParser, ExclusiveTourService exclusiveTourService) {
     this.krpanoConfigService = krpanoConfigService;
     this.panoramaService = panoramaService;
+    this.rentaTourService = rentaTourService;
     this.panoScanService = panoScanService;
     this.regionService = regionService;
     this.categoryOfContentService = categoryOfContentService;
@@ -104,19 +109,34 @@ public class Pano3DController {
   @RequestMapping(value = "/ajaxRemovePano3D", produces = "application/json; charset=utf-8", method = RequestMethod.POST)
   @ResponseBody
   public List<ToursConstraight> ajaxRemovePano3D(@RequestParam("id") int id) {
-    List<ToursConstraight> toursConstraights = new ArrayList<>();
     try {
       panoramaService.removePano3DById(id);
     } catch (DataIntegrityViolationException e) {
       List<RentaTour> rentaTours = panoramaService.getTourNamesByPanoId(id);
-      for (RentaTour s : rentaTours) {
-        toursConstraights.add(new ToursConstraight(s.getName(), "/admin/rentaTourEdit-" + s.getId()));
-      }
-      List<ExclusiveTour> exclTours = panoramaService.getExclTourNamesByPanoId(id);
-      for (ExclusiveTour s : exclTours) {
-        toursConstraights.add(new ToursConstraight(s.getName(), "/admin/exclTourEdit-" + s.getId()));
+      if (!rentaTours.isEmpty()) {
+        Panorama panorama = panoramaService.getPanoramaById(id);
+        rentaTours.forEach(t -> {
+          t.getHsForRenta().remove(panorama);
+          String defPano = t.getDefaultPano();
+          String panoPath = panorama.getPanoPath();
+          if (panoPath.equals(defPano)) {
+            t.setDefaultPano(
+                getHighestPano(t.getHsForRenta())
+                    .getPanoPath());
+          }
+          rentaTourService.saveRentaTour(t);
+        });
+        panoramaService.removePano3DById(id);
       }
     }
-    return toursConstraights;
+    return new ArrayList<>();
+  }
+
+  private Panorama getHighestPano(Set<Panorama> hsForRenta) {
+    return hsForRenta
+        .stream()
+        .filter(Panorama::isAAir)
+        .max(Comparator.comparing(p -> Integer.parseInt(p.getHeight())))
+        .get();
   }
 }
