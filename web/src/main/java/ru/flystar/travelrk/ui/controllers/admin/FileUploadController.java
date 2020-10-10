@@ -6,6 +6,7 @@ import javax.imageio.ImageReader;
 import javax.imageio.ImageWriter;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.plugins.jpeg.JPEGImageWriteParam;
+import javax.imageio.stream.ImageInputStream;
 import javax.imageio.stream.ImageOutputStream;
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
@@ -119,10 +120,12 @@ public class FileUploadController {
       Region region = regionService.getRegionByName(uploadModel.getRegion());
       pano = panoScanService.addPanoScan(panoScanFileName, fileSize, region, f);
       if (pano.getId() != 0) {
-        InputStream targetStream;
         try {
-          targetStream = new FileInputStream(file);
-          savePanoScan(targetStream, panoScanFileName);
+          InputStream streamForSave = new FileInputStream(file);
+          InputStream streamForWaterMark = new FileInputStream(file);
+          savePanoScan(streamForSave, panoScanFileName);
+          Path path = Paths.get(PATH_PANO_SCAN + panoScanFileName);
+          addTextWatermark("Created by TravelRK.ru", streamForWaterMark, path.toFile());
           FileUtils.forceDelete(file);
         } catch (IOException e) {
           e.printStackTrace();
@@ -154,7 +157,11 @@ public class FileUploadController {
     pano = panoScanService.addPanoScan(panoScanFileName, file.getSize(), regionSet, name);
     if (pano.getId() == 0) return new ResponseEntity<>(pano, HttpStatus.NO_CONTENT);
     try {
-      savePanoScan(file.getInputStream(), panoScanFileName);
+      InputStream streamForSave = file.getInputStream();
+      InputStream streamForWaterMark = file.getInputStream();
+      savePanoScan(streamForSave, panoScanFileName);
+      Path path = Paths.get(PATH_PANO_SCAN + panoScanFileName);
+      addTextWatermark("Created by TravelRK.ru", streamForWaterMark, path.toFile());
     } catch (IOException e) {
       return new ResponseEntity<>(pano, HttpStatus.NO_CONTENT);
     }
@@ -162,7 +169,6 @@ public class FileUploadController {
   }
 
   private void savePanoScan(InputStream inputStream, String panoScanFileName) throws IOException {
-    Path path = Paths.get(PATH_PANO_SCAN + panoScanFileName);
     String tumbName = PATH_PANO_SCAN + panoScanFileName.replace(".jpg", "") + "_tumb.jpg";
     String bigTumbName = PATH_PANO_SCAN + panoScanFileName.replace(".jpg", "") + "_bt.jpg";
     BufferedImage inbi = ImageIO.read(inputStream);
@@ -183,19 +189,19 @@ public class FileUploadController {
     inbi = null;
     biWaterMark.flush();
     bigTumbName = null;
-    addTextWatermark("Created by TravelRK.ru", inputStream, path.toFile());
   }
 
   private void addTextWatermark(String text, InputStream sourceInputStream, File destImageFile) {
-    try {
-      ImageReader reader = ImageIO.getImageReadersBySuffix("jpg").next();
-      reader.setInput(ImageIO.createImageInputStream(sourceInputStream));
+    try (ImageInputStream iis = ImageIO.createImageInputStream(sourceInputStream)) {
+      Iterator<ImageReader> iterator = ImageIO.getImageReadersByMIMEType("image/jpeg");
+      ImageReader reader = iterator.next();
+      reader.setInput(iis,false);
       IIOMetadata metadata = reader.getImageMetadata(0);
-      ByteArrayOutputStream os = new ByteArrayOutputStream();
-      ImageOutputStream ios = ImageIO.createImageOutputStream(os);
-
       BufferedImage bi = reader.read(0);
       reader.dispose();
+
+      ByteArrayOutputStream os = new ByteArrayOutputStream();
+      ImageOutputStream ios = ImageIO.createImageOutputStream(os);
       Iterator<ImageWriter> iter = ImageIO.getImageWritersByFormatName("jpeg");
       ImageWriter writer = iter.next();
       writer.setOutput(ios);
