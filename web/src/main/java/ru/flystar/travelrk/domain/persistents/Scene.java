@@ -34,7 +34,7 @@ public class Scene extends BaseId {
   @JoinColumn(name = "exclusiveTour_id")
   private ExclusiveTour exclusiveTour;
 
-  public boolean haveGeoMetaData() {
+    public boolean haveGeoMetaData() {
     return (latitude != null && longitude != null && height != null && north != null) &&
         (!longitude.isEmpty() && !latitude.isEmpty() && !height.isEmpty() && !north.isEmpty());
   }

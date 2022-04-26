@@ -42,7 +42,7 @@ public class CustomerInfoService {
   }
 
   public List<CustomerInfo> getCustomerInfoList() {
-    return customerInfoRepository.findAll();
+    return customerInfoRepository.findByOrderByCompanyName();
   }
 
   public CustomerInfo getCustomerInfoById(int id) {

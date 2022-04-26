@@ -43,7 +43,10 @@ public class StringTool {
   }
 
   public static Long diffDays(Date startDate, Date endDate) {
-    long diff = endDate.getTime() - startDate.getTime();
+    long diff = 0;
+    if (endDate != null && startDate != null) {
+      diff = endDate.getTime() - startDate.getTime();
+    }
     return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
   }
 

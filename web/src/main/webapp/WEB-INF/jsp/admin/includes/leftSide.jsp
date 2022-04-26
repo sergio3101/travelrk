@@ -35,6 +35,7 @@
                                 <li class="current-page"><a href="/admin/youtubegallery">Ролики с Youtube</a></li>
                                 <li class="current-page"><a href="/admin/panoscans">Развёртки панорам</a></li>
                                 <li class="current-page"><a href="/admin/pano3D">3D панорамы</a></li>
+                                <li class="current-page"><a href="/admin/panotoursrc">PanoTour исходники</a></li>
                             </ul>
                         </li>
                     </security:authorize>
@@ -45,6 +46,9 @@
                             </security:authorize>
                             <security:authorize access="hasAnyRole('ROLE_ADMIN','ROLE_USER','ROLE_MANAGER')">
                                 <li class="current-page"><a href="/admin/rentatour"><i class="fa fa-adn"></i> Арендные</a></li>
+                            </security:authorize>
+                            <security:authorize access="hasAnyRole('ROLE_ADMIN','ROLE_USER','ROLE_MANAGER')">
+                                <li class="current-page"><a href="/admin/panotourrenta"><i class="fa fa-adn"></i> Арендные PanoTour</a></li>
                             </security:authorize>
                         </ul>
                     </li>

@@ -1,6 +1,7 @@
 package ru.flystar.travelrk;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
 import static java.lang.Math.atan2;
 import static java.lang.Math.cos;
@@ -12,41 +13,19 @@ import static java.lang.Math.toRadians;
  * Created by sergey on 04.11.2017.
  */
 @SuppressWarnings("Duplicates")
-public class TestMain {
-  private static final double STARTLAT = 46.110359;
-  private static final double STARTLNG = 33.690350;
+class TestMain {
+  private static final double STARTLAT = 44.596763;
+  private static final double STARTLNG = 34.374094;
   private static final double HEIGHT = 135;
   private static final double defVangle = 6.0;
   private static final double dCoef = 0.92;
 
   public static void main(String[] args) {
-    Class c1 = new ArrayList<String>().getClass();
-    Class c2 = new ArrayList<Integer>().getClass();
-    System.out.println(c1 == c2);
-    printInfo(46.115860, 33.692827, "Detploshadka");
-    printInfo(46.111798, 33.689795, "Kinoteatr");
-    printInfo(46.110802, 33.691142, "Perekrestok");
-    printInfo(46.110292, 33.691817, "Samolet");
-    printInfo(46.107901, 33.690317, "Bank");
-    printInfo(46.110556, 33.686114, "PUD");
-    printInfo(46.117172, 33.693416, "Diskoteka");
-    printInfo(46.113801, 33.689904, "Obshaga15");
-    printInfo(46.106766, 33.684606, "DYUSSHA");
-    printInfo(46.106421, 33.683137, "DOM-A");
-    printInfo(46.105723, 33.683095, "DOM-B");
-    printInfo(46.105040, 33.683224, "DOM-V");
-    printInfo(46.104385, 33.683341, "DOM-G");
-    printInfo(46.107641, 33.684000, "Perekrestok-dyussha");
-    printInfo(46.107452, 33.683213, "Vhod-v-detsad");
-    printInfo(46.107840, 33.684209, "Ugol doma");
-    printInfo(45.384414, 32.505866, "Vechniy ogon");
-    printInfo(46.119159, 33.698252, "Motocross");
-    printInfo(46.119472, 33.690650, "Most");
-    printInfo(46.116181, 33.693790, "Lavochka1");
-    printInfo(46.116420, 33.693212, "Lavochka2");
-    printInfo(46.109753, 33.690427, "Detploshadka-center");
-    printInfo(45.385273, 32.507701, "Visotka");
-
+    String a = "https://static.travelrk.ru/3d/Sudak/Sudakdata";
+    System.out.println(a.substring(0,a.lastIndexOf("/")));
+//    String s = "if (s !== null, if (startscene === null OR startscene === \"undefined\", set(startscene, get(s));); );\nif (startscene === null OR startscene === \"undefined\",\n      set(startscene, pano264);\n);";
+//    String r = "\n    set(startscene, assa);\n";
+//    System.out.println(s.replaceFirst("[^,]\\s+set\\(startscene,\\s(.*)\\);",r));
   }
 
   private static void printInfo(double dstLat, double dstLng, String name) {

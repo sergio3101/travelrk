@@ -1,6 +1,11 @@
 package ru.flystar.travelrk;
 
+import lombok.Data;
+import lombok.Getter;
+
 import java.math.BigDecimal;
+import java.util.*;
+
 import static java.lang.Math.toRadians;
 
 /**

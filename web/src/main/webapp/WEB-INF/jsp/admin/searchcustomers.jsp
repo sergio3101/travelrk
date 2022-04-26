@@ -72,7 +72,7 @@
                                             </select>
                                         </span>
                                         <input type="text" id="rentatour" class="form-control"
-                                               placeholder="ID Арендного тура">
+                                               placeholder="ID PanoTour исходника">
                                         <span class="input-group-btn">
                                             <button id="save-custommers-btn" type="button"
                                                     class="btn btn-primary btn-flat"><i

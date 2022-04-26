@@ -37,6 +37,7 @@
                 <user name="manager1" password="En9Sb3Jg2Hfj" authorities="ROLE_MANAGER"/>
                 <user name="manager2" password="N6wGvdH2HgsB" authorities="ROLE_MANAGER"/>
                 <user name="manager3" password="wM2hcD5Gfd2a" authorities="ROLE_MANAGER"/>
+                <user name="manager4" password="N3jGv6fDa8Hv" authorities="ROLE_MANAGER"/>
             </user-service>
         </authentication-provider>
     </authentication-manager>

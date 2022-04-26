@@ -14,6 +14,7 @@ import ru.flystar.travelrk.domain.persistents.Scene;
 import ru.flystar.travelrk.domain.persistents.Video;
 import ru.flystar.travelrk.service.CategoryOfContentService;
 import ru.flystar.travelrk.service.PanoScanService;
+import ru.flystar.travelrk.service.PanoTourSceneService;
 import ru.flystar.travelrk.service.RegionService;
 import ru.flystar.travelrk.service.SceneService;
 import ru.flystar.travelrk.service.YoutubeService;
@@ -31,14 +32,16 @@ public class AjaxFormController {
   private CategoryOfContentService categoryOfContentService;
   private PanoScanService panoScanService;
   private SceneService sceneService;
+  private PanoTourSceneService panoTourSceneService;
 
   @Autowired
-  public AjaxFormController(YoutubeService youtubeService, RegionService regionService, CategoryOfContentService categoryOfContentService, PanoScanService panoScanService, SceneService sceneService) {
+  public AjaxFormController(YoutubeService youtubeService, RegionService regionService, CategoryOfContentService categoryOfContentService, PanoScanService panoScanService, SceneService sceneService, PanoTourSceneService panoTourSceneService) {
     this.youtubeService = youtubeService;
     this.regionService = regionService;
     this.categoryOfContentService = categoryOfContentService;
     this.panoScanService = panoScanService;
     this.sceneService = sceneService;
+    this.panoTourSceneService = panoTourSceneService;
   }
 
   @RequestMapping(value = "/ajaxForm/ajaxGetVideoFormById", method = RequestMethod.POST)
@@ -75,6 +78,13 @@ public class AjaxFormController {
   public ModelAndView ajaxGetScenaFormByName(@RequestParam("name") String name, @RequestParam("tourid") int tourId, @ModelAttribute("panoscanForm") Scene scene) {
     ModelAndView mov = new ModelAndView("admin/ajaxForm/editScena");
     mov.addObject("scenaForm", sceneService.getSceneByNameAndTourId(name, tourId));
+    return mov;
+  }
+
+  @RequestMapping(value = "/ajaxForm/ajaxGetScenaFormByNameAndTourId", method = RequestMethod.POST)
+  public ModelAndView ajaxGetScenaFormByNameAndTourId(@RequestParam("name") String name, @RequestParam("tourid") int tourId, @ModelAttribute("panoscanForm") Scene scene) {
+    ModelAndView mov = new ModelAndView("admin/ajaxForm/editPanoTourScene");
+    mov.addObject("scenaForm", panoTourSceneService.getPanoTourSceneByNameAndTourId(name, tourId));
     return mov;
   }
 }

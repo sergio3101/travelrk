@@ -1,27 +1,25 @@
 package ru.flystar.travelrk.ui.controllers.admin;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ru.flystar.travelrk.domain.persistents.CustomerInfo;
 import ru.flystar.travelrk.domain.persistents.PanoScan;
+import ru.flystar.travelrk.domain.persistents.PanoTourRenta;
+import ru.flystar.travelrk.domain.persistents.PanoTourScene;
+import ru.flystar.travelrk.domain.persistents.PanoTourSrc;
 import ru.flystar.travelrk.domain.persistents.Panorama;
 import ru.flystar.travelrk.domain.persistents.Region;
 import ru.flystar.travelrk.domain.persistents.RentaTour;
@@ -31,7 +29,11 @@ import ru.flystar.travelrk.domain.persistents.Video;
 import ru.flystar.travelrk.service.CategoryOfContentService;
 import ru.flystar.travelrk.service.CustomerInfoService;
 import ru.flystar.travelrk.service.ExclusiveTourService;
+import ru.flystar.travelrk.service.LogRowService;
 import ru.flystar.travelrk.service.PanoScanService;
+import ru.flystar.travelrk.service.PanoTourRentaService;
+import ru.flystar.travelrk.service.PanoTourSceneService;
+import ru.flystar.travelrk.service.PanoTourSrcService;
 import ru.flystar.travelrk.service.PanoramaService;
 import ru.flystar.travelrk.service.RegionService;
 import ru.flystar.travelrk.service.RentaTourService;
@@ -50,29 +52,37 @@ import ru.flystar.travelrk.ui.dto.SelectModel;
 @RestController
 @RequestMapping(value = "/admin")
 public class AjaxController {
-  private YoutubeService youtubeService;
-  private PanoScanService panoScanService;
-  private ExclusiveTourService exclusiveTourService;
-  private SceneService sceneService;
-  private PanoramaService panoramaService;
-  private CategoryOfContentService categoryOfContentService;
-  private CustomerInfoService customerInfoService;
-  private RentaTourService rentaTourService;
-  private RegionService regionService;
-  private UserService userService;
+  private final YoutubeService youtubeService;
+  private final PanoScanService panoScanService;
+  private final ExclusiveTourService exclusiveTourService;
+  private final PanoTourSrcService panoTourSrcService;
+  private final PanoTourRentaService panoTourRentaService;
+  private final SceneService sceneService;
+  private final PanoTourSceneService panoTourSceneService;
+  private final PanoramaService panoramaService;
+  private final CategoryOfContentService categoryOfContentService;
+  private final CustomerInfoService customerInfoService;
+  private final RentaTourService rentaTourService;
+  private final RegionService regionService;
+  private final UserService userService;
+  private final LogRowService logRowService;
 
   @Autowired
-  public AjaxController(YoutubeService youtubeService, PanoScanService panoScanService, ExclusiveTourService exclusiveTourService, SceneService sceneService, PanoramaService panoramaService, CategoryOfContentService categoryOfContentService, CustomerInfoService customerInfoService, RentaTourService rentaTourService, RegionService regionService, UserService userService) {
+  public AjaxController(YoutubeService youtubeService, PanoScanService panoScanService, ExclusiveTourService exclusiveTourService, PanoTourSrcService panoTourSrcService, PanoTourRentaService panoTourRentaService, SceneService sceneService, PanoTourSceneService panoTourSceneService, PanoramaService panoramaService, CategoryOfContentService categoryOfContentService, CustomerInfoService customerInfoService, RentaTourService rentaTourService, RegionService regionService, UserService userService, LogRowService logRowService) {
     this.youtubeService = youtubeService;
     this.panoScanService = panoScanService;
     this.exclusiveTourService = exclusiveTourService;
+    this.panoTourSrcService = panoTourSrcService;
+    this.panoTourRentaService = panoTourRentaService;
     this.sceneService = sceneService;
+    this.panoTourSceneService = panoTourSceneService;
     this.panoramaService = panoramaService;
     this.categoryOfContentService = categoryOfContentService;
     this.customerInfoService = customerInfoService;
     this.rentaTourService = rentaTourService;
     this.regionService = regionService;
     this.userService = userService;
+    this.logRowService = logRowService;
   }
 
   @RequestMapping(value = "/ajaxRemove", method = RequestMethod.POST)
@@ -87,7 +97,7 @@ public class AjaxController {
 
   @RequestMapping(value = "/ajaxRemovePanoscan", method = RequestMethod.POST)
   @ResponseBody
-  public String ajaxRemovePanoScan(@RequestParam("path") String path) {
+  public String ajaxRemovePanoScan(@RequestParam String path) {
     String msg = "ERROR";
     if (panoScanService.removePanoscanByPath(path) > 0) {
       msg = "SUCCESS";
@@ -100,6 +110,13 @@ public class AjaxController {
   @ResponseBody
   public String ajaxRemoveexclusivetour(@RequestParam("id") Integer id) {
     exclusiveTourService.removeexclusivetour(id);
+    return "SUCCESS";
+  }
+
+  @RequestMapping(value = "/ajaxRemovePanoTourSrc", method = RequestMethod.POST)
+  @ResponseBody
+  public String ajaxRemovPanoTourSrc(@RequestParam("id") Integer id) {
+    panoTourSrcService.removePanoTourSrc(id);
     return "SUCCESS";
   }
 
@@ -122,6 +139,33 @@ public class AjaxController {
   public String ajaxSaveScena(@ModelAttribute("scena") Scene scene) {
     String result = "ERROR";
     if (sceneService.saveScene(scene) != null) result = "SUCCESS";
+    return result;
+  }
+
+  @RequestMapping(value = "/ajaxReloadPanoTourSrc", method = RequestMethod.POST)
+  @ResponseBody
+  public String ajaxReloadPanoTourSrc(@RequestParam("id") int id) {
+    String result;
+    try {
+      panoTourSrcService.reloadPanoTourSrc(id);
+      result = "SUCCESS";
+    } catch (Throwable e) {
+      e.printStackTrace();
+      result = "ERROR";
+    }
+    return result;
+  }
+
+  @RequestMapping(value = "/ajaxSavePanoTourScene", method = RequestMethod.POST)
+  @ResponseBody
+  public String ajaxSavePanoTourScene(@ModelAttribute("scena") PanoTourScene scene) {
+    String result = "ERROR";
+    int panoTourSrcId = scene.getPanoTourSrc().getId();
+    PanoTourSrc panoTourSrc = panoTourSrcService.getPanoTourSrcById(panoTourSrcId);
+    if (panoTourSrc != null) {
+      scene.setPanoTourSrc(panoTourSrc);
+    }
+    if (panoTourSceneService.savePanoTourScene(scene) != null) result = "SUCCESS";
     return result;
   }
 
@@ -203,6 +247,40 @@ public class AjaxController {
     return new ResponseEntity<>("{\"status\":\"SUCCESS\"}", HttpStatus.OK);
   }
 
+  @RequestMapping(value = "/setPanoTourCustomerJson", method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+  @ResponseBody
+  public ResponseEntity<String> ajaxSetPanoTourCustomerJson(
+      @RequestBody SelectModel selectModel) {
+    Region region = regionService.getRegionByName(selectModel.getRegion());
+    List<CustomerInfo> customers = getCustommersByModel(selectModel.getSelected(), region);
+    customerInfoService.saveAll(customers);
+    String panoTourSrcId = selectModel.getRentaTourId();
+    PanoTourSrc panoTourSrc = panoTourSrcService.getPanoTourSrcById(Integer.parseInt(panoTourSrcId));
+    if (panoTourSrc != null) {
+      Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+      String login = authentication.getName();
+      User user = userService.getUserByLogin(login);
+      Calendar rentaExpired = Calendar.getInstance();
+      rentaExpired.add(Calendar.MONTH, 3);
+      customers.forEach(c -> {
+        PanoTourRenta rt = new PanoTourRenta();
+        rt.setName(c.getCompanyName());
+        rt.setUser(user);
+        rt.setDescription(c.getAddress());
+        rt.setDomain("test.travelrk.ru");
+        rt.setSum(null);
+        rt.setIsFuturePayment(false);
+        rt.setMonthCount(null);
+        rt.setRentaExpired(rentaExpired.getTime());
+        PanoTourRenta rtDst = panoTourRentaService.savePanoTourRenta(rt);
+        rtDst.setPanoTourSrc(panoTourSrc);
+        rtDst.setCustomerInfo(c);
+        panoTourRentaService.savePanoTourRenta(rtDst);
+      });
+    }
+    return new ResponseEntity<>("{\"status\":\"SUCCESS\"}", HttpStatus.OK);
+  }
+
   private List<CustomerInfo> getCustommersByModel(List<CustomerModel> selected, Region region) {
     List<CustomerInfo> result = new ArrayList<>();
     selected.forEach(e -> {
@@ -225,7 +303,7 @@ public class AjaxController {
     return result;
   }
 
-  @RequestMapping(value = "/getRentaTourJson", method = RequestMethod.GET)
+  @RequestMapping(value = "/getRentaTourJson", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
   @ResponseBody
   public ResponseEntity<List<RentaTour>> ajaxGetRentaTourJson() {
     Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -240,6 +318,29 @@ public class AjaxController {
     } else {
       list = rentaTourService.getAllRentaTours();
     }
+    return new ResponseEntity<>(list, HttpStatus.OK);
+  }
+
+  @RequestMapping(value = "/getPanoTourRentaJson", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
+  @ResponseBody
+  public ResponseEntity<List<PanoTourRenta>> ajaxGetPanoTourRentaJson() {
+    Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    List<PanoTourRenta> list;
+    if (authentication != null &&
+        authentication
+            .getAuthorities()
+            .stream()
+            .anyMatch(a -> a.getAuthority().equals("ROLE_MANAGER"))) {
+      String login = authentication.getName();
+      list = panoTourRentaService.getPanoTourRentasByOwner(login);
+    } else {
+      list = panoTourRentaService.getAllPanoTourRentas();
+    }
+    // LogRow logRow = new LogRow();
+    // logRow.setDateOfCreate(new Date());
+    // logRow.setDomain("travelrk.ru");
+    // logRow.setPanoTourRenta(list.get(0));
+    // logRowService.saveLogRow(logRow);
     return new ResponseEntity<>(list, HttpStatus.OK);
   }
 

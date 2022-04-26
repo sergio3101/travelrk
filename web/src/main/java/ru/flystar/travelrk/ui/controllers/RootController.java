@@ -23,21 +23,21 @@ import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
 import ru.flystar.travelrk.domain.persistents.CategoryOfContent;
 import ru.flystar.travelrk.domain.persistents.ExclusiveTour;
+import ru.flystar.travelrk.domain.persistents.PanoTourRenta;
 import ru.flystar.travelrk.domain.persistents.Panorama;
 import ru.flystar.travelrk.domain.persistents.RentaTour;
 import ru.flystar.travelrk.domain.persistents.Video;
 import ru.flystar.travelrk.service.CategoryOfContentService;
 import ru.flystar.travelrk.service.ExclusiveTourService;
 import ru.flystar.travelrk.service.HtmlParserService;
+import ru.flystar.travelrk.service.PanoTourRentaService;
 import ru.flystar.travelrk.service.PanoramaService;
 import ru.flystar.travelrk.service.RentaTourService;
 import ru.flystar.travelrk.service.XmlParserService;
@@ -49,7 +49,7 @@ import ru.flystar.travelrk.tools.StringTool;
  * Created by Sergej Shestopalov on 20.06.2017.
  */
 @Log4j
-@Controller
+@RestController
 public class RootController {
   @Value("${path.exclusivetour}")
   private String PATH_EXCLUSIVE_TOUR;
@@ -65,16 +65,18 @@ public class RootController {
   private ExclusiveTourService exclusiveTourService;
   private PanoramaService panoramaService;
   private RentaTourService rentaTourService;
+  private PanoTourRentaService panoTourRentaService;
   private XmlParserService xmlParser;
   private HtmlParserService htmlParser;
 
   @Autowired
-  public RootController(YoutubeService videoList, CategoryOfContentService categoryOfContentService, ExclusiveTourService exclusiveTourService, PanoramaService panoramaService, RentaTourService rentaTourService, XmlParserService xmlParser, HtmlParserService htmlParser) {
+  public RootController(YoutubeService videoList, CategoryOfContentService categoryOfContentService, ExclusiveTourService exclusiveTourService, PanoramaService panoramaService, RentaTourService rentaTourService, PanoTourRentaService panoTourRentaService, XmlParserService xmlParser, HtmlParserService htmlParser) {
     this.videoList = videoList;
     this.categoryOfContentService = categoryOfContentService;
     this.exclusiveTourService = exclusiveTourService;
     this.panoramaService = panoramaService;
     this.rentaTourService = rentaTourService;
+    this.panoTourRentaService = panoTourRentaService;
     this.xmlParser = xmlParser;
     this.htmlParser = htmlParser;
   }
@@ -195,6 +197,64 @@ public class RootController {
       modelAndView.addObject("tour", tour);
     }
     return modelAndView;
+  }
+
+  @RequestMapping(value = {"/panotour/{path}/", "/panotour/{path}/index.html"}, method = RequestMethod.GET)
+  public ModelAndView getPanoTourRentaHtml(@PathVariable String path, @RequestParam(defaultValue = "none") String snapshoturl, HttpServletResponse response, HttpServletRequest request) {
+    ModelAndView modelAndView = new ModelAndView("rentatoursError");
+    PanoTourRenta tour = panoTourRentaService.getPanoTourRentaByPath(path);
+    if (snapshoturl.equals("none")) {
+      snapshoturl = "https://travelrk.ru/pano/" + tour.getDefaultPano() + "/bigthumb.jpg";
+    } else {
+      snapshoturl = "https://travelrk.ru" + snapshoturl;
+    }
+    Date now = new Date();
+    StringBuilder message = new StringBuilder();
+    if (tour != null) {
+      modelAndView.setViewName("panotourrentaHtml");
+      if (now.after(tour.getRentaExpired())) {
+        message.append("Подписка на тур закончилась " + dateFormat.format(tour.getRentaExpired()));
+        message.append("<br/>Для продления работы тура обращайтесь по телефону: +7(978) 810-33-95");
+        modelAndView.setViewName("rentatoursError");
+        modelAndView.addObject("message", message);
+      }
+      if (request.getHeader("referer") != null && !isDomainValidate(request.getHeader("referer"), tour.getDomain())) {
+        message.append("<br/>Подписка оформлена на домен " + tour.getDomain());
+        message.append("<br/>Для оформления подписки на тур для вашего домена обращайтесь по телефону: +7(978) 810-33-95");
+        modelAndView.setViewName("rentatoursError");
+        modelAndView.addObject("message", message);
+      } else {
+        response.addHeader("X-Frame-Options", "ALLOW-FROM " + tour.getDomain());
+//                response.addHeader("Content-Security-Policy", "frame-ancestors " + tour.getDomain());
+      }
+      String firstXmlPath = tour.getPanoTourSrc().getPath() + "/First.xml";
+      String nameTour = tour.getPanoTourSrc().getPath().substring(tour.getPanoTourSrc().getPath().lastIndexOf("/") + 1);
+      panoTourRentaService.incrementCountById(tour.getId());
+      nameTour = nameTour.replace("data", "");
+      modelAndView.addObject("nameTour", nameTour);
+      modelAndView.addObject("firstXmlPath", firstXmlPath);
+      modelAndView.addObject("snapshoturl", snapshoturl);
+      modelAndView.addObject("tour", tour);
+      modelAndView.addObject("showAdv", tour.getIsFuturePayment());
+    }
+    return modelAndView;
+  }
+
+  @RequestMapping(value = "/panotour/{path}/index.xml", method = RequestMethod.GET)
+  public ModelAndView getPanoTourRentaXml(@PathVariable String path) {
+    ModelAndView modelAndView = new ModelAndView("panotourrentaXml");
+    PanoTourRenta tour = panoTourRentaService.getPanoTourRentaByPath(path);
+    String rentaTourXml = xmlParser.getPanoTourRentaXml(tour);
+    modelAndView.addObject("rentaTourXml", rentaTourXml);
+    return modelAndView;
+  }
+
+  @GetMapping(value = "/panotour/{path}/{name}data/graphics/**")
+  public RedirectView getPanoTourRentaResources(@PathVariable String path, @PathVariable String name, HttpServletRequest request){
+    String res = request.getServletPath().substring(request.getServletPath().indexOf("data/graphics/") + 14);
+    RedirectView redirectView = new RedirectView("/krengine/resources/graphics/" + res);
+    redirectView.setStatusCode(HttpStatus.MOVED_PERMANENTLY);
+    return redirectView;
   }
 
   private boolean isDomainValidate(String ref, String domain) {

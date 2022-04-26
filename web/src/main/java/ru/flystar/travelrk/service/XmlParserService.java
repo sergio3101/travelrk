@@ -29,6 +29,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Pattern;
 import static java.lang.Math.atan2;
 import static java.lang.Math.cos;
 import static java.lang.Math.sin;
@@ -53,6 +54,8 @@ import ru.flystar.travelrk.domain.nopersist.Hotspot;
 import ru.flystar.travelrk.domain.nopersist.HotspotScene;
 import ru.flystar.travelrk.domain.persistents.CustomerInfo;
 import ru.flystar.travelrk.domain.persistents.ExclusiveTour;
+import ru.flystar.travelrk.domain.persistents.PanoTourRenta;
+import ru.flystar.travelrk.domain.persistents.PanoTourScene;
 import ru.flystar.travelrk.domain.persistents.Panorama;
 import ru.flystar.travelrk.domain.persistents.Region;
 import ru.flystar.travelrk.domain.persistents.RentaTour;
@@ -93,6 +96,8 @@ public class XmlParserService {
 
   private static DocumentBuilderFactory dbFactory;
   private static DocumentBuilder dBuilder;
+  private static final Pattern startScenePattern = Pattern.compile("[^,]\\s+set\\(startscene, ([^\\(\\)]*)\\);");
+  ;
 
   @PostConstruct
   private void setup() {
@@ -410,20 +415,219 @@ public class XmlParserService {
     }
   }
 
+  public String getPanoTourRentaXml(PanoTourRenta tour) {
+    double bgFrameWidth = 0;
+    if (tour.getCustomerInfo() != null) {
+      bgFrameWidth = getBgFrameWidth(tour.getCustomerInfo().getLogoPath());
+    }
+    if (tour.getPanoTourSrc() != null) {
+      String srcXml = tour.getPanoTourSrc().getSrcXml();
+      Document scnsDoc = getDocumentFromString(srcXml);
+      if (tour.getDefaultPano() != null && !tour.getDefaultPano().isEmpty()) {
+        Node startupAct = scnsDoc.getElementsByTagName("action").item(0).getFirstChild();
+        String startupVal = startupAct.getNodeValue();
+        String startScene = "\n      set(startscene, " + tour.getDefaultPano() + ");\n";
+        startupAct.setNodeValue(startupVal.replaceFirst("[^,]\\s+set\\(startscene,\\s(.*)\\);", startScene));
+      }
+      NodeList scns = scnsDoc.getElementsByTagName("scene");
+      // removeHiddenScenas(scns, tour, scnsDoc);
+      if (tour.getCustomerInfo() != null) {
+        Element inc = scnsDoc.createElement("include");
+        inc.setAttribute("url", "/krengine/skin/travelrk_skin_renta.xml");
+        scnsDoc.getDocumentElement().appendChild(inc);
+      }
+      // добавляем счетчик просмотров
+      Element counter = scnsDoc.createElement("include");
+      counter.setAttribute("url", "/krengine/travelrk_counter.xml");
+      scnsDoc.getDocumentElement().appendChild(counter);
+
+      for (int temp = 0; temp < scns.getLength(); temp++) {
+        Node node = scns.item(temp);
+        if (node.getNodeType() == Node.ELEMENT_NODE) {
+          Element scEl = (Element) node;
+          String name = scEl.getAttribute("name");
+          PanoTourScene p = getPanoTourScene(tour, name);
+          if (tour.getCustomerInfo() != null && p != null) {
+            Boolean showCustomerInfo = p.getShowCustomerInfo();
+            if (showCustomerInfo == null || !showCustomerInfo) continue;
+            String north = p.getNorth() == null || p.getNorth().isEmpty()
+                ? "0"
+                : p.getNorth();
+            Element image = (Element) scEl.getElementsByTagName("image").item(0);
+            image.setAttribute("prealign", "0|" + north + "|0");
+
+            NodeList hotspots = scEl.getElementsByTagName("hotspot");
+            for (int t = 0; t < hotspots.getLength(); t++) {
+              Node nodeHotspot = hotspots.item(t);
+              if (nodeHotspot.getNodeType() == Node.ELEMENT_NODE) {
+                Element hotspotEl = (Element) nodeHotspot;
+                if (hotspotEl.hasAttribute("ath")) {
+                  double curAth = Double.parseDouble(hotspotEl.getAttribute("ath"));
+                  double athD = Double.parseDouble(north) + curAth;
+                  hotspotEl.setAttribute("ath", String.valueOf(athD));
+                }
+                NodeList points = hotspotEl.getElementsByTagName("point");
+                for (int l = 0; l < points.getLength(); l++) {
+                  Node nodePoint = points.item(l);
+                  if (nodePoint.getNodeType() == Node.ELEMENT_NODE) {
+                    Element pointEl = (Element) nodePoint;
+                    if (pointEl.hasAttribute("ath")) {
+                      double curAth = Double.parseDouble(pointEl.getAttribute("ath"));
+                      double athD = Double.parseDouble(north) + curAth;
+                      pointEl.setAttribute("ath", String.valueOf(athD));
+                    }
+                  }
+                }
+              }
+            }
+
+            Hotspot custHot = getHotSpotFromCustomerInfo(tour.getCustomerInfo(), p.getLatitude(), p.getLongitude(), p.getHeight());
+            if (tour.getDefaultPano() != null && !tour.getDefaultPano().isEmpty() && tour.getDefaultPano().equals(name)) {
+              Element panoview = (Element) scEl.getElementsByTagName("panoview").item(0);
+              panoview.setAttribute("h", String.valueOf(custHot.getAth()));
+              panoview.setAttribute("v", String.valueOf(custHot.getAtv()));
+            }
+            Element ciHs = scnsDoc.createElement("hotspot");
+            ciHs.setAttribute("name", "customerInfo");
+            ciHs.setAttribute("url", "/images/customerlogos/" + tour.getCustomerInfo().getLogoPath());
+            ciHs.setAttribute("ath", String.valueOf(custHot.getAth()));
+            ciHs.setAttribute("atv", String.valueOf(custHot.getAtv()));
+            ciHs.setAttribute("style", "customerStyle");
+            ciHs.setAttribute("onclick", "openurl('" + tour.getCustomerInfo().getExcltour() + "',_blank);");
+            ciHs.setAttribute("tag", "point");
+            ciHs.setAttribute("visible", "true");
+            scEl.appendChild(ciHs);
+
+            Element bgFrame = scnsDoc.createElement("hotspot");
+            bgFrame.setAttribute("name", "customerBgFrame");
+            bgFrame.setAttribute("url", "/images/1wpx.png");
+            bgFrame.setAttribute("ath", String.valueOf(custHot.getAth()));
+            bgFrame.setAttribute("atv", String.valueOf(custHot.getAtv()));
+            bgFrame.setAttribute("height", "60");
+            bgFrame.setAttribute("width", String.valueOf(bgFrameWidth));
+            bgFrame.setAttribute("style", "customerBgFrameStyle");
+            bgFrame.setAttribute("tag", "point");
+            bgFrame.setAttribute("visible", "true");
+            scEl.appendChild(bgFrame);
+
+            Element ci1Hs = scnsDoc.createElement("hotspot");
+            ci1Hs.setAttribute("name", "customerInfoLine");
+            ci1Hs.setAttribute("ath", String.valueOf(custHot.getAth()));
+            ci1Hs.setAttribute("atv", String.valueOf(custHot.getAtv()));
+            ci1Hs.setAttribute("style", "customerStyleLine");
+            ci1Hs.setAttribute("visible", "true");
+            scEl.appendChild(ci1Hs);
+
+            Element ci2Hs = scnsDoc.createElement("hotspot");
+            ci2Hs.setAttribute("name", "customerInfoTitle");
+            ci2Hs.setAttribute("ath", String.valueOf(custHot.getAth()));
+            ci2Hs.setAttribute("atv", String.valueOf(custHot.getAtv()));
+            ci2Hs.setAttribute("type", "text");
+            ci2Hs.setAttribute("html", tour.getCustomerInfo().getCompanyName() + " - " + custHot.getDistance() + "м");
+            ci2Hs.setAttribute("style", "customerStyleTitle");
+            ci2Hs.setAttribute("visible", "true");
+            scEl.appendChild(ci2Hs);
+
+            Element customerLayer = scnsDoc.createElement("layer");
+            customerLayer.setAttribute("name", "customerLayer");
+            customerLayer.setAttribute("url", "/images/customerlogos/" + tour.getCustomerInfo().getLogoPath());
+            customerLayer.setAttribute("keep", "true");
+            customerLayer.setAttribute("zorder", "0");
+            customerLayer.setAttribute("align", "righttop");
+            customerLayer.setAttribute("edge", "righttop");
+            customerLayer.setAttribute("x", "10");
+            customerLayer.setAttribute("y", "10");
+            customerLayer.setAttribute("height", "150");
+            customerLayer.setAttribute("width", "prop");
+            customerLayer.setAttribute("scale", "0.5");
+            customerLayer.setAttribute("preload", "true");
+            customerLayer.setAttribute("enabled", "true");
+            customerLayer.setAttribute("capture", "false");
+            customerLayer.setAttribute("onclick", "openurl('" + tour.getCustomerInfo().getSite() + "',_blank);");
+            scEl.appendChild(customerLayer);
+          }
+        }
+      }
+      scnsDoc.normalize();
+      return transformXmlToString(scnsDoc);
+    }
+    return "";
+  }
+
+  private void removeHiddenScenas(NodeList list, PanoTourRenta tour, Document root) {
+    List<String> names = new ArrayList<>();
+    for (int temp = 0; temp < list.getLength(); temp++) {
+      Node node = list.item(temp);
+      if (node.getNodeType() == Node.ELEMENT_NODE) {
+        Element element = (Element) node;
+        String name = element.getAttribute("name");
+        PanoTourScene p = getPanoTourScene(tour, name);
+        if (p == null) {
+          element.setAttribute("hidden","true");
+          // root.getDocumentElement().removeChild(list.item(temp));
+          // temp--;
+        } else {
+          names.add(p.getName());
+        }
+      }
+    }
+    names.forEach(e -> {
+      removeByAttr(list, root, "hotspot","linktarget", e);
+    });
+  }
+
+  private void removeByAttr(NodeList scnList, Document root, String tag, String attr, String name) {
+    for (int y = 0; y < scnList.getLength(); y++) {
+      Node scn = scnList.item(y);
+      if (scn.getNodeType() == Node.ELEMENT_NODE) {
+        Element elScn = (Element) scn;
+        NodeList list = elScn.getElementsByTagName(tag);
+        for (int i = 0; i < list.getLength(); i++) {
+          Node node = list.item(i);
+          if (node.getNodeType() == Node.ELEMENT_NODE) {
+            Element element = (Element) node;
+            String attrVal = element.getAttribute(attr);
+            if (attrVal != null && !attrVal.isEmpty() && !attr.equals(name)) {
+              elScn.removeChild(list.item(i));
+              // element.setAttribute("hidden","true");
+            }
+          }
+        }
+      }
+    }
+  }
+
+  private PanoTourScene getPanoTourScene(PanoTourRenta tour, String name) {
+    PanoTourScene p;
+    if (tour.getScenasFowShow() != null && !tour.getScenasFowShow().isEmpty()) {
+      p = tour.getScenasFowShow().stream()
+          .filter(s -> s.getName().equals(name)).findFirst().orElse(null);
+    } else {
+      p = tour.getPanoTourSrc().getScenes().stream()
+          .filter(s -> s.getName().equals(name)).findFirst().orElse(null);
+    }
+    return p;
+  }
+
+  private double getBgFrameWidth(String logoPath) {
+    BufferedImage bimg;
+    double logoWidth;
+    double logoHeight;
+    try {
+      bimg = ImageIO.read(new File(PATH_CUSTOMER_LOGO + logoPath));
+      logoWidth = bimg.getWidth();
+      logoHeight = bimg.getHeight();
+      return (60 / logoHeight) * logoWidth;
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    return 0;
+  }
+
   public String getRentaTourXml(RentaTour tour) {
     double bgFrameWidth = 0;
     if (tour.getCustomerInfo() != null) {
-      BufferedImage bimg = null;
-      double logoWidth;
-      double logoHeight;
-      try {
-        bimg = ImageIO.read(new File(PATH_CUSTOMER_LOGO + tour.getCustomerInfo().getLogoPath()));
-        logoWidth = bimg.getWidth();
-        logoHeight = bimg.getHeight();
-        bgFrameWidth = (60 / logoHeight) * logoWidth;
-      } catch (IOException e) {
-        e.printStackTrace();
-      }
+      bgFrameWidth = getBgFrameWidth(tour.getCustomerInfo().getLogoPath());
     }
     String result = "";
     StringBuilder sbXml = new StringBuilder();

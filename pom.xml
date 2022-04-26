@@ -74,7 +74,7 @@
                 <tomcat.manager>http://localhost:8085/manager/text</tomcat.manager>
                 <tomcat.manager.server>tomcat-firstbyte-test</tomcat.manager.server>
                 <mysql.driverClassName>com.mysql.jdbc.Driver</mysql.driverClassName>
-                <mysql.url>jdbc:mysql://localhost:3306/test_travelrk_db?serverTimezone=UTC</mysql.url>
+                <mysql.url>jdbc:mysql://localhost:3306/test1_travelrk_db?serverTimezone=UTC</mysql.url>
                 <mysql.username>test_travelrk_user</mysql.username>
                 <mysql.password>DarwiN_3102</mysql.password>
             </properties>

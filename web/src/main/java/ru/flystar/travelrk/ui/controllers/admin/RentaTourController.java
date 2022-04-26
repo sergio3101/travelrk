@@ -27,10 +27,6 @@ import ru.flystar.travelrk.service.PanoramaService;
 import ru.flystar.travelrk.service.RentaTourService;
 import ru.flystar.travelrk.service.UserService;
 
-/**
- * Project: travelrk
- * Created by Sergej Shestopalov on 19.03.2018.
- */
 @Controller
 @RequestMapping(value = "/admin")
 @Secured("ROLE_ADMIN")
