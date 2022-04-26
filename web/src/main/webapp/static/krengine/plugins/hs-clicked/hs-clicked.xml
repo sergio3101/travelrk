@@ -1,0 +1,109 @@
+<krpano>
+	
+<!--
+	set autosetup = "true" for apply the plugin for all loaded hotspots
+	add the attribute hs_clicked = "false" to a hotspot or hotspot style for exclude them
+	if autosetup = "false" add the attribute hs_clicked = "true" to a hotspot or hotspot style for apply the plugin manually
+	
+	version: 1.0
+	more information: http://hs-pano.com/hs-clicked-plugin/
+	author: Alexey Yuzhakov: https://www.facebook.com/a.m.yuzhakov
+	license: GNU General Public License, version 3 (GPL-3.0)
+	donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=alexey%40wp%2dpano%2ecom&lc=GB&item_name=WP%2dPano&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG_global%2egif%3aNonHosted
+-->
+	
+	<hs_clicked_settings
+		autosetup = "true"
+		align = "righttop"
+		edge = "center"
+		x = "0" y = "0"
+	/>
+	
+	<events name="hs_clicked_events" keep="true"
+			OnNewPano = "hs_clicked_onnewpano();"
+	/>
+
+	<layer name="hs_clicked_icon" url="icon-clicked.png" keep="true" visible="false"/>
+	
+	<action name="hs_clicked_init" autorun="preinit">
+		copy(hs_clicked_xml, xml.url);
+	</action>	
+	
+	<action name="hs_clicked_checkhotspots">
+		trace('hs_clicked_checkhotspots ', get(hs_clicked_count));
+		if( hs_clicked_count LT hotspot.count,
+			copy(hs_clicked_count, hotspot.count);
+			for(set(i, 0), i LT hotspot.count, inc(i),
+				if((hs_clicked_settings.autosetup) OR (hotspot[get(i)].hs_clicked),
+					if(hotspot[get(i)].hs_clicked != false,
+						txtadd(hs_clicked_text, 'hs_clicked_onclick(', get(i), '); ', get(hotspot[get(i)].onclick));
+						copy(hotspot[get(i)].onclick, hs_clicked_text);
+						if(hotspot[get(i)].hs_clicked_children, 
+							copy(layer[get(hotspot[get(i)].hs_clicked_children)].onclick, hs_clicked_text);
+							);
+						txtadd(hs_clicked_text, get(hotspot[get(i)].name), get(hs_clicked_xml), get(scene[get(xml.scene)].name));
+						if(hs_clicked_array[get(hs_clicked_text)],
+							if(hotspot[get(i)].loaded,
+								set(hotspot[get(i)].clicked, true);
+								if(hs_clicked_array[get(hs_clicked_text)].hs_clicked_children, 
+									copy(hotspot[get(i)].hs_clicked_children, hs_clicked_array[get(hs_clicked_text)].hs_clicked_children);
+								);
+								hs_clicked_addicon(get(hotspot[get(i)].name));
+								,	<!-- else -->
+								set(hotspot[get(i)].clicked, true);
+								if(hs_clicked_array[get(hs_clicked_text)].hs_clicked_children, 
+									copy(hotspot[get(i)].hs_clicked_children, hs_clicked_array[get(hs_clicked_text)].hs_clicked_children);
+									if(layer[get(hotspot[get(i)].hs_clicked_children)].onloaded,
+										txtadd(layer[get(hotspot[get(i)].hs_clicked_children)].onloaded, 'hs_clicked_addicon(', get(hotspot[get(i)].name), '); ', get(layer[get(hotspot[get(i)].hs_clicked_children)].onloaded));
+										,	<!-- else -->
+										txtadd(layer[get(hotspot[get(i)].hs_clicked_children)].onloaded, 'hs_clicked_addicon(', get(hotspot[get(i)].name), '); ');
+									); <!-- end if -->
+								);								
+								txtadd(hotspot[get(i)].onloaded, 'hs_clicked_addicon(', get(hotspot[get(i)].name), '); ', get(hotspot[get(i)].onloaded));
+							); <!-- end if -->
+						); <!-- end if -->
+					);  <!-- end if -->
+				);  <!-- end if -->
+			);  <!-- end for -->
+			delayedcall(0.71, hs_clicked_checkhotspots());
+		,
+		if( hs_clicked_count == 0, delayedcall(0.09, hs_clicked_checkhotspots()));
+		);  <!-- end if -->
+	</action>
+
+	<action name="hs_clicked_onnewpano">
+		set(hs_clicked_count, 0);
+		if(xml.url!='', copy(hs_clicked_xml, xml.url));
+		hs_clicked_checkhotspots();
+	</action>
+
+	<action name="hs_clicked_onclick">
+		ifnot( hotspot[%1].clicked,
+			txtadd(hs_clicked_text, get(hotspot[%1].name), get(hs_clicked_xml), get(scene[get(xml.scene)].name));
+			set(hs_clicked_array[get(hs_clicked_text)].value, true);
+			if(hotspot[%1].hs_clicked_children, copy(hs_clicked_array[get(hs_clicked_text)].hs_clicked_children, hotspot[%1].hs_clicked_children));
+			hs_clicked_addicon(get(hotspot[%1].name));
+			set(hotspot[%1].clicked, true);
+		);
+	</action>
+
+	<action name="hs_clicked_addicon">
+		txtadd(hs_name, %1, '_icon');
+		addlayer(get(hs_name));
+		if(hotspot[%1].hs_clicked_children,
+			if(layer[get(hotspot[%1].hs_clicked_children)].url,
+				txtadd(layer[get(hs_name)].parent, 'layer[', get(hotspot[%1].hs_clicked_children), ']');
+			);
+			, <!-- else -->
+			txtadd(layer[get(hs_name)].parent, 'hotspot[', %1, ']');
+		); <!-- end if -->
+		set(layer[get(hs_name)].url, get(layer['hs_clicked_icon'].url));
+		set(layer[get(hs_name)].align, get(hs_clicked_settings.align));
+		set(layer[get(hs_name)].edge, get(hs_clicked_settings.edge));
+		set(layer[get(hs_name)].x, get(hs_clicked_settings.x));
+		set(layer[get(hs_name)].y, get(hs_clicked_settings.y));
+		set(layer[get(hs_name)].enabled, false);
+		set(layer[get(hs_name)].visible, true);
+	</action>
+	
+</krpano>

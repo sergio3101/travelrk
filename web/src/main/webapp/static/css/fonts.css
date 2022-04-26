@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'highlinerlight';
+    src: url('../fonts/highliner_light-webfont.eot');
+    src: url('../fonts/highliner_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/highliner_light-webfont.woff2') format('woff2'),
+    url('../fonts/highliner_light-webfont.woff') format('woff'),
+    url('../fonts/highliner_light-webfont.ttf') format('truetype'),
+    url('../fonts/highliner_light-webfont.svg#highlinerlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neucharegular';
+    src: url('../fonts/neucha-webfont.eot');
+    src: url('../fonts/neucha-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/neucha-webfont.woff2') format('woff2'),
+    url('../fonts/neucha-webfont.woff') format('woff'),
+    url('../fonts/neucha-webfont.ttf') format('truetype'),
+    url('../fonts/neucha-webfont.svg#neucharegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

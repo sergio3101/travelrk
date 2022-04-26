@@ -1,0 +1,244 @@
+<!-- Made by KPGui, homepage: www.kpgui.com -->
+<krpano onstart="altstart();" >
+
+    <include name="skin" url="../skin/skin.xml" />
+
+    <tourSettings ru="Город-призрак Колманскоп, Намибия" eng="Kolmanskop Ghost Town, Namibia" lat="-26.701633" lng="15.231091" zoom="16" maptype="hybrid" soundtitleru="Frederic Delarue – «Angels Of The Sea»" soundtitleruW="auto" soundtitleeng="Frederic Delarue – &#34;Angels Of The Sea&#34;" soundtitleengW="auto" soundfile="delarue_hi.mp3|delarue_hi.ogg" infourlru="http://www.airpano.ru/360Degree-VirtualTour.php?3D=Kolmanskop-Namibia" infourleng="http://www.airpano.ru/360Degree-VirtualTour.php?3D=Kolmanskop-Namibia" infotextru="Читать статью о " infotextruwidth="auto" infotexteng="Read article about " infotextengwidth="auto" gotoTourOn="false" gotoTourTextru="" gotoTourTexteng="" gotoTourUrlru="" gotoTourUrleng="" soundsurl="sounds/" panosurl="panos/" />
+
+    <include name="lf_include" url="%CURRENTXML%/customlensflare.xml" />
+
+    <scene name="h4" folder="04" titleru="Анфилада засыпанных песком комнат" titleeng="Anfilade of sand-filled rooms" lat="-26.704488" lng=" 15.231212" heading="90" rothor="5" rotfov="81" rotspeed="2" >
+
+        <view hlookat="-1434.19" vlookat="4.57" fov="81.99" fovmin="40" fovmax="130" architectural="0.45" stereographic="false" />
+
+        <preview url="%CURRENTXML%/panos/hi/04/pre.jpg" />
+
+        <image type="CUBE" >
+
+            <cube url="%CURRENTXML%/panos/hi/04/_%s.jpg" />
+            <tablet >
+                <cube url="%CURRENTXML%/panos/low/04/_%s.jpg" />
+            </tablet>
+            <mobile >
+                <cube url="%CURRENTXML%/panos/mobile/04/_%s.jpg" />
+            </mobile>
+        </image>
+
+        <hotspot name="hsground" linkedscene="h9" style="hsGround" ath="119.12954" atv="19.03239" />
+
+    </scene>
+
+    <scene name="h7" folder="07" titleru="Колманскоп с высоты" titleeng="Above Kolmanskop Ghost Town " lat="-26.704209" lng="15.232272" heading="-20" rothor="26" rotfov="76" rotspeed="2" >
+
+        <view hlookat="-1315.06" vlookat="26.7" fov="76.25" fovmin="40" fovmax="130" architectural="0.5" stereographic="false" />
+
+        <preview url="%CURRENTXML%/panos/hi/07/pre.jpg" />
+
+        <image type="CUBE" >
+
+            <cube url="%CURRENTXML%/panos/hi/07/_%s.jpg" />
+            <tablet >
+                <cube url="%CURRENTXML%/panos/low/07/_%s.jpg" />
+            </tablet>
+            <mobile >
+                <cube url="%CURRENTXML%/panos/mobile/07/_%s.jpg" />
+            </mobile>
+        </image>
+
+        <hotspot name="hshelicopter" linkedscene="h6" style="hsHelicopter" ath="-120.08818" atv="-15" />
+
+        <hotspot name="hsground" linkedscene="h2" style="hsGround" ath="-121.06607" atv="15.45776" />
+
+        <hotspot name="hsground1" linkedscene="h8" style="hsGround" ath="-149.15864" atv="31.05864" />
+
+        <hotspot name="hsground2" linkedscene="h9" style="hsGround" ath="-179.72270" atv="33.65906" />
+
+    </scene>
+
+    <scene name="h1" folder="01" titleru="Колманскоп в полдень" titleeng="Kolmanskop at noon" lat="-26.703605" lng=" 15.230538" heading="25" rothor="0" rotfov="76" rotspeed="-2" >
+
+        <view hlookat="-1.39" vlookat="0.89" fov="76.95" fovmin="40" fovmax="120" architectural="0.25" stereographic="false" />
+
+        <preview url="%CURRENTXML%/panos/hi/01/pre.jpg" />
+
+        <image type="CUBE" >
+
+            <cube url="%CURRENTXML%/panos/hi/01/_%s.jpg" />
+            <tablet >
+                <cube url="%CURRENTXML%/panos/low/01/_%s.jpg" />
+            </tablet>
+            <mobile >
+                <cube url="%CURRENTXML%/panos/mobile/01/_%s.jpg" />
+            </mobile>
+        </image>
+
+    </scene>
+
+    <scene name="h5" folder="05" titleru="Над домом бывшего менеджера" titleeng="Above the house of the former manager" lat="-26.701633" lng=" 15.228344" heading="-30" rothor="33" rotfov="80" rotspeed="2" >
+
+        <view hlookat="-1366.18" vlookat="33.18" fov="80.99" fovmin="40" fovmax="125" architectural="0.2" stereographic="false" />
+
+        <preview url="%CURRENTXML%/panos/hi/05/pre.jpg" />
+
+        <image type="CUBE" >
+
+            <cube url="%CURRENTXML%/panos/hi/05/_%s.jpg" />
+            <tablet >
+                <cube url="%CURRENTXML%/panos/low/05/_%s.jpg" />
+            </tablet>
+            <mobile >
+                <cube url="%CURRENTXML%/panos/mobile/05/_%s.jpg" />
+            </mobile>
+        </image>
+
+        <hotspot name="hsground" linkedscene="h3" style="hsGround" ath="71.10705" atv="23.23511" />
+
+        <hotspot name="hsground1" linkedscene="h1" style="hsGround" ath="85.31598" atv="13.21254" />
+
+        <hotspot name="hsground2" linkedscene="h10" style="hsGround" ath="78.53287" atv="11.36745" />
+
+        <hotspot name="hshelicopter" linkedscene="h7" style="hsHelicopter" ath="76.13891" atv="-7.08308" />
+
+    </scene>
+
+    <scene name="h2" folder="02" titleru="Дом учителя" titleeng="Teacher&#8217;s house" lat="-26.702564" lng=" 15.230077" heading="-10" rothor="-1" rotfov="71" rotspeed="2" >
+
+        <view hlookat="476.62" vlookat="-1.71" fov="71.39" fovmin="40" fovmax="120" architectural="0.4" stereographic="false" />
+
+        <preview url="%CURRENTXML%/panos/hi/02/pre.jpg" />
+
+        <image type="CUBE" >
+
+            <cube url="%CURRENTXML%/panos/hi/02/_%s.jpg" />
+            <tablet >
+                <cube url="%CURRENTXML%/panos/low/02/_%s.jpg" />
+            </tablet>
+            <mobile >
+                <cube url="%CURRENTXML%/panos/mobile/02/_%s.jpg" />
+            </mobile>
+        </image>
+
+        <hotspot name="hsground" linkedscene="h3" style="hsGround" ath="165.40829" atv="-4.36873" />
+
+        <hotspot name="hsground1" linkedscene="h1" style="hsGround" ath="437.1131079322302" atv="-2.9296872793366737" />
+
+        <hotspot name="hshelicopter" linkedscene="h6" style="hsHelicopter" ath="45.37285" atv="-12.20490" />
+
+        <hotspot name="hshelicopter1" linkedscene="h5" style="hsHelicopter" ath="-136.09691" atv="-21.61987" />
+
+    </scene>
+
+    <scene name="h3" folder="03" titleru="В доме учителя" titleeng="Inside the Teacher&#8217;s house" lat="-26.702504" lng=" 15.229928" heading="-30" rothor="8" rotfov="79" rotspeed="-2" >
+
+        <view hlookat="984.7" vlookat="8.7" fov="79.72" fovmin="40" fovmax="130" architectural="0.4" stereographic="false" />
+
+        <preview url="%CURRENTXML%/panos/hi/03/pre.jpg" />
+
+        <image type="CUBE" >
+
+            <cube url="%CURRENTXML%/panos/hi/03/_%s.jpg" />
+            <tablet >
+                <cube url="%CURRENTXML%/panos/low/03/_%s.jpg" />
+            </tablet>
+            <mobile >
+                <cube url="%CURRENTXML%/panos/mobile/03/_%s.jpg" />
+            </mobile>
+        </image>
+
+    </scene>
+
+    <scene name="h6" folder="06" titleru="Город-призрак Колманскоп" titleeng="Kolmanskop Ghost Town" lat="-26.703439" lng="15.231091" heading="45" rothor="19" rotfov="89" rotspeed="2" >
+
+        <view hlookat="-242.15" vlookat="19.07" fov="89.12" fovmin="40" fovmax="130" fisheye="0.25" architectural="0.6" stereographic="false" />
+
+        <preview url="%CURRENTXML%/panos/hi/06/pre.jpg" />
+
+        <image type="CUBE" >
+
+            <cube url="%CURRENTXML%/panos/hi/06/_%s.jpg" />
+            <tablet >
+                <cube url="%CURRENTXML%/panos/low/06/_%s.jpg" />
+            </tablet>
+            <mobile >
+                <cube url="%CURRENTXML%/panos/mobile/06/_%s.jpg" />
+            </mobile>
+        </image>
+
+        <hotspot name="hshelicopter" linkedscene="h5" style="hsHelicopter" ath="162.52651" atv="-14.40041" />
+
+        <hotspot name="hsground" linkedscene="h2" style="hsGround" ath="172.25967" atv="13.49822" />
+
+        <hotspot name="hsground1" linkedscene="h1" style="hsGround" ath="96.71778" atv="31.35333" />
+
+        <hotspot name="hsground2" linkedscene="h8" style="hsGround" ath="7.09137" atv="29.06538" />
+
+        <hotspot name="hsground3" linkedscene="h4" style="hsGround" ath="9.75945" atv="15.92770" />
+
+        <hotspot name="hshelicopter1" linkedscene="h7" style="hsHelicopter" ath="-8.09327" atv="-14.24234" />
+
+    </scene>
+
+    <scene name="h8" folder="08" titleru="Песок и время не щадят строений" titleeng="Sand and time do not spare buildings" lat="-26.703939" lng=" 15.231072" heading="-20" rothor="12" rotfov="94" rotspeed="-2" >
+
+        <view hlookat="-1416.82" vlookat="12.05" fov="94.4" fovmin="40" fovmax="130" architectural="0.3" stereographic="false" />
+
+        <preview url="%CURRENTXML%/panos/hi/08/pre.jpg" />
+
+        <image type="CUBE" >
+
+            <cube url="%CURRENTXML%/panos/hi/08/_%s.jpg" />
+            <tablet >
+                <cube url="%CURRENTXML%/panos/low/08/_%s.jpg" />
+            </tablet>
+            <mobile >
+                <cube url="%CURRENTXML%/panos/mobile/08/_%s.jpg" />
+            </mobile>
+        </image>
+
+        <hotspot name="hsground" linkedscene="h10" style="hsGround" ath="-90.87018" atv="16.44397" />
+
+    </scene>
+
+    <scene name="h9" folder="09" titleru="Жилые помещения" titleeng="Living spaces" lat="-26.704310" lng=" 15.231188" heading="-90" rothor="-1" rotfov="80" rotspeed="-2" >
+
+        <view hlookat="-866.44" vlookat="-0.46" fov="79.61" fovmin="40" fovmax="130" architectural="0.4" stereographic="false" />
+
+        <preview url="%CURRENTXML%/panos/hi/09/pre.jpg" />
+
+        <image type="CUBE" >
+
+            <cube url="%CURRENTXML%/panos/hi/09/_%s.jpg" />
+            <tablet >
+                <cube url="%CURRENTXML%/panos/low/09/_%s.jpg" />
+            </tablet>
+            <mobile >
+                <cube url="%CURRENTXML%/panos/mobile/09/_%s.jpg" />
+            </mobile>
+        </image>
+
+        <hotspot name="hsground" linkedscene="h4" style="hsGround" ath="-162.17593" atv="9.18959" />
+
+    </scene>
+
+    <scene name="h10" folder="10" titleru="Некоторые комнаты засыпаны песком под потолок" titleeng="Some rooms are covered with sand up to the ceiling" lat="-26.703757" lng=" 15.231038" heading="0" rothor="7" rotfov="83" rotspeed="-2" >
+
+        <view hlookat="251.25" vlookat="7.73" fov="83.45" fovmin="40" fovmax="130" architectural="0.4" stereographic="false" />
+
+        <preview url="%CURRENTXML%/panos/hi/10/pre.jpg" />
+
+        <image type="CUBE" >
+
+            <cube url="%CURRENTXML%/panos/hi/10/_%s.jpg" />
+            <tablet >
+                <cube url="%CURRENTXML%/panos/low/10/_%s.jpg" />
+            </tablet>
+            <mobile >
+                <cube url="%CURRENTXML%/panos/mobile/10/_%s.jpg" />
+            </mobile>
+        </image>
+
+        <hotspot name="hsground" linkedscene="h8" style="hsGround" ath="-78.10662" atv="15.91494" />
+
+    </scene>
+
+</krpano>

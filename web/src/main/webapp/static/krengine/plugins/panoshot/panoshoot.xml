@@ -1,0 +1,814 @@
+<krpano version="1.19" snapshot_ison="false">
+
+<panoshot  
+	show_snapshot_onstart="false"
+
+	maxsize="1024" 
+	jpeg_quality="0.6" 
+	watermark="true" 
+	snapshot_name="360_Snapshot"
+	
+	show_ratio="true"
+	ratio_icon_position_align="right"
+	viewfinder_ratio_width="16" 
+	viewfinder_ratio_height="9"
+	viewfinder_padding="150"
+	viewfinder_glass="true"
+	viewfinder_bg_color="0x000000"
+	viewfinder_bg_alpha="0.7"
+	viewfinder_border="3 0xffffff 1"
+	snapshot_icon_y="100"
+			
+	email_subject="Check this out !" 
+	email_line1="I took this picture !" 
+	email_line2="Take yours >" 
+
+	show_msg="true"	
+	tutorial_msg="Move the panorama to [b]compose[/b], [b]capture[/b] and [b]share your view ![/b]"
+	share_msg="[b]Wow, nice pic ![/b][br]You can now [b]share it[/b] on your social networks ![br]&#8744;"
+	share_txt="Share on"
+	
+	mobile_button_align="bottom"
+	mobile_button_edge=""
+	mobile_button_x=""
+	mobile_button_y="50"
+
+	plugin_path="/krengine/plugins/panoshot/"
+	sound_path="/krengine/plugins/panoshot/"
+	
+	external_php_server="false"
+	external_php_server_path=""
+/>
+
+<social_but name="panoshot_facebook" show="true"/>
+<social_but name="panoshot_twitter" show="true"/>
+<social_but name="panoshot_googleplus" show="true"/>
+<social_but name="panoshot_linkedin" show="true"/>
+<social_but name="panoshot_pininterest" show="true"/>
+<social_but name="panoshot_tumblr" show="true"/>
+
+<social_but name="panoshot_vk" show="false"/>
+<social_but name="panoshot_weibo" show="false"/>
+
+<social_but name="panoshot_email" show="true"/>
+<social_but name="panoshot_download" show="true"/>
+
+<action name="set_snap_view" autorun="preinit" type="javascript">
+var sceneview = krpano.get('sceneview');
+encodedview = decodeURIComponent(sceneview);
+var elem = encodedview.split(','),
+startscene = elem[0],
+h = elem[1],
+v = elem[2],
+f = elem[3];
+if(h != undefined) {
+krpano.set("startscene", startscene);
+krpano.set("h", h);
+krpano.set("v", v);
+krpano.set("f", f);
+var cleanUri = location.protocol + '//' + location.host + location.pathname + location.hash;
+window.history.replaceState({}, document.title, cleanUri);
+}
+</action>
+
+
+<events name="setpanoshot" onxmlcomplete="
+trace('Snapshot Plugin for Krpano | V1.4');
+
+ifnot(panoshot.external_php_server,
+copy(panoshot.snapshot_path,panoshot.plugin_path)
+,
+copy(panoshot.snapshot_path,panoshot.external_php_server_path)
+);
+
+set(layer[viewfinder_bd].bgborder,get(panoshot.viewfinder_border));
+
+set(layer[viewfinders].align,get(panoshot.ratio_icon_position_align));
+set(layer[pin].align,get(panoshot.ratio_icon_position_align));
+if(panoshot.ratio_icon_position_align == left,set(layer[pin].rotate,180);set(layer[pin].ox,-12);set(layer[pin].oy,2));
+
+set(layer[vftop].bgcolor,get(panoshot.viewfinder_bg_color));
+set(layer[vfbottom].bgcolor,get(panoshot.viewfinder_bg_color));
+set(layer[vfleft].bgcolor,get(panoshot.viewfinder_bg_color));
+set(layer[vfright].bgcolor,get(panoshot.viewfinder_bg_color));
+set(layer[vftop].bgalpha,get(panoshot.viewfinder_bg_alpha));
+set(layer[vfbottom].bgalpha,get(panoshot.viewfinder_bg_alpha));
+set(layer[vfleft].bgalpha,get(panoshot.viewfinder_bg_alpha));
+set(layer[vfright].bgalpha,get(panoshot.viewfinder_bg_alpha));
+
+set(layer[tuto].html,get(panoshot.tutorial_msg));
+set(layer[wow].html,get(panoshot.share_msg));
+set(layer[partager].html,get(panoshot.share_txt));
+
+ifnot(device.desktop,set(layer[camera].align,get(panoshot.mobile_button_align)));
+ifnot(device.desktop,set(layer[camera].edge,get(panoshot.mobile_button_edge)));
+ifnot(device.desktop,set(layer[camera].x,get(panoshot.mobile_button_x)));
+ifnot(device.desktop,set(layer[camera].y,get(panoshot.mobile_button_y)));
+
+if(panoshot.show_snapshot_onstart,show_snapshot(true),show_snapshot(false));
+"
+ onloadcomplete="if(h , lookto(get(h),get(v),get(f),smooth(100,50,30),true,true,delete(h,v,f)))"
+ 
+keep="true"/>
+
+	<action name="setup_social">
+	set(nsb,0);
+	for(set(i,0), i LT social_but.count, inc(i),
+			if(social_but[get(i)].show == true , build_share(get(social_but[get(i)].name)),removelayer(get(social_but[get(i)].name)))
+		  );
+	</action>
+	
+	<action name="build_share" devices="desktop">
+	mul(sb_xpos,get(nsb),40);
+	copy(layer[%1].x,sb_xpos);
+	inc(nsb);
+	</action>
+	
+	<action name="build_share" devices="mobile">
+	if(stagewidth GT stageheight,
+	mod(mnsb,get(nsb),4);
+	if(mnsb == 0, set(layer[%1].x,20%));
+	if(mnsb == 1, set(layer[%1].x,40%));
+	if(mnsb == 2, set(layer[%1].x,60%));
+	if(mnsb == 3, set(layer[%1].x,80%));
+	if(nsb LE 3, set(layer[%1].y,30%));
+	if(nsb GT 3, set(layer[%1].y,70%));
+	inc(nsb);
+	,
+	mod(mnsb,get(nsb),2);
+	if(mnsb == 0, set(layer[%1].x,30%),set(layer[%1].x,70%));
+	if((nsb == 0) OR (nsb == 1), set(layer[%1].y,20%));
+	if((nsb == 2) OR (nsb == 3), set(layer[%1].y,40%));
+	if((nsb == 4) OR (nsb == 5), set(layer[%1].y,60%));
+	if((nsb == 6) OR (nsb == 7), set(layer[%1].y,80%));
+	if(nsb GT 7, removelayer(get(layer[%1].name)));
+	inc(nsb);
+	);
+	</action>
+
+	<action name="build_share" devices="tablet">
+	if(layer[screenshot].pixelwidth GT layer[screenshot].pixelheight,
+	mod(mnsb,get(nsb),4);
+	if(mnsb == 0, set(layer[%1].x,20%));
+	if(mnsb == 1, set(layer[%1].x,40%));
+	if(mnsb == 2, set(layer[%1].x,60%));
+	if(mnsb == 3, set(layer[%1].x,80%));
+	if(nsb LE 3, set(layer[%1].y,30%));
+	if(nsb GT 3, set(layer[%1].y,70%));
+	inc(nsb);
+	,
+	mod(mnsb,get(nsb),2);
+	if(mnsb == 0, set(layer[%1].x,30%),set(layer[%1].x,70%));
+	if((nsb == 0) OR (nsb == 1), set(layer[%1].y,20%));
+	if((nsb == 2) OR (nsb == 3), set(layer[%1].y,40%));
+	if((nsb == 4) OR (nsb == 5), set(layer[%1].y,60%));
+	if((nsb == 6) OR (nsb == 7), set(layer[%1].y,80%));
+	if(nsb GT 7, removelayer(get(layer[%1].name)));
+	inc(nsb);
+	);
+	</action>
+		
+<events name="panoshot_resize" onresize="ifnot(in_area_tween, resizearea() );" devices="desktop" keep="true"/>
+<events name="screenshotresize" onresize="if(layer[screenshot],resizescreenshot();setup_social();)" keep="true"/>
+
+<action name="show_snapshot">
+if(!firstshot AND panoshot.show_msg AND %1 == true, showtuto();set(firstshot,true),set(layer[tuto].visible,false););
+set(layer[camera].visible,%1);
+set(layer[viewfinder].visible,%1);
+if(panoshot.show_ratio,set(layer[viewfinders].visible,%1));
+if(panoshot.viewfinder_glass,set(layer[viewfinder_glass].visible,%1));
+set(snapshot_ison,%1);
+mysnapshot(%1);
+</action>
+
+<action name="mysnapshot"></action>
+
+<action name="showtuto">
+set(layer[tuto].visible,true);
+tween(layer[tuto].alpha,1);
+delayedcall(5,tween(layer[tuto].alpha,0,2,,removelayer(tuto)));
+</action>
+
+<action name="showwow">
+set(layer[wow].visible,true);
+tween(layer[wow].alpha,1);
+delayedcall(5,tween(layer[wow].alpha,0,2,,removelayer(wow)));
+</action>
+
+<layer name="tuto" url="%SWFPATH%/plugins/textfield.swf" align="center" 
+       html=""
+	   width="400"
+       css="font-family:Arial; font-size:22px; color:#ffffff;text-align:center"
+       padding="10 20"
+       background="true"
+       backgroundcolor="0x000000"
+       backgroundalpha="0.6"
+       border="false"
+	   onclick="removelayer(tuto)"
+	   visible="false"
+	   alpha="0"
+	   zorder="1000"
+	   keep="true"
+       />
+
+<layer name="wow" url="%SWFPATH%/plugins/textfield.swf" align="bottomleft" 
+       html=""
+	   width="400"
+       css="font-family:Arial; font-size:22px; color:#ffffff;text-align:center"
+       padding="10 20"
+       background="true"
+       backgroundcolor="0x000000"
+       backgroundalpha="0.7"
+       border="false"
+	   onclick="removelayer(wow)"
+	   visible="false"
+	   alpha="0"
+	   zorder="1000"
+	   devices="desktop"
+	   keep="true"
+       />
+
+<action name="hide_hs_onsnap">
+		for(set(i,0), i LT hotspot.count, inc(i),
+			copy(hs, hotspot[get(i)]);
+			if(hs.visible === true,
+				copy(hr.snap_backup_visible, hs.visible);
+				set(hr.visible, false);
+			  );
+		  );
+</action>
+
+	<action name="show_hs_aftersnap">
+		for(set(i,0), i LT hotspot.count, inc(i),
+			copy(hs, hotspot[get(i)]);
+			if(hs.snap_backup_visible,
+				copy(hs.visible, hs.snap_backup_visible);
+				delete(hs.snap_backup_visible);
+			  );
+		  );
+	</action>
+		   
+<action name="panoshoot">
+hide_hs_onsnap();
+
+if(device.desktop,
+set(layer[tuto].visible,false);setup_viewfinder();flash();show_loading()
+,
+setup_viewfinder_mobile();flash();show_loading()
+);
+if(vtbuilder_snapshotlink, get_vtbuilder_snapshotlink());
+</action>
+
+<layer name="camera" url="camera.png" align="bottom" edge="center" parent="layer[viewfinder]" ondown="playsound(camera,calc(panoshot.sound_path + 'shutter.mp3'),1);" onclick="panoshoot()" devices="desktop" keep="true" zorder="1000" onover="tween(scale,1)" onout="tween(scale,0.8)" scale="0.8"/>
+<layer name="camera" url="camera.png" ondown="playsound(camera,calc(panoshot.sound_path + 'shutter.mp3'),1);" scale="0.8" onclick="panoshoot()" devices="mobile|tablet" keep="true" visible="false"/>
+
+<style name="bg_viewfinder" type="container" parent="layer[viewfinder]" keep="true" bgcapture="true" handcursor="false" onclick="show_snapshot(false)"/>
+
+<layer name="vftop" style="bg_viewfinder" align="top" edge="bottom" height="500" width="3000"/>
+<layer name="vfbottom" style="bg_viewfinder" align="bottom" edge="top" height="500" width="3000"/>
+<layer name="vfleft" style="bg_viewfinder" align="left" edge="right" height="100%" width="1000"/>
+<layer name="vfright" style="bg_viewfinder" align="right" edge="left" height="100%" width="1000"/>
+
+<layer name="viewfinder" type="container" bgalpha="0" align="center" devices="desktop" keep="true" onloaded="if(panoshot.viewfinder_ratio_width == 0 ,set(aspect,0);changeaspect(),div(aspect,get(panoshot.viewfinder_ratio_width),get(panoshot.viewfinder_ratio_height));changeaspect();)" visible="false">
+<layer name="viewfinder_bd" type="container" bgalpha="0" align="center" devices="desktop" keep="true" parent="layer[viewfinder]" width="100%" height="100%" zorder="2"/>
+<layer name="viewfinder_glass" url="viewfinder.png" width="40%" height="prop" align="center" enabled="false" keep="true" visible="false"/>
+</layer>
+<style name="social" align="left" crop="0|0|32|32" onovercrop="0|32|32|32" keep="true"/>
+<style name="social_m" edge="center" keep="true" scale="0.6"/>
+
+<layer name="flash" type="container" bgalpha="1" bgcolor="0xffffff" width="100%" height="100%" visible="false" zorder="1000"/>
+
+<layer name="back_screen" type="container" bgalpha="0.8" bgcolor="0x000000" width="100%" height="100%" visible="false" keep="true" zorder="1000" bgcapture="true" handcursor="false" >	
+	<layer name="loading" url="loading.gif" align="center" visible="false" keep="true"/>
+</layer>
+
+	<layer name="partager" url="%SWFPATH%/plugins/textfield.swf" background="false" css="color:0xffffff;font-size:1.5em;text-align:center" html="" align="bottomleft" edge="topleft" y="-10" visible="false" keep="true" devices="desktop" zorder="1002"/>	
+	<layer name="socialbuttons" type="container" bgalpha="0" bgcolor="0x000000" width="100%" height="40" x="-15" visible="false" align="right" edge="left" devices="desktop" keep="true">
+		<layer name="panoshot_facebook" url="social/facebook.png" style="social" onclick="share_on_social(facebook,get(viewurl),get(imgurl),get(vfw),get(vfh))" />		
+		<layer name="panoshot_twitter" url="social/twitter.png" style="social" onclick="share_on_social(twitter,get(viewurl),get(imgurl),get(vfw),get(vfh))" />
+		<layer name="panoshot_googleplus" url="social/googleplus.png" style="social" onclick="share_on_social(googleplus,get(viewurl),get(imgurl),get(vfw),get(vfh))" />
+		<layer name="panoshot_linkedin" url="social/linkedin.png" style="social" onclick="share_on_social(linkedin,get(viewurl),get(imgurl),get(vfw),get(vfh))" />
+		<layer name="panoshot_pininterest" url="social/pininterest.png" style="social" onclick="share_on_social(pininterest,get(viewurl),get(imgurl),get(vfw),get(vfh))" />
+		<layer name="panoshot_tumblr" url="social/tumblr.png" style="social" onclick="share_on_social(tumblr,get(viewurl),get(imgurl),get(vfw),get(vfh))" />
+		
+		<layer name="panoshot_vk" url="social/vk.png" style="social" onclick="share_on_social(vk,get(viewurl),get(imgurl),get(vfw),get(vfh))" />
+		<layer name="panoshot_weibo" url="social/weibo.png" style="social" onclick="share_on_social(weibo,get(viewurl),get(imgurl),get(vfw),get(vfh))" />
+		
+		<layer name="panoshot_email" url="social/email.png" style="social" onclick="share_on_gmail(get(viewurl),get(imgurl),get(panoshot.email_subject),get(panoshot.email_line1),get(panoshot.email_line2))"/>
+		<layer name="panoshot_download" url="social/download.png" style="social" onclick="download(get(imgurl),get(panoshot.snapshot_name))"/>
+	</layer>
+
+	<layer name="partager" url="%SWFPATH%/plugins/textfield.swf" background="false" css="color:0xffffff;font-size:2em;text-align:center" html="" width="100%" height="100%" align="top" y="10" visible="false" keep="true" devices="mobile|tablet" zorder="1002"/>
+	<layer name="socialbuttons" type="container" bgalpha="0" bgcolor="0x000000" width="100%" height="100%" visible="false" align="top" edge="top" devices="mobile|tablet" keep="true" zorder="1002">
+		<layer name="panoshot_facebook" url="social/facebook_m.png" style="social_m" onclick="share_on_social(facebook,get(viewurl),get(imgurl),get(vfw),get(vfh))"/>
+		<layer name="panoshot_twitter" url="social/twitter_m.png" style="social_m" onclick="share_on_social(twitter,get(viewurl),get(imgurl),get(vfw),get(vfh))"/>
+		<layer name="panoshot_googleplus" url="social/googleplus_m.png" style="social_m" onclick="share_on_social(googleplus,get(viewurl),get(imgurl),get(vfw),get(vfh))"/>
+		<layer name="panoshot_linkedin" url="social/linkedin_m.png" style="social_m" onclick="share_on_social(linkedin_mobile,get(viewurl),get(imgurl),get(vfw),get(vfh))"/>
+		<layer name="panoshot_pininterest" url="social/pininterest_m.png" style="social_m" onclick="share_on_social(pininterest,get(viewurl),get(imgurl),get(vfw),get(vfh))"/>
+		<layer name="panoshot_tumblr" url="social/tumblr_m.png" style="social_m" onclick="share_on_social(tumblr,get(viewurl),get(imgurl),get(vfw),get(vfh))" />
+		
+		<layer name="panoshot_vk" url="social/vk_m.png" style="social_m" onclick="share_on_social(vk,get(viewurl),get(imgurl),get(vfw),get(vfh))" />
+		<layer name="panoshot_weibo" url="social/weibo_m.png" style="social_m" onclick="share_on_social(weibo,get(viewurl),get(imgurl),get(vfw),get(vfh))" />
+		
+		<layer name="panoshot_email" url="social/email_m.png" style="social_m" onclick="share_on_gmail(get(viewurl),get(imgurl),get(panoshot.email_subject),get(panoshot.email_line1),get(panoshot.email_line2))"/>		
+		<layer name="panoshot_download" url="social/download_m.png" style="social_m" onclick="download(get(imgurl),get(panoshot.snapshot_name))"/>		
+	</layer>
+		
+<layer name="close_screenshot" url="close.png" onclick="hide_img()" align="topright" edge="center" zorder="5" visible="false" keep="true" devices="desktop"/>
+<layer name="close_screenshot" url="close.png" onclick="hide_img()" align="topright" x="15" y="15" zorder="1002" visible="false" keep="true" devices="mobile|tablet"/>
+
+<action name="share_on_social" type="Javascript"><![CDATA[
+//var viewscene = krpano.get('viewscene');
+krpano.call("trace(get(scene[get(xml.scene)].name))");
+var viewscene = krpano.get("scene[get(xml.scene)].name");
+viewscene=viewscene.replace('scene_','');
+var pano1=viewscene.split("_")[0];
+var pano2=viewscene.split("_")[1].toUpperCase();
+viewscene=pano1+"_"+pano2;
+var  network = args[1],
+	panourl = args[2].split("&")[1],
+	snapshoturl = args[3],
+	vfw = args[4],
+	vfh = args[5],
+	winTop = (screen.height / 2) - 180,
+	winLeft = (screen.width / 2) - 260,
+	url = document.URL,
+	new_url = url.split("?")[0],
+	almostpath = url.substring(0,url.lastIndexOf("/")),
+	path = almostpath + '/',
+	pluginpath = krpano.get('panoshot.snapshot_path'),
+//	url_to_share = encodeURIComponent(window.location.origin+'/pano/'+viewscene+'/?' + panourl+'&vfw=' + vfw + '&vfh=' + vfh + '&snapshoturl=' + snapshoturl);
+  tour_url=args[2].replace('&','?'),
+	url_to_share = encodeURIComponent(tour_url+'&vfw=' + vfw + '&vfh=' + vfh + '&snapshoturl=' + snapshoturl);
+switch(network){
+        case 'facebook':
+		window.open('https://facebook.com/sharer/sharer.php?u=' + url_to_share,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=520,height=360');
+		break;
+        case 'twitter':
+		window.open('http://twitter.com/intent/tweet?text=' + url_to_share,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=520,height=360');
+		break;
+        case 'googleplus':
+		window.open('https://plus.google.com/share?url=' + url_to_share,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=400,height=520');
+		break;
+        case 'linkedin':
+		window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + url_to_share,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=400,height=520');
+		break;
+        case 'linkedin_mobile':
+		window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + panourl,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=400,height=520');
+		break;
+        case 'pininterest':
+		window.open('https://pinterest.com/pin/create/button/?url=' + url_to_share,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=520,height=360');
+		break;
+        case 'tumblr':
+		window.open('https://www.tumblr.com/widgets/share/tool?posttype=photo&caption='+panourl+'&canonicalUrl='+snapshoturl,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=520,height=360');
+		break;
+        case 'vk':
+		window.open('http://vk.com/share.php?url=' + url_to_share,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=520,height=360');
+		break;
+        case 'weibo':
+		window.open('http://service.weibo.com/share/share.php?url=' + url_to_share,'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=520,height=360');
+		break;
+}
+]]></action>
+
+<action name="share_on_gmail" type="Javascript"><![CDATA[
+var  panopath = args[1];
+var  imgpath = args[2];
+var  subject = args[3];
+var  line1 = args[4];
+var  line2 = args[5];
+window.location.href ='mailto:?subject='+subject+'&body='+line1+'%20'+imgpath+'%0D%0A'+line2+'%20'+panopath;
+]]></action>
+
+<action name="download" type="Javascript"><![CDATA[
+var  imgpath = args[1];
+var  imgname = args[2];
+var snapshotname = imgname + '.jpg';
+var a = $("<a>").attr("href",imgpath).attr("download",snapshotname).appendTo("body");
+a[0].click();
+a.remove();
+]]></action>
+
+<action name="setup_viewfinder">
+layertoscreen(viewfinder, layer[viewfinder].x,layer[viewfinder].y, screenx,screeny);
+set(vfw,get(layer[viewfinder].width));
+set(vfh,get(layer[viewfinder].height));
+roundval(screenx);
+roundval(screeny);
+roundval(vfw);
+roundval(vfh);
+if(device.pixelratio != 1,
+mul(screenx,device.pixelratio);
+mul(screeny,device.pixelratio);
+mul(vfw,device.pixelratio);
+mul(vfh,device.pixelratio);
+);
+set(vh,get(view.hlookat));
+set(vv,get(view.vlookat));
+set(vf,get(view.fov));
+roundval(vh,3);
+roundval(vv,3);
+roundval(vf,3);
+nexttick(makescreenshot(get(screenx),get(screeny),get(vfw),get(vfh),get(panoshot.maxsize)));
+</action>
+
+<action name="setup_viewfinder_mobile">
+calc(vfw,device.pixelratio * stagescale * stagewidth);
+calc(vfh,device.pixelratio * stagescale * stageheight);
+
+set(vh,get(view.hlookat));
+set(vv,get(view.vlookat));
+set(vf,get(view.fov));
+roundval(vh,3);
+roundval(vv,3);
+roundval(vf,3);
+
+nexttick(makescreenshot_mobile(get(vfw),get(vfh),get(panoshot.maxsize)););
+if(device.ipad,updatescreen());
+</action>
+
+
+<action name="makescreenshot" type="Javascript"><![CDATA[
+  if (krpano.webGL && krpano.webGL.context.getContextAttributes().preserveDrawingBuffer)
+  {
+    try
+    {
+var canvas = krpano.webGL.canvas,
+	screenx = Number(args[1]),
+	screeny = Number(args[2]),
+	vfw = Number(args[3]),
+	vfh = Number(args[4]),
+	maxsize = Number(args[5]),
+	jpeg_quality = krpano.get('panoshot.jpeg_quality'),
+	watermark = krpano.get('panoshot.watermark'),
+	scaledCanvas=document.createElement("canvas"),
+	scaledContext=scaledCanvas.getContext('2d');
+
+if(vfw > vfh){
+
+	if(vfw > maxsize)
+		{
+		scaledCanvas.width=maxsize;
+		scaledCanvas.height=maxsize*vfh/vfw;
+		}
+	else{
+		scaledCanvas.width=vfw;
+		scaledCanvas.height=vfh;
+		}
+}
+else {
+
+	if(vfh > maxsize)
+		{
+		scaledCanvas.height=maxsize;
+		scaledCanvas.width=maxsize*vfw/vfh;
+		}
+	else{
+		scaledCanvas.width=vfw;
+		scaledCanvas.height=vfh;
+		}
+}
+
+krpano.set("vfw", scaledCanvas.width);
+krpano.set("vfh", scaledCanvas.height);
+
+scaledContext.drawImage(canvas,screenx,screeny,vfw,vfh,0,0,scaledCanvas.width,scaledCanvas.height);	
+var img_src = scaledCanvas.toDataURL("image/jpeg",+jpeg_quality);
+	screenshot(img_src,watermark);
+
+    }
+    catch(err)
+    {
+       krpano.trace(3,err);
+    }
+  }
+  else
+  {
+    krpano.trace(3,"no webgl or no preserveDrawingBuffer");
+  }
+  
+  function screenshot(dataURL,watermark){
+var pluginpath = krpano.get('panoshot.snapshot_path'),
+savecreenshot = '/rentatours/savescreenshot';
+var request = $.ajax({
+  type: "POST",
+  url: savecreenshot,
+  data: { 
+     imgBase64: dataURL,
+	 watermark: watermark
+  }
+  });
+  
+  request.done(function(file) {
+	var url = document.URL,
+	new_url = url.split("?")[0],
+    almostpath = url.substring(0,url.lastIndexOf("/")),
+	path = almostpath + '/',
+	imgurl = pluginpath +file,
+	vtb_url = krpano.get('vtbuilder_snapshotlink'),
+	scene = krpano.get('scene[get(xml.scene)].name');
+	vh = krpano.get('vh'),
+	vv = krpano.get('vv'),
+	vf = krpano.get('vf');
+	if(vtb_url !== null){new_url = vtb_url}
+	else
+	if(scene !== null){new_url = new_url + '&sceneview=' + scene + ',' + vh + ',' + vv + ',' + vf};
+	var viewurl_encode = encodeURIComponent(new_url);
+	krpano.set("viewurl", new_url);
+	krpano.set("viewscene", scene);
+	krpano.set("panourl", url);
+	krpano.set("fullpath", path);
+	krpano.set("imgurl", imgurl);
+	krpano.call("show_img()");
+});
+
+  request.fail(function(jqXHR, textStatus) {
+    alert("Request failed: " + textStatus);
+  });
+  }
+]]></action>
+
+<action name="makescreenshot_mobile" type="Javascript"><![CDATA[
+  if (krpano.webGL &&
+krpano.webGL.context.getContextAttributes().preserveDrawingBuffer)
+  {
+    try
+    {
+var canvas = krpano.webGL.canvas,
+	vfw = Number(args[1]),
+	vfh = Number(args[2]),
+	maxsize = Number(args[3]),
+	jpeg_quality = krpano.get('panoshot.jpeg_quality'),
+	watermark = krpano.get('panoshot.watermark'),	
+	scaledCanvas=document.createElement("canvas"),
+	scaledContext=scaledCanvas.getContext('2d');
+	
+	scaledCanvas.style.visibility = 'hidden';
+	
+if(vfw > vfh){
+	if( vfw > maxsize )
+		{
+		scaledCanvas.width=maxsize;
+		scaledCanvas.height=maxsize*vfh/vfw;
+		}
+	else{
+		scaledCanvas.width=vfw;
+		scaledCanvas.height=vfh;
+		}
+}
+else {
+	if( vfh > maxsize )
+		{
+		scaledCanvas.height=maxsize;
+		scaledCanvas.width=maxsize*vfw/vfh;
+		}
+	else{
+		scaledCanvas.width=vfw;
+		scaledCanvas.height=vfh;
+		}
+};
+
+krpano.set("vfw", scaledCanvas.width);
+krpano.set("vfh", scaledCanvas.height);
+
+var img = new Image();
+img.src = krpano.webGL.canvas.toDataURL();
+img.onload = function(){
+scaledContext.drawImage(canvas,0,0,scaledCanvas.width,scaledCanvas.height);	
+var img_src = scaledCanvas.toDataURL("image/jpeg",+jpeg_quality);
+
+var blank = isCanvasBlank(document.getElementById('canvas'));
+
+ function isCanvasBlank(scaledCanvas) {
+    var blank = document.createElement('canvas');
+    blank.width = canvas.width;
+    blank.height = canvas.height;
+
+    return canvas.toDataURL() == blank.toDataURL();
+}
+
+    if (blank) {
+	krpano.call("try_again()");
+    }
+	else { 
+	screenshot(img_src,watermark)
+	}
+	 
+}
+
+
+    }
+    catch(err)
+    {
+       krpano.trace(3,err);
+    }
+  }
+  else
+  {
+    krpano.trace(3,"no webgl or no preserveDrawingBuffer");
+  }
+  
+  function screenshot(dataURL,watermark){
+var pluginpath = krpano.get('panoshot.snapshot_path'),
+savecreenshot = '/rentatours/savescreenshot';
+var request = $.ajax({
+  type: "POST",
+  url: savecreenshot,
+  data: { 
+     imgBase64: dataURL,
+	 watermark: watermark
+  }
+  });
+  
+  request.done(function(file) {
+	var url = document.URL,
+	new_url = url.split("?")[0],
+    almostpath = url.substring(0,url.lastIndexOf("/")),
+	path = almostpath + '/',
+	imgurl = pluginpath +file,
+	vtb_url = krpano.get('vtbuilder_snapshotlink'),
+	scene = krpano.get('scene[get(xml.scene)].name');
+	vh = krpano.get('vh'),
+	vv = krpano.get('vv'),
+	vf = krpano.get('vf');
+	if(vtb_url !== null){new_url = vtb_url}
+	else
+	if(scene !== null){new_url = new_url + '&sceneview=' + scene + ',' + vh + ',' + vv + ',' + vf};
+	var viewurl_encode = encodeURI(new_url);
+	krpano.set("viewurl", new_url);
+	krpano.set("panourl", url);
+	krpano.set("fullpath", path);
+	krpano.set("imgurl", imgurl);
+	krpano.call("show_img()");
+});
+
+
+  request.fail(function(jqXHR, textStatus) {
+    alert("Request failed: " + textStatus);
+  });
+  }
+]]></action>
+
+<action name="try_again">
+panoshoot();
+</action>
+
+<action name="flash">
+set(layer[flash].visible,true);
+delayedcall(0.15,set(layer[flash].visible,false));
+</action>
+
+<action name="show_loading">
+set(layer[back_screen].visible,true);
+set(layer[loading].visible,true);
+</action>
+
+<action name="show_img">
+set(layer[viewfinder].visible,false);
+set(layer[viewfinders].visible,false);
+set(layer[camera].visible,false);
+set(layer[loading].visible,false);
+addlayer(screenshot);
+ifnot(panoshot.external_php_server,
+txtadd(get(imgurl));
+);
+set(layer[screenshot].url,get(imgurl));
+set(layer[screenshot].zorder,1001);
+set(layer[screenshot].align,center);
+set(layer[screenshot].handcursor,false);
+set(layer[screenshot].onloaded,
+set(layer[screenshot].maxwidth,get(layer[screenshot].pixelwidth));
+set(layer[screenshot].maxheight,get(layer[screenshot].pixelheight));
+resizescreenshot());
+set(layer[close_screenshot].visible,true);
+set(layer[socialbuttons].visible,true);
+set(layer[partager].visible,true);
+if(device.desktop OR device.tablet,
+set(layer[partager].parent,layer[screenshot]);
+set(layer[close_screenshot].parent,layer[screenshot]);
+set(layer[socialbuttons].parent,layer[partager]);
+);
+set(layer[wow].parent,layer[screenshot]);
+if(panoshot.share_msg,showwow());
+</action>
+
+ <action name="resizescreenshot" devices="desktop|tablet">
+		setup_social();
+      if(layer[screenshot].loaded,
+	  	
+        div(screenaspect, stagewidth, stageheight);
+        div(imageaspect, layer[screenshot].imagewidth, layer[screenshot].imageheight);
+        if(imageaspect GT screenaspect,
+            set(layer[screenshot].width,calc(- panoshot.viewfinder_padding)); set(layer[screenshot].height,prop);
+          ,
+            set(layer[screenshot].width,prop); set(layer[screenshot].height,calc(- panoshot.viewfinder_padding));
+         );
+      );
+ </action>
+
+ <action name="resizescreenshot" devices="mobile">
+	    setup_social();
+      if(layer[screenshot].loaded,
+        div(screenaspect, stagewidth, stageheight);
+        div(imageaspect, layer[screenshot].imagewidth, layer[screenshot].imageheight);
+        if(imageaspect GT screenaspect,
+            set(layer[screenshot].width,-100); set(layer[screenshot].height,prop);
+          ,
+            set(layer[screenshot].width,prop); set(layer[screenshot].height,-100);
+         );
+      );
+ </action>
+  
+<action name="hide_img">
+show_hs_aftersnap();
+set(layer[tuto].visible,false);
+set(layer[wow].visible,false);
+set(layer[viewfinder].visible,true);
+if(panoshot.show_ratio,set(layer[viewfinders].visible,true));
+if(panoshot.viewfinder_glass,set(layer[viewfinder_glass].visible,true));
+set(layer[camera].visible,true);
+set(layer[back_screen].visible,false);
+set(layer[form].visible,false);
+set(layer[socialbuttons].visible,false);
+set(layer[partager].visible,false);
+set(layer[close_screenshot].visible,false);
+removelayer(screenshot);
+if(panoshot.show_snapshot_onstart == false AND (device.mobile OR device.tablet),show_snapshot(false));
+</action>
+
+<plugin name="soundinterface" url="soundinterface.js" preload="true" keep="true" devices="html5"/>
+
+
+<style name="ratio_but" scale="0.35" alpha="1" onover="tween(scale,0.4,0.1)" onout="tween(scale,0.35,0.1)" keep="true"/>
+
+<layer name="viewfinders" type="container" align="right" x="0" width="100" height="100%" devices="desktop" keep="true" bgalpha="0" visible="false">
+<layer name="pin" url="viewfinders/pin.png" align="right" y="200" enabled="false" oy="-7" keep="true" visible="false"/>
+<layer name="closevf" url="viewfinders/closevf.png" align="center" y="-250" onclick="show_snapshot(false)" scale="0.3" />
+<layer name="r169" url="viewfinders/169.png" align="center" y="150" onclick="div(aspect,16,9);changeaspect();" style="ratio_but"/>
+<layer name="r32" url="viewfinders/32.png" align="center" y="75" onclick="div(aspect,3,2);changeaspect();" style="ratio_but"/>
+<layer name="r43" url="viewfinders/43.png" align="center" y="0" onclick="div(aspect,4,3);changeaspect();" style="ratio_but"/>
+<layer name="r11" url="viewfinders/11.png" align="center" y="-75" onclick="div(aspect,1,1);changeaspect();" style="ratio_but"/>
+<layer name="screen" url="viewfinders/screen.png" align="center" y="-150" onclick="set(aspect,0);changeaspect();" style="ratio_but"/>
+</layer>
+
+	
+	<action name="calcaspect">
+		
+		if(aspect === null, set(aspect,0));
+		if(aspect === 0,
+		copy(swidth,stagewidth);
+		copy(sheight,stageheight);
+		tween(layer[camera].y,get(panoshot.snapshot_icon_y));
+		,
+		tween(layer[camera].y,0);
+		mul(vfpadding,get(panoshot.viewfinder_padding),2);
+		sub(swidth,stagewidth,get(vfpadding));
+		sub(sheight,stageheight,get(vfpadding));
+		);
+		if(aspect LE 0,
+			copy(destwidth, swidth);
+			copy(destheight, sheight);
+		  ,
+			math.max(maxlength, swidth, sheight);
+			if(aspect GE 1.0,
+				copy(destheight, maxlength);
+				mul(destwidth, maxlength, aspect);
+			  ,
+				div(destheight, maxlength, aspect);
+				copy(destwidth, maxlength);
+			  );
+			
+			if(destwidth GT swidth, div(dwnscale,swidth,destwidth), set(dwnscale,1.0) );
+			mul(destwidth,  destwidth, dwnscale);
+			mul(destheight, destheight, dwnscale);
+			if(destheight GT sheight, div(dwnscale,sheight,destheight), set(dwnscale,1.0) );
+			mul(destwidth,  destwidth, dwnscale);
+			mul(destheight, destheight, dwnscale);
+		  );
+	</action>
+
+
+	<action name="resizearea">
+		calcaspect();
+
+		copy(layer[viewfinder].width,  destwidth);
+		copy(layer[viewfinder].height, destheight);
+	</action>
+
+
+	<action name="changeaspect">
+		if(aspect === calc(16/9),set(layer[pin].visible,true);tween(layer[pin].y,150));
+		if(aspect === calc(3/2),set(layer[pin].visible,true);tween(layer[pin].y,75));
+		if(aspect === calc(4/3),set(layer[pin].visible,true);tween(layer[pin].y,0));
+		if(aspect === calc(1/1),set(layer[pin].visible,true);tween(layer[pin].y,-75));
+		if(aspect === 0,set(layer[pin].visible,true);tween(layer[pin].y,-150));
+		
+		calcaspect();
+
+		set(in_area_tween,true);
+		tween(layer[viewfinder].width,  get(destwidth),  0.5, easeOutCubic);
+		tween(layer[viewfinder].height, get(destheight), 0.5, easeOutCubic, WAIT);
+		set(in_area_tween,false);
+
+	</action>		
+</krpano>

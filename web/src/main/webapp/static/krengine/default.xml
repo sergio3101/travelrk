@@ -1,0 +1,12 @@
+﻿<krpano>
+	
+	<!-- the skin -->
+	<include url="/krengine/header.xml" />
+
+	[PREVIEW]
+
+	[IMAGE]
+
+	<include url="/krengine/footer.xml" />
+
+</krpano>

@@ -1,0 +1,71 @@
+<krpano>
+
+    <!-- <events name="thumbsscrollbar" keep="true"
+        onresize="delayedcall(3, layer[thumbsscrollbar].updatesize(); );"
+    /> -->
+
+    <layer name="thumbsscrollbarbg" url="scrollbarbg.png" parent="thumbsStage" keep="true"
+           align="righttop" edge="lefttop" height="-34" x="1" y="17"
+           crop="0|16|16|30"
+    >
+        <layer name="thumbsscrollbarbgtop" url="scrollbarbg.png" keep="true" zorder="0"
+               align="lefttop" edge="leftbottom" x="0" y="0" crop="0|0|16|16"
+        />
+        <layer name="thumbsscrollbarbgbot" url="scrollbarbg.png" keep="true" zorder="0"
+               align="leftbottom" edge="lefttop" x="0" y="0" crop="0|46|16|16"
+        />
+        <layer name="thumbsscrollbar" url="scrollbar.png" keep="true" zorder="100"
+               align="lefttop" edge="lefttop" height="1" x="0" y="0"
+               crop="0|16|16|30"
+               dragboundselastic="false"
+               dragaxis="y"
+               draginertia="false"
+               ondown="draggablelayer.start(thumbsscrollbar);"
+               onloaded="updatesize();"
+               onmoving="
+                copy(sbbg,layer[thumbsscrollbarbg]); sbbg.updatepos();
+                copy(sb,layer[thumbsscrollbar]);
+
+                div(sb.aspect,sb.y,sb.stageheight);
+                mul(sb.value,stagesize,sb.aspect);
+
+                events.dispatch(thumbsscrollbarchanged);
+            "
+               totalsize=""
+               visiblesize=""
+               value=""
+               updatesize="
+                copy(sbbg,layer[thumbsscrollbarbg]); sbbg.updatepos();
+                copy(sb,layer[thumbsscrollbar]);
+
+                div(sb.aspect,sb.visiblesize,sb.totalsize);
+                sub(sb.stagesize,sb.totalsize,sb.visiblesize);
+                mul(sb.height,sbbg.pixelheight,sb.aspect);
+
+                div(sb.aspect,sb.value,sb.stagesize);
+                sub(sb.stageheight,sbbg.pixelheight,sb.height);
+                mul(sb.tempy,sb.stageheight,sb.aspect);
+                if(sb.tempy LT 0,
+                    set(sb.y,0);
+                ,
+                    if(sb.tempy GT sb.stageheight,
+                        copy(sb.y,sb.stageheight);
+                    ,
+                        copy(sb.y,sb.tempy);
+                    );
+                );
+            "
+               setvalue="
+                set(layer[thumbsscrollbar].value,%1);
+                layer[thumbsscrollbar].updatesize();
+            "
+        >
+            <layer name="thumbsscrollbartop" url="scrollbar.png" keep="true"
+                   align="lefttop" edge="leftbottom" x="0" y="0" crop="0|0|16|16"
+            />
+            <layer name="thumbsscrollbarbot" url="scrollbar.png" keep="true"
+                   align="leftbottom" edge="lefttop" x="0" y="0" crop="0|46|16|16"
+            />
+        </layer>
+    </layer>
+</krpano>

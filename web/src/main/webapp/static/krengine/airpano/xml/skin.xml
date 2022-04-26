@@ -1,0 +1,9 @@
+<krpano logkey="true">
+
+    <include url="skin_desktop.xml" devices="desktop|tablet" if="!vrmode"/>
+
+    <include url="skin_phone/skin.xml" devices="mobile" if="!vrmode"/>
+
+    <include url="skin_vr/skin.xml" if="vrmode"/>
+
+</krpano>

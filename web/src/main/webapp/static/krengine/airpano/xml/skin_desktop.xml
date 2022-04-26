@@ -1,0 +1,2111 @@
+<krpano version="1.16.4" basedir="%FIRSTXML%" language="eng" thumbsStageDelta="170" showhelpdelay="3" includeurl="nikon/nikon.xml" autotourdelay="120" tourInactive="false" satagescale="0.67" onstart="">
+
+    <security cors="use-credentials" />
+
+    <events name="stagescale" keep="true"
+            onresize="
+        "
+    />
+
+
+    <events name="autotour" keep="true" if="autotour"
+            onxmlcomplete="autotour.reset();"
+            onmousedown="autotour.pause();"
+            onmouseup="autotour.reset();set(autorotate.waittime,8);"
+            onkeydown="autotour.pause();"
+            onkeyup="autotour.reset();set(autorotate.waittime,8);"
+            autotour="
+            if(autorotateEnabled,
+                add(sceneindex,scene[get(xml.scene)].index,1);
+                if(sceneindex == scene.count, set(sceneindex,0); );
+                set(autorotate.waittime,0);
+                gotoscene(get(sceneindex));
+            );
+        "
+    />
+
+    <action name="typeSceneNum">
+        txtadd(sceneNumber,%1);
+        stopdelayedcall(typeSceneNum);
+        delayedcall(typeSceneNum,0.5,gotoSceneByNum(get(sceneNumber)));
+    </action>
+
+    <action name="gotoSceneByNum">
+        for(set(i,0), i LT scene.count, inc(i),
+        if(scene[get(i)].number == %1, gotoscene(get(i)); );
+        );
+        set(sceneNumber,);
+    </action>
+
+    <include url="timer.xml" />
+
+    <include url="helphints/helphints.xml" devices="desktop"/>
+
+    <tourSettings skinurl="../skin/" />
+
+    <!-- <display details="25" movequality="HIGH" flash10="off" /> -->
+
+    <display details="24"
+             movequality="LOW"
+             stillquality="HIGH"
+             flash10="on"
+             movequality10="HIGH"
+             stillquality10="HIGH"
+    />
+
+    <progress showload="false" showwait="false"/>
+
+    <control mousespeed="40" movetocursor_="arrow" mouse="moveto"/>
+
+    <autorotate enabled="false" waittime="8" speed="2" />
+
+    <events onenterfullscreen="updateFullscreenBtn();"
+            onexitfullscreen="updateFullscreenBtn();"
+            onxmlcomplete="set(events.onxmlcomplete,null);start();timer.start(autotour,get(autotourdelay));"
+            onpreviewcomplete=""
+            onloadcomplete="ifnot(intro == 0, introDo();, introBreak(); );sceneOnLoaded();"
+            onnewpano=""
+            onremovepano=""
+            onloaderror=""
+            onkeydown="
+            if(keycode == 191, if(layer[help].visible, helpShow(false);, helpShow(true); ); );
+            if(keycode == 112, if(layer[help].visible, helpShow(false);, helpShow(true); ); );
+            if(keycode == 72, if(layer[help].visible, helpShow(false);, helpShow(true); ); );
+            if(keycode == 68, switch(controllsVisible,true,false); controllsShow(get(controllsVisible)); );
+            if(keycode == 65, switch(autorotate.enabled); setAutorotate(get(autorotate.enabled)); );
+            if(keycode == 32, switch(autorotate.enabled); setAutorotate(get(autorotate.enabled)); );
+            if(keycode == 83, switch(soundplaying,true,false); soundPlay(get(soundplaying)); );
+            if(keycode == 70, switch(fullscreen); );
+            if(keycode == 188, panoPrevNext(-1); );
+            if(keycode == 190, panoPrevNext(1); );
+            if(keycode == 77, mapShow(); );
+            if(keycode == 73, openurl(get(layer[btnInfo].targeturl),_blank); );
+            if(keycode GT 47,
+                if(keycode LT 58,
+                    sub(num,keycode,48);
+                    typeSceneNum(get(num));
+                );
+            );
+            if(keycode GT 95,
+                if(keycode LT 106,
+                    sub(num,keycode,96);
+                    typeSceneNum(get(num));
+                );
+            );
+        "
+            onkeyup=""
+            ondown=""
+            onmousedown="introBreak();"
+            onmouseup2="updateLink();set(display.movequality,HIGH);"
+            onmouseup=""
+            onmousewheel="ifnot(control.mousefovchange GT 0, scrollThumbs(); );"
+            onidle=""
+            onviewchange=""
+            onviewchanged="updateLink();"
+            onresize="updateThumbsStage();fitHelpToScreen();"
+            thumbsscrollbarchanged="
+            stoptween(layer[thumbsBar].y);
+            sub(layer[thumbsBar].y,0,layer[thumbsscrollbar].value);
+        "
+    />
+
+    <events name="preloader" keep="true"
+            onxmlcomplete="
+            set(loadingcomplete,false);
+            showprogress();
+            set(layer[preloader].visible,true);
+            stoptween(layer[preloader].alpha);
+            set(layer[preloader].alpha,1);
+        "
+            onloadcomplete="
+            set(loadingcomplete,true);
+            tween(layer[preloader].alpha,0,1,linear, set(layer[preloader].visible,true); );
+        "
+    />
+
+    <action name="updateLink">
+        <!-- set(ii,0); -->
+        stopdelayedcall(linkupdate);
+        delayedcall(linkupdate,0.2, js(updateShareLink()); );
+    </action>
+
+    <events name="html5_keyboard_controls" devices="desktop" keep="true"
+            onkeydown="html5_keydown();"
+            onkeyup="html5_keyup();"
+    />
+
+    <action name="html5_keydown">
+
+        if(keycode == 37, set(hlookat_moveforce,-1));
+        if(keycode == 39, set(hlookat_moveforce,+1));
+        if(keycode == 38, set(vlookat_moveforce,-1));
+        if(keycode == 40, set(vlookat_moveforce,+1));
+        if(keycode == 16, set(fov_moveforce,-0.2));
+        if(keycode == 17, set(fov_moveforce,+0.2));
+    </action>
+
+    <action name="html5_keyup">
+        if(keycode == 37, set(hlookat_moveforce,0));
+        if(keycode == 39, set(hlookat_moveforce,0));
+        if(keycode == 38, set(vlookat_moveforce,0));
+        if(keycode == 40, set(vlookat_moveforce,0));
+        if(keycode == 16, set(fov_moveforce,0));
+        if(keycode == 17, set(fov_moveforce,0));
+    </action>
+
+    <contextmenu fullscreen="true" >
+        <item name="fisheye" caption="Fisheye view" onclick="setVew(fisheye);" />
+        <item name="architect" caption="Architectural view" onclick="setVew(architectural);" />
+        <item name="stereograph" caption="Stereographic view" onclick="setVew(stereographic);" visible="false" />
+        <item name="normal" caption="Normal view (set as default)" onclick="setVew(normal);"/>
+        <item name="littleplanet" caption="Littleplanet view" onclick="setVew(littleplanet);" visible="false" />
+        <!-- <item name="mousemode" caption="Switch mousemode" onclick="switch(control.mousetype,drag2d,moveto);switch(control.mouse,drag,moveto);" /> -->
+        <item name="mousemode" caption="Switch mousemode" onclick="switch(control.mouse,drag,moveto);" />
+    </contextmenu>
+
+    <plugin name="options_on_off" type="container" keep="true" zorder="1000"
+            bgalpha="0.01" bgcapture="true"
+            align="lefttop" edge="lefttop" x="0" y="0"
+            width="4" height="4"
+            ondown="
+            switch(plugin[options].visible,true,false);
+            switch(contextmenu.item[stereograph].visible,true,false);
+            switch(contextmenu.item[littleplanet].visible,true,false);
+        "
+    />
+
+    <plugin name="soundinterface" keep="true" preload="true" devices="desktop|tablet"
+            url="plugins/soundinterface.swf"
+            alturl="plugins/soundinterface.js"
+    />
+
+    <plugin name="options" url="plugins/options.swf" keep="true" devices="flash"
+            align="righttop" edge="righttop" x="9" y="9" visible="false"
+    />
+
+    <plugin name="help" url="help_airpano_%$language%.png" keep="true" capture="false" visible="false"
+            align="center" edge="center" x="0" y="0" zorder="0" onloaded="fitHelpToScreen();"
+            hintru="Закрыть инструкцию" hintruW="146"
+            hinteng="Close instruction" hintengW="120"
+            ondown="helpShow(false);"
+            onhover="showHint();"
+    />
+    <plugin name="help" url="help_touch_airpano_%$language%.png" devices="touchdevice"/>
+
+    <layer name="tourTitle" url="plugins/textfield.swf" keep="true"
+           align="top" edge="top" x="0" y="30%" width="100%"
+           visible="false" alpha="0" enabled="false" capture="false"
+           html="---"
+           css="color:#f64f08; font-family:arial; font-size:52px; font-weight:bold; text-align:center"
+           autoheight="true" selectable="false" background="false"
+           textglow="4" textshadow="3"
+    />
+
+    <plugin name="draggablelayer" preload="true" keep="true"
+            url="%SWFPATH%/plugins/draggablelayer.swf"
+            alturl="%SWFPATH%/plugins/draggablelayer.js"
+    />
+
+    <plugin name="getabsxy" preload="true" keep="true"
+            url="plugins/getabsxy.swf"
+            alturl="plugins/getabsxy.js"
+    />
+
+    <layer name="overlay" type="container" keep="true" bgcolor="0x000000" bgalpha="1" bgcapture="false" align="lefttop" edge="lefttop" x="0" y="0" width="100%" height="100%" zorder="2000" visible="true" />
+
+    <!--     <layer name="airpanoLogo" url="skin.png" keep="true" zorder="0"
+            crop="360|5|150|35" align="righttop" edge="righttop"
+            preload="true" enabled="true" capture="false"
+            hintru="Авторские права защищены" hintruW="190"
+            hinteng="Copyrights are protected" hintengW="166"
+            onhover="showHint(3);"
+            ondown="if(language == ru, openurl(http://airpano.ru);, openurl(http://airpano.com); );"
+        /> -->
+
+    <layer name="airpanoLogo" url="logo_new.png" keep="true" zorder="0"
+           align="righttop" edge="righttop" x="5" y="0"
+           preload="true" enabled="true" capture="false"
+           hintru="© www.AirPano.ru - Авторские права защищены" hintruW="auto"
+           hinteng="© www.AirPano.com - Copyrights are protected" hintengW="auto"
+           onhover="showHint(3);"
+           ondown="if(language == ru, openurl(http://airpano.ru);, openurl(http://airpano.com); );"
+    />
+
+    <style name="fsBtn2" url="skin.png" keep="true" preload="true"
+           align="lefttop" edge="lefttop" x="5" y="5" visible="false"
+           onhover="showHint(2);"
+           ondown="switch(fullscreen); track_btn_click(get(name));"
+    />
+
+    <style name="fsOnru" crop="270|420|121|30" onovercrop="270|450|121|30" />
+    <style name="fsOneng" crop="30|420|120|30" onovercrop="30|450|120|30" />
+    <style name="fsOffru" crop="391|420|155|30" onovercrop="391|450|155|30" />
+    <style name="fsOffeng" crop="150|420|120|30" onovercrop="150|450|120|30" />
+
+    <layer name="topControlsBg" type="container" keep="true" zorder="200"
+           align="lefttop" edge="left" width="100" height="1" bgalpha="0.001"
+    >
+        <layer name="btnFullscreenOn2" style="fsBtn2" visible="false"
+               hintru="Полноэкранный режим" hintruW="162" x="5"
+               hinteng="Fullscreen mode" hintengW="120"
+               devices="desktop|fullscreensupport" if_="embeded != true"
+        />
+
+        <layer name="btnFullscreenOff2" style="fsBtn2" visible="false"
+               hintru="Выйти из полноэкранного режима" hintruW="178" x="5"
+               hinteng="Exit fullscreen mode" hintengW="142"
+               devices="desktop|fullscreensupport" if_="embeded != true"
+        />
+
+        <!-- <layer name="panoPrev" url="skin.png" keep="true"
+            align="lefttop" edge="lefttop" x="165" y="6"
+            crop="390|50|30|30" onovercrop="390|80|30|30"
+            ondown="panoPrevNext(get(prevnext));" onover="panoPrevNext(get(prevnext),showthumb,2);" onout="bigThumbShow(false);"
+            prevnext="-1"
+        />
+
+        <layer name="panoNext" url="skin.png" keep="true"
+            align="lefttop" edge="lefttop" x="195" y="6"
+            crop="420|50|30|30" onovercrop="420|80|30|30"
+            ondown="panoPrevNext(get(prevnext));" onover="panoPrevNext(get(prevnext),showthumb,2);" onout="bigThumbShow(false);"
+            prevnext="1"
+        />  -->
+    </layer>
+
+
+    <style name="gyro" url="skin_mobile.png" keep="true" preload="true"
+           align="lefttop" edge="lefttop" x="5" y="5" visible="false"
+    />
+
+    <layer name="btnGyroOn" style="gyro" crop="210|50|30|30" onovercrop="210|80|30|30" x2="240"
+           hintru="Гироскоп вкл" hintruW="auto"
+           hinteng="Gyro ON" hintengW="auto"
+           ondown="gyroOn(false);if(device.ipad, showHint(); ); track_btn_click(get(name));" devices2="desktop|tablet"
+    />
+    <layer name="btnGyroOn" devices2="mobile|tablet" crop="480|0|60|60" onovercrop="480|60|60|60" x2="180" />
+
+    <layer name="btnGyroOff" style="gyro" crop="240|50|30|30" onovercrop="240|80|30|30" x2="240"
+           hintru="Гироскоп выкл" hintruW="auto"
+           hinteng="Gyro OFF" hintengW="auto"
+           ondown="gyroOn(true);if(device.ipad, showHint(); );track_btn_click(get(name));" devices2="desktop|tablet"
+    />
+    <layer name="btnGyroOff" devices2="mobile|tablet" crop="540|0|60|60" onovercrop="540|60|60|60"  x2="180" />
+
+    <plugin name="gyro" url="plugins/gyro.js" keep="true" devices="html5" preload="true"
+            enabled="false"
+            camroll="true"
+            friction="0.5"
+            velastic="0.2"
+            vrelative="false"
+            onavailable="set(enabled,false); gyroOn(false);"
+    />
+
+    <style name="controllsButtons2" url="skin.png" keep="true" preload=""
+           align="leftbottom" edge="leftbottom" ox="5" oy="-5"
+           onhover="" isButton="true"
+    />
+    <style name="controllsButtons2" url="skin_mobile.png" devices="mobile"/>
+
+    <style name="controllsButtons" url="skin.png" keep="true" preload=""
+           align="leftbottom" edge="leftbottom" ox="5" oy="-5"
+           onhover="showHint();" isButton="true"
+    />
+    <style name="controllsButtons" url="skin_mobile.png" devices="mobile"/>
+
+    <layer name="controllsBg" url="skin.png" keep="true" visible="true"
+           crop="0|0|350|46" scale9grid="0|0|10|46"
+           align="leftbottom" edge="leftbottom"
+           width="400" height="42"
+           preload="true" enabled="true" capture="false"
+           zorder="1"
+    />
+
+    <layer name="btnControllsShow" style="controllsButtons" crop="0|50|30|30" onovercrop="0|80|30|30" x="0"
+           hintru="Показать управление" hintruW="150"
+           hinteng="Show controls" hintengW="110"
+           ondown="controllsShow(true); track_btn_click(get(name));" zorder="3"
+    />
+    <layer name="btnControllsShow" crop="0|0|60|60" onovercrop="0|60|60|60" devices="mobile"/>
+
+
+    <layer name="btnControllsHide" style="controllsButtons" crop="30|50|30|30" onovercrop="30|80|30|30" x="0"
+           hintru="Скрыть управление" hintruW="140"
+           hinteng="Hide controls" hintengW="104"
+           ondown="controllsShow(false);helpShow(false); track_btn_click(get(name));" zorder="3"
+    />
+    <layer name="btnControllsHide" crop="60|0|60|60" onovercrop="60|60|60|60" devices="mobile"/>
+
+    <layer name="panoPrev2" url="skin.png" keep="true" devices="desktop"
+           align="leftbottom" edge="leftbottom" x="50%" ox="-30" oy="-5"
+           crop="390|50|30|30" onovercrop="390|80|30|30"
+           ondown="panoPrevNext(get(prevnext));track_btn_click(get(name));" onover="panoPrevNext(get(prevnext),showthumb);" onout="bigThumbShow(false);"
+           prevnext="-1" onloaded="if(scene.count LT 2, set(visible,false));"
+    />
+
+    <layer name="panoNext2" url="skin.png" keep="true" devices="desktop"
+           align="leftbottom" edge="leftbottom" x="50%" ox="0" oy="-5"
+           crop="420|50|30|30" onovercrop="420|80|30|30"
+           ondown="panoPrevNext(get(prevnext));track_btn_click(get(name));" onover="panoPrevNext(get(prevnext),showthumb);" onout="bigThumbShow(false);"
+           prevnext="1" onloaded="if(scene.count LT 2, set(visible,false));"
+    />
+
+
+    <layer name="controllBtnsStage" type="container" keep="true" alpha="0"
+           align="leftbottom" edge="leftbottom" width="100%" height="10" zorder="2" bgalpha="0"
+    >
+
+        <layer name="btnFullScreenOn" style="controllsButtons" crop="150|50|30|30" onovercrop="150|80|30|30" x="30"
+               hintru="Полноэкранный режим" hintruW="162"
+               hinteng="Fullscreen mode" hintengW="120"
+               ondown="switch(fullscreen); track_btn_click(get(name));"
+               devices="desktop" if="embeded != true"
+        />
+
+        <layer name="btnFullScreenOff" style="controllsButtons" crop="180|50|30|30" onovercrop="180|80|30|30" x="30"
+               hintru="Выйти из полноэкранного режима" hintruW="178"
+               hinteng="Exit fullscreen mode" hintengW="142"
+               ondown="switch(fullscreen); track_btn_click(get(name));"
+               devices="desktop" if="embeded != true"
+        />
+
+        <layer name="btnMap" style="controllsButtons" crop="120|50|30|30" onovercrop="120|80|30|30" x="60"
+               hintru="Показать/Скрыть карту" hintruW="162"
+               hinteng="Show/Hide map" hintengW="112"
+               ondown="mapShow(); track_btn_click(get(name));"
+        />
+        <layer name="btnMap" devices="tablet" x="35" />
+        <layer name="btnMap" devices="mobile" crop="240|0|60|60" onovercrop="240|60|60|60" x="60" />
+        <layer name="btnMap" if="embeded == true" x="30" />
+
+        <layer name="btnZoomIn" style="controllsButtons" crop="300|50|30|30" onovercrop="300|80|30|30" x="90"
+               hintru="Ближе" hintruW="64"
+               hinteng="Zoom IN" hintengW="72"
+               ondown="tween(view.fov,get(view.fovmin),distance(100,1),linear); track_btn_click(get(name));" onup="stoptween(view.fov);"
+               devices="desktop"
+        />
+        <layer name="btnZoomIn" if="embeded == true" x="60" />
+
+        <layer name="btnZoomOut" style="controllsButtons" crop="330|50|30|30" onovercrop="330|80|30|30" x="120"
+               hintru="Дальше" hintruW="72"
+               hinteng="Zoom OUT" hintengW="84"
+               ondown="tween(view.fov,get(view.fovmax),distance(100,1),linear); track_btn_click(get(name));" onup="stoptween(view.fov);"
+               devices="desktop"
+        />
+        <layer name="btnZoomOut" if="embeded == true" x="90" />
+
+        <layer name="btnRotateOn" style="controllsButtons2" crop="60|50|30|30" onovercrop="60|80|30|30" x="150"
+               hintru="Включить автовращение" hintruW="166" visible="false"
+               hinteng="Autorotation ON" hintengW="118"
+               ondown="setAutorotate(true); track_btn_click(get(name));"
+               onover="show_autorotate_bg(1)"
+               onout="show_autorotate_bg(0)"
+        />
+        <layer name="btnRotateOn" if="embeded == true" x="120" />
+        <layer name="btnRotateOn" devices="tablet"  x="70" />
+        <layer name="btnRotateOn" devices="mobile" crop="120|0|60|60" onovercrop="120|60|60|60" x="120" />
+
+        <layer name="btnRotateOff" style="controllsButtons2" crop="90|50|30|30" onovercrop="90|80|30|30" x="150"
+               hintru="Выключить автовращение" hintruW="176"
+               hinteng="Autorotation OFF" hintengW="122"
+               ondown="setAutorotate(false); track_btn_click(get(name));"
+               onover="show_autorotate_bg(1)"
+               onout="show_autorotate_bg(0)"
+        />
+        <layer name="btnRotateOff" if="embeded == true" x="120" />
+        <layer name="btnRotateOff" devices="tablet"  x="70" />
+        <layer name="btnRotateOff" devices="mobile" crop="180|0|60|60" onovercrop="180|60|60|60" x="120" />
+
+        <layer name="btnHelp" style="controllsButtons" crop="270|50|30|30" onovercrop="270|80|30|30" x="180"
+               hintru="Как смотреть панораму?" hintruW="170"
+               hinteng="How to view the panorama?" hintengW="180"
+               ondown="if(layer[help].visible, helpShow(false);, helpShow(true); track_btn_click(get(name)); );"
+               devices="desktop"
+        />
+        <layer name="btnHelp" if="embeded == true" x="150" />
+
+        <layer name="btnInfo" style="controllsButtons" crop="360|50|30|30" onovercrop="360|80|30|30" x="210"
+               onclick="openurl(get(targeturl),_blank); track_btn_click(get(name));"
+        />
+        <layer name="btnInfo" if="embeded == true" x="180" />
+        <layer name="btnInfo" devices="tablet"  x="105" />
+        <layer name="btnInfo" devices="mobile" crop="420|0|60|60" onovercrop="420|60|60|60" x="180" />
+
+        <layer name="btnSoundOn" style="controllsButtons" crop="240|50|30|30" onovercrop="240|80|30|30" x="240"
+               hintru="Включить звук" hintruW="auto" visible="false"
+               hinteng="Turn Sound ON" hintengW="auto"
+               ondown="soundPlay(true); track_btn_click(get(name));" devices="desktop|tablet"
+               onover="showvol(1)"
+               onout="showvol(0)"
+        />
+        <layer name="btnSoundOn" if="embeded == true" x="210" />
+        <layer name="btnSoundOn" devices="tablet"  x="140" />
+        <!-- <layer name="btnSoundOn" devices="mobile" crop="360|0|60|60" onovercrop="360|60|60|60" x="240" /> -->
+
+        <layer name="btnSoundOff" style="controllsButtons" crop="210|50|30|30" onovercrop="210|80|30|30" x="240"
+               hintru="Выключить звук" hintruW="auto"
+               hinteng="Turn Sound OFF" hintengW="auto"
+               ondown="soundPlay(false); track_btn_click(get(name));" devices="desktop|tablet"
+               onover="showvol(1)"
+               onout="showvol(0)"
+        />
+        <layer name="btnSoundOff" if="embeded == true" x="210" />
+        <layer name="btnSoundOff" devices="tablet"  x="140" />
+        <!-- <layer name="btnSoundOff" devices="mobile" crop="300|0|60|60" onovercrop="300|60|60|60" x="240" /> -->
+
+        <layer name="soundhint" url="sound_hint_%$language%.png" keep="true" devices="desktop|tablet"
+               align="leftbottom" edge="bottom" x="258" y="35" oy="-100"
+               alpha="0" visible="false"
+               ondown="removelayer(soundhint);soundPlay(false); track_btn_click(get(name));"
+        />
+        <layer name="soundhint" if="embeded == true" x="228" />
+        <layer name="soundhint" devices="tablet" x="160" />
+
+        <layer name="soundvolbg" url="soundvolctrl.png" crop="0|0|33|86" keep="true" devices="no-ios"
+               align="leftbottom" edge="leftbottom" x="243" y="32" visible="false" alpha="0"
+               onover="showvol(1)"
+               onout="showvol(0)"
+        >
+            <layer name="soundvolspin" url="soundvolctrl.png" crop="33|0|33|29" keep="true"
+                   align="leftbottom" edge="leftbottom"
+                   dragaxis="y" draginertia="false"
+                   dragboundselastic="false"
+                   ondown="stoptween(soundfadein);draggablelayer.start(soundvolspin);"
+                   onmoving="div(newvol,y,57); changesoundvol(get(newvol),0);"
+            />
+        </layer>
+        <layer name="soundvolbg" if="embeded == true" x="213" />
+
+        <layer name="changeSound" style="controllsButtons" visible="false"
+               align="leftbottom" edge="leftbottom" ox="5" oy="-5"
+               soundcrop="480|50|30|30" soundonovercrop="480|80|30|30" x="270"
+               sound2crop="510|50|30|30" sound2onovercrop="510|80|30|30"
+               ondown="changeSound(); track_btn_click(get(name));"
+               devices="desktop"
+        />
+        <layer name="changeSound" if="embeded == true" x="240" />
+
+        <layer name="shareView" style="controllsButtons"
+               align="leftbottom" edge="leftbottom" ox="5" oy="-5"
+               crop="450|50|30|30" onovercrop="450|80|30|30" x="270"
+               hintru="Поделиться ссылкой на текущий вид" hintruW="auto"
+               hinteng="Share link to current view" hintengW="auto"
+               ondown="
+                track_btn_click(get(name));
+                if(allowSocial != false, showSocial(); );
+                if(embeded != true,
+                    set(fullscreen,false);
+                    js(showShareViewLink());
+                );
+            "
+        />
+        <layer name="shareView" if="embeded == true" x="240" />
+        <layer name="shareView" devices="tablet" x="170" />
+        <layer name="shareView" devices="mobile" crop="600|0|60|60" onovercrop="600|60|60|60" x="240" />
+
+        <layer name="visitedScenesText" url="plugins/textfield.swf" keep="true" zorder="4"
+               align="rightbottom" edge="rightbottom" x="5" y="5"
+               width="250" height="20" background="false" textshadow="2" textshadowrange="3"
+               selectable="false" enabled="false"
+               css="color:#ffffff; font-family:arial; font-size:14px; text-align:right;"
+               html=" "
+        />
+
+        <layer name="gotoTour" url="" keep="true" visible="false" alpha="0"
+               align="rightbottom" edge="rightbottom" x="165" y="7"
+               onclick="openurl(get(linkedurl),_self); track_btn_click(get(name));" onover="gotoTour();" onout="bigThumbShow(false);"
+        />
+
+    </layer>
+
+    <style name="panoPrevNextEvents" ondown="panoPrevNext(get(prevnext));"
+           onover="panoPrevNext(get(prevnext),showthumb);" onout="bigThumbShow(false);"
+    />
+
+    <layer name="airpanoTopLink" url="plugins/textfield.swf" keep="true" zorder="4" visible="false"
+           align="top" edge="top" x="0" y="8" enabled="true" capture="true" selectable="false" handcursor="true"
+           width="-30%" autoheight="true" background="false" backgroundalpha="0.3"
+           textshadow="1" textshadowrange="5"  textshadowcolor="0x000000"
+           css="color:#ffffff; font-family:arial; font-size:14px; text-align:center;"
+           htmlru="Смотреть 1000 панорам вокруг света"
+           htmleng="Open 1000 panoramas from around the world"
+    >
+        <layer name="airpanoTopLinkOver" type="container" keep="true"
+               align="lefttop" x="0" y="0" width="100%" height="100%"
+               bgalpha="0.001" bgcapture="true"
+               onclick="openurl(http://www.airpano.com/List-Aerial-Panoramas.php,_blank); track_btn_click(get(name));"
+        />
+    </layer>
+
+    <layer name="sceneTitle" url="plugins/textfield.swf" keep="true" zorder="4"
+           align="top" edge="top" x="0" y="30" enabled="false" capture="false" selectable="false"
+           width="100%" autoheight="true" background="false" textshadow="2" textshadowrange="8"  textshadowcolor="0x000000"
+           css="color:#ffffff; font-family:arial; font-size:30px; text-align:center;"
+           html="Scene Title"
+    />
+    <style name="smallTitleCss" css="color:#ffffff; font-family:arial; font-size:20px; text-align:center;" />
+
+    <style name="hintTextStyle" url="plugins/textfield.swf" zorder="1000"  keep="true" enabled="false" capture="false"
+           align="lefttop" edge="lefttop" x="0" y="0" selectable="false" visible="false"
+           background="true" textshadow="0.01" textshadowrange="2" textshadowcolor="0xFFFFFF"
+           roundedge="5" border="true" bordercolor="0xFFFFFF" borderwidth="1.0" backgroundcolor="0xEEEEEE"
+           shadow="0.01" shadowrange="4.0" shadowangle="0"
+           css="color:#222222; font-weight:bold; font-family:arial; font-size:12px; text-align:center;"
+    />
+    <style name="hintTextStyle" devices="mobile"
+           css="color:#222222; font-weight:bold; font-family:arial; font-size:18px; text-align:center;"
+    />
+
+    <layer name="hintTextBtn" height="20" style="hintTextStyle" />
+
+    <layer name="hintText" autoheight="true" style="hintTextStyle" />
+
+    <layer name="thumbsBg" type="container" keep="true" zorder="5"
+           align="rightbottom" edge="rightbottom"
+           width="10" height="100%"
+           bgcolor="0x000000" bgalpha="0"
+    >
+
+        <layer name="thumbsStage" type="container" keep="true"
+               align="rightbottom" edge="rightbottom" x="16" y="50"
+               width="96" height="0"
+               bgcolor="0x000000" bgalpha="0"
+        >
+
+            <layer name="tourMapBtn" url="skin.png" keep="true" visible="false"
+                   crop="0|480|85|55" cropeng="0|480|85|55" cropru="85|480|85|55"
+                   align="righttop" edge="rightbottom" x="0" y="-23" ox="-5"
+                   hintru="Открыть карту тура" hintruW="126"
+                   hinteng="Open tour map" hintengW="96"
+                   onhover="showHint(4);"
+                   ondown="gotoTourMap(); track_btn_click(get(name));"
+            />
+
+            <layer name="thumbsMask" type="container" align="lefttop" width="100%" height="100%" maskchildren="true">
+
+                <layer name="thumbsBar" type="container" keep="true"
+                       align="righttop" edge="righttop" x="0" y="0" ox="-5"
+                       width="" height="0"
+                       bgcolor="0x000000" bgalpha="0" bgcapture="true"
+                       dragaxis="y"
+                       dragfixedalign="true"
+                       onmoving="
+                        changeThumbsScrol();
+                    "
+                       onover="set(control.mousefovchange,0);"
+                       onout="delayedcall(0.1, ifnot(hovering, set(control.mousefovchange,1); ); );"
+                       ondown="if(height GT layer[thumbsStage].height, draggablelayer.start(thumbsBar); );"
+                />
+
+            </layer>
+
+        </layer>
+
+        <layer name="thumbsScrollTop" url="skin.png" style="thumbsScrollBtns" keep="true" visible="false"
+               crop="200|270|80|25" onovercrop="280|270|80|25"
+               align="rightbottom" edge="rightbottom" x="30" y="500"
+               movebar="tween(layer[thumbsBar].y,0,get(moveBarSpeed),linear,,changeThumbsScrol());"
+        />
+
+        <layer name="thumbsScrollBottom" url="skin.png" style="thumbsScrollBtns" keep="true" visible="false"
+               crop="200|295|80|25" onovercrop="280|295|80|25"
+               align="rightbottom" edge="righttop" x="30" y="48"
+               movebar="
+                sub(thumbsBarMinY,layer[thumbsStage].pixelheight,layer[thumbsBar].pixelheight);
+                tween(layer[thumbsBar].y,get(thumbsBarMinY),get(moveBarSpeed),linear,,changeThumbsScrol());"
+        />
+
+    </layer>
+
+    <style name="thumbsScrollBtns"
+           ondown="set(moveBarSpeed,distance(400,1));movebar();track_btn_click(get(name));"
+           onover="set(moveBarSpeed,distance(100,1));movebar();"
+           onout="stoptween(layer[thumbsBar].y);"
+           onup="stoptween(layer[thumbsBar].y);"
+    />
+
+    <include url="thumbsscrollbar/thumbsscrollbar.xml" devices="desktop"/>
+
+    <action name="changeThumbsScrol">
+        if(isdesktop, sub(tempval,0,layer[thumbsBar].y); layer[thumbsscrollbar].setvalue(get(tempval)); );
+    </action>
+
+    <style name="bigThumbFrameSpinRight" align="right" rotate="0" x="4" y="0" />
+    <style name="bigThumbFrameSpinBottom" align="bottom" rotate="90" x="0" y="4" />
+    <style name="bigThumbFrameSpinLeft" align="left" rotate="-180" x="4" y="0" />
+    <style name="bigThumbFrameSpinTop" align="top" rotate="-90" x="0" y="4" />
+
+    <layer name="bigThumb" url="" keep="true" visible="false" alpha="0"
+           align="lefttop" edge="lefttop" x="50%" y="50%" enabled="false" capture="false" zorder="1000"
+    >
+
+        <layer name="bigThumbFrame" url="skin.png" keep="true"
+               crop="0|220|100|50" scale9grid="10|10|80|30"
+               align="center" edge="center" enabled="false" capture="false"
+               width="208" height="108" zorder="1"
+        >
+
+            <layer name="bigThumbFrameSpin" url="skin.png" keep="true" preload="true"
+                   edge="left" crop="100|220|15|50" zorder="2" enabled="false" capture="false"
+                   style="bigThumbFrameSpinRight"
+            />
+
+            <layer name="bigThumbText" url="plugins/textfield.swf" keep="true"
+                   align="righttop" edge="rightbottom" x="0" y="2" enabled="false" capture="false" selectable="false"
+                   width="350" autoheight="true" background="false"
+                   textshadow="1" textshadowrange="2" textshadowcolor="0x000000" textshadowalpha="1"
+                   html="01. Очень очень длинное название сцены"
+                   css="color:#ffffff; font-family:arial; font-size:14px; text-align:right;"
+                   cssTextLeft="color:#ffffff; font-family:arial; font-size:14px; text-align:left;"
+                   cssTextCenter="color:#ffffff; font-family:arial; font-size:14px; text-align:center;"
+                   cssTextRight="color:#ffffff; font-family:arial; font-size:14px; text-align:right;"
+            />
+
+        </layer>
+
+    </layer>
+
+    <style name="shareViewDirect"
+           hintru="Получить ссылку на текущий вид текущей панорамы" hintruW="330"
+           hinteng="Get url to current view of the current panorama" hintengW="300"
+    />
+
+    <style name="thumb" keep="true" parent="thumbsBar" align="righttop" edge="righttop" capture="false"  enabled="true"/>
+
+    <style name="thumbFrame" keep="true" url="skin.png" align="center" edge="center" capture="false"  enabled="true"
+           crop="0|270|100|50" onovercrop="0|320|100|50" scale9grid="10|10|50|10"
+           onclick="gotoscene(get(linkedscene));"
+           onover="thumbOnover();"
+           onout="bigThumbShow(false);"
+    />
+
+    <style name="thumbIndexText" url="plugins/textfield.swf" keep="true"
+           align="leftbottom" edge="leftbottom" x="2" y="-2" enabled="false" capture="false" selectable="false"
+           width="100%" autoheight="true" background="false"
+           textshadow="1" textshadowrange="2" textshadowcolor="0x000000" textshadowalpha="1"
+           html="0"
+           css="color:#ffffff; font-family:arial; font-size:14px; text-align:left;"
+    />
+
+    <style name="thumbFrameNormal" crop="0|270|100|50" onovercrop="0|320|100|50" />
+    <style name="thumbFrameNormalActive" crop="0|320|100|50" onovercrop="0|320|100|50" />
+    <style name="thumbFrameVisited" crop="100|270|100|50" onovercrop="100|320|100|50"/>
+    <style name="thumbFrameVisitedActive" crop="100|320|100|50" onovercrop="100|320|100|50" visited="true"  />
+
+    <style name="hsHelicopter" url="skin.png" keep="false"
+           crop="0|120|60|50" onovercrop="60|120|60|50"
+           cropnormal="0|120|60|50" onovercropnormal="60|120|60|50"
+           cropvisited="0|170|60|50" onovercropvisited="60|170|60|50"
+           ondown="hsLinkedsceneOnclick();"
+           onover="hsLinkedsceneOnover();"
+           onout="hsLinkedsceneOnout();"
+    />
+
+    <style name="hsGround" url="skin.png" keep="false"
+           crop="120|120|50|50" onovercrop="170|120|50|50"
+           cropnormal="120|120|50|50" onovercropnormal="170|120|50|50"
+           cropvisited="120|170|50|50" onovercropvisited="170|170|50|50"
+           ondown="hsLinkedsceneOnclick();"
+           onover="hsLinkedsceneOnover();"
+           onout="hsLinkedsceneOnout();"
+    />
+    <style name="hsDiver" url="hs_diver.png"
+           crop="0|0|50|50" onovercrop="50|0|50|50"
+           cropnormal="0|0|50|50" onovercropnormal="50|0|50|50"
+           cropvisited="0|50|50|50" onovercropvisited="50|50|50|50"
+    />
+
+    <style name="hsInfo" url="skin.png"
+           crop="230|130|30|30" onovercrop="230|180|30|30"
+           ondown="if(istouchdevice, showHint(5); ); copy(temptext,linkedurl); if(temptext.length GT 0, openurl(get(linkedurl),_blank); );"
+           onhover="
+            mul(halfstagew,stagewidth,0.5);
+            mul(halfstageh,stageheight,0.5);
+            spheretoscreen(ath,atv,hsx,hsy);
+            if(hsx LT halfstagew,
+                if(hsy LT 70, set(hintposition,2);, set(hintposition,null); );
+            ,
+                if(hsy LT 70, set(hintposition,3);, set(hintposition,4); );
+            );
+            showHint(get(hintposition));
+        "
+           onover="tween(autorotate.speed,0,0.1);"
+           onout="tween(autorotate.speed,get(autorotatespeed),0.3);"
+           onloaded="if(language == eng, ifnot(linkedurleng === null, copy(linkedurl,linkedurleng); ); );"
+    />
+    <style name="hsInfoRed" crop="390|130|30|30" onovercrop="390|180|30|30"/>
+    <style name="hsInfoBlue" crop="440|130|30|30" onovercrop="440|180|30|30"/>
+    <style name="hsInfoRedLine" crop="490|130|30|30" onovercrop="490|180|30|30"/>
+
+    <style name="hsTourRed" url="hs_red.png" crop="0|0|50|50" onovercrop="50|0|50|50"/>
+
+    <style name="hsMedia" url="skin.png" visible="false"
+           hsmedia="true" switchindex="0"
+           onhover="
+            mul(halfstagew,stagewidth,0.5);
+            mul(halfstageh,stageheight,0.5);
+            spheretoscreen(ath,atv,hsx,hsy);
+            if(hsx LT halfstagew,
+                if(hsy LT 70, set(hintposition,2);, set(hintposition,null); );
+            ,
+                if(hsy LT 70, set(hintposition,3);, set(hintposition,4); );
+            );
+            showHint(get(hintposition));
+        "
+           onover="tween(autorotate.speed,0,0.1);"
+           onout="tween(autorotate.speed,get(autorotatespeed),0.3);"
+           ondown="hsmediablink(get(name),get(hsmediatype),get(skip),get(language));"
+    />
+    <style name="hsMediaVideo" crop="530|120|60|50" onovercrop="530|170|60|50" hsmediatype="video"/>
+    <style name="hsMediaVideo360" crop="590|120|60|50" onovercrop="590|170|60|50" hsmediatype="video360"/>
+    <style name="hsMediaInfo" crop="710|120|60|50" onovercrop="710|170|60|50" hsmediatype="info"/>
+
+    <style name="hsMediaGallery" crop="650|120|60|50" onovercrop="650|170|60|50" hsmediatype="images" hsmedia="true"
+           ondown="showgallery(fotogallery,get(imageindex));"
+    />
+
+    <style name="hsLineCopter" url="skin.png" keep="false"
+           crop="370|120|8|100" zoom="true" scalechildren="false"
+           ondown="hsLinkedsceneOnclick();"
+           onover="hsLinkedsceneOnover();"
+           onout="hsLinkedsceneOnout();"
+           onloaded="
+            txtadd(hsimgname,get(name),img);
+            addplugin(get(hsimgname));
+            plugin[get(hsimgname)].loadstyle(hsLineCopterImg);
+            txtadd(plugin[get(hsimgname)].parent,hotspot[,get(name),]);
+            if(scene[get(linkedscene)].visited,
+                copy(plugin[get(hsimgname)].crop,plugin[get(hsimgname)].cropvisited);
+                copy(plugin[get(hsimgname)].cropnormal,plugin[get(hsimgname)].cropvisited);
+                copy(plugin[get(hsimgname)].cropover,plugin[get(hsimgname)].onovercropvisited);
+            ,
+                copy(plugin[get(hsimgname)].crop,plugin[get(hsimgname)].cropnormal);
+                copy(plugin[get(hsimgname)].cropover,plugin[get(hsimgname)].onovercropnormal);
+            );
+        "
+    />
+
+    <style name="hsLineCopterImg" url="skin.png" keep="false" oy="10"
+           cropnormal="270|120|50|50" onovercropnormal="320|120|50|50"
+           cropvisited="270|170|50|50" onovercropvisited="320|170|50|50"
+           align="top" edge="bottom" enabled="true" capture="false"
+    />
+
+    <layer name="mapBg" type="container" keep="true"
+           bgcolor="0x444444" bgalpha="0.8"
+           align="leftbottom" edge="leftbottom" x="0" y="50"
+           width="50%" height="-150" zorder="1" visible="false"
+    >
+        <plugin name="map" url="" keep="true" zorder="0"
+                html5url="%SWFPATH%/plugins/bingmaps.js"
+                align="leftbottom" edge="leftbottom" x="0" y="0"
+                width="100%" height="100%" maptype="normal"
+                key="AuWCHhA9sY9cW-ew3IWQCXdJWvURj-SJsUqu6s1Sb8C6kjxLc-R7cKfsDOFXvCZ8"
+                bingmapkey3="AkAtsgg4vIxHLqs_7BZn3XFsAAB7CXu9sJKK3b6oyAwzE3tyx_sRwWU3LY8c679V"
+                bingmapkey="AuWCHhA9sY9cW-ew3IWQCXdJWvURj-SJsUqu6s1Sb8C6kjxLc-R7cKfsDOFXvCZ8"
+                googlekey="ABQIAAAAScKeVAgsBkDwjAaYyHvRwxR_lczprexi_xifM4rN3-F802cj1hQnYFf9IhG1aSV4lLb20SRc2mdl5A"
+                onmapready="mapSetactiveSpot();"
+        >
+            <radar visible="true" dragable="true" size="100" zoomwithmap="false"
+                   fillcolor="0xFF0000" linealpha="0" glowstrength="3"
+            />
+            <positioncontrol visible="true" align="lefttop" x="5" y="5" />
+            <maptypecontrol visible="true" align="leftbottom" x="5" y="40"
+                            buttonalign="V"
+                            buttontexts="Map|Satellite|Hybrid"
+                            scale="1.0"
+            />
+            <zoomcontrol visible="true" align="righttop" x="5" y="15" hasscrolltrack="true" />
+            <spotstyle name="mapspotstyle" edge="center"
+                       url="spot_normal.png"
+                       overurl="spot_over.png"
+                       activeurl="spot_active.png"
+            />
+        </plugin>
+
+        <layer name="mapClose" url="skin.png" keep="true" zorder="1"
+               crop="0|420|30|30" onovercrop="0|450|30|30"
+               align="righttop" edge="center" x="0" y="0"
+               ondown="mapClose();"
+        />
+        <layer name="mapClose" url="skin_mobile.png" crop="0|160|60|60" onovercrop="0|220|60|60" devices="mobile" />
+    </layer>
+    <layer name="mapBg" y="80" width="-120" height="-170" devices="mobile" />
+
+    <layer name="tourMap" type="container" keep="true" visible="false" alpha="0"
+           align="lefttop" edge="lefttop" x="0" y="0"
+           width="100%" height="100%" zorder="0" capture="false"
+    >
+        <!-- <plugin name="map_title" url="plugins/textfield.swf" keep="true"
+            align="leftbottom" edge="leftbottom" x="35" y="35" width="200" autoheight="true"
+            selectable="false" background="false" textglow="4" textshadow="3" enabled="false" capture="false"
+            css="color:#ffffff; font-family:arial; font-size:30px; text-align:left"
+            htmlru="Карта тура" html="Tour map"
+            onloaded="if(language == ru, copy(html,htmlru); );"
+        /> -->
+        <plugin name="map_title" url="skin.png" keep="true" enabled="false"
+                align="leftbottom" edge="leftbottom" x="35" y="25"
+                crop="175|480|198|55"
+                cropeng="373|480|217|55"
+                onloaded="if(language == ru, copy(crop,cropeng); );"
+        />
+        <layer name="tourMapTop" style="tourMap" align="lefttop" edge="lefttop" x="0" y="0" width="100%" height="30" />
+        <layer name="tourMapLeft" style="tourMap" align="lefttop" edge="lefttop" x="0" y="30" width="30" height="-60" />
+        <layer name="tourMapBottom" style="tourMap" align="leftbottom" edge="leftbottom" x="0" y="0" width="100%" height="30"/>
+        <layer name="tourMapFrameRight" style="tourMap" align="righttop" edge="righttop" x="0" y="30" width="30" height="-60" />
+        <layer name="tourMapClose" url="skin_mobile.png" keep="true"
+               align="righttop" edge="righttop" x="30" y="30"
+               crop="0|160|60|60" onovercrop="0|220|60|60"
+               ondown="gotoscene(get(prevOpenedScene));"
+        />
+    </layer>
+    <style name="tourMap" type="container" keep="true" bgcolor="0xFFFFFF" bgalpha="0.5" />
+    <style name="tourMapClose" type="container" keep="true" bgcolor="0xFFFFFF" bgalpha="1"
+           align="lefttop" edge="lefttop" x="0" y="0" width="100%" height="8"
+    />
+
+    <layer name="preloader" url="plugins/textfield.swf" keep="true" enabled="false" capture="false"
+           align="bottom" x="0" y="10%" width="100" autoheight="true"
+           html="0%"
+           css="color:#FFFFFF; font-family:arial; font-size:26px; text-align:center;"
+           selectable="false"
+           background="false"
+           textshadow="2.0"
+           textshadowrange="4.0"
+           textshadowangle="45"
+           textshadowcolor="0x000000"
+           textshadowalpha="0.7"
+    />
+
+    <action name="showprogress">
+        mul(loaded,progress.progress,100);
+        roundval(loaded,0);
+        txtadd(loaded,get(loaded),%);
+        copy(layer[preloader].html,loaded);
+        ifnot(loadingcomplete, delayedcall(0.1,showprogress();); );
+    </action>
+
+    <style name="btnMedia" url="skin.png" keep="true" visible="true"
+           align="lefttop" edge="lefttop"
+           ondown="set(oy,1);" onup="set(oy,0);"
+           onclick="viewToHotspot(get(hsmediatype));"
+    />
+
+    <layer name="btnMediaBg" type="container" keep="true" visible="true"
+           align="left" edge="right" x="-5" y="0" width="60" height="200"
+           bgalpha="0" scalechildren="true" scale="1"
+    >
+        <layer name="btnMedia_video" style="btnMedia" crop="530|120|60|50" onovercrop="530|170|60|50" x="0" y="0" hsmediatype="video"/>
+        <layer name="btnMedia_video360" style="btnMedia" crop="590|120|60|50" onovercrop="590|170|60|50" x="0" y="50" hsmediatype="video360"/>
+        <layer name="btnMedia_images" style="btnMedia" crop="650|120|60|50" onovercrop="650|170|60|50" x="0" y="100" hsmediatype="images"/>
+        <layer name="btnMedia_info" style="btnMedia" crop="710|120|60|50" onovercrop="710|170|60|50" x="0" y="150" hsmediatype="info"/>
+    </layer>
+
+    <action name="gyroOn">
+        if(%1 == false,
+        set(layer[gyro].enabled,false);
+        set(layer[btnGyroOff].visible,true);
+        set(layer[btnGyroOn].visible,false);
+        ,
+        set(layer[gyro].enabled,true);
+        set(layer[btnGyroOff].visible,false);
+        set(layer[btnGyroOn].visible,true);
+        );
+    </action>
+
+    <action name="showvol">
+        if(%1 == 1,
+        set(layer[soundvolbg].visible,true);
+        if(layer[soundhint].loaded,
+        tween(layer[soundhint].alpha,0,0.3,,set(layer[soundhint].visible,false); );
+        );
+        );
+        tween(layer[soundvolbg].alpha,%1,0.2,easeoutquad,
+        if(%1 == 0, set(layer[soundvolbg].visible,false); );
+        );
+    </action>
+
+    <action name="changesoundvol">
+        <!-- if(isflash, -->
+        ifnot(device.ios,
+        sub(newsoundvol,%1,0.2);
+        mul(newsoundvol,0.7);
+        if(newsoundvol LT 0, set(newsoundvol,0); );
+
+        <!-- copy(sound[bgsound].volume,newsoundvol); -->
+        copy(plugin[soundinterface].volume,newsoundvol);
+
+        ifnot(%2 == 0, mul(layer[soundvolspin].y,57,%1); );
+
+        if(%1 GT 0.1,
+        ifnot(soundplaying, soundPlay(true); );
+        ,
+        if(soundplaying, soundPlay(false); );
+        );
+        );
+    </action>
+
+    <action name="addframe">
+        addplugin(%1_frame_border);
+        set(plugin[%1_frame_border].parent,%1);
+        set(plugin[%1_frame_border].type,container);
+        set(plugin[%1_frame_border].bgborder,1 0xFF0000 1);
+        set(plugin[%1_frame_border].align,lefttop);
+        set(plugin[%1_frame_border].width,100%);
+        set(plugin[%1_frame_border].height,100%);
+    </action>
+
+    <plugins/>
+
+    <action name="start">
+        <!-- delayedcall(0.5,
+            for(set(iii,0), iii LT plugin.count, inc(iii),
+                copy(plugins.plugin[get(iii)].name,plugin[get(iii)].name);
+            );
+            for(set(iii,0), iii LT plugins.plugin.count, inc(iii),
+                addframe(get(plugins.plugin[get(iii)].name));
+            );
+        ); -->
+        set(prevOpenedScene,0);
+        if(action[resetDefaultLensflare].content, resetDefaultLensflare(); );
+        <!-- if(ismobile, set(intro,0); ); REMOVE INTRO FOR PHONES -->
+        if(stagewidth LT 800,
+        <!-- set(intro,0);  -->
+        layer[sceneTitle].loadstyle(smallTitleCss);
+        );
+        if(airpano_top_link === true, set(layer[airpanoTopLink].visible,true); );
+        if(intro == 0, helpShow(false); );
+        set(control.mousefovchange,1);
+        thumbsBuild();
+        updateThumbsStage();
+        if(quality === null, set(quality,hi); );
+        if(language === null, set(language,eng); );
+        if(show_share_button === null, set(show_share_button,false); );
+        if(embeded == null, set(embeded,false); );
+        copy(layer[shareView].visible,show_share_button);
+        <!-- layer[shareView].checkdevices(); -->
+        if(controlls_onstart === null, set(controlls_onstart,true); );
+        if(sound_onstart === null, set(sound_onstart,true); );
+        if(sound_volume === null, set(sound_volume,0.8); );
+        if(autorotate_onstart === null, set(autorotate_onstart,true); );
+        if(autorotate_onstart == false, setAutorotate(false); );
+        copy(plugin[map].lat,tourSettings.lat);
+        copy(plugin[map].lng,tourSettings.lng);
+        copy(plugin[map].zoom,tourSettings.zoom);
+        copy(autorotateEnabled,autorotate_onstart);
+        set(scenesVisited,0);
+        set(preloadBigThumbsCounter,0);
+        preloadBigThumbs();
+        updateLanguage();
+        for(set(i,0), i LT scene.count, inc(i),
+        ifnot(scene[get(i)].name == map,
+        add(sceneNum,i,1);
+        txtadd(scene[get(i)].title,get(sceneNum),'. ',get(scene[get(i)].title));
+        );
+        );
+        controllsShow(false,0);
+        updateFullscreenBtn();
+
+        ifnot(soundtracks.track.count GT 0,
+        if(defaultSound == true,
+        set(bgSoundUrl,http://www.airpano.ru/files/defaultsound/default.mp3);
+        set(tourSettings.sound2file,null);
+        ,
+        txtadd(bgSoundUrl,get(tourSettings.soundsurl),get(tourSettings.soundfile));
+        if(tourSettings.sound2file,
+        txtadd(bgSound2Url,get(tourSettings.soundsurl),get(tourSettings.sound2file));
+        );
+        );
+        ifnot(sound_allow == false,
+        ifnot(ismobile,
+        playsound(bgsound,get(bgSoundUrl),0);
+        mul(prevSoundVol,sound_volume,0.7);
+        mul(sound[bgsound].volume,sound_volume,0.7);
+        pausesound(bgsound);
+        set(currentsound,1);
+        ifnot(bgSound2Url === null,
+        set(layer[changeSound].visible,true);
+        add(layer[shareView].x,30);
+        );
+        updateChangeSound('sound',get(language));
+        ,
+        set(sound_onstart,false);
+        );
+        ,
+        set(layer[btnSoundOn].visible,false);
+        set(layer[btnSoundOff].visible,false);
+        copy(layer[shareView].x,layer[btnSoundOff].x);
+        );
+        );
+
+        if(sc == map, gotoTourMap(); , gotoscene(get(sc),get(ath),get(atv),get(fov)); );
+        tween(plugin[overlay].alpha,0,0.5,linear, removeplugin(overlay); );
+        txtadd(layer[bigThumb].url,get(tourSettings.panosurl),'hi/01/tb.jpg');
+        if(tourSettings.gotoTourOn,
+        ifnot(ismobile,
+        if(embeded == false,
+        txtadd(layer[gotoTour].url,images/ts_,get(language),.jpg);
+        set(layer[gotoTour].visible,true);
+        );
+        );
+        );
+        helpShow(true);
+    </action>
+
+    <action name="updateChangeSound">
+        copy(layer[btnSoundOff].hintWidth,tourSettings.%1title%2W);
+        txtadd(layer[btnSoundOff].hintText,get(layer[btnSoundOff].hint%2),': ',get(tourSettings.%1title%2));
+        copy(layer[btnSoundOn].hintWidth,tourSettings.%1title%2W);
+        txtadd(layer[btnSoundOn].hintText,get(layer[btnSoundOn].hint%2),': ',get(tourSettings.%1title%2));
+        copy(layer[changeSound].hintWidth,tourSettings.%1title%2W);
+        copy(layer[changeSound].hintText,tourSettings.%1title%2);
+        copy(layer[changeSound].crop,layer[changeSound].%1crop);
+        copy(layer[changeSound].onovercrop,layer[changeSound].%1onovercrop);
+    </action>
+
+    <action name="changeSound">
+        copy(currentsoundvol,sound[bgsound].volume);
+        ifnot(soundplaying,
+        set(soundispaused,true);
+        soundPlay(true);
+        ,
+        set(soundispaused,false);
+        );
+
+        if(currentsound == 1,
+        set(currentsound,2);
+        playsound(bgsound,get(bgSound2Url),0);
+        updateChangeSound('sound2',get(language));
+        ,
+        set(currentsound,1);
+        playsound(bgsound,get(bgSoundUrl),0);
+        updateChangeSound('sound',get(language));
+        );
+        if(soundispaused,
+        soundPlay(false);
+        );
+        copy(sound[bgsound].volume,currentsoundvol);
+    </action>
+
+    <action name="introDo" >
+        delayedcall(intro,get(showhelpdelay),
+        helpShow(false);
+        copy(title,plugin[tourTitle]);
+        set(title.visible,true);
+        tween(title.alpha,1,2,linear);
+        delayedcall(intro,6,
+        tween(title.alpha,0,1,linear,
+        introBreak();
+        viewAnimationDo();
+        );
+        );
+
+        );
+    </action>
+
+    <action name="introBreak" >
+        ifnot(introDone,
+        stopdelayedcall(intro);
+        helpShow(false);
+        removelayer(tourTitle);
+        delayedcall(startRot,5, setAutorotate(get(autorotateEnabled)); );
+        set(events.onmousedown,firstTouchForIosSoundFix());
+        set(events.onloadcomplete,sceneOnLoaded(););
+        set(introDone,true);
+        showPanoTitle();
+        if(sc != map,
+        controllsShow(get(controlls_onstart));
+        soundPlay(get(sound_onstart));
+        soundFadeInAction();
+        ,
+        set(mapStarted,true);
+        );
+        );
+    </action>
+
+    <action name="soundFadeInAction">
+        copy(layer[soundhint].visible,sound_allow);
+        delayedcall(0.8,
+        tween(layer[soundhint].alpha,0.8,0.5);
+        tween(layer[soundhint].oy,0,0.3);
+        delayedcall(4,
+        tween(layer[soundhint].alpha,0,1,,
+        removelayer(soundhint);
+        );
+        );
+        );
+
+        if(soundplaying == true,
+        set(soundfadein,0);
+        tween(soundfadein,get(sound_volume),8,linear,,changesoundvol(get(soundfadein)););
+        );
+    </action>
+
+    <action name="firstTouchForIosSoundFix">
+        if(soundplaying,, pausesound(bgsound); );
+        <!-- set(events.onmousedown, hideHintText();set(display.movequality,LOW); ); -->
+        set(events.onmousedown, hideHintText(); );
+    </action>
+
+    <action name="hideHintText">
+        if(istouchdevice,set(layer[hintText].alpha,0);set(layer[hintText].visible,false););
+    </action>
+
+    <action name="soundPlay">
+        ifnot(sound_allow == false,
+        ifnot(ismobile,
+        if(%1,
+        resumesound(bgsound);
+        set(layer[btnSoundOff].visible,true);
+        set(layer[btnSoundOn].visible,false);
+        div(tempspiny,sound[bgsound].volume,0.7);
+        add(tempspiny,0.2);
+        mul(layer[soundvolspin].y,57,get(tempspiny));
+        ,
+        if(soundfadein GT 0.1, stoptween(soundfadein); );
+        pausesound(bgsound);
+        set(layer[btnSoundOff].visible,false);
+        set(layer[btnSoundOn].visible,true);
+        );
+        set(soundplaying,%1);
+        );
+        );
+    </action>
+
+    <action name="helpShow">
+        if(%1,
+        set(layer[help].visible,true); tween(layer[help].alpha,1,0.2,linear);
+        events.dispatch(onhelpshow);
+        ,
+        tween(layer[help].alpha,0,0.2,linear, set(layer[help].visible,false); );
+        events.dispatch(onhelphide);
+        );
+    </action>
+
+    <plugin name="preloadThumbsBig" url="" keep="true" align="lefttop" edge="lefttop" y="-1000" x="0" />
+
+    <action name="preloadBigThumbs" >
+        txtadd(plugin[preloadThumbsBig].url,get(tourSettings.panosurl),'hi/',get(scene[get(preloadBigThumbsCounter)].folder),'/tb.jpg');
+        inc(preloadBigThumbsCounter);
+        if(preloadBigThumbsCounter LT scene.count,
+        txtadd(plugin[preloadThumbsBig].onloaded,preloadBigThumbs(,get(preloadBigThumbsCounter),));
+        ,
+        set(plugin[preloadThumbsBig].onloaded,);
+        );
+    </action>
+
+    <action name="viewAnimationDo" >
+        for(set(stepi,0), stepi LT viewanimation.step.count, inc(stepi),
+        oninterrupt(break);
+        copy(step,viewanimation.step[get(stepi)]);
+        txtadd(smoothtxt,'smooth(',get(step.accel),',',get(step.break),',',get(step.maxspeed),')');
+        lookto(get(step.hlookat),get(step.vlookat),get(step.fov),get(smoothtxt),true,false);
+        wait(get(step.delay));
+        );
+    </action>
+
+    <action name="updateLanguage">
+        for(set(i,0), i LT plugin.count, inc(i),
+        setPluginHintText(get(i),get(language));
+        );
+        for(set(i,0), i LT scene.count, inc(i),
+        setSceneTitleText(get(i),get(language));
+        );
+        if(language == ru,
+        set(contextmenu.item[fisheye].caption,Широкоугольный вид);
+        set(contextmenu.item[architect].caption,Архитектурный вид);
+        set(contextmenu.item[stereograph].caption,Стереографический вид);
+        set(contextmenu.item[normal].caption,'Нормальный вид (по умолчанию)');
+        set(contextmenu.item[littleplanet].caption,Вид маленькая планета);
+        set(contextmenu.item[mousemode].caption,Изменить режим управления мышью);
+        );
+        updateLanguagePlus(get(language));
+    </action>
+
+    <action name="updateLanguagePlus">
+        if(isdesktop,
+        layer[btnFullscreenOn2].loadstyle(fsOn%1);
+        layer[btnFullscreenOff2].loadstyle(fsOff%1);
+        );
+        copy(layer[tourTitle].html,tourSettings.%1);
+        copy(layer[btnInfo].targeturl,tourSettings.infourl%1);
+        copy(layer[btnInfo].hintText,tourSettings.infotext%1);
+        copy(layer[btnInfo].hintWidth,tourSettings.infotext%1width);
+        copy(gotoTourText,tourSettings.gotoTourText%1);
+        copy(layer[gotoTour].linkedurl,tourSettings.gotoTourUrl%1);
+        copy(layer[airpanoTopLink].html,layer[airpanoTopLink].html%1);
+        ifnot(tourSettings.tourMapUrl%1,
+        copy(layer[tourMapBtn].crop,layer[tourMapBtn].crop%1);
+        ,
+        set(layer[tourMapBtn].crop,);
+        copy(layer[tourMapBtn].url,tourSettings.tourMapUrl%1);
+        );
+    </action>
+
+    <action name="setPluginHintText">
+        copy(plugin[%1].hintText,plugin[%1].hint%2);
+        copy(plugin[%1].hintWidth,plugin[%1].hint%2W);
+    </action>
+
+    <action name="setHotspotHintText">
+        copy(hotspot[%1].hintText,hotspot[%1].hint%2);
+        copy(hotspot[%1].hintWidth,hotspot[%1].hint%2W);
+    </action>
+
+    <action name="setSceneTitleText">
+        copy(scene[%1].title,scene[%1].title%2);
+    </action>
+
+    <action name="gotoscene">
+        ifnot(%1 == null, set(scenename,%1);, set(scenename,0); );
+        set(autorotate.enabled,false);
+        dropThumbActive();
+
+        loadscene(get(scenename),null,merge,blend(0.7));
+        bigThumbShow(false);
+        ifnot(%2 == null, set(view.hlookat,%2); );
+        ifnot(%3 == null, set(view.vlookat,%3); );
+        ifnot(%4 == null, set(view.fov,%4); );
+        sceneOnStart();
+        ifnot(scene[get(scenename)].skip,
+        setThumbActive(get(scene[get(scenename)].index));
+        track_thumb_click(Thumb,get(scene[get(scenename)].index));
+        );
+    </action>
+
+    <action name="gotoTourMap">
+        copy(oldsoundplaying,soundplaying);
+        if(oldsoundplaying === null, copy(oldsoundplaying,sound_onstart); );
+        soundPlay(false);
+        copy(prevOpenedScene,scene[get(xml.scene)].name);
+        if(prevOpenedScene == map, set(prevOpenedScene,0); );
+        loadscene(map,null,merge,blend(0.7));
+        updateVisitedHotspots();
+        controllsShow(false,,keepHotspots);
+        set(layer[sceneTitle].visible,false);
+        if(introDone, showPanoTitle(); );
+        set(layer[tourMap].visible,true);
+        tween(layer[tourMap].alpha,1,0.5);
+        copy(oldAutorotateEnabled,autorotateEnabled);
+        setAutorotate(false);
+    </action>
+
+    <action name="showPanoTitle">
+        stopdelayedcall(titledelay);
+        copy(layer[sceneTitle].html,scene[get(xml.scene)].title);
+        delayedcall(titledelay,0.1,
+        set(layer[sceneTitle].visible,true);
+        set(layer[sceneTitle].alpha,0);
+        tween(layer[sceneTitle].alpha,1,1);
+        delayedcall(titledelay,6, tween(layer[sceneTitle].alpha,0,3,linear); );
+        );
+    </action>
+
+    <action name="countVisitedPanos">
+        ifnot(scene[get(xml.scene)].visited,
+        ifnot(scene[get(xml.scene)].name == map,
+        set(scene[get(xml.scene)].visited,true);
+        ifnot(scene[get(xml.scene)].skip,
+        inc(scenesVisited);
+        updateVisitedPanosText();
+        );
+        );
+        );
+    </action>
+
+    <action name="updateVisitedHotspots">
+        set(layer[btnMedia_video].visible,false);
+        set(layer[btnMedia_video360].visible,false);
+        set(layer[btnMedia_images].visible,false);
+        set(layer[btnMedia_info].visible,false);
+        for(set(hsi,0), hsi LT hotspot.count, inc(hsi),
+        setHotspotHintText(get(hsi),get(language));
+        if(hotspot[get(hsi)].linkedscene,
+        if(scene[get(hotspot[get(hsi)].linkedscene)].visited,
+        ifnot(hotspot[get(hsi)].style == hsLineCopter,
+        copy(hotspot[get(hsi)].crop,hotspot[get(hsi)].cropvisited);
+        copy(hotspot[get(hsi)].onovercrop,hotspot[get(hsi)].onovercropvisited);
+        );
+        ,
+        ifnot(hotspot[get(hsi)].style == hsLineCopter,
+        copy(hotspot[get(hsi)].crop,hotspot[get(hsi)].cropnormal);
+        copy(hotspot[get(hsi)].onovercrop,hotspot[get(hsi)].onovercropnormal);
+        );
+        );
+        );
+        ifnot(controllsVisible, set(hotspot[get(hsi)].alpha,0); );
+        copy(hotspot[get(hsi)].visible,controllsVisible);
+
+        if(hotspot[get(hsi)].hsmedia,
+        showMediaBtn(get(hotspot[get(hsi)].hsmediatype));
+        set(hotspot[get(hsi)].switchindex,0);
+        );
+        );
+        set(mediay,0);
+        if(layer[btnMedia_video].visible, add(mediay,50); ); copy(layer[btnMedia_video360].y,mediay);
+        if(layer[btnMedia_video360].visible, add(mediay,50); ); copy(layer[btnMedia_images].y,mediay);
+        if(layer[btnMedia_images].visible, add(mediay,50); ); copy(layer[btnMedia_info].y,mediay);
+        if(layer[btnMedia_info].visible, add(mediay,50); );
+        copy(layer[btnMediaBg].height,mediay);
+        set(switchindexvideo,1);
+        set(switchindexvideo360,1);
+        set(switchindeximages,1);
+        set(switchindexinfo,1);
+    </action>
+
+    <action name="showMediaBtn">
+        set(layer[btnMedia_%1].visible,true);
+    </action>
+
+    <action name="viewToHotspot">
+        set(hsmediacount,0);
+        set(hsmediaswitched,false);
+        for(set(hsi,0), hsi LT hotspot.count, inc(hsi),
+        if(hotspot[get(hsi)].hsmediatype == %1,
+        <!-- copy(hsmedianame,hotspot[get(hsi)].name); -->
+        if(hotspot[get(hsi)].hsmediatype == %1,
+        inc(hsmediacount);
+        if(hotspot[get(hsi)].switchindex LT switchindex%1,
+        ifnot(hsmediaswitched,
+        ifnot(hotspot[get(hsi)].skip == true, looktohotspot(get(hsi)); );
+        hsmediablink(get(hsi),%1,get(hotspot[get(hsi)].skip),get(language));
+        <!-- copy(currentMediaHs,hsmedianame); -->
+        copy(hotspot[get(hsi)].switchindex,switchindex%1);
+        set(hsmediaswitched,true);
+        );
+        );
+        );
+        );
+        );
+        ifnot(hsmediaswitched,
+        inc(switchindex%1); if(hsmediacount GT 1, viewToHotspot(%1); );
+        ,
+        if(hsmediacount LT 2, inc(switchindex%1); );
+        );
+    </action>
+
+    <action name="hsmediablink">
+        ifnot(%2 == images, set(fullscreen,false); );
+        if(%3 == true, set(hsmediain,0); set(hsmediaout,0);, set(hsmediain,0.15); set(hsmediaout,0.5); );
+        tween(hotspot[%1].scale,1.5,get(hsmediain),,
+        tween(hotspot[%1].scale,1,get(hsmediaout),,
+        if(%2 == images,
+        showgallery(fotogallery,get(hotspot[%1].imageindex));
+        ,
+        js(openmediawindow(get(hotspot[%1].mediawindowurl%4),get(hotspot[%1].mediawindowwidth),get(hotspot[%1].mediawindowheight)));
+        );
+        );
+        );
+    </action>
+
+    <image>
+        <cube url.html5="" devices="html5"/>
+    </image>
+
+    <action name="sceneOnStart">
+        mapSetactiveSpot();
+        copy(autorotate.horizon,scene[get(xml.scene)].rothor);
+        copy(autorotate.tofov,scene[get(xml.scene)].rotfov);
+        copy(autorotate.speed,scene[get(xml.scene)].rotspeed);
+        copy(autorotatespeed,scene[get(xml.scene)].rotspeed);
+
+        set(view.fovtype,VFOV);
+        stopdelayedcall(titledelay);
+        set(layer[sceneTitle].visible,false);
+        updateVisitedHotspots();
+        if(introDone, showPanoTitle(); );
+        if(layer[tourMap].visible,
+        set(layer[tourMap].alpha,0);
+        set(layer[tourMap].visible,false);
+        setAutorotate(get(oldAutorotateEnabled));
+        controllsShow(true);
+        soundPlay(get(oldsoundplaying));
+        );
+        <!-- updateLink(); -->
+        if(mapStarted,
+        soundFadeInAction();
+        delete(mapStarted);
+        );
+    </action>
+
+    <action name="sceneOnLoaded">
+        if(introDone, setAutorotate(get(autorotateEnabled)); );
+        countVisitedPanos();
+        ifnot(scene[get(scenename)].skip,
+        setThumbActive(get(scene[get(scenename)].index));
+        );
+    </action>
+
+    <action name="updateVisitedPanosText">
+        if(language == ru,
+        set(viewedtext,'Просмотрено ');set(fromtext,' из ');
+        ,
+        set(viewedtext,'Viewed ');set(fromtext,' of ');
+        );
+        txtadd(plugin[visitedScenesText].html,[p],get(viewedtext),get(scenesVisited),get(fromtext),get(scenescount),[/p]);
+    </action>
+
+    <action name="updateFullscreenBtn">
+        if(isdesktop,
+        if(fullscreen,
+        set(layer[btnFullScreenOn].visible,false); if(device.desktop, set(layer[btnFullScreenOff].visible,true); );
+        set(layer[btnFullscreenOn2].visible,false); if(device.desktop, set(layer[btnFullScreenOff2].visible,true); );
+        <!-- set(layer[shareView].visible,false); -->
+        ,
+        if(device.desktop, set(layer[btnFullScreenOn].visible,true); ); set(layer[btnFullScreenOff].visible,false);
+        if(device.desktop, set(layer[btnFullscreenOn2].visible,true); ); set(layer[btnFullScreenOff2].visible,false);
+        <!-- copy(layer[shareView].visible,show_share_button); -->
+        );
+        );
+    </action>
+
+    <action name="setAutorotate">
+        ifnot(%1 === null, set(autorotate.enabled,%1); set(autorotateEnabled,%1); );
+        if(autorotate.enabled,
+        set(layer[btnRotateOn].visible,false); set(layer[btnRotateOff].visible,true);
+        ,
+        set(layer[btnRotateOn].visible,true); set(layer[btnRotateOff].visible,false);
+        );
+        events.dispatch(event_autorotate_switched);
+    </action>
+
+    <action name="tweenHotspotAlpha">
+        ifnot(hotspot[%1].skip == true,
+        if(%2 == 1, set(hotspot[%1].visible,true); );
+        tween(hotspot[%1].alpha,%2,%3,linear, if(%2 == 0, set(hotspot[%1].visible,false); ); );
+        ,
+        set(set(hotspot[%1].visible,false);
+        );
+    </action>
+
+    <action name="controllsShow">
+        if(ismobile, set(ctrlsHideY,-70); , set(ctrlsHideY,-40); );
+        if(%2 == fast, set(contrdelayedcall,0);, set(contrdelayedcall,0.3); );
+        ifnot(%1 === null,
+        set(controllsVisible,%1);
+        if(%1,
+        events.dispatch(controls_show);
+        tween(layer[controllsBg].alpha,1,0,linear,
+        tween(layer[btnMediaBg].x,get(layer[btnMediaBg].pixelwidth),get(contrdelayedcall),linear);
+        tween(layer[thumbsBg].x,0,get(contrdelayedcall),linear);
+        for(set(i,0), i LT hotspot.count, inc(i),
+        tweenHotspotAlpha(get(i),1,get(contrdelayedcall));
+        );
+        tween(layer[controllBtnsStage].alpha,1);
+        tween(layer[controllBtnsStage].y,0,get(contrdelayedcall),linear,
+        set(layer[btnControllsHide].visible,true); set(layer[btnControllsShow].visible,false);
+        );
+        tween(layer[topControlsBg].y,0,get(contrdelayedcall));
+        set(layer[gotoTour].enabled,true);
+        if(layer[gotoTour].visible, tween(layer[gotoTour].alpha,1,get(contrdelayedcall)););
+        );
+        ,
+        events.dispatch(controls_hide);
+        mapClose();
+        tween(layer[thumbsBg].x,-121,get(contrdelayedcall),linear);
+        if(%3 == keepHotspots, set(tempstate,1); , set(tempstate,0); );
+        for(set(i,0), i LT hotspot.count, inc(i),
+        tweenHotspotAlpha(get(i),get(tempstate),get(contrdelayedcall));
+        );
+        tween(layer[btnMediaBg].x,0,get(contrdelayedcall),linear);
+        tween(layer[topControlsBg].y,-35,get(contrdelayedcall));
+        tween(layer[controllBtnsStage].alpha,0);
+        tween(layer[controllBtnsStage].y,get(ctrlsHideY),get(contrdelayedcall),linear,
+        tween(layer[controllsBg].alpha,0,0,linear);
+        set(layer[btnControllsHide].visible,false);
+        ifnot(scene[get(xml.scene)].name == map, set(tempstate,true); , set(tempstate,false); );
+        copy(layer[btnControllsShow].visible,tempstate);
+        );
+        set(layer[gotoTour].enabled,false);
+        if(layer[gotoTour].visible, tween(layer[gotoTour].alpha,0,get(contrdelayedcall)););
+        );
+        );
+    </action>
+
+    <action name="showHint">
+        if(isButton,
+        showHintDo(layer[hintTextBtn],%1);
+        ,
+        showHintDo(layer[hintText],%1);
+        ifnot(name == oldhintname, copy(oldhintname,name); set(layer[hintText].visible,false); );
+        );
+    </action>
+
+    <action name="showHintDo">
+        copy(%1.html,hintText);
+        set(topoffset,25);
+        set(bottomoffset,-15);
+        if(istouchdevice,
+        set(topoffset,45);
+        set(bottomoffset,-25);
+        );
+        if(%2 === null, set(%1.edge,leftbottom); copy(%1.oy,bottomoffset); );
+        if(%2 == 2, set(%1.edge,lefttop); copy(%1.oy,topoffset); );
+        if(%2 == 3, set(%1.edge,righttop); copy(%1.oy,topoffset); );
+        if(%2 == 4, set(%1.edge,rightbottom); copy(%1.oy,bottomoffset); );
+        if(%2 == 5, set(%1.edge,bottom); copy(%1.oy,bottomoffset); copy(%1.ox,0); );
+
+        if(hintWidth == auto,
+        copy(temptext,hintText);
+        if(language == ru, set(textwmult,7.2);, set(textwmult,7.2); );
+        mul(newHintWidth,temptext.length,textwmult);
+        if(newHintWidth GT 350, set(newHintWidth,350); );
+        ,
+        copy(newHintWidth,hintWidth);
+        );
+
+        if(isflash, copy(%1.width,newHintWidth); );
+        if(ismobile, mul(%1.width,newHintWidth,1.5); );
+
+        set(%1.visible,true);
+        ifnot(istouchdevice,
+        stoptween(%1.alpha);
+        tween(%1.alpha,1,0.2,linear,
+        tween(%1.alpha,0,0.1,linear, set(%1.visible,false);  );
+        );
+        ,
+        set(%1.alpha,1);
+        delayedcall(hintTextTouch, 8, set(%1.alpha,0); );
+        );
+        copy(%1.x,mouse.x); copy(%1.y,mouse.y);
+        <!-- if(pressed, delayedcall(0.1, showHintDo(%1,%2); ); ); -->
+    </action>
+
+    <action name="delayedcall">
+        set(%1,0); tween(%1,1,%2,linear,%3);
+    </action>
+
+    <action name="stopdelayedcall">
+        stoptween(%1);
+    </action>
+
+    <thumbssettings
+            thumbwidth="85"
+            thumbheight="53"
+            thumbindent="6"
+            barindent="3"
+            thumbframewidth="92"
+            thumbframeheight="61"
+    />
+
+    <action name="thumbsBuild">
+        set(scenescount,0);
+        copy(layer[thumbsBar].width,thumbssettings.thumbwidth);
+        sub(layer[thumbsBar].height,0,thumbssettings.thumbheight);
+        for(set(i,0), i LT scene.count, inc(i),
+        ifnot(scene[get(i)].skip,
+        ifnot(scene[get(i)].name == map,
+        inc(scenescount);
+        copy(scene[get(i)].number,scenescount);
+        txtadd(thumbname,thumb,get(i));
+        addlayer(get(thumbname));
+        copy(tobj,layer[get(thumbname)]);
+        tobj.loadstyle(thumb);
+        add(layer[thumbsBar].height,thumbssettings.thumbheight);
+        add(layer[thumbsBar].height,thumbssettings.thumbindent);
+        copy(tobj.y,layer[thumbsBar].height);
+
+        copy(tobj.width,thumbssettings.thumbwidth);
+        copy(tobj.height,thumbssettings.thumbheight);
+        set(thumbfile,/ts.jpg);
+        if(langthumb, if(language == ru, set(thumbfile,/tsru.jpg); ); );
+        txtadd(tobj.url,get(tourSettings.panosurl),'hi/',get(scene[get(i)].folder),get(thumbfile));
+
+        txtadd(thumbframe,thumbFrame,get(i));
+        addlayer(get(thumbframe));
+        copy(fobj,layer[get(thumbframe)]);
+        fobj.loadstyle(thumbFrame);
+        copy(fobj.width,thumbssettings.thumbframewidth);
+        copy(fobj.height,thumbssettings.thumbframeheight);
+        copy(fobj.parent,thumbname);
+        copy(fobj.linkedscene,i);
+        copy(fobj.thumbindex,i);
+
+        <!-- if(isdesktop, -->
+        txtadd(thumbtext,thumbText,get(i));
+        addlayer(get(thumbtext));
+        copy(xobj,layer[get(thumbtext)]);
+        xobj.loadstyle(thumbIndexText);
+        add(xobj.html,fobj.thumbindex,1);
+        copy(xobj.parent,thumbname);
+        <!-- ); -->
+        ,
+        set(layer[tourMapBtn].visible,true);
+        );
+        );
+        );
+        add(layer[thumbsBar].height,thumbssettings.thumbheight);
+        add(layer[thumbsBar].height,thumbssettings.barindent);
+        add(layer[thumbsBar].height,thumbssettings.barindent);
+        if(isdesktop, delayedcall(0.5, layer[thumbsscrollbar].updatesize(); ); );
+    </action>
+
+    <action name="dropThumbActive">
+        if(layer[get(prevThumbFrameName)].loaded,
+        if(layer[get(prevThumbFrameName)].visited,
+        layer[get(prevThumbFrameName)].loadstyle(thumbFrameVisited);
+        ,
+        layer[get(prevThumbFrameName)].loadstyle(thumbFrameNormal);
+        );
+        );
+    </action>
+
+    <action name="setThumbActive">
+        if(layer[thumbFrame%1],
+        if(scene[%1].visited,
+        layer[thumbFrame%1].loadstyle(thumbFrameVisitedActive);
+        ,
+        layer[thumbFrame%1].loadstyle(thumbFrameNormalActive);
+        );
+        ifnot(prevThumbFrameName == thumbFrame%1,
+        if(layer[get(prevThumbFrameName)].loaded,
+        if(layer[get(prevThumbFrameName)].visited,
+        layer[get(prevThumbFrameName)].loadstyle(thumbFrameVisited);
+        ,
+        layer[get(prevThumbFrameName)].loadstyle(thumbFrameNormal);
+        );
+        );
+        );
+        set(prevThumbFrameName,thumbFrame%1);
+
+        sub(thumbY,0,layer[thumb%1].y);
+        add(barYtop,thumbY,thumbssettings.barindent);
+
+        add(barYbot,thumbY,layer[thumbsStage].height);
+        sub(barYbot,thumbssettings.thumbheight);
+        sub(barYbot,thumbssettings.barindent);
+
+        set(newBarY,noTween);
+        if(layer[thumbsBar].y LT barYtop, copy(newBarY,barYtop); );
+        if(layer[thumbsBar].y GT barYbot, copy(newBarY,barYbot); );
+        ifnot(newBarY == noTween, tween(layer[thumbsBar].y,get(newBarY),,,,changeThumbsScrol()); );
+        );
+    </action>
+
+    <action name="thumbOnover">
+        ifnot(thumbsBarMoving,
+        set(control.mousefovchange,0);
+        getabsxy.gety(thumby,get(name));
+
+        div(thumbHalfHeight,pixelheight,2);
+        add(bigThumbY,thumby,thumbHalfHeight);
+        div(bigThumbHalfHeight,layer[bigThumb].pixelheight,2);
+        sub(bigThumbY,bigThumbHalfHeight);
+
+        sub(maxTBY,stageheight,100);
+        if(thumby LT maxTBY,
+        sub(bigThumbX,stagewidth,101);
+        sub(bigThumbX,layer[bigThumb].pixelwidth);
+        sub(bigThumbX,layer[thumbsStage].x);
+
+        bigThumbShow(true,get(linkedscene),
+        get(bigThumbX),get(bigThumbY),
+        SpinRight,TextRight,righttop,rightbottom
+        );
+        );
+        );
+    </action>
+
+    <action name="updateThumbsStage">
+        if(scenescount LT 2,
+        set(layer[thumbsStage].visible,false);
+        <!-- set(layer[panoPrev].visible,false);
+        set(layer[panoNext].visible,false); -->
+        set(layer[visitedScenesText].visible,false);
+        set(layer[gotoTour].x,60);
+        ,
+        sub(maxTSHeight,stageheight,thumbsStageDelta);
+        if(layer[tourMapBtn].visible, sub(maxTSHeight,55); );
+        if(maxTSHeight GT layer[thumbsBar].height, copy(maxTSHeight,layer[thumbsBar].height); );
+        if(maxTSHeight GT 800, set(maxTSHeight,800); );
+        copy(layer[thumbsStage].height,maxTSHeight);
+        add(layer[thumbsScrollTop].y,maxTSHeight,52);
+        );
+        sub(tempH,layer[thumbsBar].height,6);
+        if(maxTSHeight LT tempH,
+        set(layer[thumbsScrollTop].visible,true);
+        set(layer[thumbsScrollBottom].visible,true);
+        if(isdesktop, set(layer[thumbsscrollbarbg].visible,true); );
+        set(layer[thumbsStage].x,16);
+        ,
+        set(layer[thumbsScrollTop].visible,false);
+        set(layer[thumbsScrollBottom].visible,false);
+        if(isdesktop, set(layer[thumbsscrollbarbg].visible,false); );
+        set(layer[thumbsStage].x,0);
+        );
+        if(isdesktop,
+        copy(layer[thumbsscrollbar].totalsize,layer[thumbsBar].height);
+        layer[thumbsMask].updatepos();
+        copy(layer[thumbsscrollbar].visiblesize,layer[thumbsMask].pixelheight);
+        changeThumbsScrol();
+        );
+    </action>
+
+    <action name="scrollThumbs">
+        set(mwdelta,0);
+        stopdelayedcall(scrollThumbsDelay);
+        if(wheeldelta_raw,
+        if(wheeldelta_raw LT 0, set(mwdelta,-1);, set(mwdelta,1); );
+        ,
+        if(wheeldelta != 0,
+        if(wheeldelta LT 0, set(mwdelta,-1);, set(mwdelta,1); );
+        );
+        );
+        if(mwdelta != 0,
+        if(mwdelta LT 0, sub(thumbsBarMinY,layer[thumbsStage].pixelheight,layer[thumbsBar].pixelheight); );
+        if(mwdelta GT 0, set(thumbsBarMinY,0); );
+        delayedcall(scrollThumbsDelay,0.3,
+        delayedcall(0, set(thumbsBarMoving,false); );
+        stoptween(layer[thumbsBar].y);
+        );
+        tween(layer[thumbsBar].y,get(thumbsBarMinY),distance(400,1),linear,,changeThumbsScrol());
+        ifnot(thumbsBarMoving, bigThumbShow(false); set(thumbsBarMoving,true); );
+        );
+    </action>
+
+    <action name="hsLinkedsceneOnclick">
+        set(view.fovmin,30);
+        bigThumbShow(false);
+        looktohotspot(get(name),,tween(,1));delayedcall(1, gotoscene(get(linkedscene)); );
+    </action>
+
+    <action name="hsLinkedsceneOnover">
+        tween(autorotate.speed,0,0.1);
+        spheretoscreen(ath,atv,hsx,hsy);
+        if(style == hsLineCopter, sub(hsy,pixelheight); sub(hsy,5); );
+        if(hsy LT 155,
+        add(bigThumbY,hsy,31);
+        if(style == hsLineCopter, sub(bigThumbY,18); );
+        set(BTSpin,SpinTop); set(BTTextAlign,bottom); set(BTTextEdge,top);
+        ,
+        sub(hsy,31); sub(bigThumbY,hsy,layer[bigThumb].pixelheight);
+        set(BTSpin,SpinBottom); set(BTTextAlign,top); set(BTTextEdge,bottom);
+        );
+
+        div(bigThumbHalfWidth,layer[bigThumb].pixelwidth,2);
+        sub(bigThumbX,hsx,bigThumbHalfWidth);
+
+        bigThumbShow(true,get(linkedscene),
+        get(bigThumbX),get(bigThumbY),
+        get(BTSpin),TextCenter,get(BTTextAlign),get(BTTextEdge)
+        );
+
+        if(style == hsLineCopter,
+        txtadd(hsImageName,get(name),img);
+        copy(layer[get(hsImageName)].crop,layer[get(hsImageName)].cropover);
+        );
+    </action>
+
+    <action name="hsLinkedsceneOnout">
+        tween(autorotate.speed,get(autorotatespeed),0.3);
+        bigThumbShow(false);
+        if(style == hsLineCopter,
+        txtadd(hsImageName,get(name),img);
+        copy(layer[get(hsImageName)].crop,layer[get(hsImageName)].cropnormal);
+        );
+    </action>
+
+    <action name="bigThumbShow">
+        if(%1,
+        copy(btobj,layer[bigThumb]);
+        stoptween(layer[bigThumb].alpha);
+        if(%5 == SpinNone,
+        set(layer[bigThumbFrameSpin].visible,false);
+        ,
+        set(layer[bigThumbFrameSpin].visible,true);
+        layer[bigThumbFrameSpin].loadstyle(bigThumbFrame%5);
+        );
+        copy(layer[bigThumbText].css,layer[bigThumbText].css%6);
+        set(layer[bigThumbText].align,%7);
+        set(layer[bigThumbText].edge,%8);
+        if(%2 == 1000,
+        set(btobj.url,images/tb.jpg);
+        copy(layer[bigThumbText].html,gotoTourText);
+        ,
+        txtadd(btobj.url,get(tourSettings.panosurl),'hi/',get(scene[%2].folder),'/tb.jpg');
+        ifnot(%9 == pn,
+        copy(layer[bigThumbText].html,scene[%2].title);
+        ,
+        copy(layer[bigThumbText].html,PNText);
+        );
+        );
+
+
+        tween(btobj.x,%3,0.25);
+        tween(btobj.y,%4,0.25);
+        set(btobj.visible,true);
+        set(alphadelay,0);
+        tween(alphadelay,1,0.1,linear,
+        tween(btobj.alpha,1,0.1,linear);
+        );
+        ,
+        tween(layer[bigThumb].alpha,0,0.1,linear,set(layer[bigThumb].visible,false););
+        );
+    </action>
+
+    <action name="setVew" >
+        if(%1 == fisheye,
+        set(display.flash10,off);
+        tween(view.architectural, 0.0, distance(1.0, 0.25), easeoutquad);
+        tween(view.fisheye, 0.0 ,distance(1.0, 0.20), easeoutquad,
+        set(view.stereographic,false);
+        set(view.fovmax,145);
+        tween(view.fisheye, 0.35, distance(1.0, 1.25) );
+        );
+        );
+        if(%1 == architectural,
+        set(display.flash10,off);
+        tween(view.fovmax, 90.0, distance(179, 0.25), easeoutquad);
+        tween(view.architectural, 1.0, distance(1.0, 0.25), easeoutquad);
+        tween(view.fisheye, 0.0, distance(1.0, 0.25), easeoutquad, set(view.stereographic,false); );
+        );
+        if(%1 == stereographic,
+        set(display.flash10,off);
+        tween(view.architectural, 0.0, distance(1.0, 0.25), easeoutquad);
+        tween(view.fisheye, 0.0 ,distance(1.0, 0.10), easeoutquad,
+        set(view.stereographic,true);
+        tween(view.fisheye, 1.0, distance(1.0, 1.25));
+        tween(view.fovmax, 100, distance(179, 1.25));
+        );
+        );
+        if(%1 == normal,
+        set(display.flash10,on);
+        tween(view.fisheye, 0.0, 0.5, default, set(view.stereographic,false); );
+        tween(view.architectural, 0.0);
+        if(view.vlookat GT 80, tween(view.vlookat, 0); );
+        );
+        if(%1 == littleplanet,
+        set(display.flash10,off);
+        tween(view.architectural, 0.0, distance(1.0, 0.25), easeoutquad);
+        tween(view.fisheye,       0.0 ,distance(1.0, 0.10), easeoutquad,
+        set(view.stereographic,true);
+        tween(view.fisheye, 1.0, distance(1.0, 0.75));
+        tween(view.fov,     140, distance(179, 0.75), easeoutquad, set(view.fovmax,150););
+        tween(view.vlookat,  90, distance(179, 0.75), easeoutquad);
+        );
+        );
+    </action>
+
+    <action name="mapShow" >
+        ifnot(plugin[mapBg].visible,
+        mul(deltax,stagewidth,0.50);
+        sub(plugin[mapBg].x,0,deltax);
+        set(plugin[mapBg].visible,true);
+        tween(plugin[mapBg].x,0,0.2,linear,
+        ifnot(plugin[map].loaded,
+        mapAddSpots();
+        ifnot(tourSettings.maptype === null, copy(plugin[map].maptype,tourSettings.maptype); );
+        if(isflash,
+        copy(plugin[map].key,plugin[map].bingmapkey);
+        txtadd(plugin[map].url,get(tourSettings.skinurl),'plugins/bingmaps.swf');
+        ,
+        <!-- copy(plugin[map].key,plugin[map].bingmapkey); -->
+        copy(plugin[map].url,plugin[map].html5url);
+        <!-- txtadd(plugin[map].url,get(tourSettings.skinurl),'plugins/bingmaps.js'); -->
+        <!-- txtadd(plugin[map].url,get(tourSettings.skinurl),'plugins/bingmaps.js'); -->
+        );
+        );
+        );
+        ,
+        mapClose();
+        );
+    </action>
+
+    <action name="mapClose" >
+        sub(deltax,0,plugin[mapBg].pixelwidth);
+        tween(plugin[mapBg].x,get(deltax),0.2,linear,
+        set(plugin[mapBg].visible,false);
+        );
+    </action>
+
+    <action name="mapAddSpots" >
+        set(spotI,0);
+        for(set(i,0), i LT scene.count, inc(i),
+        set(addSpot,0);
+        ifnot(scene[get(i)].name == map, inc(addSpot); );
+        txtadd(scenell,'NO',get(scene[get(i)].lat),get(scene[get(i)].lng));
+        ifnot(scenell == NO, inc(addSpot); );
+        if(addSpot == 2,
+        txtadd(spotname,spot,get(i));
+        copy(plugin[map].spot[get(spotI)].name,spotname);
+        copy(scene[get(i)].spotname,spotname);
+        copy(spotobj,plugin[map].spot[get(spotname)]);
+        set(spotobj.style,mapspotstyle);
+        copy(spotobj.lat,scene[get(i)].lat);
+        copy(spotobj.lng,scene[get(i)].lng);
+        copy(spotobj.heading,scene[get(i)].heading);
+        txtadd(spotobj.onclick,'bigThumbShow(false);spotOnclick(',get(spotI),');');
+        txtadd(spotobj.onover,'mapSpotOnover(',get(spotI),');');
+        set(spotobj.onout,bigThumbShow(false));
+        inc(spotI);
+        );
+        );
+    </action>
+
+    <action name="mapSpotOnover">
+        sub(bigThumbY,mouse.y,layer[bigThumb].pixelheight);
+        sub(bigThumbY,15);
+
+        div(bigThumbHalfWidth,layer[bigThumb].pixelwidth,2);
+        sub(bigThumbX,mouse.x,bigThumbHalfWidth);
+
+        bigThumbShow(true,%1,
+        get(bigThumbX),get(bigThumbY),
+        SpinNone,TextCenter,top,bottom
+        );
+    </action>
+
+    <action name="mapSetactiveSpot" >
+        copy(mapobj,plugin[map]);
+        if(mapobj.loaded,
+        copy(spotname,scene[get(xml.scene)].spotname);
+        mapobj.activatespot(get(spotname));
+        if(pantospot === true, mapobj.pantospot(get(spotname)); );
+        if(spotname === null, set(mapobj.radar.visible,false);, set(mapobj.radar.visible,true); );
+        );
+    </action>
+
+    <action name="spotOnclick" >
+        gotoscene(%1);
+    </action>
+
+    <action name="PNskipscene">
+        if(scene[get(sceneindex)].skip == true, add(sceneindex,1); PNskipscene(); );
+    </action>
+
+    <action name="panoPrevNext" >
+        copy(sceneindex,scene[get(xml.scene)].index);
+        add(sceneindex,%1);
+        if(sceneindex LT 0, sub(sceneindex,scene.count,1); );
+        if(scene[get(sceneindex)].name == map, add(sceneindex,%1); );
+        PNskipscene();
+        ifnot(sceneindex LT scene.count, set(sceneindex,0); );
+        if(%2 == showthumb,
+        if(%3 == 2,
+        set(bigThumbY,50);
+        copy(btnX,x);
+        set(spinAlign,SpinTop);
+        set(btTextAlign,bottom);
+        set(btTextEdge,top);
+        ,
+        sub(bigThumbY,stageheight,layer[bigThumb].pixelheight);
+        sub(bigThumbY,45);
+        div(btnX,stagewidth,2);
+        add(btnX,ox);
+        set(spinAlign,SpinBottom);
+        set(btTextAlign,top);
+        set(btTextEdge,bottom);
+        );
+
+        div(bigThumbHalfWidth,layer[bigThumb].pixelwidth,2);
+        sub(bigThumbX,btnX,bigThumbHalfWidth);
+        add(bigThumbX,15);
+
+        if(%1 == -1, if(language == ru,set(PNText,Предыдущая панорама);,set(PNText,Previous panorama);); );
+        if(%1 == 1, if(language == ru,set(PNText,Следующая панорама);,set(PNText,Next panorama);); );
+
+        bigThumbShow(true,get(sceneindex),
+        get(bigThumbX),get(bigThumbY),
+        get(spinAlign),TextCenter,get(btTextAlign),get(btTextEdge),pn
+        );
+        ,
+        if(scene[get(sceneindex)].name == map,
+        gotoTourMap();
+        ,
+        gotoscene(get(sceneindex));
+        );
+
+        );
+    </action>
+
+    <action name="gotoTour" >
+        getabsxy.gety(gotoTourY,get(name));
+        getabsxy.getx(gotoTourX,get(name));
+
+        sub(bigThumbY,gotoTourY,layer[bigThumb].pixelheight);
+        sub(bigThumbY,10);
+
+        div(gotoTourHalfWidth,pixelwidth,2);
+        div(bigThumbHalfWidth,layer[bigThumb].pixelwidth,2);
+        sub(bigThumbX,gotoTourX,bigThumbHalfWidth);
+        add(bigThumbX,gotoTourHalfWidth);
+
+        bigThumbShow(true,1000,
+        get(bigThumbX),get(bigThumbY),
+        SpinBottom,TextRight,righttop,rightbottom,
+        get(text)
+        );
+    </action>
+
+    <action name="fitHelpToScreen">
+        mul(maxwidth,stagewidth,0.6);
+        mul(maxheight,stageheight,0.6);
+        div(imageaspect,layer[help].imagewidth,layer[help].imageheight);
+        if(layer[help].imageheight GT maxheight, copy(newheight,maxheight);, copy(newheight,layer[help].imageheight); );
+        mul(newwidth,newheight,imageaspect);
+        if(newwidth GT maxwidth, copy(newwidth,maxwidth); div(newheight,newwidth,imageaspect); );
+
+        copy(layer[help].width,newwidth);
+        copy(layer[help].height,newheight);
+    </action>
+
+    <action name="track_btn_click">
+        js(trackTourEvent(Interface,%1));
+    </action>
+
+    <action name="track_thumb_click">
+        js(trackTourEvent(Thumbs,%1,%2));
+    </action>
+
+    <action name="stopSounds">
+        ifnot(tourInactive == true,
+        set(tourInactive,true);
+        copy(prevAutorotate,autorotateEnabled);
+        setAutorotate(false);
+        copy(prevSoundVol,plugin[soundinterface].volume);
+        if(isflash,
+        ifnot(fullscreen,
+        stoptween(plugin[soundinterface].volume);
+        tween(plugin[soundinterface].volume,0,0.3,linear,
+        set(plugin[soundinterface].mute,true);
+        );
+        );
+        ,
+        set(plugin[soundinterface].mute,true);
+        );
+        );
+    </action>
+
+    <action name="startSounds">
+        if(tourInactive == true,
+        set(tourInactive,false);
+        setAutorotate(get(prevAutorotate));
+        if(isflash,
+        stoptween(plugin[soundinterface].volume);
+        set(plugin[soundinterface].mute,false);
+        tween(plugin[soundinterface].volume,get(prevSoundVol),1,linear);
+        ,
+        set(plugin[soundinterface].mute,false);
+        );
+        );
+    </action>
+
+    <!-- <include url="city-book-promo/promo.xml" devices_="ipad" if_="language == ru" if="!adsonstart"/> -->
+
+    <!-- <include url="ipad-app-promo/ipad-app-promo.xml" devices="ipad"/> -->
+    <!-- <include url="april1-promo/promo.xml" devices="desktop"/> -->
+    <!-- <include url="calc:if(addsonstart == true, wayag-promo/wayag-promo.xml, empty.xml)" devices="desktop"/> -->
+    <!-- <include url="no-promo/no-promo.xml" devices="desktop" if="adsonstart == no" /> -->
+    <!-- <include url="%$adsonstart%-promo/%$adsonstart%-promo.xml" devices="desktop" if="adsonstart AND adsonstart != no" />  -->
+    <!-- <include url="antarctica-promo/antarctica-promo.xml" devices="desktop" if="!adsonstart"/> -->
+    <!-- <include url="android-app-promo/android-app-promo.xml" devфыices="desktop|android" if="adsonstart != no" /> -->
+
+
+    <!-- <include url="ipad-app-promo/appstore-button.xml" devices="ios"/> -->
+
+    <include url="autorotate/autorotate.xml" devices="desktop"/>
+
+    <include url="multitracks/multitracks.xml" devices="desktop"/>
+
+    <include url="share/share.xml"/>
+
+</krpano>

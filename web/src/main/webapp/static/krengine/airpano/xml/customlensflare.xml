@@ -1,0 +1,31 @@
+<krpano>
+    <lensflareset name="DEFAULT" url="images/lensflares.png"/>
+    <lensflareset name="custom" url="images/lensflares.png" >
+        <flare name="f1" pos="0" scale="0.045" color="0xC2C2C2" pixsize="200" />
+        <flare name="f2" pos="-0.3" scale="0.03" color="0x281200" pixsize="100" pixupos="300" pixvpos="100" />
+        <flare name="f3" pos="-0.08" scale="0.065" color="0x050a08" pixsize="100" pixupos="300" pixvpos="100" />
+        <flare name="f4" pos="0.26" scale="0.0035" color="0x7495A1" pixsize="100" pixupos="200" />
+        <flare name="f5" pos="0.3" scale="0.015" color="0x141D1C" pixsize="100" pixupos="200" pixvpos="100" />
+        <flare name="f6" pos="0.33" scale="0.0095" color="0x1B1424" pixsize="100" pixupos="200" pixvpos="100" />
+        <flare name="f7" pos="0.45" scale="0.002" color="0x000C1F" pixsize="100" pixupos="200" />
+        <flare name="f8" pos="0.56" scale="0.0035" color="0xC55D29" pixsize="100" pixupos="200" />
+        <flare name="f9" pos="0.63" scale="0.025" color="0x1A0D05" pixsize="100" pixupos="200" pixvpos="100" />
+        <flare name="f10" pos="0.77" scale="0.01" color="0x0E041A" pixsize="100" pixupos="200" />
+        <flare name="f11" pos="0.80" scale="0.04" color="0x000C1F" pixsize="100" pixupos="300" pixvpos="100" />
+        <flare name="f12" pos="1.25" scale="0.06" color="0x939393" pixsize="200" pixupos="200" pixvpos="200" />
+        <flare name="f13" pos="1.4" scale="0.095" color="0x6F6F6F" pixsize="200" pixvpos="200" />
+        <flare name="f14" pos="1.8" scale="0.009" color="0x23261D" pixsize="100" pixupos="200" />
+        <flare name="f15" pos="2" scale="0.002" color="0x8A6E96" pixsize="100" pixupos="200" />
+        <flare name="f16" pos="2.1" scale="0.04" color="0x120B16" pixsize="100" pixupos="200" />
+    </lensflareset>
+    <action name="resetDefaultLensflare">
+        for(set(i,0), i LT lensflareset[custom].flare.count, inc(i),
+        copy(lensflareset[DEFAULT].flare[get(i)].pos,lensflareset[custom].flare[get(i)].pos);
+        copy(lensflareset[DEFAULT].flare[get(i)].scale,lensflareset[custom].flare[get(i)].scale);
+        copy(lensflareset[DEFAULT].flare[get(i)].color,lensflareset[custom].flare[get(i)].color);
+        copy(lensflareset[DEFAULT].flare[get(i)].pixsize,lensflareset[custom].flare[get(i)].pixsize);
+        copy(lensflareset[DEFAULT].flare[get(i)].pixupos,lensflareset[custom].flare[get(i)].pixupos);
+        copy(lensflareset[DEFAULT].flare[get(i)].pixvpos,lensflareset[custom].flare[get(i)].pixvpos);
+        );
+    </action>
+</krpano>

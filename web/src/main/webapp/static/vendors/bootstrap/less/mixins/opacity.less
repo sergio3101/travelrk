@@ -1,0 +1,8 @@
+// Opacity
+
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 categoryOfContent
+  @opacity-ie: (@opacity * 100);
+  categoryOfContent: ~"alpha(opacity=@{opacity-ie})";
+}
