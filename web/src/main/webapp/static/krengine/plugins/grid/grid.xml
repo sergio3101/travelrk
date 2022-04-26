@@ -1,0 +1,45 @@
+<krpano logkey="true" bgcolor="0xFFFFFF" onstart="">
+<include url="%SWFPATH%/plugins/showtext.xml"/>
+<grid interval="10" width="10" start="-85" end="85" color="0xffffff"/>
+"
+<events name="grid" keep="true" onloadcomplete="
+for(set(number_line,1), 
+    number_line*grid.interval LE 360, 
+    inc(number_line), 
+    make_grid(get(number_line), 
+        calc(number_line*grid.interval), 
+        get(grid.start), 
+        calc(number_line*grid.interval), 
+        get(grid.end),
+    )
+); 
+for(set(number_line, 0), 
+    number_line*grid.interval LT 180, 
+    inc(number_line), 
+    make_grid_hor(calc(number_line), calc(number_line*grid.interval-100));
+ );
+"/>
+<action name="make_grid_hor">
+addhotspot(horz%1); hotspot[horz%1].loadstyle(gridh); set(delta_hor, 0.1); for(set(h,0);set(point_number, 0);, h*grid.interval LT 350, inc(h), make_point_hor(horz%1, get(point_number), calc(h*grid.interval),calc(%1*grid.interval-90),); ); set(delta_hor, -0.1); for(calc(h), h GE 0, dec(h), make_point_hor(horz%1, get(point_number), calc(h*grid.interval),calc(%1*grid.interval-90),); );
+</action>
+<action name="make_grid">
+addhotspot(grid%1); hotspot[grid%1].loadstyle(grid); make_point(grid%1, 0, %2, %3); make_point(grid%1, 1, %4, %5);
+</action>
+<action name="make_point_hor">
+set(hotspot[%1].point[%2].ath, calc(%3+delta_hor)); set(hotspot[%1].point[%2].atv, calc(%4+0.001)); inc(point_number);
+</action>
+<action name="make_point">
+set(hotspot[%1].point[%2].ath, %3); set(hotspot[%1].point[%2].atv, %4);
+</action>
+<style name="gridh" alpha="1.0" borderwidth="calc:grid.width/2" fillalpha="0.0" bordercolor="0xffffff" borderalpha="0.4" capture="false" onhover="subtxt(angle, get(name), 4, 3);showtext(calc(angle*grid.interval-90));" onover="set(borderalpha, 0.7);" onout="set(borderalpha, 0.4);"/>
+<style name="grid" alpha="1.0" borderwidth="calc:grid.width/2" fillalpha="0.0" bordercolor="0xffffff" borderalpha="0.4" capture="false" onhover="subtxt(angle, get(name), 4, 3);showtext(calc(angle*grid.interval));" onover="set(borderalpha, 0.7);" onout="set(borderalpha, 0.4);"/>
+<action name="startup" autorun="onstart">
+if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); ); loadscene(get(startscene), null, MERGE); if(startactions !== null, startactions() );
+</action>
+<scene name="scene_1" title="" onstart="">
+<image>
+<cube url=""/>
+</image>
+<view hlookat="0" fov="120"/>
+</scene>
+</krpano>

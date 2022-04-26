@@ -1,0 +1,11 @@
+.comodo-logo {
+    position: absolute;
+    margin-top: -84px;
+    width: 100% !important;
+}
+.comodo-logo a {
+    float: right !important;
+    display: block !important;
+    box-sizing: border-box !important;
+    margin-right: 5px;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano  bgcolor="#ffffff">
+    <action name="draghotspot">
+	spheretoscreen(ath, atv, hotspotcenterx, hotspotcentery, calc(mouse.stagex LT stagewidth/2 ? 'l' : 'r'));
+	sub(drag_adjustx, mouse.stagex, hotspotcenterx);
+	sub(drag_adjusty, mouse.stagey, hotspotcentery);
+	asyncloop(pressed,
+		sub(dx, mouse.stagex, drag_adjustx);
+		sub(dy, mouse.stagey, drag_adjusty);
+		set(attv,0);
+		screentosphere(dx, dy, ath, attv);
+		js(setNorth(get(ath)));
+		print_hotspot_pos();
+	);
+    </action>
+	
+    <action name="print_hotspot_pos"><![CDATA[
+	copy(print_ath, ath);
+	copy(print_atv, atv);
+	roundval(print_ath, 3);
+	roundval(print_atv, 3);
+	calc(plugin[hotspot_pos_info].html, '&lt;hotspot name="' + name + '"[br]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...[br]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ath="' + print_ath + '"[br]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atv="' + print_atv + '"[br]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...[br]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;');
+	]]></action>
+
+
+<scene name="pano37"
+       heading="0"
+       thumburl="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/thumbnail.jpg"
+       multires="true"
+       planar="false"
+       full360="true">
+    <view fisheye="0"
+          limitview="range"
+          hlookatmin="-180"
+          hlookatmax="180"
+          vlookatmin="-90"
+          vlookatmax="90"
+          maxpixelzoom=""
+          fovmin="14.7157"
+          fovtype="VFOV"
+          fovmax="90"
+          fov="46.184200"/>
+    <preview url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/preview.jpg" type="CUBESTRIP" striporder="FRBLUD" />
+    <image prealign="0|0|0" type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
+      <level tiledimagewidth="4096" tiledimageheight="4096">
+          <front url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/0/2/%v_%u.jpg"/>
+          <right url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/1/2/%v_%u.jpg"/>
+          <back  url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/2/2/%v_%u.jpg"/>
+          <left  url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/3/2/%v_%u.jpg"/>
+          <up    url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/4/2/%v_%u.jpg"/>
+          <down  url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/5/2/%v_%u.jpg"/>
+      </level>
+      <level tiledimagewidth="2048" tiledimageheight="2048">
+          <front url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/0/1/%v_%u.jpg"/>
+          <right url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/1/1/%v_%u.jpg"/>
+          <back  url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/2/1/%v_%u.jpg"/>
+          <left  url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/3/1/%v_%u.jpg"/>
+          <up    url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/4/1/%v_%u.jpg"/>
+          <down  url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/5/1/%v_%u.jpg"/>
+      </level>
+      <level tiledimagewidth="1024" tiledimageheight="1024">
+          <front url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/0/0/%v_%u.jpg"/>
+          <right url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/1/0/%v_%u.jpg"/>
+          <back  url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/2/0/%v_%u.jpg"/>
+          <left  url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/3/0/%v_%u.jpg"/>
+          <up    url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/4/0/%v_%u.jpg"/>
+          <down  url="https://travelrk.ru/exclusivetour/Solnechnayadolina1/Solnechnayadolinadata/obshaya_visotnaya_37/5/0/%v_%u.jpg"/>
+      </level>
+    </image>
+	<hotspot name="spotNorth" url="/images/red-north-arrow.png" scale="0.1" ath="0" atv="15"  ondown="draghotspot();" />
+    </scene>
+    
+    <action name="startup" autorun="onstart">
+        loadscene("pano37");
+    </action>
+</krpano>

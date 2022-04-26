@@ -1,0 +1,8 @@
+<krpano>
+	<!-- view settings -->
+	<view fov="60" hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150"/>
+	<include url="/krengine/skin/travelrk_skin.xml"/>
+	<!--<include url="/krengine/plugins/hs-clicked/hs-clicked.xml"/>-->
+	<!--<include url="/krengine/skin/videointerface.xml" />-->
+	<style name="hs_photo" url="/krengine/plugins/hs-clicked/hs_photo.png" hs_clicked="true"/>
+</krpano>

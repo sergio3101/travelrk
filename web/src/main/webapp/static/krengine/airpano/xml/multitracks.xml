@@ -1,0 +1,140 @@
+<krpano>
+
+    <events name="multitracks" keep="true"
+            onxmlcomplete="
+            if(soundtracks.track.count GT 0, initsound(); );
+            set(events[multitracks].onxmlcomplete,null);
+        "
+    />
+
+    <style name="track_text" url="../plugins/textfield.swf" keep="true"
+           align="lefttop" x="0" y="0" enabled="false" selectable="false"
+           width="100%" autoheight="true" background="false"
+           textshadow="1" textshadowrange="5" textshadowcolor="0x000000"
+           css="color:#ffffff; font-family:arial; font-size:14px; text-align:left;"
+    />
+
+    <layer name="changeTrack" parent="controllBtnsStage" style="controllsButtons2" visible="false"
+           align="leftbottom" edge="leftbottom" ox="5" oy="-5"
+           crop2="540|50|30|30" onovercrop2="540|80|30|30" x2="270"
+           crop="480|50|30|30" onovercrop="480|80|30|30" x="270"
+           onover="show_multitracks_bg(1)"
+           onout="show_multitracks_bg(0)"
+           ondown="changeTrack();"
+           devices="desktop"
+    />
+
+    <layer name="multitracks_bg" url="multitracks_bg.png" scale9grid="22|7|24|36" keep="true"
+           align="leftbottom" edge="leftbottom" x="274" y="32" visible="false" alpha="0"
+           width="200" height="58"
+           onover="show_multitracks_bg(1)"
+           onout="show_multitracks_bg(0)"
+    />
+
+    <action name="buildTrackList">
+        for(set(i,0), i LT soundtracks.track.count, inc(i),
+        txtadd(trackbgname,track_text_bg,get(i));
+        txtadd(tracktextname,track_text,get(i));
+
+        addlayer(get(trackbgname));
+        set(layer[get(trackbgname)].type,container);
+        set(layer[get(trackbgname)].keep,true);
+        set(layer[get(trackbgname)].align,lefttop);
+        set(layer[get(trackbgname)].width,-14);
+        set(layer[get(trackbgname)].height,20);
+        set(layer[get(trackbgname)].x,7);
+        mul(layer[get(trackbgname)].y,i,20);
+        add(layer[get(trackbgname)].y,7);
+        set(layer[get(trackbgname)].bgcolor,0x555555);
+        set(layer[get(trackbgname)].bgcapture,true);
+        set(layer[get(trackbgname)].parent,multitracks_bg);
+        txtadd(layer[get(trackbgname)].ondown,"changeTrack(",get(i),");");
+
+        addlayer(get(tracktextname));
+        layer[get(tracktextname)].loadstyle(track_text);
+        copy(layer[get(tracktextname)].parent,trackbgname);
+        settracktext(get(i),get(language));
+        );
+        mul(layer[multitracks_bg].height,i,20);
+        add(layer[multitracks_bg].height,18);
+        setmultitracksbgwidth(get(language));
+    </action>
+
+    <action name="setmultitracksbgwidth">
+        copy(layer[multitracks_bg].width,soundtracks.width%1));
+    </action>
+
+    <action name="settracktext">
+        txtadd(layer[get(tracktextname)].html,&#x00A0;,get(soundtracks.track[%1].title%2));
+    </action>
+
+    <action name="show_multitracks_bg">
+        helpShow(false);
+        if(%1 == 1,
+        set(layer[multitracks_bg].visible,true);
+        );
+        tween(layer[multitracks_bg].alpha,%1,0.2,easeoutquad,
+        if(%1 == 0, set(layer[multitracks_bg].visible,false); );
+        );
+    </action>
+
+    <action name="initsound">
+        buildTrackList();
+        if(defaultSound == true,
+        set(bgSoundUrl,http://www.airpano.ru/files/defaultsound/default.mp3);
+        ,
+        txtadd(bgSoundUrl,get(tourSettings.soundsurl),get(soundtracks.track[0].file));
+        );
+        ifnot(sound_allow == false,
+        ifnot(ismobile,
+        playsound(bgsound,get(bgSoundUrl),0);
+        updateTrackList(0);
+        set(currenttrack,1);
+        mul(sound[bgsound].volume,sound_volume,0.7);
+        pausesound(bgsound);
+        set(currentsound,1);
+        set(layer[changeTrack].visible,true);
+        add(layer[shareView].x,30);
+        ,
+        set(sound_onstart,false);
+        );
+        ,
+        set(layer[btnSoundOn].visible,false);
+        set(layer[btnSoundOff].visible,false);
+        copy(layer[shareView].x,layer[btnSoundOff].x);
+        );
+    </action>
+
+    <action name="changeTrack">
+        ifnot(%1 == null, set(currenttrack,%1); );
+        copy(currentsoundvol,sound[bgsound].volume);
+        ifnot(soundplaying,
+        set(soundispaused,true);
+        soundPlay(true);
+        ,
+        set(soundispaused,false);
+        );
+
+        txtadd(bgSoundUrl,get(tourSettings.soundsurl),get(soundtracks.track[get(currenttrack)].file));
+        playsound(bgsound,get(bgSoundUrl),0);
+        updateTrackList(get(currenttrack));
+        inc(currenttrack);
+        if(currenttrack == soundtracks.track.count, set(currenttrack,0); );
+
+        if(soundispaused, soundPlay(false); );
+        copy(sound[bgsound].volume,currentsoundvol);
+    </action>
+
+    <action name="updateTrackList">
+        for(set(i,0), i LT soundtracks.track.count, inc(i),
+        txtadd(trackbgname,track_text_bg,get(i));
+        if(i == %1,
+        set(layer[get(trackbgname)].bgalpha,1);
+        ,
+        set(layer[get(trackbgname)].bgalpha,0.001);
+        );
+        );
+    </action>
+
+
+</krpano>

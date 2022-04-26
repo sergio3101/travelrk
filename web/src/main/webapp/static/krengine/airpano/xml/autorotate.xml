@@ -1,0 +1,74 @@
+<krpano>
+
+    <events name="autorotate" keep="true"
+            onxmlcomplete="
+            if(language == eng,
+                set(layer[autorotate_bg].width,140);
+                set(layer[autorotate_text_on].html,&#x00A0;Autorotate is ON);
+                set(layer[autorotate_text_off].html,&#x00A0;Autorotate is OFF);
+            );
+
+            set(events[autorotate].onxmlcomplete,null);
+        "
+            event_autorotate_switched="
+            if(autorotate.enabled,
+                set(layer[autorotate_text_on_cursor].bgalpha,1);
+                set(layer[autorotate_text_off_cursor].bgalpha,0.001);
+            ,
+                set(layer[autorotate_text_on_cursor].bgalpha,0.001);
+                set(layer[autorotate_text_off_cursor].bgalpha,1);
+            );
+        "
+    />
+
+    <style name="autorotate_switch_text_on"
+           css="color:#ffffff; font-family:arial; font-size:14px; text-align:left;"
+    />
+
+    <style name="autorotate_switch_text_off"
+           css="color:#555555; font-family:arial; font-size:14px; text-align:left;"
+    />
+
+    <layer name="autorotate_bg" url="autorotate_bg.png" scale9grid="22|7|24|36" keep="true"
+           align="leftbottom" edge="leftbottom" x="154" y="32" visible="false" alpha="0"
+           width="200" height="58"
+           onover="show_autorotate_bg(1)"
+           onout="show_autorotate_bg(0)"
+    >
+        <layer name="autorotate_text_on_cursor" type="container" keep="true"
+               align="lefttop" width="-14" height="20" x="7" y="7" bgcolor="0x555555" bgalpha="1" bgcapture="true"
+               ondown="setAutorotate(true);"
+        >
+            <layer name="autorotate_text_on" url="../plugins/textfield.swf" keep="true"
+                   align="center" x="0" y="0" enabled="false" selectable="false"
+                   width="100%" autoheight="true" background="false"
+                   html="&#x00A0;Автовращение включено"
+                   textshadow="1" textshadowrange="5"  textshadowcolor="0x000000"
+                   css="color:#ffffff; font-family:arial; font-size:14px; text-align:left;"
+            />
+        </layer>
+        <layer name="autorotate_text_off_cursor" type="container" keep="true"
+               align="lefttop" width="-14" height="20" x="7" y="27" bgcolor="0x555555" bgalpha="0.001" bgcapture="true"
+               ondown="setAutorotate(false);"
+        >
+            <layer name="autorotate_text_off" url="../plugins/textfield.swf" keep="true"
+                   align="center" x="0" y="0" enabled="false" selectable="false"
+                   width="100%" autoheight="true" background="false"
+                   html="&#x00A0;Автовращение выключено"
+                   textshadow="1" textshadowrange="5"  textshadowcolor="0x000000"
+                   css="color:#ffffff; font-family:arial; font-size:14px; text-align:left;"
+            />
+        </layer>
+
+    </layer>
+
+    <action name="show_autorotate_bg">
+        if(%1 == 1,
+        set(layer[autorotate_bg].visible,true);
+        );
+        tween(layer[autorotate_bg].alpha,%1,0.2,easeoutquad,
+        if(%1 == 0, set(layer[autorotate_bg].visible,false); );
+        );
+    </action>
+
+</krpano>

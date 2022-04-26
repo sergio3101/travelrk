@@ -1,0 +1,20 @@
+<krpano>
+<plugin name="close_mod" url="close.png" align="center" x="0" y="0" onclick="closew();" visible="false" zorder="999" keep="true" />
+<plugin name="mask_black" url="black_w.png" align="center" width="100%" height="100%" enabled="false" keep="true" zorder="900" visible="false" alpha="0.7"/>
+<action name="forma">
+div(mx,%1,2);
+add(mx,22) ;
+div(my,%2,2);
+sub(my,0,my);
+set(plugin[close_mod].x,get(mx));
+set(plugin[close_mod].y,get(my));
+if(plugin[close_mod].visible == true,  set(plugin[close_mod].visible, false ); , set(plugin[close_mod].visible, true ););
+if(plugin[mask_black].visible == true,  set(plugin[mask_black].visible, false ); , set(plugin[mask_black].visible, true ););
+js(openforma(%1|%2|%3|%4));
+</action>
+<action name="closew">
+set(plugin[close_mod].visible, false );
+set(plugin[mask_black].visible, false );
+js(closeforma());
+</action>
+</krpano>

@@ -1,0 +1,78 @@
+﻿<krpano version="1.19" title="Virtual Tour">
+
+
+	<!-- Для активасии редактирования нажать "С" -->
+		
+   	<!-- Стиль текста1 -->         		   
+	<style name="text_Com1" enabled="true"   url="%SWFPATH%/plugins/textfield.swf" css="font-family:Arial; color:#FFFFFF; font-size:20px;" capture="true"
+		    x="1" y="18" padding="3 3"  align="lefttop" background="false"  />
+			
+	<!-- Стиль текста2 -->         		   
+	<style name="text_Com2" enabled="true"   url="%SWFPATH%/plugins/textfield.swf" css="font-family:Arial; color:#FFFFFF; font-size:12px;" capture="true"
+		    x="2" y="19" padding="3 3"  align="lefttop" background="false"  />
+	
+   <!-- Риска длинная --> 
+    <style name="riska_compas" type="container" keep="true" edge="lefttop"  width="1" height="10" zorder="40" alpha="1" enabled="false"  
+           bgcapture="true" bgcolor="0xFFFFFF" bgalpha="1" bgshadow="3 3 3 0x000000 0.8" 
+		   parent="background_scale"
+         />	 
+		 
+	<!-- Риска короткая --> 
+    <style name="riska_compas2" type="container" keep="true" edge="lefttop"  width="1" height="5" zorder="40" alpha="1" enabled="false"  
+            bgcapture="true" bgcolor="0xFFFFFF" bgalpha="1" bgshadow="3 3 3 0x000000 0.8" bgroundedge="0"
+			parent="background_scale"
+         />	 
+		 
+	<!-- Фон под компас --> 	 
+	<layer name="background_scale"  type="container" keep="true" align="top" enabled="true" handcursor="true" bgcapture="true" 
+	       alpha="1"   y="0" x="0"  width="100%" height="30" maskchildren="true"
+	       bgcolor="0x555555"  bgalpha="0.7"  bgshadow="0 0 30 10 0x000000 0.4"  
+		   onclick=""
+		   ondown="draggingComp();" >
+		   
+		   <layer  name="target_comp"  type="container" keep="true"  bgcapture="true"  align="center"  alpha="0.7" width="1" height="150"
+				   bgcolor="0xFF0000" bgalpha="1" 
+		/>	
+	</layer>	
+
+		
+		
+	<!-- S --> 
+    <layer name="S" style="text_Com1" keep="true" edge="center"  alpha="1" parent="compassm_1" html="[b]S[/b]" css="font-family:Arial; color:#FF6F68; font-size:20px;"  />	 
+	<!-- W --> 
+    <layer name="W" style="text_Com1" keep="true" edge="center"  alpha="1" parent="compassm_19" html="[b]W[/b]" />	
+	<!-- N --> 
+    <layer name="N" style="text_Com1" keep="true" edge="center"  alpha="1" parent="compassm_37" html="[b]N[/b]" css="font-family:Arial; color:#267DFF; font-size:20px;" />	 
+    <!-- E --> 
+    <layer name="E" style="text_Com1" keep="true" edge="center"  alpha="1" parent="compassm_55" html="[b]E[/b]" />
+
+	<!-- SW --> 
+    <layer name="SW" style="text_Com2" keep="true" edge="center"  alpha="1" parent="compassm_10" html="SW" />	 
+	<!-- NW --> 
+    <layer name="NW" style="text_Com2" keep="true" edge="center"  alpha="1" parent="compassm_28" html="NW" />	
+	<!-- NE --> 
+    <layer name="NE" style="text_Com2" keep="true" edge="center"  alpha="1" parent="compassm_46" html="NE" />	 
+    <!-- SE --> 
+    <layer name="SE" style="text_Com2" keep="true" edge="center"  alpha="1" parent="compassm_64" html="SE" />	
+	
+       
+    <!-- Показать-спрятать полосу -->
+	
+	<!-- Кнопка компас -->
+  <layer name="compass_button"   keep="true" align="righttop"  x="10" y="50"  url="Compass.png" scale="0.5"  alpha="0.8" zorder="92" rotate="0"
+		 onover="set(alpha,1);" onout="set(alpha,0.8);"
+		 onclick="if(layer[background_scale].height == 0,tween(layer[background_scale].height,30); tween(layer[background_scale].alpha,1);
+													,
+													 tween(layer[background_scale].height,0); tween(layer[background_scale].alpha,0);
+					   );"
+		/> 
+	
+		
+		
+	<!-- новая сцена -->	
+	<events  onviewchange="update_compass();" />	
+	
+</krpano>
+
+
+

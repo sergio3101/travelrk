@@ -1,0 +1,4 @@
+<krpano>
+    <include url="/krengine/plugins/compassSM/compassSM.xml" />
+    <include url="/krengine/plugins/grid/grid.xml" />
+</krpano>

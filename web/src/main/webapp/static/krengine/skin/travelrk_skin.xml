@@ -1,0 +1,154 @@
+<krpano>
+<action name="hotspot_animate">
+                if(loaded,
+                        inc(frame,1,get(frames),0);
+                        mul(ypos,frame,frameheight);
+                        txtadd(crop,'0|',get(ypos),'|',get(framewidth),'|',get(frameheight));
+                        delayedcall(0.03, hotspot_animate() );
+              );
+</action>
+<style name="arrow_style" url="/krengine/skin/hotspot_sm.png" keep="false" visible="false"
+           zoom="false"
+           alpha="0.8"
+           ondown="hsLinkedsceneOnclick();"
+           onover="hsLinkedsceneOnover();"
+           onout="hsLinkedsceneOnout();"
+/>
+<style name="point_style" x="-32" y="-32" keep="false" visible="false"
+           url="/krengine/skin/hotspot_ani_white_64x64x20.png"
+           crop="0|0|64|64"
+           frames="20" framewidth="64" frameheight="64" frame="0"
+           onloaded="hotspot_animate();"
+           zoom="false"
+           alpha="0.8"
+           ondown="hsLinkedsceneOnclick();"
+           onover="hsLinkedsceneOnover();"
+           onout="hsLinkedsceneOnout();"
+/>
+<style name="hsHelicopter" url="/images/skin.png" keep="false" visible="false"
+           crop="0|120|60|50" onovercrop="60|120|60|50"
+           cropnormal="0|120|60|50" onovercropnormal="60|120|60|50"
+           cropvisited="0|170|60|50" onovercropvisited="60|170|60|50"
+           zoom="false"
+           alpha="0.8"
+           ondown="hsLinkedsceneOnclick();"
+           onover="hsLinkedsceneOnover();"
+           onout="hsLinkedsceneOnout();"
+    />
+<!--<layer name="airpanoLogo" url="/img/logo_pano.png" keep="true" zorder="0" align="centertop" edge="righttop" x="110" y="10" preload="true" enabled="true" capture="false" hintru="© travelrk.ru - Авторские права защищены" hintruW="auto" hinteng="© travelrk.ru - Copyrights are protected" hintengW="auto" onhover="showHint(3);" ondown="openurl(https://travelrk.ru);"/>-->
+<style name="bigThumbFrameSpinRight" align="right" rotate="0" x="4" y="0" />
+    <style name="bigThumbFrameSpinBottom" align="bottom" rotate="90" x="0" y="4" />
+    <style name="bigThumbFrameSpinLeft" align="left" rotate="-180" x="4" y="0" />
+    <style name="bigThumbFrameSpinTop" align="top" rotate="-90" x="0" y="4" />
+
+    <layer name="bigThumb" url="" keep="true" visible="false" alpha="0" width="200" height="100"
+           align="lefttop" edge="lefttop" x="50%" y="50%" enabled="false" capture="false" zorder="9"
+    >
+
+        <layer name="bigThumbFrame" url="skin.png" keep="true"
+               crop="0|220|100|50" scale9grid="10|10|80|30"
+               align="center" edge="center" enabled="false" capture="false"
+               width="208" height="108" zorder="1"
+        >
+
+            <layer name="bigThumbFrameSpin" url="skin.png" keep="true" preload="true"
+                   edge="left" crop="100|220|15|50" zorder="2" enabled="false" capture="false"
+                   style="bigThumbFrameSpinRight"
+            />
+
+            <layer name="bigThumbText" url="plugins/textfield.swf" keep="true"
+                   align="righttop" edge="rightbottom" x="0" y="2" enabled="false" capture="false" selectable="false"
+                   width="350" autoheight="true" background="false"
+                   textshadow="1" textshadowrange="2" textshadowcolor="0x000000" textshadowalpha="1"
+                   html=""
+                   css="color:#ffffff; font-family:arial; font-size:14px; text-align:right;"
+                   cssTextLeft="color:#ffffff; font-family:arial; font-size:14px; text-align:left;"
+                   cssTextCenter="color:#ffffff; font-family:arial; font-size:14px; text-align:center;"
+                   cssTextRight="color:#ffffff; font-family:arial; font-size:14px; text-align:right;"
+            />
+
+        </layer>
+
+    </layer>
+
+<action name="hsLinkedsceneOnclick">
+//        set(view.fovmin,30);
+        bigThumbShow(false);
+//        looktohotspot(get(name),,tween(,1));delayedcall(1, gotoscene(get(linkedscene)); );
+</action>
+
+<action name="hsLinkedsceneOnover">
+        tween(autorotate.speed,0,0.1);
+        spheretoscreen(ath,atv,hsx,hsy);
+        set(tumbW,196);
+        set(tumbH,96);
+        if(hsy LT 155,
+            add(bigThumbY,hsy,31);
+	    set(BTSpin,SpinTop); 
+    	    set(BTTextAlign,bottom); 
+            set(BTTextEdge,top);
+        ,
+	    sub(hsy,31); sub(bigThumbY,hsy,tumbH);
+    	    set(BTSpin,SpinBottom); set(BTTextAlign,top); set(BTTextEdge,bottom);
+        );
+
+        div(bigThumbHalfWidth,tumbW,2);
+        sub(bigThumbX,hsx,bigThumbHalfWidth);
+//        warning('X: ',bigThumbX,', Y: ',bigThumbY);
+//        warning('WIDTH: ',layer[bigThumb].pixelwidth,', HEIGHT: ',layer[bigThumb].pixelheight);
+        
+        bigThumbShow(true,get(linkedscene),
+        get(bigThumbX),get(bigThumbY),
+        get(BTSpin),TextCenter,get(BTTextAlign),get(BTTextEdge),get(distance)
+        );
+    </action>
+<action name="hsLinkedsceneOnout">
+//        tween(autorotate.speed,get(autorotatespeed),0.3);
+        bigThumbShow(false);
+//        if(style == hsLineCopter,
+//        txtadd(hsImageName,get(name),img);
+//        copy(layer[get(hsImageName)].crop,layer[get(hsImageName)].cropnormal);
+//        );
+    </action>
+<action name="bigThumbShow">
+        if(%1,
+        copy(btobj,layer[bigThumb]);
+        stoptween(layer[bigThumb].alpha);
+        if(%5 == SpinNone,
+        set(layer[bigThumbFrameSpin].visible,false);
+        ,
+        set(layer[bigThumbFrameSpin].visible,true);
+        layer[bigThumbFrameSpin].loadstyle(bigThumbFrame%5);
+        );
+        copy(layer[bigThumbText].css,layer[bigThumbText].css%6);
+        set(layer[bigThumbText].align,%7);
+        set(layer[bigThumbText].edge,%8);
+        if(%2 == 1000,
+        set(btobj.url,images/tb.jpg);
+        set(btobj.width,213);
+        copy(layer[bigThumbText].html,gotoTourText);
+        ,
+//        txtadd(btobj.url,get(tourSettings.panosurl),'hi/',get(scene[%2].folder),'/tb.jpg');
+//        txtadd(btobj.url,get(scene[%2].folder),'/tb.jpg');
+        txtadd(btobj.url,get(scene[%2].thumburl),'');
+        set(hstitle,get(scene[%2].title));
+        txtadd(hstitle,get(hstitle),' - ',%9,'m');
+        ifnot(%9 == pn,
+        copy(layer[bigThumbText].html,hstitle);
+        ,
+        copy(layer[bigThumbText].html,PNText);
+        );
+        );
+
+
+        tween(btobj.x,%3,0.25);
+        tween(btobj.y,%4,0.25);
+        set(btobj.visible,true);
+        set(alphadelay,0);
+        tween(alphadelay,1,0.1,linear,tween(btobj.alpha,1,0.1,linear););
+        ,
+        tween(layer[bigThumb].alpha,0,0.1,linear,set(layer[bigThumb].visible,false););
+        );
+    </action>
+
+</krpano>

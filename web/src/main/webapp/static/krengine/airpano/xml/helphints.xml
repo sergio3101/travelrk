@@ -1,0 +1,95 @@
+<krpano>
+
+    <events name="helphints" keep="true"
+            onxmlcomplete="showhintsSetLanguage(get(language));delete(events[helphints].onxmlcomplete);"
+            onhelpshow="if(introDone, showHelpHints(); );"
+            onhelphide="hideHelpHints();"
+    />
+
+    <layer name="hhBtn" keep="true" parent="help"
+           align="top" edge="bottom" x="0" y="10"
+           ondown="set(visible,false);introBreak();helpShow(true);delayedcall(10,helpShow(false););"
+    />
+
+    <style name="hhOneng" url="../skin.png" crop="0|535|120|30" onovercrop="0|565|120|30"/>
+    <!-- <style name="hhOffeng" crop="120|535|120|30" onovercrop="120|565|120|30" ondown="hideHelpHints(eng);"/>     -->
+    <style name="hhOnru" url="../skin.png" crop="240|535|156|30" onovercrop="240|565|156|30"/>
+    <!-- <style name="hhOffru" crop="396|535|156|30" onovercrop="396|565|156|30" ondown="hideHelpHints(ru);"/> -->
+
+    <style name="helpHints"  keep="true" visible="false" alpha="0"/>
+
+    <layer name="hhAll" url="hints%$language%.png" style="helpHints"
+           align="top" edge="leftbottom" x="-60" y="0"
+           parent="btnMap"
+    />
+
+    <layer name="hhSound1" url="sound%$language%.png" style="helpHints"
+           align="top" edge="leftbottom" x="0" y="0"
+           parent="btnSoundOn"
+    />
+
+    <layer name="hhSound2" url="sound%$language%.png" style="helpHints"
+           align="top" edge="leftbottom" x="0" y="0"
+           parent="btnSoundOff"
+    />
+
+    <layer name="hhMusic" url="music%$language%.png" style="helpHints"
+           align="top" edge="leftbottom" x="0" y="0"
+           parent="changeSound"
+    />
+
+    <layer name="hhLink" url="share%$language%.png" style="helpHints"
+           align="top" edge="leftbottom" x="0" y="0"
+           parent="shareView"
+    />
+
+    <layer name="hhThumbs" url="thumbs%$language%.png" style="helpHints"
+           align="leftbottom" edge="rightbottom" x="-90" y="80"
+           parent="thumbsBg"
+    />
+
+    <layer name="hhMap" url="map%$language%.png" style="helpHints"
+           align="left" edge="right" x="-10" y="0"
+           parent="tourMapBtn"
+    />
+
+
+
+    <action name="showhintsSetLanguage">
+        layer[hhBtn].loadstyle(hhOn%1);
+    </action>
+
+    <action name="showHelpHints">
+        showHideHH(hhAll,show);
+        showHideHH(hhSound1,show);
+        showHideHH(hhSound2,show);
+        showHideHH(hhLink,show);
+        showHideHH(hhThumbs,show);
+        showHideHH(hhMap,show);
+        showHideHH(hhMusic,show);
+        removelayer(soundhint);
+    </action>
+
+    <action name="hideHelpHints">
+        showHideHH(hhAll);
+        showHideHH(hhSound1);
+        showHideHH(hhSound2);
+        showHideHH(hhLink);
+        showHideHH(hhThumbs);
+        showHideHH(hhMap);
+        showHideHH(hhMusic);
+        set(layer[hhBtn].visible,false);
+    </action>
+
+    <action name="showHideHH">
+        if(%2 == show,
+        set(layer[%1].visible,true);tween(layer[%1].alpha,1);
+        ,
+        tween(layer[%1].alpha,0,,,set(layer[%1].visible,false););
+        );
+    </action>
+
+
+
+
+</krpano>
