@@ -77,7 +77,7 @@
     <%--<include url="/krengine/skin/vtourskin_design_flat_light.xml"  if="design === 'flat_light'"  />--%>
     <%--<include url="/krengine/skin/vtourskin_design_ultra_light.xml" if="design === 'ultra_light'" />--%>
     <%--<include url="/krengine/skin/vtourskin_design_117.xml"         if="design === '117'"         />--%>
-    <include url="/krengine/skin/travelrk_skin_renta.xml"/>
+<%--    <include url="/krengine/skin/travelrk_skin_renta.xml"/>--%>
     <%--<include url="/krengine/plugins/garrows/garrows.xml" />--%>
     <!-- startup action - here the first pano/scene will be loaded -->
     <action name="startup" autorun="onstart">

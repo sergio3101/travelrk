@@ -290,6 +290,7 @@ public class AjaxController {
         info.setAddress(e.getAddress());
         info.setPhone(e.getPhone());
         info.setSite(e.getSite());
+        info.setYaBronUrl(e.getYaBronUrl());
         info.setYaid(e.getYaid());
         info.setOfficeLng(e.getOfficeLng());
         info.setOfficeLat(e.getOfficeLat());

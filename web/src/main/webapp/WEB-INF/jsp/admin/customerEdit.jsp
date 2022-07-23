@@ -206,6 +206,14 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
+                                        <form:label path="yaBronUrl" class="control-label col-md-2">URL для брони:</form:label>
+                                        <div class="col-md-10">
+                                            <div class="input-group input-group-sm col-md-10">
+                                                <form:input path="yaBronUrl" cssClass="form-control field col-md-10"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
                                         <form:label path="excltour" class="control-label col-md-2">Экслюзивный тур:</form:label>
                                         <div class="col-md-10">
                                             <div class="input-group input-group-sm col-md-10">

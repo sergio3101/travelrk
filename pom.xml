@@ -90,7 +90,7 @@
             <properties>
                 <deploy.env>dev</deploy.env>
                 <tomcat.manager>http://localhost:8081/manager/text</tomcat.manager>
-                <tomcat.manager.server>tomcat-firstbyte-test</tomcat.manager.server>
+                <tomcat.manager.server>tomcat-firstbyte</tomcat.manager.server>
                 <mysql.driverClassName>com.mysql.jdbc.Driver</mysql.driverClassName>
                 <mysql.url>jdbc:mysql://localhost:3306/travelrk_db?serverTimezone=UTC</mysql.url>
                 <mysql.username>travelrk_user</mysql.username>

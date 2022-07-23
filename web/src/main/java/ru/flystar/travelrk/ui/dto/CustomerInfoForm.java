@@ -24,6 +24,7 @@ public class CustomerInfoForm {
   private String phone = "";
   private String address = "";
   private String site = "";
+  private String yaBronUrl = "";
   private String excltour = "";
   private String email = "";
   private MultipartFile logoPath;

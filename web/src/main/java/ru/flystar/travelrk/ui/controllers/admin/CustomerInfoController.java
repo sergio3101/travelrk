@@ -138,6 +138,7 @@ public class CustomerInfoController {
     ci.setHeight(cif.getHeight());
     ci.setDescription(cif.getDescription());
     ci.setSite(cif.getSite());
+    ci.setYaBronUrl(cif.getYaBronUrl());
     ci.setPhone(cif.getPhone());
     ci.setExcltour(cif.getExcltour());
     ci.setLogoPath(cif.getLogo());
@@ -156,6 +157,7 @@ public class CustomerInfoController {
     cif.setHeight(ci.getHeight());
     cif.setDescription(ci.getDescription());
     cif.setSite(ci.getSite());
+    cif.setYaBronUrl(ci.getYaBronUrl());
     cif.setPhone(ci.getPhone());
     cif.setExcltour(ci.getExcltour());
     cif.setLogo(ci.getLogoPath());

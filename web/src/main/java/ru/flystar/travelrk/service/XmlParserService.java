@@ -39,6 +39,8 @@ import lombok.extern.log4j.Log4j;
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;
 import static org.apache.commons.lang3.StringEscapeUtils.escapeHtml3;
+
+import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -435,6 +437,27 @@ public class XmlParserService {
         Element inc = scnsDoc.createElement("include");
         inc.setAttribute("url", "/krengine/skin/travelrk_skin_renta.xml");
         scnsDoc.getDocumentElement().appendChild(inc);
+        if (StringUtils.isNotBlank(tour.getCustomerInfo().getYaBronUrl())) {
+          Element bronlayer = scnsDoc.createElement("layer");
+          bronlayer.setAttribute("name", "bronLogo");
+          bronlayer.setAttribute("url", "/img/logo_bron.png");
+          bronlayer.setAttribute("keep", "true");
+          bronlayer.setAttribute("scale", "0.6");
+          bronlayer.setAttribute("zorder", "0");
+          bronlayer.setAttribute("align", "centerbottom");
+          bronlayer.setAttribute("edge", "righttop");
+          bronlayer.setAttribute("x", "80");
+          bronlayer.setAttribute("y", "40");
+          bronlayer.setAttribute("preload", "true");
+          bronlayer.setAttribute("enabled", "true");
+          bronlayer.setAttribute("capture", "false");
+          bronlayer.setAttribute("hintru", "© travelrk.ru");
+          bronlayer.setAttribute("hintruW", "auto");
+          bronlayer.setAttribute("hinteng", "© travelrk.ru");
+          bronlayer.setAttribute("hintengW", "auto");
+          bronlayer.setAttribute("onclick", "openurl("+tour.getCustomerInfo().getYaBronUrl()+");");
+          scnsDoc.getDocumentElement().appendChild(bronlayer);
+        }
       }
       // добавляем счетчик просмотров
       Element counter = scnsDoc.createElement("include");

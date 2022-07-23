@@ -58,6 +58,8 @@ public class CustomerInfo extends BaseId {
   private String description = "";
   @Column(name = "yaid")
   private String yaid = "";
+  @Column(name = "ya_bron_url")
+  private String yaBronUrl = "";
   @OneToMany(mappedBy = "customerInfo")
   private Set<RentaTour> rentaTours = new HashSet<>();
   @OneToOne

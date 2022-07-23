@@ -18,6 +18,7 @@ public class CustomerModel {
   private String officeLng;
   private String phone;
   private String site;
+  private String yaBronUrl;
   private String yaid;
   private String logoPath;
   private RegionModel region;
