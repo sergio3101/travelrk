@@ -177,13 +177,11 @@
                                     <c:forEach items="${exclusivetourList}" varStatus="vs">
                                         <tr id="${exclusivetourList[vs.index].id}">
                                             <th scope="row">
-                                                <a href="${urlExclTour}/${exclusivetourList[vs.index].path}" target="_blank"><i class="fa fa-play-circle-o" title="Просмотр"></i></a>&nbsp;
-                                                <a href="exclTourEdit-${exclusivetourList[vs.index].id}"><i class="fa fa-edit" title="Изменить"></i></a>&nbsp;
-                                                <a data-toggle="modal" data-target=".bs-remove-exclusivetour" data-data="${exclusivetourList[vs.index].id}" title="Удалить"><i class="fa fa-remove"></i></a>
+                                                <a href="${exclusivetourList[vs.index].path}" target="_blank"><i class="fa fa-play-circle-o" title="Просмотр"></i></a>&nbsp;
                                             </th>
                                             <td>${exclusivetourList[vs.index].size}</td>
                                             <td><fmt:formatDate value="${exclusivetourList[vs.index].dateOfDownload}" var="dateOfDownload" type="date" pattern="yyyy-MM-dd"/>${dateOfDownload}</td>
-                                            <td style="padding:0px;text-align: center;"><c:if test="${not empty exclusivetourList[vs.index].logo}"><img src="${urlExclTour}/${exclusivetourList[vs.index].logo}" height="37"></c:if></td>
+                                            <td style="padding:0px;text-align: center;"><c:if test="${not empty exclusivetourList[vs.index].logo}"><img src="${exclusivetourList[vs.index].logo}" height="37"></c:if></td>
                                             <td>${exclusivetourList[vs.index].name}</td>
                                         </tr>
                                     </c:forEach>

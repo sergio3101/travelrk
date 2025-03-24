@@ -90,8 +90,8 @@
                                             <p class="lead">Инфо</p>
                                             <div class="row">
                                                 <div class="col-md-2"><strong>Путь к туру:</strong></div>
-                                                <div class="col-md-10"><a href="https://travelrk.ru/panotour/${panoTourRenta.path}/"
-                                                                          target="_blank">https://travelrk.ru/panotour/${panoTourRenta.path}</a>
+                                                <div class="col-md-10"><a href="https://pano.travelrk.ru/panotour/${panoTourRenta.path}/"
+                                                                          target="_blank">https://pano.travelrk.ru/panotour/${panoTourRenta.path}</a>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -230,7 +230,7 @@
                                             <div class="form-group">
                                                 <div class="col-md-12">
                                                     <section class="language-markup">
-                                                        <pre class="language-html pre-wrap"><code><c:set var = "iframe" value = '<iframe src="https://travelrk.ru/panotour/${panoTourRenta.path}/" id="tour_frame" width="700" height="410" border="0" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="width: 100%;max-width: 100%;"></iframe>'/>${fn:escapeXml(iframe)}</code></pre>
+                                                        <pre class="language-html pre-wrap"><code><c:set var = "iframe" value = '<iframe src="https://pano.travelrk.ru/panotour/${panoTourRenta.path}/" id="tour_frame" width="700" height="410" border="0" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="width: 100%;max-width: 100%;"></iframe>'/>${fn:escapeXml(iframe)}</code></pre>
                                                     </section>
                                                 </div>
                                             </div>

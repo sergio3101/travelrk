@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<div class="comodo-logo"><script language="JavaScript" type="text/javascript">TrustLogo("https://travelrk.ru/img/comodo_secure_seal_76x26_transp.png", "CL1", "none");</script></div>
+<div class="comodo-logo"><script language="JavaScript" type="text/javascript">TrustLogo("https://pano.travelrk.ru/img/comodo_secure_seal_76x26_transp.png", "CL1", "none");</script></div>
 <!-- Yandex.Metrika counter -->
 <script language="JavaScript" type="text/javascript">
     (function (d, w, c) {

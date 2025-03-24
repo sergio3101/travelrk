@@ -2,7 +2,7 @@
 <!-- Yandex.Metrika informer -->
 <div class="pull-right">
     <script language="JavaScript" type="text/javascript">
-        TrustLogo("https://travelrk.ru/img/comodo_secure_seal_76x26_transp.png", "CL1", "none");
+        TrustLogo("https://pano.travelrk.ru/img/comodo_secure_seal_76x26_transp.png", "CL1", "none");
     </script>
     <a href="https://metrika.yandex.ru/stat/?id=46547013&amp;from=informer"
    target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/46547013/3_0_209FFFFF_007FFFFF_1_pageviews"

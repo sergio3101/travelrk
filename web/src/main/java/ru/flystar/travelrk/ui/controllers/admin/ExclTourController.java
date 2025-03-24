@@ -16,9 +16,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import ru.flystar.travelrk.ExclusiveTourModel;
 import ru.flystar.travelrk.domain.persistents.ExclusiveTour;
 import ru.flystar.travelrk.domain.persistents.Panorama;
 import ru.flystar.travelrk.domain.persistents.Scene;
+import ru.flystar.travelrk.service.AwsExclusiveTourService;
 import ru.flystar.travelrk.service.ExclusiveTourService;
 import ru.flystar.travelrk.service.PanoramaService;
 import ru.flystar.travelrk.service.SceneService;
@@ -38,18 +40,22 @@ public class ExclTourController {
   private XmlParserService xmlParserService;
   private SceneService sceneService;
 
+  private AwsExclusiveTourService awsExclusiveTourService;
+
   @Autowired
-  public ExclTourController(ExclusiveTourService exclusiveTourService, PanoramaService panoramaService, XmlParserService xmlParserService, SceneService sceneService) {
+  public ExclTourController(ExclusiveTourService exclusiveTourService, PanoramaService panoramaService, XmlParserService xmlParserService, SceneService sceneService,
+                            AwsExclusiveTourService awsExclusiveTourService) {
     this.exclusiveTourService = exclusiveTourService;
     this.panoramaService = panoramaService;
     this.xmlParserService = xmlParserService;
     this.sceneService = sceneService;
+    this.awsExclusiveTourService = awsExclusiveTourService;
   }
 
   @RequestMapping(value = "/exclusivetour", method = RequestMethod.GET)
   public ModelAndView exclusivetour() {
     ModelAndView modelAndView = new ModelAndView("admin/exclusivetour");
-    List<ExclusiveTour> list = exclusiveTourService.getAllexclusivetour();
+    List<ExclusiveTourModel> list = awsExclusiveTourService.getAllExclusiveTours();
     modelAndView.addObject("exclusivetourList", list);
     return modelAndView;
   }

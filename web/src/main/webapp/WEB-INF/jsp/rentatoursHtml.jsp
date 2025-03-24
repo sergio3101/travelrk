@@ -14,16 +14,16 @@
     <meta name="title" content="${tour.name}" />
     <meta property="og:title" content="${tour.name}" />
     <meta property="og:type" content="article"/>
-    <%--<meta property="og:url" content="https://travelrk.ru/rentatours/${tour.path}/" />--%>
+    <%--<meta property="og:url" content="https://pano.travelrk.ru/rentatours/${tour.path}/" />--%>
     <meta property="og:image" content="${snapshoturl}" />
     <meta property="og:image:url" content="${snapshoturl}" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:description" content="${tour.description}" />
-    <meta property="og:site_name" content="TRAVELRK.RU" />
+    <meta property="og:site_name" content="PANO.TRAVELRK.RU" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="${tour.name}" />
     <meta name="twitter:description" content="${tour.description}" />
-    <meta name="twitter:url" content="https://travelrk.ru/rentatours/${tour.path}/" />
+    <meta name="twitter:url" content="https://pano.travelrk.ru/rentatours/${tour.path}/" />
     <meta name="twitter:image" content="${snapshoturl}" />
     <%@ include file="includes/headStyle.jsp" %>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

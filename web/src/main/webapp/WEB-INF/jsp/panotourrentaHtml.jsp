@@ -168,8 +168,8 @@
                     ,bgcolor:"#000000"
                     ,focus: false
                     ,html5:isBot ? "always" : "prefer"
-                    ,initvars:{UNIQURL:"https://travelrk.ru/panotour/${tour.path}", COUNTER:"Просмотров: ${tour.counter}"}
-                    ,vars:{startscene:curScene,starttime:curTime,UNIQURL:"https://travelrk.ru/panotour/${tour.path}"}
+                    ,initvars:{UNIQURL:"https://pano.travelrk.ru/panotour/${tour.path}", COUNTER:"Просмотров: ${tour.counter}"}
+                    ,vars:{startscene:curScene,starttime:curTime,UNIQURL:"https://pano.travelrk.ru/panotour/${tour.path}"}
 
                     ,localfallback:"flash"
 

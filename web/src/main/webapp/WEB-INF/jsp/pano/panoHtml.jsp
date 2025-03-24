@@ -12,16 +12,16 @@
     <meta name="title" content="${panorama.region.viewName} - ${panorama.title}" />
     <meta property="og:title" content="${panorama.region.viewName} - ${panorama.title}" />
     <meta property="og:type" content="article"/>
-    <%--<meta property="og:url" content="https://travelrk.ru/pano/${panorama.panoPath}/" />--%>
+    <%--<meta property="og:url" content="https://pano.travelrk.ru/pano/${panorama.panoPath}/" />--%>
     <meta property="og:image" content="${snapshoturl}" />
     <meta property="og:image:url" content="${snapshoturl}" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:description" content="${panorama.description}" />
-    <meta property="og:site_name" content="TRAVELRK.RU" />
+    <meta property="og:site_name" content="PANO.TRAVELRK.RU" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="${panorama.region.viewName} - ${panorama.title}" />
     <meta name="twitter:description" content="${panorama.description}" />
-    <meta name="twitter:url" content="https://travelrk.ru" />
+    <meta name="twitter:url" content="https://pano.travelrk.ru" />
     <meta name="twitter:image" content="${snapshoturl}" />
     <style>
         @-ms-viewport { width:device-width; }
